@@ -1,0 +1,89 @@
+{
+  "abi": [],
+  "ast": {
+    "absolutePath": "interfaces/level0/governance/IPhantomGovernor.sol",
+    "exportedSymbols": {
+      "IGovernorTimelock": [
+        2103
+      ],
+      "IPhantomGovernor": [
+        802
+      ]
+    },
+    "id": 803,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 798,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:22"
+      },
+      {
+        "absolutePath": "/Users/admin/.brownie/packages/OpenZeppelin/openzeppelin-contracts@4.3.2/contracts/governance/extensions/IGovernorTimelock.sol",
+        "file": "@openzeppelin/contracts/governance/extensions/IGovernorTimelock.sol",
+        "id": 800,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 803,
+        "sourceUnit": 2104,
+        "src": "93:102:22",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 799,
+              "name": "IGovernorTimelock",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "101:17:22",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPhantomGovernor",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 801,
+          "nodeType": "StructuredDocumentation",
+          "src": "197:106:22",
+          "text": " @title IPhantomGovernor\n @author PhantomDao Team\n @notice The Interface for PhantomGovernor"
+        },
+        "fullyImplemented": true,
+        "id": 802,
+        "linearizedBaseContracts": [
+          802
+        ],
+        "name": "IPhantomGovernor",
+        "nameLocation": "314:16:22",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 803,
+        "src": "304:29:22",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:298:22"
+  },
+  "contractName": "IPhantomGovernor",
+  "dependencies": [],
+  "offset": [
+    304,
+    333
+  ],
+  "sha1": "85e9308e930bf3e6830ac6413380ff2a11b62250",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/* Package Interface Imports */\nimport {IGovernorTimelock} from \"@openzeppelin/contracts/governance/extensions/IGovernorTimelock.sol\";\n\n/**\n * @title IPhantomGovernor\n * @author PhantomDao Team\n * @notice The Interface for PhantomGovernor\n */\ninterface IPhantomGovernor {}",
+  "type": "interface"
+}

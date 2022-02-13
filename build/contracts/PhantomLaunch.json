@@ -1,0 +1,5047 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "storageFactoryAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "contractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "PhantomStorageMixin__ContractNotFoundByAddressOrIsOutdated",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "contractName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "PhantomStorageMixin__ContractNotFoundByNameOrIsOutdated",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "PhantomStorageMixin__UserIsNotGuardian",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "claimFPHM",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "exerciseFPHM",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "swapAPHM",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "13": "/Users/admin/.brownie/packages/OpenZeppelin/openzeppelin-contracts@4.4.2/contracts/security/ReentrancyGuard.sol",
+    "32": "/Users/admin/.brownie/packages/hifi-finance/prb-math@2.4.1/contracts/PRBMath.sol",
+    "34": "/Users/admin/.brownie/packages/hifi-finance/prb-math@2.4.1/contracts/PRBMathUD60x18.sol",
+    "60": "contracts/level1/launch/PhantomLaunch.sol",
+    "61": "contracts/mixins/PhantomStorageMixin.sol",
+    "66": "contracts/storage/PhantomStorageKeys.sol",
+    "87": "interfaces/level1/launch/IPhantomLaunch.sol",
+    "88": "interfaces/mixins/IPhantomStorageMixin.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/level1/launch/PhantomLaunch.sol",
+    "exportedSymbols": {
+      "IPhantomLaunch": [
+        17338
+      ],
+      "PRBMathUD60x18": [
+        11082
+      ],
+      "PhantomLaunch": [
+        8361
+      ],
+      "PhantomStorageMixin": [
+        8981
+      ]
+    },
+    "id": 8362,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8294,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:60"
+      },
+      {
+        "absolutePath": "/Users/admin/.brownie/packages/hifi-finance/prb-math@2.4.1/contracts/PRBMathUD60x18.sol",
+        "file": "@hifi-finance/prb-math/contracts/PRBMathUD60x18.sol",
+        "id": 8296,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 8362,
+        "sourceUnit": 11083,
+        "src": "83:83:60",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 8295,
+              "name": "PRBMathUD60x18",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "91:14:60",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "contracts/mixins/PhantomStorageMixin.sol",
+        "file": "../../mixins/PhantomStorageMixin.sol",
+        "id": 8298,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 8362,
+        "sourceUnit": 8982,
+        "src": "191:73:60",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 8297,
+              "name": "PhantomStorageMixin",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "199:19:60",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "interfaces/level1/launch/IPhantomLaunch.sol",
+        "file": "../../../interfaces/level1/launch/IPhantomLaunch.sol",
+        "id": 8300,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 8362,
+        "sourceUnit": 17339,
+        "src": "299:84:60",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 8299,
+              "name": "IPhantomLaunch",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "307:14:60",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 8302,
+              "name": "PhantomStorageMixin",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 8981,
+              "src": "532:19:60"
+            },
+            "id": 8303,
+            "nodeType": "InheritanceSpecifier",
+            "src": "532:19:60"
+          },
+          {
+            "baseName": {
+              "id": 8304,
+              "name": "IPhantomLaunch",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 17338,
+              "src": "553:14:60"
+            },
+            "id": 8305,
+            "nodeType": "InheritanceSpecifier",
+            "src": "553:14:60"
+          }
+        ],
+        "canonicalName": "PhantomLaunch",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 8301,
+          "nodeType": "StructuredDocumentation",
+          "src": "385:120:60",
+          "text": " @title PhantomLaunch\n @author PhantomDao Team\n @notice The dApp facing contract used for launch functions"
+        },
+        "fullyImplemented": true,
+        "id": 8361,
+        "linearizedBaseContracts": [
+          8361,
+          17338,
+          8981,
+          17394,
+          17378,
+          10472
+        ],
+        "name": "PhantomLaunch",
+        "nameLocation": "515:13:60",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 8308,
+            "libraryName": {
+              "id": 8306,
+              "name": "PRBMathUD60x18",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 11082,
+              "src": "580:14:60"
+            },
+            "nodeType": "UsingForDirective",
+            "src": "574:33:60",
+            "typeName": {
+              "id": 8307,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "599:7:60",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "body": {
+              "id": 8317,
+              "nodeType": "Block",
+              "src": "699:23:60",
+              "statements": [
+                {
+                  "functionReturnParameters": 8315,
+                  "id": 8316,
+                  "nodeType": "Return",
+                  "src": "709:7:60"
+                }
+              ]
+            },
+            "id": 8318,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 8313,
+                    "name": "storageFactoryAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 8310,
+                    "src": "676:21:60",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 8314,
+                "kind": "baseConstructorSpecifier",
+                "modifierName": {
+                  "id": 8312,
+                  "name": "PhantomStorageMixin",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 8981,
+                  "src": "656:19:60"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "656:42:60"
+              }
+            ],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8311,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8310,
+                  "mutability": "mutable",
+                  "name": "storageFactoryAddress",
+                  "nameLocation": "633:21:60",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8318,
+                  "src": "625:29:60",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8309,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "625:7:60",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "624:31:60"
+            },
+            "returnParameters": {
+              "id": 8315,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "699:0:60"
+            },
+            "scope": 8361,
+            "src": "613:109:60",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              17329
+            ],
+            "body": {
+              "id": 8331,
+              "nodeType": "Block",
+              "src": "1046:52:60",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 8327,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "1080:3:60",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 8328,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "1080:10:60",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "id": 8324,
+                          "name": "PhantomAlphaSwap",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 8641,
+                          "src": "1056:16:60",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomAlphaSwap_$14965_$",
+                            "typeString": "function () view returns (contract IPhantomAlphaSwap)"
+                          }
+                        },
+                        "id": 8325,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1056:18:60",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IPhantomAlphaSwap_$14965",
+                          "typeString": "contract IPhantomAlphaSwap"
+                        }
+                      },
+                      "id": 8326,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "swap",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 14964,
+                      "src": "1056:23:60",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address) external"
+                      }
+                    },
+                    "id": 8329,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1056:35:60",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 8330,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1056:35:60"
+                }
+              ]
+            },
+            "functionSelector": "f4860e4f",
+            "id": 8332,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 8322,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 8321,
+                  "name": "nonReentrant",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 17377,
+                  "src": "1033:12:60"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1033:12:60"
+              }
+            ],
+            "name": "swapAPHM",
+            "nameLocation": "1004:8:60",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 8320,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1024:8:60"
+            },
+            "parameters": {
+              "id": 8319,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1012:2:60"
+            },
+            "returnParameters": {
+              "id": 8323,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1046:0:60"
+            },
+            "scope": 8361,
+            "src": "995:103:60",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              17333
+            ],
+            "body": {
+              "id": 8345,
+              "nodeType": "Block",
+              "src": "1156:52:60",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 8341,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "1190:3:60",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 8342,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "1190:10:60",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "id": 8338,
+                          "name": "PhantomFounders",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 8660,
+                          "src": "1166:15:60",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomFounders_$15000_$",
+                            "typeString": "function () view returns (contract IPhantomFounders)"
+                          }
+                        },
+                        "id": 8339,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1166:17:60",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IPhantomFounders_$15000",
+                          "typeString": "contract IPhantomFounders"
+                        }
+                      },
+                      "id": 8340,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "claim",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 14993,
+                      "src": "1166:23:60",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address) external"
+                      }
+                    },
+                    "id": 8343,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1166:35:60",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 8344,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1166:35:60"
+                }
+              ]
+            },
+            "functionSelector": "c22a3e5b",
+            "id": 8346,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 8336,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 8335,
+                  "name": "nonReentrant",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 17377,
+                  "src": "1143:12:60"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1143:12:60"
+              }
+            ],
+            "name": "claimFPHM",
+            "nameLocation": "1113:9:60",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 8334,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1134:8:60"
+            },
+            "parameters": {
+              "id": 8333,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1122:2:60"
+            },
+            "returnParameters": {
+              "id": 8337,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1156:0:60"
+            },
+            "scope": 8361,
+            "src": "1104:104:60",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              17337
+            ],
+            "body": {
+              "id": 8359,
+              "nodeType": "Block",
+              "src": "1269:55:60",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 8355,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "1306:3:60",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 8356,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "1306:10:60",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "id": 8352,
+                          "name": "PhantomFounders",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 8660,
+                          "src": "1279:15:60",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomFounders_$15000_$",
+                            "typeString": "function () view returns (contract IPhantomFounders)"
+                          }
+                        },
+                        "id": 8353,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1279:17:60",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IPhantomFounders_$15000",
+                          "typeString": "contract IPhantomFounders"
+                        }
+                      },
+                      "id": 8354,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "exercise",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 14999,
+                      "src": "1279:26:60",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address) external"
+                      }
+                    },
+                    "id": 8357,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1279:38:60",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 8358,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1279:38:60"
+                }
+              ]
+            },
+            "functionSelector": "c1e262e5",
+            "id": 8360,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 8350,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 8349,
+                  "name": "nonReentrant",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 17377,
+                  "src": "1256:12:60"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1256:12:60"
+              }
+            ],
+            "name": "exerciseFPHM",
+            "nameLocation": "1223:12:60",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 8348,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1247:8:60"
+            },
+            "parameters": {
+              "id": 8347,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1235:2:60"
+            },
+            "returnParameters": {
+              "id": 8351,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1269:0:60"
+            },
+            "scope": 8361,
+            "src": "1214:110:60",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8362,
+        "src": "506:820:60",
+        "usedErrors": [
+          17385,
+          17389,
+          17393
+        ]
+      }
+    ],
+    "src": "35:1292:60"
+  },
+  "bytecode": "601260e08181527139b2b1bab934ba3c9730b2323932b9b9b7b360711b6101009081526080918252600d6101209081526c73656375726974792e6e616d6560981b6101405260a0526101a060405260136101609081527f73656375726974792e72656769737465726564000000000000000000000000006101805260c0529091600091620000909183919062001332565b506020828101518051620000ab926001850192019062001332565b5060408201518051620000c991600284019160209091019062001332565b50506040805161032081018252601b6102e082019081527f7068616e746f6d2e636f6e7472616374732e616c706861737761700000000000610300830152610100820190815282518084018452601a8082527f7068616e746f6d2e636f6e7472616374732e666f756e646572730000000000006020838101919091526101208501929092528451808601865260198082527f7068616e746f6d2e636f6e7472616374732e7374616b696e67000000000000008285015261014086019190915285518087018752601f81527f7068616e746f6d2e636f6e7472616374732e7374616b696e677761726d75700081850152610160860152855180870187529081527f7068616e746f6d2e636f6e7472616374732e626f6e64696e67000000000000008184015261018085015284518086018652601581527f7068616e746f6d2e636f6e7472616374732e70686d0000000000000000000000818401526101a08501528451808601865260168082527f7068616e746f6d2e636f6e7472616374732e7370686d00000000000000000000828501526101c0860191909152855180870187528181527f7068616e746f6d2e636f6e7472616374732e6770686d00000000000000000000818501526101e0860152855180870187528181527f7068616e746f6d2e636f6e7472616374732e6170686d0000000000000000000081850152610200860152855180870187529081527f7068616e746f6d2e636f6e7472616374732e6670686d000000000000000000008184015261022085015284518086018652601781527f7068616e746f6d2e636f6e7472616374732e7661756c7400000000000000000081840152610240850152845180860186528181527f7068616e746f6d2e636f6e7472616374732e74726561737572790000000000008184015261026085015284518086018652601c81527f7068616e746f6d2e636f6e7472616374732e6465785f726f75746572000000008184015261028085015284518086018652601e81527f7068616e746f6d2e636f6e7472616374732e796561726e5f726f757465720000818401526102a0850152845180860186529081527f7068616e746f6d2e636f6e7472616374732e6578656375746f72000000000000818301526102c0840152908252825160c08101909352602a6060840181815292945090840192918291620019286080840139815260200160405180606001604052806040518060600160405280602b8152602001620018ad602b913981526020016040518060400160405280602081526020017f7068616e746f6d2e74726561737572792e6163636f756e745f6b65792e64616f815250815260200160405180606001604052806025815260200162001a166025913990528152604080518082018252601981527f7068616e746f6d2e74726561737572792e62616c616e636573000000000000006020828101919091529283015291835281516101c0810190925260246101608301818152938201938392830191829160c085019182919062001843610180880139815260200160405180606001604052806025815260200162001a8560259139815260200160405180606001604052806024815260200162001a3b6024913981526020016040518060600160405280602b8152602001620018d8602b9139815260200160405180606001604052806024815260200162001aaa602491398152508152602001604051806060016040528060258152602001620019a2602591398152602001604051806060016040528060298152602001620019ed6029913981526020016040518060400160405280601b81526020017f7068616e746f6d2e616c6c6f6361746f722e746f6b656e732e6c70000000000081525081526020016040518060400160405280601f81526020017f7068616e746f6d2e616c6c6f6361746f722e746f6b656e732e73696e676c6500815250815250815250815260200160405180610100016040528060405180604001604052806040518060400160405280601a81526020017f7068616e746f6d2e626f6e64696e672e757365722e6e6f6e636500000000000081525081526020016040518060600160405280602b815260200162001952602b913981525081526020016040518060400160405280601d81526020017f7068616e746f6d2e626f6e64696e672e76657374696e67626c6f636b7300000081525081526020016040518060400160405280601c81526020017f7068616e746f6d2e626f6e64696e672e70726f6669745f726174696f0000000081525081526020016040518060400160405280601881526020017f7068616e746f6d2e626f6e64696e672e646973636f756e74000000000000000081525081526020016040518060400160405280601b81526020017f7068616e746f6d2e626f6e64696e672e69735f72656465656d6564000000000081525081526020016040518060400160405280601681526020017f7068616e746f6d2e626f6e64696e672e7061796f75740000000000000000000081525081526020016040518060400160405280601e81526020017f7068616e746f6d2e626f6e64696e672e76657374735f61745f626c6f636b000081525081526020016040518060400160405280601881526020017f7068616e746f6d2e626f6e64696e672e69735f76616c69640000000000000000815250815250815260200160405180604001604052806040518060400160405280601d81526020017f7068616e746f6d2e7374616b696e672e726562617365436f756e746572000000815250815260200160405180606001604052806022815260200162001b796022913990528152604080516101408101909152602160e0820181815260209093019282916060830191829162001af26101008601398152602001604051806060016040528060248152602001620018896024913981526020016040518060600160405280602681526020016200181d60269139815260408051808201825260208082527f7068616e746f6d2e666f756e6465722e636c61696d732e6c617374436c61696d828201529283015291835281516060810183528082018281527f7068616e746f6d2e666f756e6465722e6368616e6765732e6e65774f776e65728285015281528382015281518083018352601d81527f7068616e746f6d2e666f756e6465722e76657374696e67537461727473000000818301529282019290925291835281516101608101909252602261010083018181529390910192829162001867610120840139815260200160405180606001604052806023815260200162001b136023913981526020016040518060600160405280602581526020016200197d602591398152602001604051806060016040528060268152602001620019c76026913981526020016040518060600160405280602581526020016200190360259139815260200160405180606001604052806026815260200162001a5f60269139815260200160405180606001604052806024815260200162001ace6024913981526020016040518060600160405280602a815260200162001b9b602a9139815250815260200160405180608001604052806040518060400160405280601c81526020017f7068616e746f6d2e676f7665726e6f722e766f74696e6744656c61790000000081525081526020016040518060400160405280601d81526020017f7068616e746f6d2e676f7665726e6f722e766f74696e67506572696f64000000815250815260200160405180606001604052806021815260200162001b3660219139815260200160405180606001604052806022815260200162001b57602291399052905280518051805160039291839162000be191839160209091019062001332565b50602082810151805162000bfc926001850192019062001332565b506040820151805162000c1a91600284019160209091019062001332565b506060820151805162000c3891600384019160209091019062001332565b506080820151805162000c5691600484019160209091019062001332565b5060a0820151805162000c7491600584019160209091019062001332565b5060c0820151805162000c9291600684019160209091019062001332565b5060e0820151805162000cb091600784019160209091019062001332565b50610100820151805162000ccf91600884019160209091019062001332565b50610120820151805162000cee91600984019160209091019062001332565b50610140820151805162000d0d91600a84019160209091019062001332565b50610160820151805162000d2c91600b84019160209091019062001332565b50610180820151805162000d4b91600c84019160209091019062001332565b506101a0820151805162000d6a91600d84019160209091019062001332565b506101c0820151805162000d8991600e84019160209091019062001332565b505050602082810151805180519192600f85019262000dac928492019062001332565b50602082810151805180519192600185019262000dcd928492019062001332565b50602082810151805162000de8926001850192019062001332565b506040820151805162000e0691600284019160209091019062001332565b5050506040820151805162000e2691600484019160209091019062001332565b5050506040820151805180518051805160148601939284929091839162000e539183916020019062001332565b50602082810151805162000e6e926001850192019062001332565b506040820151805162000e8c91600284019160209091019062001332565b506060820151805162000eaa91600384019160209091019062001332565b506080820151805162000ec891600484019160209091019062001332565b505050602082810151805162000ee5926005850192019062001332565b506040820151805162000f0391600684019160209091019062001332565b506060820151805162000f2191600784019160209091019062001332565b506080820151805162000f3f91600884019160209091019062001332565b505050506060830151805180518051929350601d850192839162000f699183916020019062001332565b50602082810151805162000f84926001850192019062001332565b505050602082810151805162000fa1926002850192019062001332565b506040820151805162000fbf91600384019160209091019062001332565b506060820151805162000fdd91600484019160209091019062001332565b506080820151805162000ffb91600584019160209091019062001332565b5060a082015180516200101991600684019160209091019062001332565b5060c082015180516200103791600784019160209091019062001332565b5060e082015180516200105591600884019160209091019062001332565b5050506080820151805180516026840191620010779183916020019062001332565b50602082810151805162001092926001850192019062001332565b50505060a08201518051805180516028850192918391620010bb91839160209091019062001332565b506020828101518051620010d6926001850192019062001332565b5060408201518051620010f491600284019160209091019062001332565b50606082015180516200111291600384019160209091019062001332565b505050602082810151805180519192600485019262001135928492019062001332565b505050604082015180516200115591600584019160209091019062001332565b50505060c082015180518051602e840191620011779183916020019062001332565b50602082810151805162001192926001850192019062001332565b5060408201518051620011b091600284019160209091019062001332565b5060608201518051620011ce91600384019160209091019062001332565b5060808201518051620011ec91600484019160209091019062001332565b5060a082015180516200120a91600584019160209091019062001332565b5060c082015180516200122891600684019160209091019062001332565b5060e082015180516200124691600784019160209091019062001332565b50505060e0820151805180516036840191620012689183916020019062001332565b50602082810151805162001283926001850192019062001332565b5060408201518051620012a191600284019160209091019062001332565b5060608201518051620012bf91600384019160209091019062001332565b50505050506d7068616e746f6d53746f7261676560901b603f55348015620012e657600080fd5b5060405162001bc538038062001bc58339810160408190526200130991620013d8565b6001603d55603e80546001600160a01b0383166001600160a01b03199091161790555062001447565b82805462001340906200140a565b90600052602060002090601f016020900481019282620013645760008555620013af565b82601f106200137f57805160ff1916838001178555620013af565b82800160010185558215620013af579182015b82811115620013af57825182559160200191906001019062001392565b50620013bd929150620013c1565b5090565b5b80821115620013bd5760008155600101620013c2565b600060208284031215620013eb57600080fd5b81516001600160a01b03811681146200140357600080fd5b9392505050565b600181811c908216806200141f57607f821691505b602082108114156200144157634e487b7160e01b600052602260045260246000fd5b50919050565b6103c680620014576000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063c1e262e514610046578063c22a3e5b14610050578063f4860e4f14610058575b600080fd5b61004e610060565b005b61004e6100fc565b61004e61015a565b6002603d54141561008c5760405162461bcd60e51b81526004016100839061028d565b60405180910390fd5b6002603d556100996101b7565b604051630d8acc1560e11b81523360048201526001600160a01b039190911690631b15982a906024015b600060405180830381600087803b1580156100dd57600080fd5b505af11580156100f1573d6000803e3d6000fd5b50506001603d555050565b6002603d54141561011f5760405162461bcd60e51b81526004016100839061028d565b6002603d5561012c6101b7565b604051630f41a04d60e11b81523360048201526001600160a01b039190911690631e83409a906024016100c3565b6002603d54141561017d5760405162461bcd60e51b81526004016100839061028d565b6002603d5561018a610256565b604051623438dd60e41b81523360048201526001600160a01b0391909116906303438dd0906024016100c3565b60006101cb603e546001600160a01b031690565b6001600160a01b03166321f8a72160036000016001016040516101ee91906102c4565b60405190819003812060e083901b6001600160e01b03191682526004820152602401602060405180830381865afa15801561022d573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102519190610360565b905090565b600061026a603e546001600160a01b031690565b6001600160a01b03166321f8a72160036000016000016040516101ee91906102c4565b6020808252601f908201527f5265656e7472616e637947756172643a207265656e7472616e742063616c6c00604082015260600190565b600080835481600182811c9150808316806102e057607f831692505b602080841082141561030057634e487b7160e01b86526022600452602486fd5b818015610314576001811461032557610352565b60ff19861689528489019650610352565b60008a81526020902060005b8681101561034a5781548b820152908501908301610331565b505084890196505b509498975050505050505050565b60006020828403121561037257600080fd5b81516001600160a01b038116811461038957600080fd5b939250505056fea2646970667358221220d50b4c9f424573268250bc42e916c8d0a18f19d2b24b6f2abed8b9a294f4ca4464736f6c634300080a00337068616e746f6d2e666f756e6465722e636c61696d732e72656d61696e696e67416d6f756e747068616e746f6d2e616c6c6f6361746f722e746f6b656e732e616464726573732e6461697068616e746f6d2e726f7574696e672e6465785f726f757465725f616464726573737068616e746f6d2e666f756e6465722e636c61696d732e696e697469616c416d6f756e747068616e746f6d2e74726561737572792e6163636f756e745f6b65792e76656e747572656361706974616c7068616e746f6d2e616c6c6f6361746f722e746f6b656e732e616464726573732e6461695f70686d5f6c707068616e746f6d2e726f7574696e672e73706f6f6b795f726f757465725f616464726573737068616e746f6d2e74726561737572792e617070726f7665642e65787465726e616c2e616464726573737068616e746f6d2e626f6e64696e672e757365722e66697273745f756e72656465656d65645f6e6f6e63657068616e746f6d2e726f7574696e672e7370697269745f726f757465725f616464726573737068616e746f6d2e616c6c6f6361746f722e746f6b656e732e64657374696e6174696f6e737068616e746f6d2e726f7574696e672e7370697269745f666163746f72795f616464726573737068616e746f6d2e616c6c6f6361746f722e746f6b656e732e646573745f70657263656e74616765737068616e746f6d2e74726561737572792e6163636f756e745f6b65792e72657365727665737068616e746f6d2e616c6c6f6361746f722e746f6b656e732e616464726573732e6d696d7068616e746f6d2e726f7574696e672e73706f6f6b795f666163746f72795f616464726573737068616e746f6d2e616c6c6f6361746f722e746f6b656e732e616464726573732e7766746d7068616e746f6d2e616c6c6f6361746f722e746f6b656e732e616464726573732e6465787068616e746f6d2e726f7574696e672e7370697269745f67617567655f616464726573737068616e746f6d2e666f756e6465722e636c61696d732e616c6c6f636174696f6e7068616e746f6d2e726f7574696e672e6465785f666163746f72795f616464726573737068616e746f6d2e676f7665726e6f722e71756f72756d50657263656e746167657068616e746f6d2e676f7665726e6f722e70726f706f73616c5468726573686f6c647068616e746f6d2e7374616b696e672e6e657874526562617365446561646c696e657068616e746f6d2e726f7574696e672e7370697269745f67617567655f70726f78795f61646472657373",
+  "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.10+commit.fc410830"
+  },
+  "contractName": "PhantomLaunch",
+  "coverageMap": {
+    "branches": {
+      "13": {
+        "PhantomLaunch.swapAPHM": {
+          "6": [
+            2325,
+            2344,
+            true
+          ]
+        }
+      },
+      "32": {},
+      "34": {},
+      "60": {},
+      "61": {},
+      "66": {},
+      "87": {},
+      "88": {}
+    },
+    "statements": {
+      "13": {},
+      "32": {},
+      "34": {},
+      "60": {
+        "PhantomLaunch.claimFPHM": {
+          "1": [
+            1166,
+            1201
+          ]
+        },
+        "PhantomLaunch.exerciseFPHM": {
+          "0": [
+            1279,
+            1317
+          ]
+        },
+        "PhantomLaunch.swapAPHM": {
+          "2": [
+            1056,
+            1091
+          ]
+        }
+      },
+      "61": {
+        "PhantomStorageMixin.PhantomAlphaSwap": {
+          "5": [
+            4718,
+            4811
+          ]
+        },
+        "PhantomStorageMixin.PhantomFounders": {
+          "3": [
+            4902,
+            4993
+          ]
+        },
+        "PhantomStorageMixin.PhantomStorage": {
+          "4": [
+            2169,
+            2208
+          ]
+        }
+      },
+      "66": {},
+      "87": {},
+      "88": {}
+    }
+  },
+  "dependencies": [
+    "IPhantomLaunch",
+    "IPhantomStorageMixin",
+    "hifi-finance/prb-math@2.4.1/PRBMath",
+    "hifi-finance/prb-math@2.4.1/PRBMathUD60x18",
+    "PhantomStorageKeys",
+    "PhantomStorageMixin",
+    "OpenZeppelin/openzeppelin-contracts@4.4.2/ReentrancyGuard"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c8063c1e262e514610046578063c22a3e5b14610050578063f4860e4f14610058575b600080fd5b61004e610060565b005b61004e6100fc565b61004e61015a565b6002603d54141561008c5760405162461bcd60e51b81526004016100839061028d565b60405180910390fd5b6002603d556100996101b7565b604051630d8acc1560e11b81523360048201526001600160a01b039190911690631b15982a906024015b600060405180830381600087803b1580156100dd57600080fd5b505af11580156100f1573d6000803e3d6000fd5b50506001603d555050565b6002603d54141561011f5760405162461bcd60e51b81526004016100839061028d565b6002603d5561012c6101b7565b604051630f41a04d60e11b81523360048201526001600160a01b039190911690631e83409a906024016100c3565b6002603d54141561017d5760405162461bcd60e51b81526004016100839061028d565b6002603d5561018a610256565b604051623438dd60e41b81523360048201526001600160a01b0391909116906303438dd0906024016100c3565b60006101cb603e546001600160a01b031690565b6001600160a01b03166321f8a72160036000016001016040516101ee91906102c4565b60405190819003812060e083901b6001600160e01b03191682526004820152602401602060405180830381865afa15801561022d573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102519190610360565b905090565b600061026a603e546001600160a01b031690565b6001600160a01b03166321f8a72160036000016000016040516101ee91906102c4565b6020808252601f908201527f5265656e7472616e637947756172643a207265656e7472616e742063616c6c00604082015260600190565b600080835481600182811c9150808316806102e057607f831692505b602080841082141561030057634e487b7160e01b86526022600452602486fd5b818015610314576001811461032557610352565b60ff19861689528489019650610352565b60008a81526020902060005b8681101561034a5781548b820152908501908301610331565b505084890196505b509498975050505050505050565b60006020828403121561037257600080fd5b81516001600160a01b038116811461038957600080fd5b939250505056fea2646970667358221220d50b4c9f424573268250bc42e916c8d0a18f19d2b24b6f2abed8b9a294f4ca4464736f6c634300080a0033",
+  "deployedSourceMap": "506:820:60:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1214:110;;;:::i;:::-;;1104:104;;;:::i;995:103::-;;;:::i;1214:110::-;1744:1:13;2325:7;;:19;;2317:63;;;;-1:-1:-1;;;2317:63:13;;;;;;;:::i;:::-;;;;;;;;;1744:1;2455:7;:18;1279:17:60::1;:15;:17::i;:::-;:38;::::0;-1:-1:-1;;;1279:38:60;;1306:10:::1;1279:38;::::0;::::1;520:51:91::0;-1:-1:-1;;;;;1279:26:60;;;::::1;::::0;::::1;::::0;493:18:91;;1279:38:60::1;;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;::::0;::::1;;;;;-1:-1:-1::0;;1701:1:13;2628:7;:22;-1:-1:-1;;1214:110:60:o;1104:104::-;1744:1:13;2325:7;;:19;;2317:63;;;;-1:-1:-1;;;2317:63:13;;;;;;;:::i;:::-;1744:1;2455:7;:18;1166:17:60::1;:15;:17::i;:::-;:35;::::0;-1:-1:-1;;;1166:35:60;;1190:10:::1;1166:35;::::0;::::1;520:51:91::0;-1:-1:-1;;;;;1166:23:60;;;::::1;::::0;::::1;::::0;493:18:91;;1166:35:60::1;374:203:91::0;995:103:60;1744:1:13;2325:7;;:19;;2317:63;;;;-1:-1:-1;;;2317:63:13;;;;;;;:::i;:::-;1744:1;2455:7;:18;1056::60::1;:16;:18::i;:::-;:35;::::0;-1:-1:-1;;;1056:35:60;;1080:10:::1;1056:35;::::0;::::1;520:51:91::0;-1:-1:-1;;;;;1056:23:60;;;::::1;::::0;::::1;::::0;493:18:91;;1056:35:60::1;374:203:91::0;4824:176:61;4874:16;4926;2192:15;;-1:-1:-1;;;;;2192:15:61;;2093:122;4926:16;-1:-1:-1;;;;;4926:27:61;;4964:7;:17;;:26;;4954:37;;;;;;:::i;:::-;;;;;;;;;4926:66;;;;-1:-1:-1;;;;;;4926:66:61;;;;;;1954:25:91;1927:18;;4926:66:61;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;4902:91;;4824:176;:::o;4638:180::-;4689:17;4743:16;2192:15;;-1:-1:-1;;;;;2192:15:61;;2093:122;4743:16;-1:-1:-1;;;;;4743:27:61;;4781:7;:17;;:27;;4771:38;;;;;;:::i;14:355:91:-;216:2;198:21;;;255:2;235:18;;;228:30;294:33;289:2;274:18;;267:61;360:2;345:18;;14:355::o;707:1096::-;833:3;862:1;895:6;889:13;925:3;947:1;975:9;971:2;967:18;957:28;;1035:2;1024:9;1020:18;1057;1047:61;;1101:4;1093:6;1089:17;1079:27;;1047:61;1127:2;1175;1167:6;1164:14;1144:18;1141:38;1138:165;;;-1:-1:-1;;;1202:33:91;;1258:4;1255:1;1248:15;1288:4;1209:3;1276:17;1138:165;1319:18;1346:104;;;;1464:1;1459:319;;;;1312:466;;1346:104;-1:-1:-1;;1379:24:91;;1367:37;;1424:16;;;;-1:-1:-1;1346:104:91;;1459:319;654:1;647:14;;;691:4;678:18;;1553:1;1567:165;1581:6;1578:1;1575:13;1567:165;;;1659:14;;1646:11;;;1639:35;1702:16;;;;1596:10;;1567:165;;;1571:3;;1761:6;1756:3;1752:16;1745:23;;1312:466;-1:-1:-1;1794:3:91;;707:1096;-1:-1:-1;;;;;;;;707:1096:91:o;1990:290::-;2060:6;2113:2;2101:9;2092:7;2088:23;2084:32;2081:52;;;2129:1;2126;2119:12;2081:52;2155:16;;-1:-1:-1;;;;;2200:31:91;;2190:42;;2180:70;;2246:1;2243;2236:12;2180:70;2269:5;1990:290;-1:-1:-1;;;1990:290:91:o",
+  "language": "Solidity",
+  "natspec": {
+    "author": "PhantomDao Team",
+    "kind": "dev",
+    "methods": {
+      "claimFPHM()": {
+        "details": "claim fPHM tokens"
+      },
+      "exerciseFPHM()": {
+        "details": "swap vested fPHM for gPHM"
+      },
+      "swapAPHM()": {
+        "details": "swap aPHM for PHM on a 1:1 basis."
+      }
+    },
+    "notice": "The dApp facing contract used for launch functions",
+    "title": "PhantomLaunch",
+    "version": 1
+  },
+  "offset": [
+    506,
+    1326
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x41 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0xC1E262E5 EQ PUSH2 0x46 JUMPI DUP1 PUSH4 0xC22A3E5B EQ PUSH2 0x50 JUMPI DUP1 PUSH4 0xF4860E4F EQ PUSH2 0x58 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x4E PUSH2 0x60 JUMP JUMPDEST STOP JUMPDEST PUSH2 0x4E PUSH2 0xFC JUMP JUMPDEST PUSH2 0x4E PUSH2 0x15A JUMP JUMPDEST PUSH1 0x2 PUSH1 0x3D SLOAD EQ ISZERO PUSH2 0x8C JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD PUSH2 0x83 SWAP1 PUSH2 0x28D JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x2 PUSH1 0x3D SSTORE PUSH2 0x99 PUSH2 0x1B7 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH4 0xD8ACC15 PUSH1 0xE1 SHL DUP2 MSTORE CALLER PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP2 SWAP1 SWAP2 AND SWAP1 PUSH4 0x1B15982A SWAP1 PUSH1 0x24 ADD JUMPDEST PUSH1 0x0 PUSH1 0x40 MLOAD DUP1 DUP4 SUB DUP2 PUSH1 0x0 DUP8 DUP1 EXTCODESIZE ISZERO DUP1 ISZERO PUSH2 0xDD JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP GAS CALL ISZERO DUP1 ISZERO PUSH2 0xF1 JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP PUSH1 0x1 PUSH1 0x3D SSTORE POP POP JUMP JUMPDEST PUSH1 0x2 PUSH1 0x3D SLOAD EQ ISZERO PUSH2 0x11F JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD PUSH2 0x83 SWAP1 PUSH2 0x28D JUMP JUMPDEST PUSH1 0x2 PUSH1 0x3D SSTORE PUSH2 0x12C PUSH2 0x1B7 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH4 0xF41A04D PUSH1 0xE1 SHL DUP2 MSTORE CALLER PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP2 SWAP1 SWAP2 AND SWAP1 PUSH4 0x1E83409A SWAP1 PUSH1 0x24 ADD PUSH2 0xC3 JUMP JUMPDEST PUSH1 0x2 PUSH1 0x3D SLOAD EQ ISZERO PUSH2 0x17D JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD PUSH2 0x83 SWAP1 PUSH2 0x28D JUMP JUMPDEST PUSH1 0x2 PUSH1 0x3D SSTORE PUSH2 0x18A PUSH2 0x256 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH3 0x3438DD PUSH1 0xE4 SHL DUP2 MSTORE CALLER PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP2 SWAP1 SWAP2 AND SWAP1 PUSH4 0x3438DD0 SWAP1 PUSH1 0x24 ADD PUSH2 0xC3 JUMP JUMPDEST PUSH1 0x0 PUSH2 0x1CB PUSH1 0x3E SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND SWAP1 JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH4 0x21F8A721 PUSH1 0x3 PUSH1 0x0 ADD PUSH1 0x1 ADD PUSH1 0x40 MLOAD PUSH2 0x1EE SWAP2 SWAP1 PUSH2 0x2C4 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 DUP2 SWAP1 SUB DUP2 KECCAK256 PUSH1 0xE0 DUP4 SWAP1 SHL PUSH1 0x1 PUSH1 0x1 PUSH1 0xE0 SHL SUB NOT AND DUP3 MSTORE PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x24 ADD PUSH1 0x20 PUSH1 0x40 MLOAD DUP1 DUP4 SUB DUP2 DUP7 GAS STATICCALL ISZERO DUP1 ISZERO PUSH2 0x22D JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP PUSH1 0x40 MLOAD RETURNDATASIZE PUSH1 0x1F NOT PUSH1 0x1F DUP3 ADD AND DUP3 ADD DUP1 PUSH1 0x40 MSTORE POP DUP2 ADD SWAP1 PUSH2 0x251 SWAP2 SWAP1 PUSH2 0x360 JUMP JUMPDEST SWAP1 POP SWAP1 JUMP JUMPDEST PUSH1 0x0 PUSH2 0x26A PUSH1 0x3E SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND SWAP1 JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH4 0x21F8A721 PUSH1 0x3 PUSH1 0x0 ADD PUSH1 0x0 ADD PUSH1 0x40 MLOAD PUSH2 0x1EE SWAP2 SWAP1 PUSH2 0x2C4 JUMP JUMPDEST PUSH1 0x20 DUP1 DUP3 MSTORE PUSH1 0x1F SWAP1 DUP3 ADD MSTORE PUSH32 0x5265656E7472616E637947756172643A207265656E7472616E742063616C6C00 PUSH1 0x40 DUP3 ADD MSTORE PUSH1 0x60 ADD SWAP1 JUMP JUMPDEST PUSH1 0x0 DUP1 DUP4 SLOAD DUP2 PUSH1 0x1 DUP3 DUP2 SHR SWAP2 POP DUP1 DUP4 AND DUP1 PUSH2 0x2E0 JUMPI PUSH1 0x7F DUP4 AND SWAP3 POP JUMPDEST PUSH1 0x20 DUP1 DUP5 LT DUP3 EQ ISZERO PUSH2 0x300 JUMPI PUSH4 0x4E487B71 PUSH1 0xE0 SHL DUP7 MSTORE PUSH1 0x22 PUSH1 0x4 MSTORE PUSH1 0x24 DUP7 REVERT JUMPDEST DUP2 DUP1 ISZERO PUSH2 0x314 JUMPI PUSH1 0x1 DUP2 EQ PUSH2 0x325 JUMPI PUSH2 0x352 JUMP JUMPDEST PUSH1 0xFF NOT DUP7 AND DUP10 MSTORE DUP5 DUP10 ADD SWAP7 POP PUSH2 0x352 JUMP JUMPDEST PUSH1 0x0 DUP11 DUP2 MSTORE PUSH1 0x20 SWAP1 KECCAK256 PUSH1 0x0 JUMPDEST DUP7 DUP2 LT ISZERO PUSH2 0x34A JUMPI DUP2 SLOAD DUP12 DUP3 ADD MSTORE SWAP1 DUP6 ADD SWAP1 DUP4 ADD PUSH2 0x331 JUMP JUMPDEST POP POP DUP5 DUP10 ADD SWAP7 POP JUMPDEST POP SWAP5 SWAP9 SWAP8 POP POP POP POP POP POP POP POP JUMP JUMPDEST PUSH1 0x0 PUSH1 0x20 DUP3 DUP5 SUB SLT ISZERO PUSH2 0x372 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP2 AND DUP2 EQ PUSH2 0x389 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP4 SWAP3 POP POP POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD5 SIGNEXTEND 0x4C SWAP16 TIMESTAMP GASLIMIT PUSH20 0x268250BC42E916C8D0A18F19D2B24B6F2ABED8B9 LOG2 SWAP5 DELEGATECALL 0xCA DIFFICULTY PUSH5 0x736F6C6343 STOP ADDMOD EXP STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "MSTORE",
+      "path": "60"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "CALLVALUE",
+      "path": "60"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "ISZERO",
+      "path": "60"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "JUMPI",
+      "path": "60"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "REVERT",
+      "path": "60"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "POP",
+      "path": "60"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "CALLDATASIZE",
+      "path": "60"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "LT",
+      "path": "60"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x41"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "JUMPI",
+      "path": "60"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "CALLDATALOAD",
+      "path": "60"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "SHR",
+      "path": "60"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH4",
+      "path": "60",
+      "value": "0xC1E262E5"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "EQ",
+      "path": "60"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x46"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "JUMPI",
+      "path": "60"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH4",
+      "path": "60",
+      "value": "0xC22A3E5B"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "EQ",
+      "path": "60"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x50"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "JUMPI",
+      "path": "60"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "55": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH4",
+      "path": "60",
+      "value": "0xF4860E4F"
+    },
+    "60": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "EQ",
+      "path": "60"
+    },
+    "61": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x58"
+    },
+    "64": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "JUMPI",
+      "path": "60"
+    },
+    "65": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "66": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x0"
+    },
+    "68": {
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "69": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        506,
+        1326
+      ],
+      "op": "REVERT",
+      "path": "60"
+    },
+    "70": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1214,
+        1324
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "71": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1214,
+        1324
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x4E"
+    },
+    "74": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1214,
+        1324
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x60"
+    },
+    "77": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "jump": "i",
+      "offset": [
+        1214,
+        1324
+      ],
+      "op": "JUMP",
+      "path": "60"
+    },
+    "78": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1214,
+        1324
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "79": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1214,
+        1324
+      ],
+      "op": "STOP",
+      "path": "60"
+    },
+    "80": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1104,
+        1208
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "81": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1104,
+        1208
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x4E"
+    },
+    "84": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1104,
+        1208
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0xFC"
+    },
+    "87": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "jump": "i",
+      "offset": [
+        1104,
+        1208
+      ],
+      "op": "JUMP",
+      "path": "60"
+    },
+    "88": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        995,
+        1098
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "89": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        995,
+        1098
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x4E"
+    },
+    "92": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        995,
+        1098
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x15A"
+    },
+    "95": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "jump": "i",
+      "offset": [
+        995,
+        1098
+      ],
+      "op": "JUMP",
+      "path": "60"
+    },
+    "96": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1214,
+        1324
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "97": {
+      "offset": [
+        1744,
+        1745
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x2"
+    },
+    "99": {
+      "offset": [
+        2325,
+        2332
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x3D"
+    },
+    "101": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2325,
+        2332
+      ],
+      "op": "SLOAD",
+      "path": "13"
+    },
+    "102": {
+      "offset": [
+        2325,
+        2344
+      ],
+      "op": "EQ",
+      "path": "13"
+    },
+    "103": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2325,
+        2344
+      ],
+      "op": "ISZERO",
+      "path": "13"
+    },
+    "104": {
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x8C"
+    },
+    "107": {
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "JUMPI",
+      "path": "13"
+    },
+    "108": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "110": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "111": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "115": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "117": {
+      "op": "SHL"
+    },
+    "118": {
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "119": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "120": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x4"
+    },
+    "122": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "123": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x83"
+    },
+    "126": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "127": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x28D"
+    },
+    "130": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "jump": "i",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "131": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "132": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "134": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "135": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "136": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "SWAP2",
+      "path": "13"
+    },
+    "137": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "SUB",
+      "path": "13"
+    },
+    "138": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "139": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "REVERT",
+      "optimizer_revert": true,
+      "path": "13"
+    },
+    "140": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "141": {
+      "offset": [
+        1744,
+        1745
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x2"
+    },
+    "143": {
+      "offset": [
+        2455,
+        2462
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x3D"
+    },
+    "145": {
+      "offset": [
+        2455,
+        2473
+      ],
+      "op": "SSTORE",
+      "path": "13"
+    },
+    "146": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1296
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "statement": 0,
+      "value": "0x99"
+    },
+    "149": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1294
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x1B7"
+    },
+    "152": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "jump": "i",
+      "offset": [
+        1279,
+        1296
+      ],
+      "op": "JUMP",
+      "path": "60"
+    },
+    "153": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1296
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "154": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x40"
+    },
+    "156": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "MLOAD",
+      "path": "60"
+    },
+    "157": {
+      "op": "PUSH4",
+      "value": "0xD8ACC15"
+    },
+    "162": {
+      "op": "PUSH1",
+      "value": "0xE1"
+    },
+    "164": {
+      "op": "SHL"
+    },
+    "165": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP2",
+      "path": "60"
+    },
+    "166": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "MSTORE",
+      "path": "60"
+    },
+    "167": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1306,
+        1316
+      ],
+      "op": "CALLER",
+      "path": "60"
+    },
+    "168": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x4"
+    },
+    "170": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP3",
+      "path": "60"
+    },
+    "171": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "ADD",
+      "path": "60"
+    },
+    "172": {
+      "op": "MSTORE"
+    },
+    "173": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "175": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "177": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "179": {
+      "op": "SHL"
+    },
+    "180": {
+      "op": "SUB"
+    },
+    "181": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1305
+      ],
+      "op": "SWAP2",
+      "path": "60"
+    },
+    "182": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1305
+      ],
+      "op": "SWAP1",
+      "path": "60"
+    },
+    "183": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1305
+      ],
+      "op": "SWAP2",
+      "path": "60"
+    },
+    "184": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1305
+      ],
+      "op": "AND",
+      "path": "60"
+    },
+    "185": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1305
+      ],
+      "op": "SWAP1",
+      "path": "60"
+    },
+    "186": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1305
+      ],
+      "op": "PUSH4",
+      "path": "60",
+      "value": "0x1B15982A"
+    },
+    "191": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1305
+      ],
+      "op": "SWAP1",
+      "path": "60"
+    },
+    "192": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "194": {
+      "op": "ADD"
+    },
+    "195": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "196": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x0"
+    },
+    "198": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x40"
+    },
+    "200": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "MLOAD",
+      "path": "60"
+    },
+    "201": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "202": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP4",
+      "path": "60"
+    },
+    "203": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "SUB",
+      "path": "60"
+    },
+    "204": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP2",
+      "path": "60"
+    },
+    "205": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x0"
+    },
+    "207": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP8",
+      "path": "60"
+    },
+    "208": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "209": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "EXTCODESIZE",
+      "path": "60"
+    },
+    "210": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "ISZERO",
+      "path": "60"
+    },
+    "211": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "212": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "ISZERO",
+      "path": "60"
+    },
+    "213": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0xDD"
+    },
+    "216": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "JUMPI",
+      "path": "60"
+    },
+    "217": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x0"
+    },
+    "219": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "220": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "REVERT",
+      "path": "60"
+    },
+    "221": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "222": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "POP",
+      "path": "60"
+    },
+    "223": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "GAS",
+      "path": "60"
+    },
+    "224": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "CALL",
+      "path": "60"
+    },
+    "225": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "ISZERO",
+      "path": "60"
+    },
+    "226": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "227": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "ISZERO",
+      "path": "60"
+    },
+    "228": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0xF1"
+    },
+    "231": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "JUMPI",
+      "path": "60"
+    },
+    "232": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "60"
+    },
+    "233": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x0"
+    },
+    "235": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "DUP1",
+      "path": "60"
+    },
+    "236": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "RETURNDATACOPY",
+      "path": "60"
+    },
+    "237": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "60"
+    },
+    "238": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x0"
+    },
+    "240": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "REVERT",
+      "path": "60"
+    },
+    "241": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "offset": [
+        1279,
+        1317
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "242": {
+      "op": "POP"
+    },
+    "243": {
+      "op": "POP"
+    },
+    "244": {
+      "offset": [
+        1701,
+        1702
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x1"
+    },
+    "246": {
+      "offset": [
+        2628,
+        2635
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x3D"
+    },
+    "248": {
+      "offset": [
+        2628,
+        2650
+      ],
+      "op": "SSTORE",
+      "path": "13"
+    },
+    "249": {
+      "op": "POP"
+    },
+    "250": {
+      "op": "POP"
+    },
+    "251": {
+      "fn": "PhantomLaunch.exerciseFPHM",
+      "jump": "o",
+      "offset": [
+        1214,
+        1324
+      ],
+      "op": "JUMP",
+      "path": "60"
+    },
+    "252": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1104,
+        1208
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "253": {
+      "offset": [
+        1744,
+        1745
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x2"
+    },
+    "255": {
+      "offset": [
+        2325,
+        2332
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x3D"
+    },
+    "257": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2325,
+        2332
+      ],
+      "op": "SLOAD",
+      "path": "13"
+    },
+    "258": {
+      "offset": [
+        2325,
+        2344
+      ],
+      "op": "EQ",
+      "path": "13"
+    },
+    "259": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2325,
+        2344
+      ],
+      "op": "ISZERO",
+      "path": "13"
+    },
+    "260": {
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x11F"
+    },
+    "263": {
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "JUMPI",
+      "path": "13"
+    },
+    "264": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "266": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "267": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "271": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "273": {
+      "op": "SHL"
+    },
+    "274": {
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "275": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "276": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x4"
+    },
+    "278": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "279": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x83"
+    },
+    "282": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "283": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x28D"
+    },
+    "286": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "jump": "i",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "287": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "288": {
+      "offset": [
+        1744,
+        1745
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x2"
+    },
+    "290": {
+      "offset": [
+        2455,
+        2462
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x3D"
+    },
+    "292": {
+      "offset": [
+        2455,
+        2473
+      ],
+      "op": "SSTORE",
+      "path": "13"
+    },
+    "293": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1183
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "statement": 1,
+      "value": "0x12C"
+    },
+    "296": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1181
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x1B7"
+    },
+    "299": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "jump": "i",
+      "offset": [
+        1166,
+        1183
+      ],
+      "op": "JUMP",
+      "path": "60"
+    },
+    "300": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1183
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "301": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1201
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x40"
+    },
+    "303": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1201
+      ],
+      "op": "MLOAD",
+      "path": "60"
+    },
+    "304": {
+      "op": "PUSH4",
+      "value": "0xF41A04D"
+    },
+    "309": {
+      "op": "PUSH1",
+      "value": "0xE1"
+    },
+    "311": {
+      "op": "SHL"
+    },
+    "312": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1201
+      ],
+      "op": "DUP2",
+      "path": "60"
+    },
+    "313": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1201
+      ],
+      "op": "MSTORE",
+      "path": "60"
+    },
+    "314": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1190,
+        1200
+      ],
+      "op": "CALLER",
+      "path": "60"
+    },
+    "315": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1201
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x4"
+    },
+    "317": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1201
+      ],
+      "op": "DUP3",
+      "path": "60"
+    },
+    "318": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1201
+      ],
+      "op": "ADD",
+      "path": "60"
+    },
+    "319": {
+      "op": "MSTORE"
+    },
+    "320": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "322": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "324": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "326": {
+      "op": "SHL"
+    },
+    "327": {
+      "op": "SUB"
+    },
+    "328": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1189
+      ],
+      "op": "SWAP2",
+      "path": "60"
+    },
+    "329": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1189
+      ],
+      "op": "SWAP1",
+      "path": "60"
+    },
+    "330": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1189
+      ],
+      "op": "SWAP2",
+      "path": "60"
+    },
+    "331": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1189
+      ],
+      "op": "AND",
+      "path": "60"
+    },
+    "332": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1189
+      ],
+      "op": "SWAP1",
+      "path": "60"
+    },
+    "333": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1189
+      ],
+      "op": "PUSH4",
+      "path": "60",
+      "value": "0x1E83409A"
+    },
+    "338": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1189
+      ],
+      "op": "SWAP1",
+      "path": "60"
+    },
+    "339": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "341": {
+      "op": "ADD"
+    },
+    "342": {
+      "fn": "PhantomLaunch.claimFPHM",
+      "offset": [
+        1166,
+        1201
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0xC3"
+    },
+    "345": {
+      "op": "JUMP"
+    },
+    "346": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        995,
+        1098
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "347": {
+      "offset": [
+        1744,
+        1745
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x2"
+    },
+    "349": {
+      "offset": [
+        2325,
+        2332
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x3D"
+    },
+    "351": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2325,
+        2332
+      ],
+      "op": "SLOAD",
+      "path": "13"
+    },
+    "352": {
+      "offset": [
+        2325,
+        2344
+      ],
+      "op": "EQ",
+      "path": "13"
+    },
+    "353": {
+      "branch": 6,
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2325,
+        2344
+      ],
+      "op": "ISZERO",
+      "path": "13"
+    },
+    "354": {
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x17D"
+    },
+    "357": {
+      "branch": 6,
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "JUMPI",
+      "path": "13"
+    },
+    "358": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "360": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "361": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "365": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "367": {
+      "op": "SHL"
+    },
+    "368": {
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "369": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "370": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x4"
+    },
+    "372": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "373": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x83"
+    },
+    "376": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "377": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x28D"
+    },
+    "380": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "jump": "i",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "381": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        2317,
+        2380
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "382": {
+      "offset": [
+        1744,
+        1745
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x2"
+    },
+    "384": {
+      "offset": [
+        2455,
+        2462
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x3D"
+    },
+    "386": {
+      "offset": [
+        2455,
+        2473
+      ],
+      "op": "SSTORE",
+      "path": "13"
+    },
+    "387": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1074
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "statement": 2,
+      "value": "0x18A"
+    },
+    "390": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1072
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0x256"
+    },
+    "393": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "jump": "i",
+      "offset": [
+        1056,
+        1074
+      ],
+      "op": "JUMP",
+      "path": "60"
+    },
+    "394": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1074
+      ],
+      "op": "JUMPDEST",
+      "path": "60"
+    },
+    "395": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1091
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x40"
+    },
+    "397": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1091
+      ],
+      "op": "MLOAD",
+      "path": "60"
+    },
+    "398": {
+      "op": "PUSH3",
+      "value": "0x3438DD"
+    },
+    "402": {
+      "op": "PUSH1",
+      "value": "0xE4"
+    },
+    "404": {
+      "op": "SHL"
+    },
+    "405": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1091
+      ],
+      "op": "DUP2",
+      "path": "60"
+    },
+    "406": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1091
+      ],
+      "op": "MSTORE",
+      "path": "60"
+    },
+    "407": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1080,
+        1090
+      ],
+      "op": "CALLER",
+      "path": "60"
+    },
+    "408": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1091
+      ],
+      "op": "PUSH1",
+      "path": "60",
+      "value": "0x4"
+    },
+    "410": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1091
+      ],
+      "op": "DUP3",
+      "path": "60"
+    },
+    "411": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1091
+      ],
+      "op": "ADD",
+      "path": "60"
+    },
+    "412": {
+      "op": "MSTORE"
+    },
+    "413": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "415": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "417": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "419": {
+      "op": "SHL"
+    },
+    "420": {
+      "op": "SUB"
+    },
+    "421": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1079
+      ],
+      "op": "SWAP2",
+      "path": "60"
+    },
+    "422": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1079
+      ],
+      "op": "SWAP1",
+      "path": "60"
+    },
+    "423": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1079
+      ],
+      "op": "SWAP2",
+      "path": "60"
+    },
+    "424": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1079
+      ],
+      "op": "AND",
+      "path": "60"
+    },
+    "425": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1079
+      ],
+      "op": "SWAP1",
+      "path": "60"
+    },
+    "426": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1079
+      ],
+      "op": "PUSH4",
+      "path": "60",
+      "value": "0x3438DD0"
+    },
+    "431": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1079
+      ],
+      "op": "SWAP1",
+      "path": "60"
+    },
+    "432": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "434": {
+      "op": "ADD"
+    },
+    "435": {
+      "fn": "PhantomLaunch.swapAPHM",
+      "offset": [
+        1056,
+        1091
+      ],
+      "op": "PUSH2",
+      "path": "60",
+      "value": "0xC3"
+    },
+    "438": {
+      "op": "JUMP"
+    },
+    "439": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4824,
+        5000
+      ],
+      "op": "JUMPDEST",
+      "path": "61"
+    },
+    "440": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4874,
+        4890
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x0"
+    },
+    "442": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4942
+      ],
+      "op": "PUSH2",
+      "path": "61",
+      "statement": 3,
+      "value": "0x1CB"
+    },
+    "445": {
+      "fn": "PhantomStorageMixin.PhantomStorage",
+      "offset": [
+        2192,
+        2207
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "statement": 4,
+      "value": "0x3E"
+    },
+    "447": {
+      "fn": "PhantomStorageMixin.PhantomStorage",
+      "offset": [
+        2192,
+        2207
+      ],
+      "op": "SLOAD",
+      "path": "61"
+    },
+    "448": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "450": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "452": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "454": {
+      "op": "SHL"
+    },
+    "455": {
+      "op": "SUB"
+    },
+    "456": {
+      "fn": "PhantomStorageMixin.PhantomStorage",
+      "offset": [
+        2192,
+        2207
+      ],
+      "op": "AND",
+      "path": "61"
+    },
+    "457": {
+      "fn": "PhantomStorageMixin.PhantomStorage",
+      "offset": [
+        2192,
+        2207
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "458": {
+      "fn": "PhantomStorageMixin.PhantomStorage",
+      "offset": [
+        2093,
+        2215
+      ],
+      "op": "JUMP",
+      "path": "61"
+    },
+    "459": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4942
+      ],
+      "op": "JUMPDEST",
+      "path": "61"
+    },
+    "460": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "462": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "464": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "466": {
+      "op": "SHL"
+    },
+    "467": {
+      "op": "SUB"
+    },
+    "468": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4953
+      ],
+      "op": "AND",
+      "path": "61"
+    },
+    "469": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4953
+      ],
+      "op": "PUSH4",
+      "path": "61",
+      "value": "0x21F8A721"
+    },
+    "474": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4964,
+        4971
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x3"
+    },
+    "476": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4964,
+        4981
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x0"
+    },
+    "478": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4964,
+        4981
+      ],
+      "op": "ADD",
+      "path": "61"
+    },
+    "479": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4964,
+        4990
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x1"
+    },
+    "481": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4964,
+        4990
+      ],
+      "op": "ADD",
+      "path": "61"
+    },
+    "482": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x40"
+    },
+    "484": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "MLOAD",
+      "path": "61"
+    },
+    "485": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "PUSH2",
+      "path": "61",
+      "value": "0x1EE"
+    },
+    "488": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "SWAP2",
+      "path": "61"
+    },
+    "489": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "490": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "PUSH2",
+      "path": "61",
+      "value": "0x2C4"
+    },
+    "493": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "jump": "i",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "JUMP",
+      "path": "61"
+    },
+    "494": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "JUMPDEST",
+      "path": "61"
+    },
+    "495": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x40"
+    },
+    "497": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "MLOAD",
+      "path": "61"
+    },
+    "498": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "499": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "DUP2",
+      "path": "61"
+    },
+    "500": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "501": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "SUB",
+      "path": "61"
+    },
+    "502": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "DUP2",
+      "path": "61"
+    },
+    "503": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4954,
+        4991
+      ],
+      "op": "KECCAK256",
+      "path": "61"
+    },
+    "504": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0xE0"
+    },
+    "506": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP4",
+      "path": "61"
+    },
+    "507": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "508": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "SHL",
+      "path": "61"
+    },
+    "509": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "511": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "513": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "515": {
+      "op": "SHL"
+    },
+    "516": {
+      "op": "SUB"
+    },
+    "517": {
+      "op": "NOT"
+    },
+    "518": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "AND",
+      "path": "61"
+    },
+    "519": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP3",
+      "path": "61"
+    },
+    "520": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "MSTORE",
+      "path": "61"
+    },
+    "521": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x4"
+    },
+    "523": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP3",
+      "path": "61"
+    },
+    "524": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "ADD",
+      "path": "61"
+    },
+    "525": {
+      "op": "MSTORE"
+    },
+    "526": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "528": {
+      "op": "ADD"
+    },
+    "529": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x20"
+    },
+    "531": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x40"
+    },
+    "533": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "MLOAD",
+      "path": "61"
+    },
+    "534": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP1",
+      "path": "61"
+    },
+    "535": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP4",
+      "path": "61"
+    },
+    "536": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "SUB",
+      "path": "61"
+    },
+    "537": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP2",
+      "path": "61"
+    },
+    "538": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP7",
+      "path": "61"
+    },
+    "539": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "GAS",
+      "path": "61"
+    },
+    "540": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "STATICCALL",
+      "path": "61"
+    },
+    "541": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "ISZERO",
+      "path": "61"
+    },
+    "542": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP1",
+      "path": "61"
+    },
+    "543": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "ISZERO",
+      "path": "61"
+    },
+    "544": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH2",
+      "path": "61",
+      "value": "0x22D"
+    },
+    "547": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "JUMPI",
+      "path": "61"
+    },
+    "548": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "61"
+    },
+    "549": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x0"
+    },
+    "551": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP1",
+      "path": "61"
+    },
+    "552": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "RETURNDATACOPY",
+      "path": "61"
+    },
+    "553": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "61"
+    },
+    "554": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x0"
+    },
+    "556": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "REVERT",
+      "path": "61"
+    },
+    "557": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "JUMPDEST",
+      "path": "61"
+    },
+    "558": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "POP",
+      "path": "61"
+    },
+    "559": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "POP",
+      "path": "61"
+    },
+    "560": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "POP",
+      "path": "61"
+    },
+    "561": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "POP",
+      "path": "61"
+    },
+    "562": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x40"
+    },
+    "564": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "MLOAD",
+      "path": "61"
+    },
+    "565": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "61"
+    },
+    "566": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x1F"
+    },
+    "568": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "NOT",
+      "path": "61"
+    },
+    "569": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x1F"
+    },
+    "571": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP3",
+      "path": "61"
+    },
+    "572": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "ADD",
+      "path": "61"
+    },
+    "573": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "AND",
+      "path": "61"
+    },
+    "574": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP3",
+      "path": "61"
+    },
+    "575": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "ADD",
+      "path": "61"
+    },
+    "576": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP1",
+      "path": "61"
+    },
+    "577": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x40"
+    },
+    "579": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "MSTORE",
+      "path": "61"
+    },
+    "580": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "POP",
+      "path": "61"
+    },
+    "581": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "DUP2",
+      "path": "61"
+    },
+    "582": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "ADD",
+      "path": "61"
+    },
+    "583": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "584": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH2",
+      "path": "61",
+      "value": "0x251"
+    },
+    "587": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "SWAP2",
+      "path": "61"
+    },
+    "588": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "589": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "PUSH2",
+      "path": "61",
+      "value": "0x360"
+    },
+    "592": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "jump": "i",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "JUMP",
+      "path": "61"
+    },
+    "593": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4926,
+        4992
+      ],
+      "op": "JUMPDEST",
+      "path": "61"
+    },
+    "594": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4902,
+        4993
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "595": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4902,
+        4993
+      ],
+      "op": "POP",
+      "path": "61"
+    },
+    "596": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "offset": [
+        4824,
+        5000
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "597": {
+      "fn": "PhantomStorageMixin.PhantomFounders",
+      "jump": "o",
+      "offset": [
+        4824,
+        5000
+      ],
+      "op": "JUMP",
+      "path": "61"
+    },
+    "598": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4638,
+        4818
+      ],
+      "op": "JUMPDEST",
+      "path": "61"
+    },
+    "599": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4689,
+        4706
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x0"
+    },
+    "601": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4743,
+        4759
+      ],
+      "op": "PUSH2",
+      "path": "61",
+      "statement": 5,
+      "value": "0x26A"
+    },
+    "604": {
+      "fn": "PhantomStorageMixin.PhantomStorage",
+      "offset": [
+        2192,
+        2207
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x3E"
+    },
+    "606": {
+      "fn": "PhantomStorageMixin.PhantomStorage",
+      "offset": [
+        2192,
+        2207
+      ],
+      "op": "SLOAD",
+      "path": "61"
+    },
+    "607": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "609": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "611": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "613": {
+      "op": "SHL"
+    },
+    "614": {
+      "op": "SUB"
+    },
+    "615": {
+      "fn": "PhantomStorageMixin.PhantomStorage",
+      "offset": [
+        2192,
+        2207
+      ],
+      "op": "AND",
+      "path": "61"
+    },
+    "616": {
+      "fn": "PhantomStorageMixin.PhantomStorage",
+      "offset": [
+        2192,
+        2207
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "617": {
+      "fn": "PhantomStorageMixin.PhantomStorage",
+      "offset": [
+        2093,
+        2215
+      ],
+      "op": "JUMP",
+      "path": "61"
+    },
+    "618": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4743,
+        4759
+      ],
+      "op": "JUMPDEST",
+      "path": "61"
+    },
+    "619": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "621": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "623": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "625": {
+      "op": "SHL"
+    },
+    "626": {
+      "op": "SUB"
+    },
+    "627": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4743,
+        4770
+      ],
+      "op": "AND",
+      "path": "61"
+    },
+    "628": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4743,
+        4770
+      ],
+      "op": "PUSH4",
+      "path": "61",
+      "value": "0x21F8A721"
+    },
+    "633": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4781,
+        4788
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x3"
+    },
+    "635": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4781,
+        4798
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x0"
+    },
+    "637": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4781,
+        4798
+      ],
+      "op": "ADD",
+      "path": "61"
+    },
+    "638": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4781,
+        4808
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x0"
+    },
+    "640": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4781,
+        4808
+      ],
+      "op": "ADD",
+      "path": "61"
+    },
+    "641": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4771,
+        4809
+      ],
+      "op": "PUSH1",
+      "path": "61",
+      "value": "0x40"
+    },
+    "643": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4771,
+        4809
+      ],
+      "op": "MLOAD",
+      "path": "61"
+    },
+    "644": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4771,
+        4809
+      ],
+      "op": "PUSH2",
+      "path": "61",
+      "value": "0x1EE"
+    },
+    "647": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4771,
+        4809
+      ],
+      "op": "SWAP2",
+      "path": "61"
+    },
+    "648": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4771,
+        4809
+      ],
+      "op": "SWAP1",
+      "path": "61"
+    },
+    "649": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "offset": [
+        4771,
+        4809
+      ],
+      "op": "PUSH2",
+      "path": "61",
+      "value": "0x2C4"
+    },
+    "652": {
+      "fn": "PhantomStorageMixin.PhantomAlphaSwap",
+      "jump": "i",
+      "offset": [
+        4771,
+        4809
+      ],
+      "op": "JUMP",
+      "path": "61"
+    },
+    "653": {
+      "op": "JUMPDEST"
+    },
+    "654": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "656": {
+      "op": "DUP1"
+    },
+    "657": {
+      "op": "DUP3"
+    },
+    "658": {
+      "op": "MSTORE"
+    },
+    "659": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "661": {
+      "op": "SWAP1"
+    },
+    "662": {
+      "op": "DUP3"
+    },
+    "663": {
+      "op": "ADD"
+    },
+    "664": {
+      "op": "MSTORE"
+    },
+    "665": {
+      "op": "PUSH32",
+      "value": "0x5265656E7472616E637947756172643A207265656E7472616E742063616C6C00"
+    },
+    "698": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "700": {
+      "op": "DUP3"
+    },
+    "701": {
+      "op": "ADD"
+    },
+    "702": {
+      "op": "MSTORE"
+    },
+    "703": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "705": {
+      "op": "ADD"
+    },
+    "706": {
+      "op": "SWAP1"
+    },
+    "707": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "708": {
+      "op": "JUMPDEST"
+    },
+    "709": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "711": {
+      "op": "DUP1"
+    },
+    "712": {
+      "op": "DUP4"
+    },
+    "713": {
+      "op": "SLOAD"
+    },
+    "714": {
+      "op": "DUP2"
+    },
+    "715": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "717": {
+      "op": "DUP3"
+    },
+    "718": {
+      "op": "DUP2"
+    },
+    "719": {
+      "op": "SHR"
+    },
+    "720": {
+      "op": "SWAP2"
+    },
+    "721": {
+      "op": "POP"
+    },
+    "722": {
+      "op": "DUP1"
+    },
+    "723": {
+      "op": "DUP4"
+    },
+    "724": {
+      "op": "AND"
+    },
+    "725": {
+      "op": "DUP1"
+    },
+    "726": {
+      "op": "PUSH2",
+      "value": "0x2E0"
+    },
+    "729": {
+      "op": "JUMPI"
+    },
+    "730": {
+      "op": "PUSH1",
+      "value": "0x7F"
+    },
+    "732": {
+      "op": "DUP4"
+    },
+    "733": {
+      "op": "AND"
+    },
+    "734": {
+      "op": "SWAP3"
+    },
+    "735": {
+      "op": "POP"
+    },
+    "736": {
+      "op": "JUMPDEST"
+    },
+    "737": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "739": {
+      "op": "DUP1"
+    },
+    "740": {
+      "op": "DUP5"
+    },
+    "741": {
+      "op": "LT"
+    },
+    "742": {
+      "op": "DUP3"
+    },
+    "743": {
+      "op": "EQ"
+    },
+    "744": {
+      "op": "ISZERO"
+    },
+    "745": {
+      "op": "PUSH2",
+      "value": "0x300"
+    },
+    "748": {
+      "op": "JUMPI"
+    },
+    "749": {
+      "op": "PUSH4",
+      "value": "0x4E487B71"
+    },
+    "754": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "756": {
+      "op": "SHL"
+    },
+    "757": {
+      "op": "DUP7"
+    },
+    "758": {
+      "op": "MSTORE"
+    },
+    "759": {
+      "op": "PUSH1",
+      "value": "0x22"
+    },
+    "761": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "763": {
+      "op": "MSTORE"
+    },
+    "764": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "766": {
+      "op": "DUP7"
+    },
+    "767": {
+      "op": "REVERT"
+    },
+    "768": {
+      "op": "JUMPDEST"
+    },
+    "769": {
+      "op": "DUP2"
+    },
+    "770": {
+      "op": "DUP1"
+    },
+    "771": {
+      "op": "ISZERO"
+    },
+    "772": {
+      "op": "PUSH2",
+      "value": "0x314"
+    },
+    "775": {
+      "op": "JUMPI"
+    },
+    "776": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "778": {
+      "op": "DUP2"
+    },
+    "779": {
+      "op": "EQ"
+    },
+    "780": {
+      "op": "PUSH2",
+      "value": "0x325"
+    },
+    "783": {
+      "op": "JUMPI"
+    },
+    "784": {
+      "op": "PUSH2",
+      "value": "0x352"
+    },
+    "787": {
+      "op": "JUMP"
+    },
+    "788": {
+      "op": "JUMPDEST"
+    },
+    "789": {
+      "op": "PUSH1",
+      "value": "0xFF"
+    },
+    "791": {
+      "op": "NOT"
+    },
+    "792": {
+      "op": "DUP7"
+    },
+    "793": {
+      "op": "AND"
+    },
+    "794": {
+      "op": "DUP10"
+    },
+    "795": {
+      "op": "MSTORE"
+    },
+    "796": {
+      "op": "DUP5"
+    },
+    "797": {
+      "op": "DUP10"
+    },
+    "798": {
+      "op": "ADD"
+    },
+    "799": {
+      "op": "SWAP7"
+    },
+    "800": {
+      "op": "POP"
+    },
+    "801": {
+      "op": "PUSH2",
+      "value": "0x352"
+    },
+    "804": {
+      "op": "JUMP"
+    },
+    "805": {
+      "op": "JUMPDEST"
+    },
+    "806": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "808": {
+      "op": "DUP11"
+    },
+    "809": {
+      "op": "DUP2"
+    },
+    "810": {
+      "op": "MSTORE"
+    },
+    "811": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "813": {
+      "op": "SWAP1"
+    },
+    "814": {
+      "op": "KECCAK256"
+    },
+    "815": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "817": {
+      "op": "JUMPDEST"
+    },
+    "818": {
+      "op": "DUP7"
+    },
+    "819": {
+      "op": "DUP2"
+    },
+    "820": {
+      "op": "LT"
+    },
+    "821": {
+      "op": "ISZERO"
+    },
+    "822": {
+      "op": "PUSH2",
+      "value": "0x34A"
+    },
+    "825": {
+      "op": "JUMPI"
+    },
+    "826": {
+      "op": "DUP2"
+    },
+    "827": {
+      "op": "SLOAD"
+    },
+    "828": {
+      "op": "DUP12"
+    },
+    "829": {
+      "op": "DUP3"
+    },
+    "830": {
+      "op": "ADD"
+    },
+    "831": {
+      "op": "MSTORE"
+    },
+    "832": {
+      "op": "SWAP1"
+    },
+    "833": {
+      "op": "DUP6"
+    },
+    "834": {
+      "op": "ADD"
+    },
+    "835": {
+      "op": "SWAP1"
+    },
+    "836": {
+      "op": "DUP4"
+    },
+    "837": {
+      "op": "ADD"
+    },
+    "838": {
+      "op": "PUSH2",
+      "value": "0x331"
+    },
+    "841": {
+      "op": "JUMP"
+    },
+    "842": {
+      "op": "JUMPDEST"
+    },
+    "843": {
+      "op": "POP"
+    },
+    "844": {
+      "op": "POP"
+    },
+    "845": {
+      "op": "DUP5"
+    },
+    "846": {
+      "op": "DUP10"
+    },
+    "847": {
+      "op": "ADD"
+    },
+    "848": {
+      "op": "SWAP7"
+    },
+    "849": {
+      "op": "POP"
+    },
+    "850": {
+      "op": "JUMPDEST"
+    },
+    "851": {
+      "op": "POP"
+    },
+    "852": {
+      "op": "SWAP5"
+    },
+    "853": {
+      "op": "SWAP9"
+    },
+    "854": {
+      "op": "SWAP8"
+    },
+    "855": {
+      "op": "POP"
+    },
+    "856": {
+      "op": "POP"
+    },
+    "857": {
+      "op": "POP"
+    },
+    "858": {
+      "op": "POP"
+    },
+    "859": {
+      "op": "POP"
+    },
+    "860": {
+      "op": "POP"
+    },
+    "861": {
+      "op": "POP"
+    },
+    "862": {
+      "op": "POP"
+    },
+    "863": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "864": {
+      "op": "JUMPDEST"
+    },
+    "865": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "867": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "869": {
+      "op": "DUP3"
+    },
+    "870": {
+      "op": "DUP5"
+    },
+    "871": {
+      "op": "SUB"
+    },
+    "872": {
+      "op": "SLT"
+    },
+    "873": {
+      "op": "ISZERO"
+    },
+    "874": {
+      "op": "PUSH2",
+      "value": "0x372"
+    },
+    "877": {
+      "op": "JUMPI"
+    },
+    "878": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "880": {
+      "op": "DUP1"
+    },
+    "881": {
+      "op": "REVERT"
+    },
+    "882": {
+      "op": "JUMPDEST"
+    },
+    "883": {
+      "op": "DUP2"
+    },
+    "884": {
+      "op": "MLOAD"
+    },
+    "885": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "887": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "889": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "891": {
+      "op": "SHL"
+    },
+    "892": {
+      "op": "SUB"
+    },
+    "893": {
+      "op": "DUP2"
+    },
+    "894": {
+      "op": "AND"
+    },
+    "895": {
+      "op": "DUP2"
+    },
+    "896": {
+      "op": "EQ"
+    },
+    "897": {
+      "op": "PUSH2",
+      "value": "0x389"
+    },
+    "900": {
+      "op": "JUMPI"
+    },
+    "901": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "903": {
+      "op": "DUP1"
+    },
+    "904": {
+      "op": "REVERT"
+    },
+    "905": {
+      "op": "JUMPDEST"
+    },
+    "906": {
+      "op": "SWAP4"
+    },
+    "907": {
+      "op": "SWAP3"
+    },
+    "908": {
+      "op": "POP"
+    },
+    "909": {
+      "op": "POP"
+    },
+    "910": {
+      "op": "POP"
+    },
+    "911": {
+      "jump": "o",
+      "op": "JUMP"
+    }
+  },
+  "sha1": "f655577c5af73dbdb82f9e05d097b27c9232f261",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/* Package Imports */\nimport {PRBMathUD60x18} from \"@hifi-finance/prb-math/contracts/PRBMathUD60x18.sol\";\n\n/* Internal Imports */\nimport {PhantomStorageMixin} from \"../../mixins/PhantomStorageMixin.sol\";\n\n/* Internal Interface Imports */\nimport {IPhantomLaunch} from \"../../../interfaces/level1/launch/IPhantomLaunch.sol\";\n\n/**\n * @title PhantomLaunch\n * @author PhantomDao Team\n * @notice The dApp facing contract used for launch functions\n */\ncontract PhantomLaunch is PhantomStorageMixin, IPhantomLaunch {\n    using PRBMathUD60x18 for uint256;\n\n    constructor(address storageFactoryAddress) PhantomStorageMixin(storageFactoryAddress) {\n        return;\n    }\n\n    //=================================================================================================================\n    // External Functions\n    //=================================================================================================================\n\n    function swapAPHM() external override nonReentrant {\n        PhantomAlphaSwap().swap(msg.sender);\n    }\n\n    function claimFPHM() external override nonReentrant {\n        PhantomFounders().claim(msg.sender);\n    }\n\n    function exerciseFPHM() external override nonReentrant {\n        PhantomFounders().exercise(msg.sender);\n    }\n}\n",
+  "sourceMap": "533:71:66:-:0;;;;;-1:-1:-1;;;533:71:66;;;;506:820:60;533:71:66;;;;;;;;-1:-1:-1;;;533:71:66;;;;;506:820:60;533:71:66;;;;;;;;;-1:-1:-1;533:71:66;506:820:60;;-1:-1:-1;;503:101:66;;-1:-1:-1;;533:71:66;503:101;:::i;:::-;-1:-1:-1;503:101:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;503:101:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;647:3557:66;;;669:700;;;;;;;;;;;;;;;;;647:3557;;;669:700;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;669:700:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;669:700:66;;;;;;;;;;;;;;;;-1:-1:-1;;;669:700:66;647:3557;;;1383:367;;-1:-1:-1;1383:367:66;;;;;;;;;;;;647:3557;;-1:-1:-1;647:3557:66;;;;1383:367;;;;;;;;;;;;1472:219;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1383:367;;;;;;;;;;;;;;;;;;;;;;;;;;647:3557;;;1764:687;;1821:366;;;;;;;;;;;;;647:3557;;;;1764:687;;;;;;;1792:645;;;;;;1821:366;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1792:645;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1764:687;;;647:3557;;;;2465:454;;;;;;;;2491:90;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2465:454;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:3557;;;;2933:79;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:3557;;3026:434;;;3052:268;;;;;;;;;;;;;647:3557;;;;;3026:434;;;;;;;;3052:268;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3026:434;;;3338:59;;;;;;;;;;;;;;;;;;;;3026:434;;;;;;;;;;;;;;;;;;;;;;;;;;647:3557;;;3474:479;;;;;;;;;;;;;;;647:3557;;;;;3474:479;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:3557;;;;3967:227;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:3557;;611:3593;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;611:3593:66;;;;;;;;;;;;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:3593:66;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:3593:66;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;-1:-1:-1;;;2005:41:61;;613:109:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1701:1:13;1806:7;:22;2567:15:61;:32;;-1:-1:-1;;;;;2567:32:61;;-1:-1:-1;;;;;;2567:32:61;;;;;;613:109:60;506:820;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;506:820:60;;;-1:-1:-1;506:820:60;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:290:91;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:91;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:91:o;309:380::-;388:1;384:12;;;;431;;;452:61;;506:4;498:6;494:17;484:27;;452:61;559:2;551:6;548:14;528:18;525:38;522:161;;;605:10;600:3;596:20;593:1;586:31;640:4;637:1;630:15;668:4;665:1;658:15;522:161;;309:380;;;:::o;:::-;506:820:60;;;;;;",
+  "sourcePath": "contracts/level1/launch/PhantomLaunch.sol",
+  "type": "contract"
+}

@@ -1,0 +1,98 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "transferToTreasury",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "ast": {
+    "absolutePath": "interfaces/level0/launch/IPhantomDutchAuctionVault.sol",
+    "exportedSymbols": {
+      "IPhantomDutchAuctionVault": [
+        818
+      ]
+    },
+    "id": 819,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 813,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:24"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPhantomDutchAuctionVault",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 814,
+          "nodeType": "StructuredDocumentation",
+          "src": "61:124:24",
+          "text": " @title IPhantomDutchAuctionVault\n @author PhantomDao Team\n @notice The Interface for PhantomDutchAuctionVault"
+        },
+        "fullyImplemented": false,
+        "id": 818,
+        "linearizedBaseContracts": [
+          818
+        ],
+        "name": "IPhantomDutchAuctionVault",
+        "nameLocation": "196:25:24",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "6ff86162",
+            "id": 817,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferToTreasury",
+            "nameLocation": "238:18:24",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 815,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "256:2:24"
+            },
+            "returnParameters": {
+              "id": 816,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "267:0:24"
+            },
+            "scope": 818,
+            "src": "229:39:24",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 819,
+        "src": "186:85:24",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:236:24"
+  },
+  "contractName": "IPhantomDutchAuctionVault",
+  "dependencies": [],
+  "offset": [
+    186,
+    271
+  ],
+  "sha1": "8f4614dd26229f8b14a3b7c4890d1085e3e0c211",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/**\n * @title IPhantomDutchAuctionVault\n * @author PhantomDao Team\n * @notice The Interface for PhantomDutchAuctionVault\n */\ninterface IPhantomDutchAuctionVault {\n\n    function transferToTreasury() external;\n\n}",
+  "type": "interface"
+}

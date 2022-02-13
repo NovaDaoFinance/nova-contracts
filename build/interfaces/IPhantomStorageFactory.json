@@ -1,0 +1,520 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "inContractName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "PhantomStorageFactory_ContractAlreadyExists",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "inContractName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "PhantomStorageFactory_ContractDoesNotExist",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "inContractName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "deployStorageContract",
+      "outputs": [
+        {
+          "internalType": "contract IPhantomStorage",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "inContractName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getStorageContractByName",
+      "outputs": [
+        {
+          "internalType": "contract IPhantomStorage",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "inContractName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "removeStorageContract",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "ast": {
+    "absolutePath": "interfaces/storage/IPhantomStorageFactory.sol",
+    "exportedSymbols": {
+      "IPhantomStorage": [
+        1301
+      ],
+      "IPhantomStorageFactory": [
+        1338
+      ]
+    },
+    "id": 1339,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1303,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:32"
+      },
+      {
+        "absolutePath": "interfaces/storage/IPhantomStorage.sol",
+        "file": "./IPhantomStorage.sol",
+        "id": 1305,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 1339,
+        "sourceUnit": 1302,
+        "src": "94:54:32",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 1304,
+              "name": "IPhantomStorage",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "102:15:32",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPhantomStorageFactory",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 1306,
+          "nodeType": "StructuredDocumentation",
+          "src": "150:113:32",
+          "text": " @title PhantomStorageFactory\n @author PhantomDao Team\n @notice Interface for PhantomStorageFactory"
+        },
+        "fullyImplemented": false,
+        "id": 1338,
+        "linearizedBaseContracts": [
+          1338
+        ],
+        "name": "IPhantomStorageFactory",
+        "nameLocation": "275:22:32",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 1310,
+            "name": "PhantomStorageFactory_ContractAlreadyExists",
+            "nameLocation": "565:43:32",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 1309,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1308,
+                  "mutability": "mutable",
+                  "name": "inContractName",
+                  "nameLocation": "617:14:32",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1310,
+                  "src": "609:22:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1307,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "609:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "608:24:32"
+            },
+            "src": "559:74:32"
+          },
+          {
+            "id": 1314,
+            "name": "PhantomStorageFactory_ContractDoesNotExist",
+            "nameLocation": "644:42:32",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 1313,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1312,
+                  "mutability": "mutable",
+                  "name": "inContractName",
+                  "nameLocation": "695:14:32",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1314,
+                  "src": "687:22:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1311,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "687:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "686:24:32"
+            },
+            "src": "638:73:32"
+          },
+          {
+            "functionSelector": "93f3621c",
+            "id": 1322,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deployStorageContract",
+            "nameLocation": "983:21:32",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1317,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1316,
+                  "mutability": "mutable",
+                  "name": "inContractName",
+                  "nameLocation": "1013:14:32",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1322,
+                  "src": "1005:22:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1315,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1005:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1004:24:32"
+            },
+            "returnParameters": {
+              "id": 1321,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1320,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1322,
+                  "src": "1047:15:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IPhantomStorage_$1301",
+                    "typeString": "contract IPhantomStorage"
+                  },
+                  "typeName": {
+                    "id": 1319,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1318,
+                      "name": "IPhantomStorage",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1301,
+                      "src": "1047:15:32"
+                    },
+                    "referencedDeclaration": 1301,
+                    "src": "1047:15:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPhantomStorage_$1301",
+                      "typeString": "contract IPhantomStorage"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1046:17:32"
+            },
+            "scope": 1338,
+            "src": "974:90:32",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "056d18f9",
+            "id": 1329,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeStorageContract",
+            "nameLocation": "1078:21:32",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1325,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1324,
+                  "mutability": "mutable",
+                  "name": "inContractName",
+                  "nameLocation": "1108:14:32",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1329,
+                  "src": "1100:22:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1323,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1100:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1099:24:32"
+            },
+            "returnParameters": {
+              "id": 1328,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1327,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1329,
+                  "src": "1142:4:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1326,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1142:4:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1141:6:32"
+            },
+            "scope": 1338,
+            "src": "1069:79:32",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "41d68c39",
+            "id": 1337,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStorageContractByName",
+            "nameLocation": "1421:24:32",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1332,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1331,
+                  "mutability": "mutable",
+                  "name": "inContractName",
+                  "nameLocation": "1454:14:32",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1337,
+                  "src": "1446:22:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1330,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1446:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1445:24:32"
+            },
+            "returnParameters": {
+              "id": 1336,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1335,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1337,
+                  "src": "1493:15:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IPhantomStorage_$1301",
+                    "typeString": "contract IPhantomStorage"
+                  },
+                  "typeName": {
+                    "id": 1334,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1333,
+                      "name": "IPhantomStorage",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1301,
+                      "src": "1493:15:32"
+                    },
+                    "referencedDeclaration": 1301,
+                    "src": "1493:15:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPhantomStorage_$1301",
+                      "typeString": "contract IPhantomStorage"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1492:17:32"
+            },
+            "scope": 1338,
+            "src": "1412:98:32",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1339,
+        "src": "265:1247:32",
+        "usedErrors": [
+          1310,
+          1314
+        ]
+      }
+    ],
+    "src": "35:1478:32"
+  },
+  "contractName": "IPhantomStorageFactory",
+  "dependencies": [
+    "IPhantomStorage"
+  ],
+  "offset": [
+    265,
+    1512
+  ],
+  "sha1": "27e9c1f06ec1e3530ca29e43bfc02326eac3187b",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/* Internal Interface Imports */\nimport {IPhantomStorage} from \"./IPhantomStorage.sol\";\n\n/**\n * @title PhantomStorageFactory\n * @author PhantomDao Team\n * @notice Interface for PhantomStorageFactory\n */\n\ninterface IPhantomStorageFactory {\n    //=================================================================================================================\n    // Errors\n    //=================================================================================================================\n\n    error PhantomStorageFactory_ContractAlreadyExists(bytes32 inContractName);\n    error PhantomStorageFactory_ContractDoesNotExist(bytes32 inContractName);\n\n    //=================================================================================================================\n    // Mutators\n    //=================================================================================================================\n\n    function deployStorageContract(bytes32 inContractName) external returns (IPhantomStorage);\n    function removeStorageContract(bytes32 inContractName) external returns (bool);\n\n    //=================================================================================================================\n    // Accessors\n    //=================================================================================================================\n\n    function getStorageContractByName(bytes32 inContractName) external view returns (IPhantomStorage);\n}\n",
+  "type": "interface"
+}

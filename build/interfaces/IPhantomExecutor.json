@@ -1,0 +1,154 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "proposalId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "eta",
+          "type": "uint256"
+        }
+      ],
+      "name": "ProposalQueued",
+      "type": "event"
+    }
+  ],
+  "ast": {
+    "absolutePath": "interfaces/level0/governance/IPhantomExecutor.sol",
+    "exportedSymbols": {
+      "IPhantomExecutor": [
+        796
+      ]
+    },
+    "id": 797,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 788,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:21"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPhantomExecutor",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 789,
+          "nodeType": "StructuredDocumentation",
+          "src": "61:107:21",
+          "text": " @title IPhantomExecutor\n @author PhantomDao Team\n @notice The Interface for IPhantomExecutor"
+        },
+        "fullyImplemented": true,
+        "id": 796,
+        "linearizedBaseContracts": [
+          796
+        ],
+        "name": "IPhantomExecutor",
+        "nameLocation": "179:16:21",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "id": 795,
+            "name": "ProposalQueued",
+            "nameLocation": "208:14:21",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 794,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 791,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "proposalId",
+                  "nameLocation": "231:10:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 795,
+                  "src": "223:18:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 790,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "223:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 793,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "eta",
+                  "nameLocation": "251:3:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 795,
+                  "src": "243:11:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 792,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "243:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "222:33:21"
+            },
+            "src": "202:54:21"
+          }
+        ],
+        "scope": 797,
+        "src": "169:89:21",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:223:21"
+  },
+  "contractName": "IPhantomExecutor",
+  "dependencies": [],
+  "offset": [
+    169,
+    258
+  ],
+  "sha1": "5c2e715c994a46d6c829d61d4820ff2ce3873a83",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/**\n * @title IPhantomExecutor\n * @author PhantomDao Team\n * @notice The Interface for IPhantomExecutor\n */\ninterface IPhantomExecutor {\n    event ProposalQueued(uint256 proposalId, uint256 eta);\n}",
+  "type": "interface"
+}

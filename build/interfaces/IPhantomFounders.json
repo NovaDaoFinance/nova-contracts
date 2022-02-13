@@ -1,0 +1,361 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "founder",
+          "type": "address"
+        }
+      ],
+      "name": "claim",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "founder",
+          "type": "address"
+        }
+      ],
+      "name": "exercise",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "founder",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "registerFounder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "startVesting",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "ast": {
+    "absolutePath": "interfaces/level0/launch/IPhantomFounders.sol",
+    "exportedSymbols": {
+      "IPhantomFounders": [
+        846
+      ]
+    },
+    "id": 847,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 820,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:25"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPhantomFounders",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 821,
+          "nodeType": "StructuredDocumentation",
+          "src": "61:105:25",
+          "text": " @title IPhantomFounders\n @author PhantomDao Team\n @notice The Inteface for PhantomFounders"
+        },
+        "fullyImplemented": false,
+        "id": 846,
+        "linearizedBaseContracts": [
+          846
+        ],
+        "name": "IPhantomFounders",
+        "nameLocation": "177:16:25",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 822,
+              "nodeType": "StructuredDocumentation",
+              "src": "201:54:25",
+              "text": " @dev set the start date for vesting"
+            },
+            "functionSelector": "deb36e32",
+            "id": 825,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "startVesting",
+            "nameLocation": "269:12:25",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 823,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "281:2:25"
+            },
+            "returnParameters": {
+              "id": 824,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "292:0:25"
+            },
+            "scope": 846,
+            "src": "260:33:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 826,
+              "nodeType": "StructuredDocumentation",
+              "src": "299:88:25",
+              "text": " @dev add a foudner's wallet to the whitelist with an amount of tokens"
+            },
+            "functionSelector": "eb462d9e",
+            "id": 833,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "registerFounder",
+            "nameLocation": "401:15:25",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 831,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 828,
+                  "mutability": "mutable",
+                  "name": "founder",
+                  "nameLocation": "425:7:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 833,
+                  "src": "417:15:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 827,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "417:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 830,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "442:6:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 833,
+                  "src": "434:14:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 829,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "434:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "416:33:25"
+            },
+            "returnParameters": {
+              "id": 832,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "458:0:25"
+            },
+            "scope": 846,
+            "src": "392:67:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 834,
+              "nodeType": "StructuredDocumentation",
+              "src": "465:34:25",
+              "text": " @dev claim fPHM"
+            },
+            "functionSelector": "1e83409a",
+            "id": 839,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claim",
+            "nameLocation": "513:5:25",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 837,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 836,
+                  "mutability": "mutable",
+                  "name": "founder",
+                  "nameLocation": "527:7:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 839,
+                  "src": "519:15:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 835,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "519:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "518:17:25"
+            },
+            "returnParameters": {
+              "id": 838,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "544:0:25"
+            },
+            "scope": 846,
+            "src": "504:41:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 840,
+              "nodeType": "StructuredDocumentation",
+              "src": "551:49:25",
+              "text": " @dev swap vested fPHM for gPHM"
+            },
+            "functionSelector": "1b15982a",
+            "id": 845,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exercise",
+            "nameLocation": "614:8:25",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 843,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 842,
+                  "mutability": "mutable",
+                  "name": "founder",
+                  "nameLocation": "631:7:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 845,
+                  "src": "623:15:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 841,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "623:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "622:17:25"
+            },
+            "returnParameters": {
+              "id": 844,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "648:0:25"
+            },
+            "scope": 846,
+            "src": "605:44:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 847,
+        "src": "167:485:25",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:617:25"
+  },
+  "contractName": "IPhantomFounders",
+  "dependencies": [],
+  "offset": [
+    167,
+    652
+  ],
+  "sha1": "b829b05fe88937312fae820b5cedb5ed465af4a5",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/**\n * @title IPhantomFounders\n * @author PhantomDao Team\n * @notice The Inteface for PhantomFounders\n */\ninterface IPhantomFounders {\n\n    /**\n     * @dev set the start date for vesting\n     */\n    function startVesting() external;\n\n    /**\n     * @dev add a foudner's wallet to the whitelist with an amount of tokens\n     */\n    function registerFounder(address founder, uint256 amount) external;\n\n    /**\n     * @dev claim fPHM\n     */\n    function claim(address founder) external;\n\n    /**\n     * @dev swap vested fPHM for gPHM\n     */\n    function exercise(address founder) external;\n\n}",
+  "type": "interface"
+}

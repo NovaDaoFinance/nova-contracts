@@ -1,0 +1,62 @@
+{
+  "abi": [],
+  "ast": {
+    "absolutePath": "interfaces/level1/governance/IPhantomGovernance.sol",
+    "exportedSymbols": {
+      "IPhantomGovernance": [
+        919
+      ]
+    },
+    "id": 920,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 917,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:28"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPhantomGovernance",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 918,
+          "nodeType": "StructuredDocumentation",
+          "src": "61:106:28",
+          "text": " @title IPhantomGovernance\n @author PhantomDao Team\n @notice The Inteface for PhantomFinance"
+        },
+        "fullyImplemented": true,
+        "id": 919,
+        "linearizedBaseContracts": [
+          919
+        ],
+        "name": "IPhantomGovernance",
+        "nameLocation": "178:18:28",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 920,
+        "src": "168:31:28",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:164:28"
+  },
+  "contractName": "IPhantomGovernance",
+  "dependencies": [],
+  "offset": [
+    168,
+    199
+  ],
+  "sha1": "85add6151a5164b4a2fca0253ad0104a81ad591b",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/**\n * @title IPhantomGovernance\n * @author PhantomDao Team\n * @notice The Inteface for PhantomFinance\n */\ninterface IPhantomGovernance {}",
+  "type": "interface"
+}

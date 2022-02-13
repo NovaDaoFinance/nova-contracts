@@ -1,0 +1,5390 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "authority",
+          "type": "address"
+        }
+      ],
+      "name": "LogSetAuthority",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "LogSetOwner",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "authority",
+      "outputs": [
+        {
+          "internalType": "contract DSAuthority",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract DSAuthority",
+          "name": "authority_",
+          "type": "address"
+        }
+      ],
+      "name": "setAuthority",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner_",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "40": "contracts/core/auth/DSAuth.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/core/auth/DSAuth.sol",
+    "exportedSymbols": {
+      "DSAuth": [
+        1926
+      ],
+      "DSAuthEvents": [
+        1804
+      ],
+      "DSAuthority": [
+        1795
+      ]
+    },
+    "id": 1927,
+    "license": "GNU-3",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1783,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "677:24:40"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "DSAuthority",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1795,
+        "linearizedBaseContracts": [
+          1795
+        ],
+        "name": "DSAuthority",
+        "nameLocation": "713:11:40",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "b7009613",
+            "id": 1794,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canCall",
+            "nameLocation": "740:7:40",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1790,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1785,
+                  "mutability": "mutable",
+                  "name": "src",
+                  "nameLocation": "765:3:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1794,
+                  "src": "757:11:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1784,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "757:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1787,
+                  "mutability": "mutable",
+                  "name": "dst",
+                  "nameLocation": "786:3:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1794,
+                  "src": "778:11:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1786,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "778:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1789,
+                  "mutability": "mutable",
+                  "name": "sig",
+                  "nameLocation": "806:3:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1794,
+                  "src": "799:10:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 1788,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "799:6:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "747:68:40"
+            },
+            "returnParameters": {
+              "id": 1793,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1792,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1794,
+                  "src": "839:4:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1791,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "839:4:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "838:6:40"
+            },
+            "scope": 1795,
+            "src": "731:114:40",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1927,
+        "src": "703:144:40",
+        "usedErrors": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "DSAuthEvents",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1804,
+        "linearizedBaseContracts": [
+          1804
+        ],
+        "name": "DSAuthEvents",
+        "nameLocation": "858:12:40",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "id": 1799,
+            "name": "LogSetAuthority",
+            "nameLocation": "883:15:40",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1798,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1797,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "authority",
+                  "nameLocation": "915:9:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1799,
+                  "src": "899:25:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1796,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "899:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "898:27:40"
+            },
+            "src": "877:49:40"
+          },
+          {
+            "anonymous": false,
+            "id": 1803,
+            "name": "LogSetOwner",
+            "nameLocation": "937:11:40",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1802,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1801,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "owner",
+                  "nameLocation": "965:5:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1803,
+                  "src": "949:21:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1800,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "949:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "948:23:40"
+            },
+            "src": "931:41:40"
+          }
+        ],
+        "scope": 1927,
+        "src": "849:125:40",
+        "usedErrors": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 1805,
+              "name": "DSAuthEvents",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 1804,
+              "src": "995:12:40"
+            },
+            "id": 1806,
+            "nodeType": "InheritanceSpecifier",
+            "src": "995:12:40"
+          }
+        ],
+        "canonicalName": "DSAuth",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1926,
+        "linearizedBaseContracts": [
+          1926,
+          1804
+        ],
+        "name": "DSAuth",
+        "nameLocation": "985:6:40",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "bf7e214f",
+            "id": 1809,
+            "mutability": "mutable",
+            "name": "authority",
+            "nameLocation": "1033:9:40",
+            "nodeType": "VariableDeclaration",
+            "scope": 1926,
+            "src": "1014:28:40",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_DSAuthority_$1795",
+              "typeString": "contract DSAuthority"
+            },
+            "typeName": {
+              "id": 1808,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 1807,
+                "name": "DSAuthority",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 1795,
+                "src": "1014:11:40"
+              },
+              "referencedDeclaration": 1795,
+              "src": "1014:11:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                "typeString": "contract DSAuthority"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "8da5cb5b",
+            "id": 1811,
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "1063:5:40",
+            "nodeType": "VariableDeclaration",
+            "scope": 1926,
+            "src": "1048:20:40",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 1810,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1048:7:40",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1824,
+              "nodeType": "Block",
+              "src": "1096:73:40",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 1817,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 1814,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1811,
+                      "src": "1106:5:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "expression": {
+                        "id": 1815,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -15,
+                        "src": "1114:3:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 1816,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "src": "1114:10:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1106:18:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 1818,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1106:18:40"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 1820,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "1151:3:40",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 1821,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "1151:10:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 1819,
+                      "name": "LogSetOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1803,
+                      "src": "1139:11:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 1822,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1139:23:40",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1823,
+                  "nodeType": "EmitStatement",
+                  "src": "1134:28:40"
+                }
+              ]
+            },
+            "id": 1825,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1812,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1086:2:40"
+            },
+            "returnParameters": {
+              "id": 1813,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1096:0:40"
+            },
+            "scope": 1926,
+            "src": "1075:94:40",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1840,
+              "nodeType": "Block",
+              "src": "1221:64:40",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 1834,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 1832,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1811,
+                      "src": "1231:5:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 1833,
+                      "name": "owner_",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1827,
+                      "src": "1239:6:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1231:14:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 1835,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1231:14:40"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 1837,
+                        "name": "owner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1811,
+                        "src": "1272:5:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 1836,
+                      "name": "LogSetOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1803,
+                      "src": "1260:11:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 1838,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1260:18:40",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1839,
+                  "nodeType": "EmitStatement",
+                  "src": "1255:23:40"
+                }
+              ]
+            },
+            "functionSelector": "13af4035",
+            "id": 1841,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 1830,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 1829,
+                  "name": "auth",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 1875,
+                  "src": "1216:4:40"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1216:4:40"
+              }
+            ],
+            "name": "setOwner",
+            "nameLocation": "1184:8:40",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1828,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1827,
+                  "mutability": "mutable",
+                  "name": "owner_",
+                  "nameLocation": "1201:6:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1841,
+                  "src": "1193:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1826,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1193:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1192:16:40"
+            },
+            "returnParameters": {
+              "id": 1831,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1221:0:40"
+            },
+            "scope": 1926,
+            "src": "1175:110:40",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1860,
+              "nodeType": "Block",
+              "src": "1349:89:40",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 1851,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 1849,
+                      "name": "authority",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1809,
+                      "src": "1359:9:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                        "typeString": "contract DSAuthority"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 1850,
+                      "name": "authority_",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1844,
+                      "src": "1371:10:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                        "typeString": "contract DSAuthority"
+                      }
+                    },
+                    "src": "1359:22:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                      "typeString": "contract DSAuthority"
+                    }
+                  },
+                  "id": 1852,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1359:22:40"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 1856,
+                            "name": "authority",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1809,
+                            "src": "1420:9:40",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                              "typeString": "contract DSAuthority"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                              "typeString": "contract DSAuthority"
+                            }
+                          ],
+                          "id": 1855,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1412:7:40",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 1854,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1412:7:40",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 1857,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1412:18:40",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 1853,
+                      "name": "LogSetAuthority",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1799,
+                      "src": "1396:15:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 1858,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1396:35:40",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1859,
+                  "nodeType": "EmitStatement",
+                  "src": "1391:40:40"
+                }
+              ]
+            },
+            "functionSelector": "7a9e5e4b",
+            "id": 1861,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 1847,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 1846,
+                  "name": "auth",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 1875,
+                  "src": "1344:4:40"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1344:4:40"
+              }
+            ],
+            "name": "setAuthority",
+            "nameLocation": "1300:12:40",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1845,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1844,
+                  "mutability": "mutable",
+                  "name": "authority_",
+                  "nameLocation": "1325:10:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1861,
+                  "src": "1313:22:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                    "typeString": "contract DSAuthority"
+                  },
+                  "typeName": {
+                    "id": 1843,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1842,
+                      "name": "DSAuthority",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1795,
+                      "src": "1313:11:40"
+                    },
+                    "referencedDeclaration": 1795,
+                    "src": "1313:11:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                      "typeString": "contract DSAuthority"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1312:24:40"
+            },
+            "returnParameters": {
+              "id": 1848,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1349:0:40"
+            },
+            "scope": 1926,
+            "src": "1291:147:40",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1874,
+              "nodeType": "Block",
+              "src": "1460:94:40",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "expression": {
+                              "id": 1865,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": -15,
+                              "src": "1491:3:40",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 1866,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "src": "1491:10:40",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "expression": {
+                              "id": 1867,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": -15,
+                              "src": "1503:3:40",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 1868,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sig",
+                            "nodeType": "MemberAccess",
+                            "src": "1503:7:40",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes4",
+                              "typeString": "bytes4"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_bytes4",
+                              "typeString": "bytes4"
+                            }
+                          ],
+                          "id": 1864,
+                          "name": "isAuthorized",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1925,
+                          "src": "1478:12:40",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$_t_address_$_t_bytes4_$returns$_t_bool_$",
+                            "typeString": "function (address,bytes4) view returns (bool)"
+                          }
+                        },
+                        "id": 1869,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1478:33:40",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "64732d617574682d756e617574686f72697a6564",
+                        "id": 1870,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1513:22:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_166b1fe4059d096071443d23428666de4ceaca5dfeecf186a801a33a4cdbddd9",
+                          "typeString": "literal_string \"ds-auth-unauthorized\""
+                        },
+                        "value": "ds-auth-unauthorized"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_166b1fe4059d096071443d23428666de4ceaca5dfeecf186a801a33a4cdbddd9",
+                          "typeString": "literal_string \"ds-auth-unauthorized\""
+                        }
+                      ],
+                      "id": 1863,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "1470:7:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 1871,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1470:66:40",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1872,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1470:66:40"
+                },
+                {
+                  "id": 1873,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1546:1:40"
+                }
+              ]
+            },
+            "id": 1875,
+            "name": "auth",
+            "nameLocation": "1453:4:40",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 1862,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1457:2:40"
+            },
+            "src": "1444:110:40",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1924,
+              "nodeType": "Block",
+              "src": "1636:303:40",
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 1889,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 1884,
+                      "name": "src",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1877,
+                      "src": "1650:3:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "arguments": [
+                        {
+                          "id": 1887,
+                          "name": "this",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -28,
+                          "src": "1665:4:40",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_DSAuth_$1926",
+                            "typeString": "contract DSAuth"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_DSAuth_$1926",
+                            "typeString": "contract DSAuth"
+                          }
+                        ],
+                        "id": 1886,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1657:7:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 1885,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "1657:7:40",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 1888,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1657:13:40",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1650:20:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "condition": {
+                      "commonType": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "id": 1895,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "id": 1893,
+                        "name": "src",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1877,
+                        "src": "1718:3:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression": {
+                        "id": 1894,
+                        "name": "owner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1811,
+                        "src": "1725:5:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "src": "1718:12:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseBody": {
+                      "condition": {
+                        "commonType": {
+                          "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                          "typeString": "contract DSAuthority"
+                        },
+                        "id": 1906,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 1899,
+                          "name": "authority",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1809,
+                          "src": "1778:9:40",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                            "typeString": "contract DSAuthority"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "hexValue": "30",
+                                  "id": 1903,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "kind": "number",
+                                  "lValueRequested": false,
+                                  "nodeType": "Literal",
+                                  "src": "1811:1:40",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_rational_0_by_1",
+                                    "typeString": "int_const 0"
+                                  },
+                                  "value": "0"
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_rational_0_by_1",
+                                    "typeString": "int_const 0"
+                                  }
+                                ],
+                                "id": 1902,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "1803:7:40",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_address_$",
+                                  "typeString": "type(address)"
+                                },
+                                "typeName": {
+                                  "id": 1901,
+                                  "name": "address",
+                                  "nodeType": "ElementaryTypeName",
+                                  "src": "1803:7:40",
+                                  "typeDescriptions": {}
+                                }
+                              },
+                              "id": 1904,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "1803:10:40",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "id": 1900,
+                            "name": "DSAuthority",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1795,
+                            "src": "1791:11:40",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_DSAuthority_$1795_$",
+                              "typeString": "type(contract DSAuthority)"
+                            }
+                          },
+                          "id": 1905,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1791:23:40",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                            "typeString": "contract DSAuthority"
+                          }
+                        },
+                        "src": "1778:36:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "falseBody": {
+                        "id": 1920,
+                        "nodeType": "Block",
+                        "src": "1859:74:40",
+                        "statements": [
+                          {
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "id": 1912,
+                                  "name": "src",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1877,
+                                  "src": "1898:3:40",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                },
+                                {
+                                  "arguments": [
+                                    {
+                                      "id": 1915,
+                                      "name": "this",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": -28,
+                                      "src": "1911:4:40",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_DSAuth_$1926",
+                                        "typeString": "contract DSAuth"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_contract$_DSAuth_$1926",
+                                        "typeString": "contract DSAuth"
+                                      }
+                                    ],
+                                    "id": 1914,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "nodeType": "ElementaryTypeNameExpression",
+                                    "src": "1903:7:40",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_type$_t_address_$",
+                                      "typeString": "type(address)"
+                                    },
+                                    "typeName": {
+                                      "id": 1913,
+                                      "name": "address",
+                                      "nodeType": "ElementaryTypeName",
+                                      "src": "1903:7:40",
+                                      "typeDescriptions": {}
+                                    }
+                                  },
+                                  "id": 1916,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "typeConversion",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "1903:13:40",
+                                  "tryCall": false,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                },
+                                {
+                                  "id": 1917,
+                                  "name": "sig",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1879,
+                                  "src": "1918:3:40",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_bytes4",
+                                    "typeString": "bytes4"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  },
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  },
+                                  {
+                                    "typeIdentifier": "t_bytes4",
+                                    "typeString": "bytes4"
+                                  }
+                                ],
+                                "expression": {
+                                  "id": 1910,
+                                  "name": "authority",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1809,
+                                  "src": "1880:9:40",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_contract$_DSAuthority_$1795",
+                                    "typeString": "contract DSAuthority"
+                                  }
+                                },
+                                "id": 1911,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "canCall",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 1794,
+                                "src": "1880:17:40",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_external_view$_t_address_$_t_address_$_t_bytes4_$returns$_t_bool_$",
+                                  "typeString": "function (address,address,bytes4) view external returns (bool)"
+                                }
+                              },
+                              "id": 1918,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "1880:42:40",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              }
+                            },
+                            "functionReturnParameters": 1883,
+                            "id": 1919,
+                            "nodeType": "Return",
+                            "src": "1873:49:40"
+                          }
+                        ]
+                      },
+                      "id": 1921,
+                      "nodeType": "IfStatement",
+                      "src": "1774:159:40",
+                      "trueBody": {
+                        "id": 1909,
+                        "nodeType": "Block",
+                        "src": "1816:37:40",
+                        "statements": [
+                          {
+                            "expression": {
+                              "hexValue": "66616c7365",
+                              "id": 1907,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "bool",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "1837:5:40",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              },
+                              "value": "false"
+                            },
+                            "functionReturnParameters": 1883,
+                            "id": 1908,
+                            "nodeType": "Return",
+                            "src": "1830:12:40"
+                          }
+                        ]
+                      }
+                    },
+                    "id": 1922,
+                    "nodeType": "IfStatement",
+                    "src": "1714:219:40",
+                    "trueBody": {
+                      "id": 1898,
+                      "nodeType": "Block",
+                      "src": "1732:36:40",
+                      "statements": [
+                        {
+                          "expression": {
+                            "hexValue": "74727565",
+                            "id": 1896,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1753:4:40",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "true"
+                          },
+                          "functionReturnParameters": 1883,
+                          "id": 1897,
+                          "nodeType": "Return",
+                          "src": "1746:11:40"
+                        }
+                      ]
+                    }
+                  },
+                  "id": 1923,
+                  "nodeType": "IfStatement",
+                  "src": "1646:287:40",
+                  "trueBody": {
+                    "id": 1892,
+                    "nodeType": "Block",
+                    "src": "1672:36:40",
+                    "statements": [
+                      {
+                        "expression": {
+                          "hexValue": "74727565",
+                          "id": 1890,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1693:4:40",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "true"
+                        },
+                        "functionReturnParameters": 1883,
+                        "id": 1891,
+                        "nodeType": "Return",
+                        "src": "1686:11:40"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "id": 1925,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isAuthorized",
+            "nameLocation": "1569:12:40",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1880,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1877,
+                  "mutability": "mutable",
+                  "name": "src",
+                  "nameLocation": "1590:3:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1925,
+                  "src": "1582:11:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1876,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1582:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1879,
+                  "mutability": "mutable",
+                  "name": "sig",
+                  "nameLocation": "1602:3:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1925,
+                  "src": "1595:10:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 1878,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1595:6:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1581:25:40"
+            },
+            "returnParameters": {
+              "id": 1883,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1882,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1925,
+                  "src": "1630:4:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1881,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1630:4:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1629:6:40"
+            },
+            "scope": 1926,
+            "src": "1560:379:40",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 1927,
+        "src": "976:965:40",
+        "usedErrors": []
+      }
+    ],
+    "src": "677:1265:40"
+  },
+  "bytecode": "608060405234801561001057600080fd5b50600180546001600160a01b031916339081179091556040517fce241d7ca1f669fee44b6fc00b8eba2df3bb514eed0f6f668f8f89096e81ed9490600090a26103768061005e6000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806313af4035146100515780637a9e5e4b146100665780638da5cb5b14610079578063bf7e214f146100a8575b600080fd5b61006461005f3660046102fa565b6100bb565b005b6100646100743660046102fa565b610163565b60015461008c906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b60005461008c906001600160a01b031681565b6100d1336000356001600160e01b031916610204565b6101195760405162461bcd60e51b8152602060048201526014602482015273191ccb585d5d1a0b5d5b985d5d1a1bdc9a5e995960621b60448201526064015b60405180910390fd5b600180546001600160a01b0319166001600160a01b0383169081179091556040517fce241d7ca1f669fee44b6fc00b8eba2df3bb514eed0f6f668f8f89096e81ed9490600090a250565b610179336000356001600160e01b031916610204565b6101bc5760405162461bcd60e51b8152602060048201526014602482015273191ccb585d5d1a0b5d5b985d5d1a1bdc9a5e995960621b6044820152606401610110565b600080546001600160a01b0319166001600160a01b038316908117825560405190917f1abebea81bfa2637f28358c371278fb15ede7ea8dd28d2e03b112ff6d936ada491a250565b60006001600160a01b03831630141561021f575060016102dc565b6001546001600160a01b038481169116141561023d575060016102dc565b6000546001600160a01b0316610255575060006102dc565b60005460405163b700961360e01b81526001600160a01b0385811660048301523060248301526001600160e01b0319851660448301529091169063b700961390606401602060405180830381865afa1580156102b5573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102d9919061031e565b90505b92915050565b6001600160a01b03811681146102f757600080fd5b50565b60006020828403121561030c57600080fd5b8135610317816102e2565b9392505050565b60006020828403121561033057600080fd5b8151801515811461031757600080fdfea2646970667358221220d333b09871f052ef0d5e76892a4c041e38366525a21134605c1bbebddb898af064736f6c634300080a0033",
+  "bytecodeSha1": "44149acd187426709f04d4c82f66b6550b317c0e",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.10+commit.fc410830"
+  },
+  "contractName": "DSAuth",
+  "coverageMap": {
+    "branches": {
+      "40": {
+        "DSAuth.isAuthorized": {
+          "9": [
+            1650,
+            1670,
+            false
+          ],
+          "10": [
+            1718,
+            1730,
+            false
+          ]
+        },
+        "DSAuth.setAuthority": {
+          "8": [
+            1478,
+            1511,
+            true
+          ]
+        }
+      }
+    },
+    "statements": {
+      "40": {
+        "DSAuth.isAuthorized": {
+          "4": [
+            1686,
+            1697
+          ],
+          "5": [
+            1746,
+            1757
+          ],
+          "6": [
+            1830,
+            1842
+          ],
+          "7": [
+            1873,
+            1922
+          ]
+        },
+        "DSAuth.setAuthority": {
+          "2": [
+            1359,
+            1381
+          ],
+          "3": [
+            1391,
+            1431
+          ]
+        },
+        "DSAuth.setOwner": {
+          "0": [
+            1231,
+            1245
+          ],
+          "1": [
+            1255,
+            1278
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [
+    "DSAuthEvents",
+    "DSAuthority"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b506004361061004c5760003560e01c806313af4035146100515780637a9e5e4b146100665780638da5cb5b14610079578063bf7e214f146100a8575b600080fd5b61006461005f3660046102fa565b6100bb565b005b6100646100743660046102fa565b610163565b60015461008c906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b60005461008c906001600160a01b031681565b6100d1336000356001600160e01b031916610204565b6101195760405162461bcd60e51b8152602060048201526014602482015273191ccb585d5d1a0b5d5b985d5d1a1bdc9a5e995960621b60448201526064015b60405180910390fd5b600180546001600160a01b0319166001600160a01b0383169081179091556040517fce241d7ca1f669fee44b6fc00b8eba2df3bb514eed0f6f668f8f89096e81ed9490600090a250565b610179336000356001600160e01b031916610204565b6101bc5760405162461bcd60e51b8152602060048201526014602482015273191ccb585d5d1a0b5d5b985d5d1a1bdc9a5e995960621b6044820152606401610110565b600080546001600160a01b0319166001600160a01b038316908117825560405190917f1abebea81bfa2637f28358c371278fb15ede7ea8dd28d2e03b112ff6d936ada491a250565b60006001600160a01b03831630141561021f575060016102dc565b6001546001600160a01b038481169116141561023d575060016102dc565b6000546001600160a01b0316610255575060006102dc565b60005460405163b700961360e01b81526001600160a01b0385811660048301523060248301526001600160e01b0319851660448301529091169063b700961390606401602060405180830381865afa1580156102b5573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102d9919061031e565b90505b92915050565b6001600160a01b03811681146102f757600080fd5b50565b60006020828403121561030c57600080fd5b8135610317816102e2565b9392505050565b60006020828403121561033057600080fd5b8151801515811461031757600080fdfea2646970667358221220d333b09871f052ef0d5e76892a4c041e38366525a21134605c1bbebddb898af064736f6c634300080a0033",
+  "deployedSourceMap": "976:965:40:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1175:110;;;;;;:::i;:::-;;:::i;:::-;;1291:147;;;;;;:::i;:::-;;:::i;1048:20::-;;;;;-1:-1:-1;;;;;1048:20:40;;;;;;-1:-1:-1;;;;;838:32:91;;;820:51;;808:2;793:18;1048:20:40;;;;;;;1014:28;;;;;-1:-1:-1;;;;;1014:28:40;;;1175:110;1478:33;1491:10;1503:7;;-1:-1:-1;;;;;;1503:7:40;1478:12;:33::i;:::-;1470:66;;;;-1:-1:-1;;;1470:66:40;;1312:2:91;1470:66:40;;;1294:21:91;1351:2;1331:18;;;1324:30;-1:-1:-1;;;1370:18:91;;;1363:50;1430:18;;1470:66:40;;;;;;;;;1231:5:::1;:14:::0;;-1:-1:-1;;;;;;1231:14:40::1;-1:-1:-1::0;;;;;1231:14:40;::::1;::::0;;::::1;::::0;;;1260:18:::1;::::0;::::1;::::0;-1:-1:-1;;1260:18:40::1;1175:110:::0;:::o;1291:147::-;1478:33;1491:10;1503:7;;-1:-1:-1;;;;;;1503:7:40;1478:12;:33::i;:::-;1470:66;;;;-1:-1:-1;;;1470:66:40;;1312:2:91;1470:66:40;;;1294:21:91;1351:2;1331:18;;;1324:30;-1:-1:-1;;;1370:18:91;;;1363:50;1430:18;;1470:66:40;1110:344:91;1470:66:40;1359:9:::1;:22:::0;;-1:-1:-1;;;;;;1359:22:40::1;-1:-1:-1::0;;;;;1359:22:40;::::1;::::0;;::::1;::::0;;1396:35:::1;::::0;1359:22;;1396:35:::1;::::0;::::1;1291:147:::0;:::o;1560:379::-;1630:4;-1:-1:-1;;;;;1650:20:40;;1665:4;1650:20;1646:287;;;-1:-1:-1;1693:4:40;1686:11;;1646:287;1725:5;;-1:-1:-1;;;;;1718:12:40;;;1725:5;;1718:12;1714:219;;;-1:-1:-1;1753:4:40;1746:11;;1714:219;1811:1;1778:9;-1:-1:-1;;;;;1778:9:40;1774:159;;-1:-1:-1;1837:5:40;1830:12;;1774:159;1880:9;;:42;;-1:-1:-1;;;1880:42:40;;-1:-1:-1;;;;;1715:15:91;;;1880:42:40;;;1697:34:91;1911:4:40;1747:18:91;;;1740:43;-1:-1:-1;;;;;;1819:33:91;;1799:18;;;1792:61;1880:9:40;;;;:17;;1632:18:91;;1880:42:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1873:49;;1774:159;1560:379;;;;:::o;14:131:91:-;-1:-1:-1;;;;;89:31:91;;79:42;;69:70;;135:1;132;125:12;69:70;14:131;:::o;150:247::-;209:6;262:2;250:9;241:7;237:23;233:32;230:52;;;278:1;275;268:12;230:52;317:9;304:23;336:31;361:5;336:31;:::i;:::-;386:5;150:247;-1:-1:-1;;;150:247:91:o;1864:277::-;1931:6;1984:2;1972:9;1963:7;1959:23;1955:32;1952:52;;;2000:1;1997;1990:12;1952:52;2032:9;2026:16;2085:5;2078:13;2071:21;2064:5;2061:32;2051:60;;2107:1;2104;2097:12",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    976,
+    1941
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x4C JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x13AF4035 EQ PUSH2 0x51 JUMPI DUP1 PUSH4 0x7A9E5E4B EQ PUSH2 0x66 JUMPI DUP1 PUSH4 0x8DA5CB5B EQ PUSH2 0x79 JUMPI DUP1 PUSH4 0xBF7E214F EQ PUSH2 0xA8 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x64 PUSH2 0x5F CALLDATASIZE PUSH1 0x4 PUSH2 0x2FA JUMP JUMPDEST PUSH2 0xBB JUMP JUMPDEST STOP JUMPDEST PUSH2 0x64 PUSH2 0x74 CALLDATASIZE PUSH1 0x4 PUSH2 0x2FA JUMP JUMPDEST PUSH2 0x163 JUMP JUMPDEST PUSH1 0x1 SLOAD PUSH2 0x8C SWAP1 PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP2 AND DUP2 MSTORE PUSH1 0x20 ADD PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x8C SWAP1 PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND DUP2 JUMP JUMPDEST PUSH2 0xD1 CALLER PUSH1 0x0 CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xE0 SHL SUB NOT AND PUSH2 0x204 JUMP JUMPDEST PUSH2 0x119 JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x14 PUSH1 0x24 DUP3 ADD MSTORE PUSH20 0x191CCB585D5D1A0B5D5B985D5D1A1BDC9A5E9959 PUSH1 0x62 SHL PUSH1 0x44 DUP3 ADD MSTORE PUSH1 0x64 ADD JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x1 DUP1 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB NOT AND PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP4 AND SWAP1 DUP2 OR SWAP1 SWAP2 SSTORE PUSH1 0x40 MLOAD PUSH32 0xCE241D7CA1F669FEE44B6FC00B8EBA2DF3BB514EED0F6F668F8F89096E81ED94 SWAP1 PUSH1 0x0 SWAP1 LOG2 POP JUMP JUMPDEST PUSH2 0x179 CALLER PUSH1 0x0 CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xE0 SHL SUB NOT AND PUSH2 0x204 JUMP JUMPDEST PUSH2 0x1BC JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x14 PUSH1 0x24 DUP3 ADD MSTORE PUSH20 0x191CCB585D5D1A0B5D5B985D5D1A1BDC9A5E9959 PUSH1 0x62 SHL PUSH1 0x44 DUP3 ADD MSTORE PUSH1 0x64 ADD PUSH2 0x110 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB NOT AND PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP4 AND SWAP1 DUP2 OR DUP3 SSTORE PUSH1 0x40 MLOAD SWAP1 SWAP2 PUSH32 0x1ABEBEA81BFA2637F28358C371278FB15EDE7EA8DD28D2E03B112FF6D936ADA4 SWAP2 LOG2 POP JUMP JUMPDEST PUSH1 0x0 PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP4 AND ADDRESS EQ ISZERO PUSH2 0x21F JUMPI POP PUSH1 0x1 PUSH2 0x2DC JUMP JUMPDEST PUSH1 0x1 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP5 DUP2 AND SWAP2 AND EQ ISZERO PUSH2 0x23D JUMPI POP PUSH1 0x1 PUSH2 0x2DC JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH2 0x255 JUMPI POP PUSH1 0x0 PUSH2 0x2DC JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x40 MLOAD PUSH4 0xB7009613 PUSH1 0xE0 SHL DUP2 MSTORE PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP6 DUP2 AND PUSH1 0x4 DUP4 ADD MSTORE ADDRESS PUSH1 0x24 DUP4 ADD MSTORE PUSH1 0x1 PUSH1 0x1 PUSH1 0xE0 SHL SUB NOT DUP6 AND PUSH1 0x44 DUP4 ADD MSTORE SWAP1 SWAP2 AND SWAP1 PUSH4 0xB7009613 SWAP1 PUSH1 0x64 ADD PUSH1 0x20 PUSH1 0x40 MLOAD DUP1 DUP4 SUB DUP2 DUP7 GAS STATICCALL ISZERO DUP1 ISZERO PUSH2 0x2B5 JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP PUSH1 0x40 MLOAD RETURNDATASIZE PUSH1 0x1F NOT PUSH1 0x1F DUP3 ADD AND DUP3 ADD DUP1 PUSH1 0x40 MSTORE POP DUP2 ADD SWAP1 PUSH2 0x2D9 SWAP2 SWAP1 PUSH2 0x31E JUMP JUMPDEST SWAP1 POP JUMPDEST SWAP3 SWAP2 POP POP JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP2 AND DUP2 EQ PUSH2 0x2F7 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP JUMP JUMPDEST PUSH1 0x0 PUSH1 0x20 DUP3 DUP5 SUB SLT ISZERO PUSH2 0x30C JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 CALLDATALOAD PUSH2 0x317 DUP2 PUSH2 0x2E2 JUMP JUMPDEST SWAP4 SWAP3 POP POP POP JUMP JUMPDEST PUSH1 0x0 PUSH1 0x20 DUP3 DUP5 SUB SLT ISZERO PUSH2 0x330 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 MLOAD DUP1 ISZERO ISZERO DUP2 EQ PUSH2 0x317 JUMPI PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD3 CALLER 0xB0 SWAP9 PUSH18 0xF052EF0D5E76892A4C041E38366525A21134 PUSH1 0x5C SHL 0xBE 0xBD 0xDB DUP10 DUP11 CREATE PUSH5 0x736F6C6343 STOP ADDMOD EXP STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "MSTORE",
+      "path": "40"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "CALLVALUE",
+      "path": "40"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "ISZERO",
+      "path": "40"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "REVERT",
+      "path": "40"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "CALLDATASIZE",
+      "path": "40"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "LT",
+      "path": "40"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x4C"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "CALLDATALOAD",
+      "path": "40"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "SHR",
+      "path": "40"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH4",
+      "path": "40",
+      "value": "0x13AF4035"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "EQ",
+      "path": "40"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x51"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH4",
+      "path": "40",
+      "value": "0x7A9E5E4B"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "EQ",
+      "path": "40"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x66"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "55": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH4",
+      "path": "40",
+      "value": "0x8DA5CB5B"
+    },
+    "60": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "EQ",
+      "path": "40"
+    },
+    "61": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x79"
+    },
+    "64": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "65": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "66": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH4",
+      "path": "40",
+      "value": "0xBF7E214F"
+    },
+    "71": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "EQ",
+      "path": "40"
+    },
+    "72": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0xA8"
+    },
+    "75": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "76": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "77": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x0"
+    },
+    "79": {
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "80": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        976,
+        1941
+      ],
+      "op": "REVERT",
+      "path": "40"
+    },
+    "81": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "82": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x64"
+    },
+    "85": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x5F"
+    },
+    "88": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "CALLDATASIZE",
+      "path": "40"
+    },
+    "89": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x4"
+    },
+    "91": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x2FA"
+    },
+    "94": {
+      "fn": "DSAuth.setOwner",
+      "jump": "i",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "95": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "96": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0xBB"
+    },
+    "99": {
+      "fn": "DSAuth.setOwner",
+      "jump": "i",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "100": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "101": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "STOP",
+      "path": "40"
+    },
+    "102": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "103": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x64"
+    },
+    "106": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x74"
+    },
+    "109": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "CALLDATASIZE",
+      "path": "40"
+    },
+    "110": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x4"
+    },
+    "112": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x2FA"
+    },
+    "115": {
+      "fn": "DSAuth.setAuthority",
+      "jump": "i",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "116": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "117": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x163"
+    },
+    "120": {
+      "fn": "DSAuth.setAuthority",
+      "jump": "i",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "121": {
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "122": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x1"
+    },
+    "124": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "SLOAD",
+      "path": "40"
+    },
+    "125": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x8C"
+    },
+    "128": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "129": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "131": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "133": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "135": {
+      "op": "SHL"
+    },
+    "136": {
+      "op": "SUB"
+    },
+    "137": {
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "138": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "DUP2",
+      "path": "40"
+    },
+    "139": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "140": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "141": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x40"
+    },
+    "143": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "MLOAD",
+      "path": "40"
+    },
+    "144": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "146": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "148": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "150": {
+      "op": "SHL"
+    },
+    "151": {
+      "op": "SUB"
+    },
+    "152": {
+      "op": "SWAP1"
+    },
+    "153": {
+      "op": "SWAP2"
+    },
+    "154": {
+      "op": "AND"
+    },
+    "155": {
+      "op": "DUP2"
+    },
+    "156": {
+      "op": "MSTORE"
+    },
+    "157": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "159": {
+      "op": "ADD"
+    },
+    "160": {
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x40"
+    },
+    "162": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "MLOAD",
+      "path": "40"
+    },
+    "163": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "164": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "SWAP2",
+      "path": "40"
+    },
+    "165": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "SUB",
+      "path": "40"
+    },
+    "166": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "167": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1048,
+        1068
+      ],
+      "op": "RETURN",
+      "path": "40"
+    },
+    "168": {
+      "offset": [
+        1014,
+        1042
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "169": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1014,
+        1042
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x0"
+    },
+    "171": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1014,
+        1042
+      ],
+      "op": "SLOAD",
+      "path": "40"
+    },
+    "172": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1014,
+        1042
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x8C"
+    },
+    "175": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1014,
+        1042
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "176": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "178": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "180": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "182": {
+      "op": "SHL"
+    },
+    "183": {
+      "op": "SUB"
+    },
+    "184": {
+      "offset": [
+        1014,
+        1042
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "185": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1014,
+        1042
+      ],
+      "op": "DUP2",
+      "path": "40"
+    },
+    "186": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1014,
+        1042
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "187": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "188": {
+      "offset": [
+        1478,
+        1511
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0xD1"
+    },
+    "191": {
+      "offset": [
+        1491,
+        1501
+      ],
+      "op": "CALLER",
+      "path": "40"
+    },
+    "192": {
+      "offset": [
+        1503,
+        1510
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x0"
+    },
+    "194": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1503,
+        1510
+      ],
+      "op": "CALLDATALOAD",
+      "path": "40"
+    },
+    "195": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "197": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "199": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "201": {
+      "op": "SHL"
+    },
+    "202": {
+      "op": "SUB"
+    },
+    "203": {
+      "op": "NOT"
+    },
+    "204": {
+      "offset": [
+        1503,
+        1510
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "205": {
+      "offset": [
+        1478,
+        1490
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x204"
+    },
+    "208": {
+      "jump": "i",
+      "offset": [
+        1478,
+        1511
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "209": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1478,
+        1511
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "210": {
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x119"
+    },
+    "213": {
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "214": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x40"
+    },
+    "216": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "MLOAD",
+      "path": "40"
+    },
+    "217": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "221": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "223": {
+      "op": "SHL"
+    },
+    "224": {
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "DUP2",
+      "path": "40"
+    },
+    "225": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "MSTORE",
+      "path": "40"
+    },
+    "226": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "228": {
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x4"
+    },
+    "230": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "DUP3",
+      "path": "40"
+    },
+    "231": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "ADD",
+      "path": "40"
+    },
+    "232": {
+      "op": "MSTORE"
+    },
+    "233": {
+      "op": "PUSH1",
+      "value": "0x14"
+    },
+    "235": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "237": {
+      "op": "DUP3"
+    },
+    "238": {
+      "op": "ADD"
+    },
+    "239": {
+      "op": "MSTORE"
+    },
+    "240": {
+      "op": "PUSH20",
+      "value": "0x191CCB585D5D1A0B5D5B985D5D1A1BDC9A5E9959"
+    },
+    "261": {
+      "op": "PUSH1",
+      "value": "0x62"
+    },
+    "263": {
+      "op": "SHL"
+    },
+    "264": {
+      "op": "PUSH1",
+      "value": "0x44"
+    },
+    "266": {
+      "op": "DUP3"
+    },
+    "267": {
+      "op": "ADD"
+    },
+    "268": {
+      "op": "MSTORE"
+    },
+    "269": {
+      "op": "PUSH1",
+      "value": "0x64"
+    },
+    "271": {
+      "op": "ADD"
+    },
+    "272": {
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "273": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x40"
+    },
+    "275": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "MLOAD",
+      "path": "40"
+    },
+    "276": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "277": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "SWAP2",
+      "path": "40"
+    },
+    "278": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "SUB",
+      "path": "40"
+    },
+    "279": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "280": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "REVERT",
+      "optimizer_revert": true,
+      "path": "40"
+    },
+    "281": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "282": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1236
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "statement": 0,
+      "value": "0x1"
+    },
+    "284": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "285": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "SLOAD",
+      "path": "40"
+    },
+    "286": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "288": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "290": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "292": {
+      "op": "SHL"
+    },
+    "293": {
+      "op": "SUB"
+    },
+    "294": {
+      "op": "NOT"
+    },
+    "295": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "296": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "298": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "300": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "302": {
+      "op": "SHL"
+    },
+    "303": {
+      "op": "SUB"
+    },
+    "304": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "DUP4",
+      "path": "40"
+    },
+    "305": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "306": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "307": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "DUP2",
+      "path": "40"
+    },
+    "308": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "OR",
+      "path": "40"
+    },
+    "309": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "310": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "SWAP2",
+      "path": "40"
+    },
+    "311": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1231,
+        1245
+      ],
+      "op": "SSTORE",
+      "path": "40"
+    },
+    "312": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1260,
+        1278
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "statement": 1,
+      "value": "0x40"
+    },
+    "314": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1260,
+        1278
+      ],
+      "op": "MLOAD",
+      "path": "40"
+    },
+    "315": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1260,
+        1278
+      ],
+      "op": "PUSH32",
+      "path": "40",
+      "value": "0xCE241D7CA1F669FEE44B6FC00B8EBA2DF3BB514EED0F6F668F8F89096E81ED94"
+    },
+    "348": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1260,
+        1278
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "349": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "351": {
+      "op": "SWAP1"
+    },
+    "352": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1260,
+        1278
+      ],
+      "op": "LOG2",
+      "path": "40"
+    },
+    "353": {
+      "fn": "DSAuth.setOwner",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "354": {
+      "fn": "DSAuth.setOwner",
+      "jump": "o",
+      "offset": [
+        1175,
+        1285
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "355": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "356": {
+      "offset": [
+        1478,
+        1511
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x179"
+    },
+    "359": {
+      "offset": [
+        1491,
+        1501
+      ],
+      "op": "CALLER",
+      "path": "40"
+    },
+    "360": {
+      "offset": [
+        1503,
+        1510
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x0"
+    },
+    "362": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1503,
+        1510
+      ],
+      "op": "CALLDATALOAD",
+      "path": "40"
+    },
+    "363": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "365": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "367": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "369": {
+      "op": "SHL"
+    },
+    "370": {
+      "op": "SUB"
+    },
+    "371": {
+      "op": "NOT"
+    },
+    "372": {
+      "offset": [
+        1503,
+        1510
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "373": {
+      "offset": [
+        1478,
+        1490
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x204"
+    },
+    "376": {
+      "jump": "i",
+      "offset": [
+        1478,
+        1511
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "377": {
+      "branch": 8,
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1478,
+        1511
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "378": {
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x1BC"
+    },
+    "381": {
+      "branch": 8,
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "382": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x40"
+    },
+    "384": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "MLOAD",
+      "path": "40"
+    },
+    "385": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "389": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "391": {
+      "op": "SHL"
+    },
+    "392": {
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "DUP2",
+      "path": "40"
+    },
+    "393": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "MSTORE",
+      "path": "40"
+    },
+    "394": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "396": {
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x4"
+    },
+    "398": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "DUP3",
+      "path": "40"
+    },
+    "399": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "ADD",
+      "path": "40"
+    },
+    "400": {
+      "op": "MSTORE"
+    },
+    "401": {
+      "op": "PUSH1",
+      "value": "0x14"
+    },
+    "403": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "405": {
+      "op": "DUP3"
+    },
+    "406": {
+      "op": "ADD"
+    },
+    "407": {
+      "op": "MSTORE"
+    },
+    "408": {
+      "op": "PUSH20",
+      "value": "0x191CCB585D5D1A0B5D5B985D5D1A1BDC9A5E9959"
+    },
+    "429": {
+      "op": "PUSH1",
+      "value": "0x62"
+    },
+    "431": {
+      "op": "SHL"
+    },
+    "432": {
+      "op": "PUSH1",
+      "value": "0x44"
+    },
+    "434": {
+      "op": "DUP3"
+    },
+    "435": {
+      "op": "ADD"
+    },
+    "436": {
+      "op": "MSTORE"
+    },
+    "437": {
+      "op": "PUSH1",
+      "value": "0x64"
+    },
+    "439": {
+      "op": "ADD"
+    },
+    "440": {
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x110"
+    },
+    "443": {
+      "op": "JUMP"
+    },
+    "444": {
+      "offset": [
+        1470,
+        1536
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "445": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1368
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "statement": 2,
+      "value": "0x0"
+    },
+    "447": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "448": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "SLOAD",
+      "path": "40"
+    },
+    "449": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "451": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "453": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "455": {
+      "op": "SHL"
+    },
+    "456": {
+      "op": "SUB"
+    },
+    "457": {
+      "op": "NOT"
+    },
+    "458": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "459": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "461": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "463": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "465": {
+      "op": "SHL"
+    },
+    "466": {
+      "op": "SUB"
+    },
+    "467": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "DUP4",
+      "path": "40"
+    },
+    "468": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "469": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "470": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "DUP2",
+      "path": "40"
+    },
+    "471": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "OR",
+      "path": "40"
+    },
+    "472": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "DUP3",
+      "path": "40"
+    },
+    "473": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "SSTORE",
+      "path": "40"
+    },
+    "474": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1396,
+        1431
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "statement": 3,
+      "value": "0x40"
+    },
+    "476": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1396,
+        1431
+      ],
+      "op": "MLOAD",
+      "path": "40"
+    },
+    "477": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "478": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1359,
+        1381
+      ],
+      "op": "SWAP2",
+      "path": "40"
+    },
+    "479": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1396,
+        1431
+      ],
+      "op": "PUSH32",
+      "path": "40",
+      "value": "0x1ABEBEA81BFA2637F28358C371278FB15EDE7EA8DD28D2E03B112FF6D936ADA4"
+    },
+    "512": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1396,
+        1431
+      ],
+      "op": "SWAP2",
+      "path": "40"
+    },
+    "513": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1396,
+        1431
+      ],
+      "op": "LOG2",
+      "path": "40"
+    },
+    "514": {
+      "fn": "DSAuth.setAuthority",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "515": {
+      "fn": "DSAuth.setAuthority",
+      "jump": "o",
+      "offset": [
+        1291,
+        1438
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "516": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1560,
+        1939
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "517": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1630,
+        1634
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x0"
+    },
+    "519": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "521": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "523": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "525": {
+      "op": "SHL"
+    },
+    "526": {
+      "op": "SUB"
+    },
+    "527": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1650,
+        1670
+      ],
+      "op": "DUP4",
+      "path": "40"
+    },
+    "528": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1650,
+        1670
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "529": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1665,
+        1669
+      ],
+      "op": "ADDRESS",
+      "path": "40"
+    },
+    "530": {
+      "branch": 9,
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1650,
+        1670
+      ],
+      "op": "EQ",
+      "path": "40"
+    },
+    "531": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1646,
+        1933
+      ],
+      "op": "ISZERO",
+      "path": "40"
+    },
+    "532": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1646,
+        1933
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x21F"
+    },
+    "535": {
+      "branch": 9,
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1646,
+        1933
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "536": {
+      "op": "POP"
+    },
+    "537": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1693,
+        1697
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "statement": 4,
+      "value": "0x1"
+    },
+    "539": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1686,
+        1697
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x2DC"
+    },
+    "542": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1686,
+        1697
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "543": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1646,
+        1933
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "544": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1725,
+        1730
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x1"
+    },
+    "546": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1725,
+        1730
+      ],
+      "op": "SLOAD",
+      "path": "40"
+    },
+    "547": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "549": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "551": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "553": {
+      "op": "SHL"
+    },
+    "554": {
+      "op": "SUB"
+    },
+    "555": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1718,
+        1730
+      ],
+      "op": "DUP5",
+      "path": "40"
+    },
+    "556": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1718,
+        1730
+      ],
+      "op": "DUP2",
+      "path": "40"
+    },
+    "557": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1718,
+        1730
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "558": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1725,
+        1730
+      ],
+      "op": "SWAP2",
+      "path": "40"
+    },
+    "559": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1725,
+        1730
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "560": {
+      "branch": 10,
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1718,
+        1730
+      ],
+      "op": "EQ",
+      "path": "40"
+    },
+    "561": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1714,
+        1933
+      ],
+      "op": "ISZERO",
+      "path": "40"
+    },
+    "562": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1714,
+        1933
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x23D"
+    },
+    "565": {
+      "branch": 10,
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1714,
+        1933
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "566": {
+      "op": "POP"
+    },
+    "567": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1753,
+        1757
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "statement": 5,
+      "value": "0x1"
+    },
+    "569": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1746,
+        1757
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x2DC"
+    },
+    "572": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1746,
+        1757
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "573": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1714,
+        1933
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "574": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1811,
+        1812
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x0"
+    },
+    "576": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1778,
+        1787
+      ],
+      "op": "SLOAD",
+      "path": "40"
+    },
+    "577": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "579": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "581": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "583": {
+      "op": "SHL"
+    },
+    "584": {
+      "op": "SUB"
+    },
+    "585": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1778,
+        1787
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "586": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1774,
+        1933
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x255"
+    },
+    "589": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1774,
+        1933
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "590": {
+      "op": "POP"
+    },
+    "591": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1837,
+        1842
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "statement": 6,
+      "value": "0x0"
+    },
+    "593": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1830,
+        1842
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x2DC"
+    },
+    "596": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1830,
+        1842
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "597": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1774,
+        1933
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "598": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1889
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "statement": 7,
+      "value": "0x0"
+    },
+    "600": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1889
+      ],
+      "op": "SLOAD",
+      "path": "40"
+    },
+    "601": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x40"
+    },
+    "603": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "MLOAD",
+      "path": "40"
+    },
+    "604": {
+      "op": "PUSH4",
+      "value": "0xB7009613"
+    },
+    "609": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "611": {
+      "op": "SHL"
+    },
+    "612": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP2",
+      "path": "40"
+    },
+    "613": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "MSTORE",
+      "path": "40"
+    },
+    "614": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "616": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "618": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "620": {
+      "op": "SHL"
+    },
+    "621": {
+      "op": "SUB"
+    },
+    "622": {
+      "op": "DUP6"
+    },
+    "623": {
+      "op": "DUP2"
+    },
+    "624": {
+      "op": "AND"
+    },
+    "625": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x4"
+    },
+    "627": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP4",
+      "path": "40"
+    },
+    "628": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "ADD",
+      "path": "40"
+    },
+    "629": {
+      "op": "MSTORE"
+    },
+    "630": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1911,
+        1915
+      ],
+      "op": "ADDRESS",
+      "path": "40"
+    },
+    "631": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "633": {
+      "op": "DUP4"
+    },
+    "634": {
+      "op": "ADD"
+    },
+    "635": {
+      "op": "MSTORE"
+    },
+    "636": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "638": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "640": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "642": {
+      "op": "SHL"
+    },
+    "643": {
+      "op": "SUB"
+    },
+    "644": {
+      "op": "NOT"
+    },
+    "645": {
+      "op": "DUP6"
+    },
+    "646": {
+      "op": "AND"
+    },
+    "647": {
+      "op": "PUSH1",
+      "value": "0x44"
+    },
+    "649": {
+      "op": "DUP4"
+    },
+    "650": {
+      "op": "ADD"
+    },
+    "651": {
+      "op": "MSTORE"
+    },
+    "652": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1889
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "653": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1889
+      ],
+      "op": "SWAP2",
+      "path": "40"
+    },
+    "654": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1889
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "655": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1889
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "656": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1897
+      ],
+      "op": "PUSH4",
+      "path": "40",
+      "value": "0xB7009613"
+    },
+    "661": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1897
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "662": {
+      "op": "PUSH1",
+      "value": "0x64"
+    },
+    "664": {
+      "op": "ADD"
+    },
+    "665": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x20"
+    },
+    "667": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x40"
+    },
+    "669": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "MLOAD",
+      "path": "40"
+    },
+    "670": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "671": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP4",
+      "path": "40"
+    },
+    "672": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "SUB",
+      "path": "40"
+    },
+    "673": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP2",
+      "path": "40"
+    },
+    "674": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP7",
+      "path": "40"
+    },
+    "675": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "GAS",
+      "path": "40"
+    },
+    "676": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "STATICCALL",
+      "path": "40"
+    },
+    "677": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "ISZERO",
+      "path": "40"
+    },
+    "678": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "679": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "ISZERO",
+      "path": "40"
+    },
+    "680": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x2B5"
+    },
+    "683": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "JUMPI",
+      "path": "40"
+    },
+    "684": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "40"
+    },
+    "685": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x0"
+    },
+    "687": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "688": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "RETURNDATACOPY",
+      "path": "40"
+    },
+    "689": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "40"
+    },
+    "690": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x0"
+    },
+    "692": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "REVERT",
+      "path": "40"
+    },
+    "693": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "694": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "695": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "696": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "697": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "698": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x40"
+    },
+    "700": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "MLOAD",
+      "path": "40"
+    },
+    "701": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "40"
+    },
+    "702": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x1F"
+    },
+    "704": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "NOT",
+      "path": "40"
+    },
+    "705": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x1F"
+    },
+    "707": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP3",
+      "path": "40"
+    },
+    "708": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "ADD",
+      "path": "40"
+    },
+    "709": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "AND",
+      "path": "40"
+    },
+    "710": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP3",
+      "path": "40"
+    },
+    "711": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "ADD",
+      "path": "40"
+    },
+    "712": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP1",
+      "path": "40"
+    },
+    "713": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH1",
+      "path": "40",
+      "value": "0x40"
+    },
+    "715": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "MSTORE",
+      "path": "40"
+    },
+    "716": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "717": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "DUP2",
+      "path": "40"
+    },
+    "718": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "ADD",
+      "path": "40"
+    },
+    "719": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "720": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x2D9"
+    },
+    "723": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "SWAP2",
+      "path": "40"
+    },
+    "724": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "725": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "PUSH2",
+      "path": "40",
+      "value": "0x31E"
+    },
+    "728": {
+      "fn": "DSAuth.isAuthorized",
+      "jump": "i",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "729": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1880,
+        1922
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "730": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1873,
+        1922
+      ],
+      "op": "SWAP1",
+      "path": "40"
+    },
+    "731": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1873,
+        1922
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "732": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1774,
+        1933
+      ],
+      "op": "JUMPDEST",
+      "path": "40"
+    },
+    "733": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1560,
+        1939
+      ],
+      "op": "SWAP3",
+      "path": "40"
+    },
+    "734": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1560,
+        1939
+      ],
+      "op": "SWAP2",
+      "path": "40"
+    },
+    "735": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1560,
+        1939
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "736": {
+      "fn": "DSAuth.isAuthorized",
+      "offset": [
+        1560,
+        1939
+      ],
+      "op": "POP",
+      "path": "40"
+    },
+    "737": {
+      "fn": "DSAuth.isAuthorized",
+      "jump": "o",
+      "offset": [
+        1560,
+        1939
+      ],
+      "op": "JUMP",
+      "path": "40"
+    },
+    "738": {
+      "op": "JUMPDEST"
+    },
+    "739": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "741": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "743": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "745": {
+      "op": "SHL"
+    },
+    "746": {
+      "op": "SUB"
+    },
+    "747": {
+      "op": "DUP2"
+    },
+    "748": {
+      "op": "AND"
+    },
+    "749": {
+      "op": "DUP2"
+    },
+    "750": {
+      "op": "EQ"
+    },
+    "751": {
+      "op": "PUSH2",
+      "value": "0x2F7"
+    },
+    "754": {
+      "op": "JUMPI"
+    },
+    "755": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "757": {
+      "op": "DUP1"
+    },
+    "758": {
+      "op": "REVERT"
+    },
+    "759": {
+      "op": "JUMPDEST"
+    },
+    "760": {
+      "op": "POP"
+    },
+    "761": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "762": {
+      "op": "JUMPDEST"
+    },
+    "763": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "765": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "767": {
+      "op": "DUP3"
+    },
+    "768": {
+      "op": "DUP5"
+    },
+    "769": {
+      "op": "SUB"
+    },
+    "770": {
+      "op": "SLT"
+    },
+    "771": {
+      "op": "ISZERO"
+    },
+    "772": {
+      "op": "PUSH2",
+      "value": "0x30C"
+    },
+    "775": {
+      "op": "JUMPI"
+    },
+    "776": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "778": {
+      "op": "DUP1"
+    },
+    "779": {
+      "op": "REVERT"
+    },
+    "780": {
+      "op": "JUMPDEST"
+    },
+    "781": {
+      "op": "DUP2"
+    },
+    "782": {
+      "op": "CALLDATALOAD"
+    },
+    "783": {
+      "op": "PUSH2",
+      "value": "0x317"
+    },
+    "786": {
+      "op": "DUP2"
+    },
+    "787": {
+      "op": "PUSH2",
+      "value": "0x2E2"
+    },
+    "790": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "791": {
+      "op": "JUMPDEST"
+    },
+    "792": {
+      "op": "SWAP4"
+    },
+    "793": {
+      "op": "SWAP3"
+    },
+    "794": {
+      "op": "POP"
+    },
+    "795": {
+      "op": "POP"
+    },
+    "796": {
+      "op": "POP"
+    },
+    "797": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "798": {
+      "op": "JUMPDEST"
+    },
+    "799": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "801": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "803": {
+      "op": "DUP3"
+    },
+    "804": {
+      "op": "DUP5"
+    },
+    "805": {
+      "op": "SUB"
+    },
+    "806": {
+      "op": "SLT"
+    },
+    "807": {
+      "op": "ISZERO"
+    },
+    "808": {
+      "op": "PUSH2",
+      "value": "0x330"
+    },
+    "811": {
+      "op": "JUMPI"
+    },
+    "812": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "814": {
+      "op": "DUP1"
+    },
+    "815": {
+      "op": "REVERT"
+    },
+    "816": {
+      "op": "JUMPDEST"
+    },
+    "817": {
+      "op": "DUP2"
+    },
+    "818": {
+      "op": "MLOAD"
+    },
+    "819": {
+      "op": "DUP1"
+    },
+    "820": {
+      "op": "ISZERO"
+    },
+    "821": {
+      "op": "ISZERO"
+    },
+    "822": {
+      "op": "DUP2"
+    },
+    "823": {
+      "op": "EQ"
+    },
+    "824": {
+      "op": "PUSH2",
+      "value": "0x317"
+    },
+    "827": {
+      "op": "JUMPI"
+    },
+    "828": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "830": {
+      "op": "DUP1"
+    },
+    "831": {
+      "op": "REVERT"
+    }
+  },
+  "sha1": "ed0a0910b5007f5abf3f935106a1ab09412e1cb3",
+  "source": "// SPDX-License-Identifier: GNU-3\n// This program is free software: you can redistribute it and/or modify\n// it under the terms of the GNU General Public License as published by\n// the Free Software Foundation, either version 3 of the License, or\n// (at your option) any later version.\n\n// This program is distributed in the hope that it will be useful,\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n// GNU General Public License for more details.\n\n// You should have received a copy of the GNU General Public License\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\n\npragma solidity =0.8.10;\n\ninterface DSAuthority {\n    function canCall(\n        address src,\n        address dst,\n        bytes4 sig\n    ) external view returns (bool);\n}\n\ncontract DSAuthEvents {\n    event LogSetAuthority(address indexed authority);\n    event LogSetOwner(address indexed owner);\n}\n\ncontract DSAuth is DSAuthEvents {\n    DSAuthority public authority;\n    address public owner;\n\n    constructor() public {\n        owner = msg.sender;\n        emit LogSetOwner(msg.sender);\n    }\n\n    function setOwner(address owner_) public auth {\n        owner = owner_;\n        emit LogSetOwner(owner);\n    }\n\n    function setAuthority(DSAuthority authority_) public auth {\n        authority = authority_;\n        emit LogSetAuthority(address(authority));\n    }\n\n    modifier auth() {\n        require(isAuthorized(msg.sender, msg.sig), \"ds-auth-unauthorized\");\n        _;\n    }\n\n    function isAuthorized(address src, bytes4 sig) internal view returns (bool) {\n        if (src == address(this)) {\n            return true;\n        } else if (src == owner) {\n            return true;\n        } else if (authority == DSAuthority(address(0))) {\n            return false;\n        } else {\n            return authority.canCall(src, address(this), sig);\n        }\n    }\n}\n",
+  "sourceMap": "976:965:40:-:0;;;1075:94;;;;;;;;;-1:-1:-1;1106:5:40;:18;;-1:-1:-1;;;;;;1106:18:40;1114:10;1106:18;;;;;;1139:23;;;;1106:5;;1139:23;976:965;;;;;;",
+  "sourcePath": "contracts/core/auth/DSAuth.sol",
+  "type": "contract"
+}

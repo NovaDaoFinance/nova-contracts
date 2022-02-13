@@ -1,0 +1,270 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "TOKEN",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawAll",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "ast": {
+    "absolutePath": "interfaces/external/ISpiritSwapGauge.sol",
+    "exportedSymbols": {
+      "IERC20": [
+        2026
+      ],
+      "ISpiritSwapGauge": [
+        643
+      ]
+    },
+    "id": 644,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 625,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:16"
+      },
+      {
+        "absolutePath": "/Users/admin/.brownie/packages/OpenZeppelin/openzeppelin-contracts@4.3.2/contracts/token/ERC20/IERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "id": 627,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 644,
+        "sourceUnit": 2027,
+        "src": "93:70:16",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 626,
+              "name": "IERC20",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "101:6:16",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISpiritSwapGauge",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 628,
+          "nodeType": "StructuredDocumentation",
+          "src": "166:106:16",
+          "text": " @title ISpiritSwapGauge\n @author PhantomDao Team\n @notice The Inteface for ISpiritSwapGauge"
+        },
+        "fullyImplemented": false,
+        "id": 643,
+        "linearizedBaseContracts": [
+          643
+        ],
+        "name": "ISpiritSwapGauge",
+        "nameLocation": "283:16:16",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "82bfefc8",
+            "id": 634,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "TOKEN",
+            "nameLocation": "320:5:16",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 629,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "325:2:16"
+            },
+            "returnParameters": {
+              "id": 633,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 632,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 634,
+                  "src": "346:6:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$2026",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "id": 631,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 630,
+                      "name": "IERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 2026,
+                      "src": "346:6:16"
+                    },
+                    "referencedDeclaration": 2026,
+                    "src": "346:6:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$2026",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "345:8:16"
+            },
+            "scope": 643,
+            "src": "311:43:16",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "b6b55f25",
+            "id": 639,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "368:7:16",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 637,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 636,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "384:6:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 639,
+                  "src": "376:14:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 635,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:16:16"
+            },
+            "returnParameters": {
+              "id": 638,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "400:0:16"
+            },
+            "scope": 643,
+            "src": "359:42:16",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "853828b6",
+            "id": 642,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawAll",
+            "nameLocation": "415:11:16",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 640,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "426:2:16"
+            },
+            "returnParameters": {
+              "id": 641,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "437:0:16"
+            },
+            "scope": 643,
+            "src": "406:32:16",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 644,
+        "src": "273:167:16",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:405:16"
+  },
+  "contractName": "ISpiritSwapGauge",
+  "dependencies": [
+    "OpenZeppelin/openzeppelin-contracts@4.3.2/IERC20"
+  ],
+  "offset": [
+    273,
+    440
+  ],
+  "sha1": "b911dc61d0de8c6feef29f2f7b9810b8ddfc706f",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/* Package Interface Imports */\nimport {IERC20} from \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\n\n\n/**\n * @title ISpiritSwapGauge\n * @author PhantomDao Team\n * @notice The Inteface for ISpiritSwapGauge\n */\ninterface ISpiritSwapGauge {\n    \n    function TOKEN() external returns (IERC20);\n    function deposit(uint256 amount) external;\n    function withdrawAll() external;\n}",
+  "type": "interface"
+}

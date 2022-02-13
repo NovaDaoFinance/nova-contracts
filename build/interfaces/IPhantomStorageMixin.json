@@ -1,0 +1,226 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "contractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "PhantomStorageMixin__ContractNotFoundByAddressOrIsOutdated",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "contractName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "PhantomStorageMixin__ContractNotFoundByNameOrIsOutdated",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "PhantomStorageMixin__UserIsNotGuardian",
+      "type": "error"
+    }
+  ],
+  "ast": {
+    "absolutePath": "interfaces/mixins/IPhantomStorageMixin.sol",
+    "exportedSymbols": {
+      "IPhantomStorageMixin": [
+        951
+      ]
+    },
+    "id": 952,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 937,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:30"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPhantomStorageMixin",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 938,
+          "nodeType": "StructuredDocumentation",
+          "src": "61:110:30",
+          "text": " @title IPhantomStorageMixin\n @author PhantomDao Team\n @notice Interface of PhantomStorageMixin"
+        },
+        "fullyImplemented": true,
+        "id": 951,
+        "linearizedBaseContracts": [
+          951
+        ],
+        "name": "IPhantomStorageMixin",
+        "nameLocation": "182:20:30",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 942,
+            "name": "PhantomStorageMixin__ContractNotFoundByAddressOrIsOutdated",
+            "nameLocation": "475:58:30",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 941,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 940,
+                  "mutability": "mutable",
+                  "name": "contractAddress",
+                  "nameLocation": "542:15:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 942,
+                  "src": "534:23:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 939,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "534:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "533:25:30"
+            },
+            "src": "469:90:30"
+          },
+          {
+            "id": 946,
+            "name": "PhantomStorageMixin__ContractNotFoundByNameOrIsOutdated",
+            "nameLocation": "570:55:30",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 945,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 944,
+                  "mutability": "mutable",
+                  "name": "contractName",
+                  "nameLocation": "634:12:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 946,
+                  "src": "626:20:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 943,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "626:7:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "625:22:30"
+            },
+            "src": "564:84:30"
+          },
+          {
+            "id": 950,
+            "name": "PhantomStorageMixin__UserIsNotGuardian",
+            "nameLocation": "659:38:30",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 949,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 948,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "706:4:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 950,
+                  "src": "698:12:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 947,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "698:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "697:14:30"
+            },
+            "src": "653:59:30"
+          }
+        ],
+        "scope": 952,
+        "src": "172:552:30",
+        "usedErrors": [
+          942,
+          946,
+          950
+        ]
+      }
+    ],
+    "src": "35:689:30"
+  },
+  "contractName": "IPhantomStorageMixin",
+  "dependencies": [],
+  "offset": [
+    172,
+    724
+  ],
+  "sha1": "b7702228172c8472eabfb5ab541618bf3cce5500",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/** \n * @title IPhantomStorageMixin\n * @author PhantomDao Team\n * @notice Interface of PhantomStorageMixin\n */\ninterface IPhantomStorageMixin {\n\n    //=================================================================================================================\n    // Errors\n    //=================================================================================================================\n    \n    error PhantomStorageMixin__ContractNotFoundByAddressOrIsOutdated(address contractAddress);\n    error PhantomStorageMixin__ContractNotFoundByNameOrIsOutdated(bytes32 contractName);\n    error PhantomStorageMixin__UserIsNotGuardian(address user);\n        \n\n}",
+  "type": "interface"
+}

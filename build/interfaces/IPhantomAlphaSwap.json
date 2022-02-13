@@ -1,0 +1,133 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "claimer",
+          "type": "address"
+        }
+      ],
+      "name": "swap",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "ast": {
+    "absolutePath": "interfaces/level0/launch/IPhantomAlphaSwap.sol",
+    "exportedSymbols": {
+      "IPhantomAlphaSwap": [
+        811
+      ]
+    },
+    "id": 812,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 804,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:23"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPhantomAlphaSwap",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 805,
+          "nodeType": "StructuredDocumentation",
+          "src": "61:108:23",
+          "text": " @title IPhantomAlphaSwap\n @author PhantomDao Team\n @notice The Interface for PhantomAlphaSwap"
+        },
+        "fullyImplemented": false,
+        "id": 811,
+        "linearizedBaseContracts": [
+          811
+        ],
+        "name": "IPhantomAlphaSwap",
+        "nameLocation": "180:17:23",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "03438dd0",
+            "id": 810,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "swap",
+            "nameLocation": "214:4:23",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 808,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 807,
+                  "mutability": "mutable",
+                  "name": "claimer",
+                  "nameLocation": "227:7:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 810,
+                  "src": "219:15:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 806,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "219:7:23",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "218:17:23"
+            },
+            "returnParameters": {
+              "id": 809,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "244:0:23"
+            },
+            "scope": 811,
+            "src": "205:40:23",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 812,
+        "src": "170:78:23",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:213:23"
+  },
+  "contractName": "IPhantomAlphaSwap",
+  "dependencies": [],
+  "offset": [
+    170,
+    248
+  ],
+  "sha1": "75802d207c9399d12fc5bb973094107a5a2e8c58",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/**\n * @title IPhantomAlphaSwap\n * @author PhantomDao Team\n * @notice The Interface for PhantomAlphaSwap\n */\ninterface IPhantomAlphaSwap {\n\n    function swap(address claimer) external;\n\n}",
+  "type": "interface"
+}

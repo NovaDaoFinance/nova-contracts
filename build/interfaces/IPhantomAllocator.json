@@ -1,0 +1,62 @@
+{
+  "abi": [],
+  "ast": {
+    "absolutePath": "interfaces/level0/finance/IPhantomAllocator.sol",
+    "exportedSymbols": {
+      "IPhantomAllocator": [
+        723
+      ]
+    },
+    "id": 724,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 721,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:19"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPhantomAllocator",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 722,
+          "nodeType": "StructuredDocumentation",
+          "src": "62:107:19",
+          "text": " @title IPhantomAllocator\n @author PhantomDao Team\n @notice The Inteface for PhantomAllocator"
+        },
+        "fullyImplemented": true,
+        "id": 723,
+        "linearizedBaseContracts": [
+          723
+        ],
+        "name": "IPhantomAllocator",
+        "nameLocation": "180:17:19",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 724,
+        "src": "170:31:19",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:166:19"
+  },
+  "contractName": "IPhantomAllocator",
+  "dependencies": [],
+  "offset": [
+    170,
+    201
+  ],
+  "sha1": "7774a13a76fc89df3bd339412bf04184c0919b3c",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n\n/**\n * @title IPhantomAllocator\n * @author PhantomDao Team\n * @notice The Inteface for PhantomAllocator\n */\ninterface IPhantomAllocator {\n}",
+  "type": "interface"
+}

@@ -1,0 +1,184 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "claimFPHM",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "exerciseFPHM",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "swapAPHM",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "ast": {
+    "absolutePath": "interfaces/level1/launch/IPhantomLaunch.sol",
+    "exportedSymbols": {
+      "IPhantomLaunch": [
+        935
+      ]
+    },
+    "id": 936,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 921,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:29"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPhantomLaunch",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 922,
+          "nodeType": "StructuredDocumentation",
+          "src": "61:100:29",
+          "text": " @title IPhantomLaunch\n @author PhantomDao Team\n @notice The Inteface for PhantomLauch"
+        },
+        "fullyImplemented": false,
+        "id": 935,
+        "linearizedBaseContracts": [
+          935
+        ],
+        "name": "IPhantomLaunch",
+        "nameLocation": "172:14:29",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 923,
+              "nodeType": "StructuredDocumentation",
+              "src": "194:57:29",
+              "text": " @dev swap aPHM for PHM on a 1:1 basis."
+            },
+            "functionSelector": "f4860e4f",
+            "id": 926,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "swapAPHM",
+            "nameLocation": "265:8:29",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 924,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "273:2:29"
+            },
+            "returnParameters": {
+              "id": 925,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "284:0:29"
+            },
+            "scope": 935,
+            "src": "256:29:29",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 927,
+              "nodeType": "StructuredDocumentation",
+              "src": "291:41:29",
+              "text": " @dev claim fPHM tokens"
+            },
+            "functionSelector": "c22a3e5b",
+            "id": 930,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claimFPHM",
+            "nameLocation": "346:9:29",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 928,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "355:2:29"
+            },
+            "returnParameters": {
+              "id": 929,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "366:0:29"
+            },
+            "scope": 935,
+            "src": "337:30:29",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 931,
+              "nodeType": "StructuredDocumentation",
+              "src": "373:49:29",
+              "text": " @dev swap vested fPHM for gPHM"
+            },
+            "functionSelector": "c1e262e5",
+            "id": 934,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exerciseFPHM",
+            "nameLocation": "437:12:29",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 932,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "449:2:29"
+            },
+            "returnParameters": {
+              "id": 933,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "460:0:29"
+            },
+            "scope": 935,
+            "src": "428:33:29",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 936,
+        "src": "162:303:29",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:430:29"
+  },
+  "contractName": "IPhantomLaunch",
+  "dependencies": [],
+  "offset": [
+    162,
+    465
+  ],
+  "sha1": "97b786b74a13b42ddd0eb56fdc2c3026e6756166",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/**\n * @title IPhantomLaunch\n * @author PhantomDao Team\n * @notice The Inteface for PhantomLauch\n */\ninterface IPhantomLaunch {\n\n    /**\n     * @dev swap aPHM for PHM on a 1:1 basis.\n     */\n    function swapAPHM() external;\n\n    /**\n     * @dev claim fPHM tokens\n     */\n    function claimFPHM() external;\n\n    /**\n     * @dev swap vested fPHM for gPHM\n     */ \n    function exerciseFPHM() external; \n\n}",
+  "type": "interface"
+}
