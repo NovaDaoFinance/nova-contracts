@@ -2,6 +2,13 @@
   "abi": [
     {
       "inputs": [],
+      "name": "claimAPHM",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
       "name": "claimFPHM",
       "outputs": [],
       "stateMutability": "nonpayable",
@@ -26,15 +33,15 @@
     "absolutePath": "interfaces/level1/launch/IPhantomLaunch.sol",
     "exportedSymbols": {
       "IPhantomLaunch": [
-        935
+        677
       ]
     },
-    "id": 936,
+    "id": 678,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 921,
+        "id": 659,
         "literals": [
           "solidity",
           "=",
@@ -42,7 +49,7 @@
           ".10"
         ],
         "nodeType": "PragmaDirective",
-        "src": "35:24:29"
+        "src": "35:24:14"
       },
       {
         "abstract": false,
@@ -51,134 +58,167 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 922,
+          "id": 660,
           "nodeType": "StructuredDocumentation",
-          "src": "61:100:29",
+          "src": "61:100:14",
           "text": " @title IPhantomLaunch\n @author PhantomDao Team\n @notice The Inteface for PhantomLauch"
         },
         "fullyImplemented": false,
-        "id": 935,
+        "id": 677,
         "linearizedBaseContracts": [
-          935
+          677
         ],
         "name": "IPhantomLaunch",
-        "nameLocation": "172:14:29",
+        "nameLocation": "172:14:14",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "documentation": {
-              "id": 923,
+              "id": 661,
               "nodeType": "StructuredDocumentation",
-              "src": "194:57:29",
+              "src": "194:41:14",
+              "text": " @dev claim aPHM tokens"
+            },
+            "functionSelector": "3e43061c",
+            "id": 664,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claimAPHM",
+            "nameLocation": "249:9:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 662,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "258:2:14"
+            },
+            "returnParameters": {
+              "id": 663,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "269:0:14"
+            },
+            "scope": 677,
+            "src": "240:30:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 665,
+              "nodeType": "StructuredDocumentation",
+              "src": "276:57:14",
               "text": " @dev swap aPHM for PHM on a 1:1 basis."
             },
             "functionSelector": "f4860e4f",
-            "id": 926,
+            "id": 668,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "swapAPHM",
-            "nameLocation": "265:8:29",
+            "nameLocation": "347:8:14",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 924,
+              "id": 666,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "273:2:29"
+              "src": "355:2:14"
             },
             "returnParameters": {
-              "id": 925,
+              "id": 667,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "284:0:29"
+              "src": "366:0:14"
             },
-            "scope": 935,
-            "src": "256:29:29",
+            "scope": 677,
+            "src": "338:29:14",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 927,
+              "id": 669,
               "nodeType": "StructuredDocumentation",
-              "src": "291:41:29",
+              "src": "373:41:14",
               "text": " @dev claim fPHM tokens"
             },
             "functionSelector": "c22a3e5b",
-            "id": 930,
+            "id": 672,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "claimFPHM",
-            "nameLocation": "346:9:29",
+            "nameLocation": "428:9:14",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 928,
+              "id": 670,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "355:2:29"
+              "src": "437:2:14"
             },
             "returnParameters": {
-              "id": 929,
+              "id": 671,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "366:0:29"
+              "src": "448:0:14"
             },
-            "scope": 935,
-            "src": "337:30:29",
+            "scope": 677,
+            "src": "419:30:14",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 931,
+              "id": 673,
               "nodeType": "StructuredDocumentation",
-              "src": "373:49:29",
+              "src": "455:49:14",
               "text": " @dev swap vested fPHM for gPHM"
             },
             "functionSelector": "c1e262e5",
-            "id": 934,
+            "id": 676,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "exerciseFPHM",
-            "nameLocation": "437:12:29",
+            "nameLocation": "519:12:14",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 932,
+              "id": 674,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "449:2:29"
+              "src": "531:2:14"
             },
             "returnParameters": {
-              "id": 933,
+              "id": 675,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "460:0:29"
+              "src": "542:0:14"
             },
-            "scope": 935,
-            "src": "428:33:29",
+            "scope": 677,
+            "src": "510:33:14",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 936,
-        "src": "162:303:29",
+        "scope": 678,
+        "src": "162:385:14",
         "usedErrors": []
       }
     ],
-    "src": "35:430:29"
+    "src": "35:512:14"
   },
   "contractName": "IPhantomLaunch",
   "dependencies": [],
   "offset": [
     162,
-    465
+    547
   ],
-  "sha1": "97b786b74a13b42ddd0eb56fdc2c3026e6756166",
-  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/**\n * @title IPhantomLaunch\n * @author PhantomDao Team\n * @notice The Inteface for PhantomLauch\n */\ninterface IPhantomLaunch {\n\n    /**\n     * @dev swap aPHM for PHM on a 1:1 basis.\n     */\n    function swapAPHM() external;\n\n    /**\n     * @dev claim fPHM tokens\n     */\n    function claimFPHM() external;\n\n    /**\n     * @dev swap vested fPHM for gPHM\n     */ \n    function exerciseFPHM() external; \n\n}",
+  "sha1": "509bcbb5cc492eb89690b6169580fb81d6b1a1da",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/**\n * @title IPhantomLaunch\n * @author PhantomDao Team\n * @notice The Inteface for PhantomLauch\n */\ninterface IPhantomLaunch {\n\n    /**\n     * @dev claim aPHM tokens\n     */\n    function claimAPHM() external;\n\n    /**\n     * @dev swap aPHM for PHM on a 1:1 basis.\n     */\n    function swapAPHM() external;\n\n    /**\n     * @dev claim fPHM tokens\n     */\n    function claimFPHM() external;\n\n    /**\n     * @dev swap vested fPHM for gPHM\n     */ \n    function exerciseFPHM() external; \n\n}",
   "type": "interface"
 }

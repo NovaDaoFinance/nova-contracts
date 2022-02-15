@@ -91,18 +91,15 @@
     "absolutePath": "interfaces/core/IPhantomVault.sol",
     "exportedSymbols": {
       "IPhantomVault": [
-        327
-      ],
-      "PRBMathUD60x18": [
-        1948
+        403
       ]
     },
-    "id": 328,
+    "id": 404,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 291,
+        "id": 369,
         "literals": [
           "solidity",
           "=",
@@ -110,31 +107,7 @@
           ".10"
         ],
         "nodeType": "PragmaDirective",
-        "src": "35:24:9"
-      },
-      {
-        "absolutePath": "/Users/admin/.brownie/packages/hifi-finance/prb-math@2.4.1/contracts/PRBMathUD60x18.sol",
-        "file": "@hifi-finance/prb-math/contracts/PRBMathUD60x18.sol",
-        "id": 293,
-        "nameLocation": "-1:-1:-1",
-        "nodeType": "ImportDirective",
-        "scope": 328,
-        "sourceUnit": 1949,
-        "src": "83:85:9",
-        "symbolAliases": [
-          {
-            "foreign": {
-              "id": 292,
-              "name": "PRBMathUD60x18",
-              "nodeType": "Identifier",
-              "overloadedDeclarations": [],
-              "src": "92:14:9",
-              "typeDescriptions": {}
-            },
-            "nameLocation": "-1:-1:-1"
-          }
-        ],
-        "unitAlias": ""
+        "src": "35:24:5"
       },
       {
         "abstract": false,
@@ -143,40 +116,40 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 294,
+          "id": 370,
           "nodeType": "StructuredDocumentation",
-          "src": "170:101:9",
+          "src": "61:101:5",
           "text": " @title IPhantomVault\n @author PhantomDao Team\n @notice The Interface for IPhantomVault"
         },
         "fullyImplemented": false,
-        "id": 327,
+        "id": 403,
         "linearizedBaseContracts": [
-          327
+          403
         ],
         "name": "IPhantomVault",
-        "nameLocation": "282:13:9",
+        "nameLocation": "173:13:5",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "anonymous": false,
-            "id": 302,
+            "id": 378,
             "name": "PhantomVault_Withdrawal",
-            "nameLocation": "564:23:9",
+            "nameLocation": "455:23:5",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 301,
+              "id": 377,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 296,
+                  "id": 372,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "fromUser",
-                  "nameLocation": "596:8:9",
+                  "nameLocation": "487:8:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 302,
-                  "src": "588:16:9",
+                  "scope": 378,
+                  "src": "479:16:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -184,10 +157,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 295,
+                    "id": 371,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "588:7:9",
+                    "src": "479:7:5",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -198,14 +171,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 298,
+                  "id": 374,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "outAmount",
-                  "nameLocation": "614:9:9",
+                  "nameLocation": "505:9:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 302,
-                  "src": "606:17:9",
+                  "scope": 378,
+                  "src": "497:17:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -213,10 +186,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 297,
+                    "id": 373,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "606:7:9",
+                    "src": "497:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -226,14 +199,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 300,
+                  "id": 376,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "outToken",
-                  "nameLocation": "633:8:9",
+                  "nameLocation": "524:8:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 302,
-                  "src": "625:16:9",
+                  "scope": 378,
+                  "src": "516:16:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -241,10 +214,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 299,
+                    "id": 375,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "625:7:9",
+                    "src": "516:7:5",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -254,30 +227,30 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "587:55:9"
+              "src": "478:55:5"
             },
-            "src": "558:85:9"
+            "src": "449:85:5"
           },
           {
             "anonymous": false,
-            "id": 310,
+            "id": 386,
             "name": "PhantomVault_Burned",
-            "nameLocation": "654:19:9",
+            "nameLocation": "545:19:5",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 309,
+              "id": 385,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 304,
+                  "id": 380,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "fromUser",
-                  "nameLocation": "682:8:9",
+                  "nameLocation": "573:8:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 310,
-                  "src": "674:16:9",
+                  "scope": 386,
+                  "src": "565:16:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -285,10 +258,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 303,
+                    "id": 379,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "674:7:9",
+                    "src": "565:7:5",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -299,14 +272,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 306,
+                  "id": 382,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "outAmount",
-                  "nameLocation": "700:9:9",
+                  "nameLocation": "591:9:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 310,
-                  "src": "692:17:9",
+                  "scope": 386,
+                  "src": "583:17:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -314,10 +287,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 305,
+                    "id": 381,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "692:7:9",
+                    "src": "583:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -327,14 +300,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 308,
+                  "id": 384,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "outToken",
-                  "nameLocation": "719:8:9",
+                  "nameLocation": "610:8:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 310,
-                  "src": "711:16:9",
+                  "scope": 386,
+                  "src": "602:16:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -342,10 +315,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 307,
+                    "id": 383,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "711:7:9",
+                    "src": "602:7:5",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -355,38 +328,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "673:55:9"
+              "src": "564:55:5"
             },
-            "src": "648:81:9"
+            "src": "539:81:5"
           },
           {
             "documentation": {
-              "id": 311,
+              "id": 387,
               "nodeType": "StructuredDocumentation",
-              "src": "993:174:9",
+              "src": "884:174:5",
               "text": " @dev Withdraw ERC20 tokens from the Vault\n @param outAmount The number of tokens to be withdrawn\n @param outToken The type of token to withdraw"
             },
             "functionSelector": "00f714ce",
-            "id": 318,
+            "id": 394,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "withdraw",
-            "nameLocation": "1181:8:9",
+            "nameLocation": "1072:8:5",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 316,
+              "id": 392,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 313,
+                  "id": 389,
                   "mutability": "mutable",
                   "name": "outAmount",
-                  "nameLocation": "1198:9:9",
+                  "nameLocation": "1089:9:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 318,
-                  "src": "1190:17:9",
+                  "scope": 394,
+                  "src": "1081:17:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -394,10 +367,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 312,
+                    "id": 388,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1190:7:9",
+                    "src": "1081:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -407,13 +380,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 315,
+                  "id": 391,
                   "mutability": "mutable",
                   "name": "outToken",
-                  "nameLocation": "1217:8:9",
+                  "nameLocation": "1108:8:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 318,
-                  "src": "1209:16:9",
+                  "scope": 394,
+                  "src": "1100:16:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -421,10 +394,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 314,
+                    "id": 390,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1209:7:9",
+                    "src": "1100:7:5",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -434,48 +407,48 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1189:37:9"
+              "src": "1080:37:5"
             },
             "returnParameters": {
-              "id": 317,
+              "id": 393,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1235:0:9"
+              "src": "1126:0:5"
             },
-            "scope": 327,
-            "src": "1172:64:9",
+            "scope": 403,
+            "src": "1063:64:5",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 319,
+              "id": 395,
               "nodeType": "StructuredDocumentation",
-              "src": "1242:178:9",
+              "src": "1133:178:5",
               "text": " @dev Burn ERC20 tokens from the Vault\n @param burnAmount the number of tokens to be burned\n @param burnToken The address of the ERC20 token to burn"
             },
             "functionSelector": "fcd3533c",
-            "id": 326,
+            "id": 402,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "burn",
-            "nameLocation": "1434:4:9",
+            "nameLocation": "1325:4:5",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 324,
+              "id": 400,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 321,
+                  "id": 397,
                   "mutability": "mutable",
                   "name": "burnAmount",
-                  "nameLocation": "1447:10:9",
+                  "nameLocation": "1338:10:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 326,
-                  "src": "1439:18:9",
+                  "scope": 402,
+                  "src": "1330:18:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -483,10 +456,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 320,
+                    "id": 396,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1439:7:9",
+                    "src": "1330:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -496,13 +469,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 323,
+                  "id": 399,
                   "mutability": "mutable",
                   "name": "burnToken",
-                  "nameLocation": "1467:9:9",
+                  "nameLocation": "1358:9:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 326,
-                  "src": "1459:17:9",
+                  "scope": 402,
+                  "src": "1350:17:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -510,10 +483,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 322,
+                    "id": 398,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1459:7:9",
+                    "src": "1350:7:5",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -523,35 +496,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1438:39:9"
+              "src": "1329:39:5"
             },
             "returnParameters": {
-              "id": 325,
+              "id": 401,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1486:0:9"
+              "src": "1377:0:5"
             },
-            "scope": 327,
-            "src": "1425:62:9",
+            "scope": 403,
+            "src": "1316:62:5",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 328,
-        "src": "272:1217:9",
+        "scope": 404,
+        "src": "163:1217:5",
         "usedErrors": []
       }
     ],
-    "src": "35:1454:9"
+    "src": "35:1345:5"
   },
   "contractName": "IPhantomVault",
   "dependencies": [],
   "offset": [
-    272,
-    1489
+    163,
+    1380
   ],
-  "sha1": "fe983428c66c7e0b6732327a1e03a8ff14475fbc",
-  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/* Package Imports */\nimport { PRBMathUD60x18 } from \"@hifi-finance/prb-math/contracts/PRBMathUD60x18.sol\";\n\n/**\n * @title IPhantomVault\n * @author PhantomDao Team\n * @notice The Interface for IPhantomVault\n */\ninterface IPhantomVault {\n\n    //=================================================================================================================\n    // Events\n    //=================================================================================================================\n\n    event PhantomVault_Withdrawal(address fromUser, uint256 outAmount, address outToken);\n    event PhantomVault_Burned(address fromUser, uint256 outAmount, address outToken);\n\n    //=================================================================================================================\n    // Functions\n    //=================================================================================================================\n\n    /**\n     * @dev Withdraw ERC20 tokens from the Vault\n     * @param outAmount The number of tokens to be withdrawn\n     * @param outToken The type of token to withdraw\n     */\n    function withdraw(uint256 outAmount, address outToken) external;\n\n    /**\n     * @dev Burn ERC20 tokens from the Vault\n     * @param burnAmount the number of tokens to be burned\n     * @param burnToken The address of the ERC20 token to burn\n     */\n    function burn(uint256 burnAmount, address burnToken) external;\n}",
+  "sha1": "8f02c939e845ef47653505c1fe4444e7be8cce2b",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/**\n * @title IPhantomVault\n * @author PhantomDao Team\n * @notice The Interface for IPhantomVault\n */\ninterface IPhantomVault {\n\n    //=================================================================================================================\n    // Events\n    //=================================================================================================================\n\n    event PhantomVault_Withdrawal(address fromUser, uint256 outAmount, address outToken);\n    event PhantomVault_Burned(address fromUser, uint256 outAmount, address outToken);\n\n    //=================================================================================================================\n    // Functions\n    //=================================================================================================================\n\n    /**\n     * @dev Withdraw ERC20 tokens from the Vault\n     * @param outAmount The number of tokens to be withdrawn\n     * @param outToken The type of token to withdraw\n     */\n    function withdraw(uint256 outAmount, address outToken) external;\n\n    /**\n     * @dev Burn ERC20 tokens from the Vault\n     * @param burnAmount the number of tokens to be burned\n     * @param burnToken The address of the ERC20 token to burn\n     */\n    function burn(uint256 burnAmount, address burnToken) external;\n}",
   "type": "interface"
 }

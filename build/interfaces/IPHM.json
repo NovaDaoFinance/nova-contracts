@@ -67,6 +67,19 @@
       "inputs": [
         {
           "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "addUncappedHolder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
           "name": "owner",
           "type": "address"
         },
@@ -261,6 +274,19 @@
       "type": "function"
     },
     {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "removeUncappedHolder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
       "inputs": [],
       "name": "totalSupply",
       "outputs": [
@@ -331,18 +357,18 @@
     "absolutePath": "interfaces/core/erc20/IPHM.sol",
     "exportedSymbols": {
       "IPHM": [
-        347
+        433
       ],
       "IPhantomERC20": [
-        375
+        1101
       ]
     },
-    "id": 348,
+    "id": 434,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 329,
+        "id": 405,
         "literals": [
           "solidity",
           "=",
@@ -350,25 +376,25 @@
           ".10"
         ],
         "nodeType": "PragmaDirective",
-        "src": "35:24:10"
+        "src": "35:24:6"
       },
       {
         "absolutePath": "interfaces/core/erc20/IPhantomERC20.sol",
         "file": "./IPhantomERC20.sol",
-        "id": 331,
+        "id": 407,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 348,
-        "sourceUnit": 376,
-        "src": "93:50:10",
+        "scope": 434,
+        "sourceUnit": 1102,
+        "src": "93:50:6",
         "symbolAliases": [
           {
             "foreign": {
-              "id": 330,
+              "id": 406,
               "name": "IPhantomERC20",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "src": "101:13:10",
+              "src": "101:13:6",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -381,60 +407,60 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 333,
+              "id": 409,
               "name": "IPhantomERC20",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 375,
-              "src": "247:13:10"
+              "referencedDeclaration": 1101,
+              "src": "247:13:6"
             },
-            "id": 334,
+            "id": 410,
             "nodeType": "InheritanceSpecifier",
-            "src": "247:13:10"
+            "src": "247:13:6"
           }
         ],
         "canonicalName": "IPHM",
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 332,
+          "id": 408,
           "nodeType": "StructuredDocumentation",
-          "src": "145:83:10",
+          "src": "145:83:6",
           "text": " @title IPHM\n @author PhantomDao Team\n @notice The Interface for IPHM"
         },
         "fullyImplemented": false,
-        "id": 347,
+        "id": 433,
         "linearizedBaseContracts": [
-          347,
-          375,
-          2062,
-          2026
+          433,
+          1101,
+          1215,
+          1179
         ],
         "name": "IPHM",
-        "nameLocation": "239:4:10",
+        "nameLocation": "239:4:6",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "functionSelector": "acc9d9df",
-            "id": 341,
+            "functionSelector": "8c754783",
+            "id": 415,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
-            "name": "balanceAllDenoms",
-            "nameLocation": "276:16:10",
+            "name": "addUncappedHolder",
+            "nameLocation": "276:17:6",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 337,
+              "id": 413,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 336,
+                  "id": 412,
                   "mutability": "mutable",
-                  "name": "user",
-                  "nameLocation": "301:4:10",
+                  "name": "addr",
+                  "nameLocation": "302:4:6",
                   "nodeType": "VariableDeclaration",
-                  "scope": 341,
-                  "src": "293:12:10",
+                  "scope": 415,
+                  "src": "294:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -442,10 +468,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 335,
+                    "id": 411,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "293:7:10",
+                    "src": "294:7:6",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -455,21 +481,133 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "292:14:10"
+              "src": "293:14:6"
             },
             "returnParameters": {
-              "id": 340,
+              "id": 414,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "316:0:6"
+            },
+            "scope": 433,
+            "src": "267:50:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "a1149a32",
+            "id": 420,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeUncappedHolder",
+            "nameLocation": "331:20:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 418,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 339,
+                  "id": 417,
+                  "mutability": "mutable",
+                  "name": "addr",
+                  "nameLocation": "360:4:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 420,
+                  "src": "352:12:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 416,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "352:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "351:14:6"
+            },
+            "returnParameters": {
+              "id": 419,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "374:0:6"
+            },
+            "scope": 433,
+            "src": "322:53:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "acc9d9df",
+            "id": 427,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "balanceAllDenoms",
+            "nameLocation": "389:16:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 423,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 422,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "414:4:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 427,
+                  "src": "406:12:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 421,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "406:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "405:14:6"
+            },
+            "returnParameters": {
+              "id": 426,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 425,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 341,
-                  "src": "329:7:10",
+                  "scope": 427,
+                  "src": "442:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -477,10 +615,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 338,
+                    "id": 424,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "329:7:10",
+                    "src": "442:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -489,42 +627,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "328:9:10"
+              "src": "441:9:6"
             },
-            "scope": 347,
-            "src": "267:71:10",
+            "scope": 433,
+            "src": "380:71:6",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "01ba7911",
-            "id": 346,
+            "id": 432,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "maxBalancePerWallet",
-            "nameLocation": "352:19:10",
+            "nameLocation": "465:19:6",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 342,
+              "id": 428,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "371:2:10"
+              "src": "484:2:6"
             },
             "returnParameters": {
-              "id": 345,
+              "id": 431,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 344,
+                  "id": 430,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 346,
-                  "src": "397:7:10",
+                  "scope": 432,
+                  "src": "510:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -532,10 +670,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 343,
+                    "id": 429,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "397:7:10",
+                    "src": "510:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -544,21 +682,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "396:9:10"
+              "src": "509:9:6"
             },
-            "scope": 347,
-            "src": "343:63:10",
+            "scope": 433,
+            "src": "456:63:6",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 348,
-        "src": "229:180:10",
+        "scope": 434,
+        "src": "229:293:6",
         "usedErrors": []
       }
     ],
-    "src": "35:375:10"
+    "src": "35:488:6"
   },
   "contractName": "IPHM",
   "dependencies": [
@@ -568,9 +706,9 @@
   ],
   "offset": [
     229,
-    409
+    522
   ],
-  "sha1": "e5085cc9e42ba585c69e82a4beac57be43556103",
-  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/* Internal Interface Import */\nimport {IPhantomERC20} from \"./IPhantomERC20.sol\";\n\n/**\n * @title IPHM\n * @author PhantomDao Team\n * @notice The Interface for IPHM\n */\ninterface IPHM is IPhantomERC20 {\n    function balanceAllDenoms(address user) external view returns(uint256);\n    function maxBalancePerWallet() external view returns (uint256);\n\n} ",
+  "sha1": "0db2b7e23c5ba8fd30bc8d3457fed2dc9430ee1b",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/* Internal Interface Import */\nimport {IPhantomERC20} from \"./IPhantomERC20.sol\";\n\n/**\n * @title IPHM\n * @author PhantomDao Team\n * @notice The Interface for IPHM\n */\ninterface IPHM is IPhantomERC20 {\n    function addUncappedHolder(address addr) external;\n    function removeUncappedHolder(address addr) external;\n    function balanceAllDenoms(address user) external view returns(uint256);\n    function maxBalancePerWallet() external view returns (uint256);\n\n} ",
   "type": "interface"
 }

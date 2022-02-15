@@ -6,6 +6,7 @@ import {DSAuth} from "../libs/DSAuth.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {PRBMathUD60x18} from "@hifi-finance/prb-math/contracts/PRBMathUD60x18.sol";
 
+
 /* Internal Imports */
 import {PhantomStorageMixin} from "../mixins/PhantomStorageMixin.sol";
 
@@ -114,18 +115,8 @@ contract PhantomAdmin is PhantomStorageMixin, DSAuth {
         return PhantomStorage().getUint(keccak256(abi.encodePacked(phantom.bonding.multiplier, inBondType, inToken)));
     }
 
-    function registerTWAPAggregator(address twap, address forToken) external auth {
-        PhantomStorage().registerContract(
-            abi.encodePacked(phantom.contracts.bondpricing, forToken), 
-            twap
-        );
-    }
-
-    function registerTWAP(address twap, address forPair) external auth {
-        PhantomStorage().registerContract(
-            abi.encodePacked(phantom.contracts.twap, forPair), 
-            twap
-        );
+    function registerBondPricingTWAP(address twap, address token) external auth {
+        PhantomStorage().registerContract(abi.encodePacked(phantom.contracts.bondpricing, token), twap);
     }
 
     function maxBondPayoutPHM() external view returns (uint256) {

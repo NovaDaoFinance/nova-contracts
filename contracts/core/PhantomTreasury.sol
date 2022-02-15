@@ -15,7 +15,7 @@ import {PhantomStorageMixin} from "../mixins/PhantomStorageMixin.sol";
 import {IPhantomERC20} from "../../interfaces/core/erc20/IPhantomERC20.sol";
 import {IPhantomTreasury} from "../../interfaces/core/IPhantomTreasury.sol";
 import {IyVault} from "../../interfaces/external/IyVault.sol";
-import {IPhantomTWAPAggregator} from "../../interfaces/core/IPhantomTWAPAggregator.sol";
+import {IPhantomTWAP} from "../../interfaces/core/IPhantomTWAP.sol";
 
 /**
  * @title PhantomTreasury
@@ -113,7 +113,7 @@ contract PhantomTreasury is PhantomStorageMixin, IPhantomTreasury {
         require(_isReserveToken[inToken], "PhantomTreasury: inToken isn't a reserve token");
 
         // For a given bonding token retrieve the desired oracle to use for bond pricing
-        IPhantomTWAPAggregator twap = PhantomTWAPAggregator(inToken);
+        IPhantomTWAP twap = PhantomBondPricing(inToken);
         require(address(twap) != address(0), "PhantomTreasury: No TWAP deployed for inToken");
         // Trigger an update to get the latest price
         twap.update();
@@ -146,7 +146,7 @@ contract PhantomTreasury is PhantomStorageMixin, IPhantomTreasury {
 
         // For a given bonding token retrieve the desired oracle to use for bond pricing
 
-        IPhantomTWAPAggregator twap = PhantomTWAPAggregator(outToken);
+        IPhantomTWAP twap = PhantomBondPricing(outToken);
         require(address(twap) != address(0), "PhantomTreasury: No TWAP deployed for outToken");
         // Trigger an update to get the latest price
         twap.update();
@@ -199,7 +199,7 @@ contract PhantomTreasury is PhantomStorageMixin, IPhantomTreasury {
     function sumReserves() public view override returns (uint256) {
         uint256 S;
         for (uint256 i; i < reserveTokens.length; i++) {
-            IPhantomTWAPAggregator twap = PhantomTWAPAggregator(reserveTokens[i]);
+            IPhantomTWAP twap = PhantomBondPricing(reserveTokens[i]);
             require(address(twap) != address(0), "PhantomTreasury: No twap registered for reserve token");
 
             S += twap.consult(
@@ -257,7 +257,7 @@ contract PhantomTreasury is PhantomStorageMixin, IPhantomTreasury {
         uint256 supply = PHM().totalSupply();
         uint256 balance;
         for (uint256 i; i < reserveTokens.length; i++) {
-            IPhantomTWAPAggregator twap = PhantomTWAPAggregator(reserveTokens[i]);
+            IPhantomTWAP twap = PhantomBondPricing(reserveTokens[i]);
             require(address(twap) != address(0), "PhantomTreasury: No twap registered for reserve token");
 
             twap.update();

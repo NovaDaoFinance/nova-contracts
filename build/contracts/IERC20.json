@@ -1,0 +1,2387 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "37": "contracts/core/PhantomBondPricing.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/core/PhantomBondPricing.sol",
+    "exportedSymbols": {
+      "IERC20": [
+        1117
+      ],
+      "IPhantomTWAP": [
+        13787
+      ],
+      "PhantomBondPricing": [
+        1289
+      ],
+      "PhantomTWAP": [
+        1585
+      ]
+    },
+    "id": 1290,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1107,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:37"
+      },
+      {
+        "absolutePath": "interfaces/core/IPhantomTWAP.sol",
+        "file": "../../interfaces/core/IPhantomTWAP.sol",
+        "id": 1109,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 1290,
+        "sourceUnit": 13788,
+        "src": "62:68:37",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 1108,
+              "name": "IPhantomTWAP",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "70:12:37",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "contracts/core/PhantomTWAP.sol",
+        "file": "./PhantomTWAP.sol",
+        "id": 1111,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 1290,
+        "sourceUnit": 1586,
+        "src": "131:46:37",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 1110,
+              "name": "PhantomTWAP",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "139:11:37",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IERC20",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1117,
+        "linearizedBaseContracts": [
+          1117
+        ],
+        "name": "IERC20",
+        "nameLocation": "189:6:37",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "313ce567",
+            "id": 1116,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decimals",
+            "nameLocation": "211:8:37",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1112,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "219:2:37"
+            },
+            "returnParameters": {
+              "id": 1115,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1114,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1116,
+                  "src": "244:5:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1113,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "244:5:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "243:7:37"
+            },
+            "scope": 1117,
+            "src": "202:49:37",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1290,
+        "src": "179:74:37",
+        "usedErrors": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 1118,
+              "name": "IPhantomTWAP",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 13787,
+              "src": "286:12:37"
+            },
+            "id": 1119,
+            "nodeType": "InheritanceSpecifier",
+            "src": "286:12:37"
+          }
+        ],
+        "canonicalName": "PhantomBondPricing",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1289,
+        "linearizedBaseContracts": [
+          1289,
+          13787
+        ],
+        "name": "PhantomBondPricing",
+        "nameLocation": "264:18:37",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1123,
+            "mutability": "mutable",
+            "name": "twaps",
+            "nameLocation": "328:5:37",
+            "nodeType": "VariableDeclaration",
+            "scope": 1289,
+            "src": "306:27:37",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage",
+              "typeString": "contract PhantomTWAP[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 1121,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 1120,
+                  "name": "PhantomTWAP",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 1585,
+                  "src": "306:11:37"
+                },
+                "referencedDeclaration": 1585,
+                "src": "306:11:37",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                  "typeString": "contract PhantomTWAP"
+                }
+              },
+              "id": 1122,
+              "nodeType": "ArrayTypeName",
+              "src": "306:13:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage_ptr",
+                "typeString": "contract PhantomTWAP[]"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": true,
+            "id": 1126,
+            "mutability": "constant",
+            "name": "FRAX",
+            "nameLocation": "357:4:37",
+            "nodeType": "VariableDeclaration",
+            "scope": 1289,
+            "src": "340:66:37",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 1124,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "340:7:37",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307861663331394535373839393435313937653336354537663766624663353642313330353233423333",
+              "id": 1125,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "364:42:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0xaf319E5789945197e365E7f7fbFc56B130523B33"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1155,
+              "nodeType": "Block",
+              "src": "461:115:37",
+              "statements": [
+                {
+                  "body": {
+                    "id": 1153,
+                    "nodeType": "Block",
+                    "src": "511:59:37",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "baseExpression": {
+                                    "id": 1147,
+                                    "name": "twaps_",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 1129,
+                                    "src": "548:6:37",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                                      "typeString": "address[] memory"
+                                    }
+                                  },
+                                  "id": 1149,
+                                  "indexExpression": {
+                                    "id": 1148,
+                                    "name": "i",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 1133,
+                                    "src": "555:1:37",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "nodeType": "IndexAccess",
+                                  "src": "548:9:37",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                ],
+                                "id": 1146,
+                                "name": "PhantomTWAP",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1585,
+                                "src": "536:11:37",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_PhantomTWAP_$1585_$",
+                                  "typeString": "type(contract PhantomTWAP)"
+                                }
+                              },
+                              "id": 1150,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "536:22:37",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                                "typeString": "contract PhantomTWAP"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                                "typeString": "contract PhantomTWAP"
+                              }
+                            ],
+                            "expression": {
+                              "id": 1143,
+                              "name": "twaps",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1123,
+                              "src": "525:5:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage",
+                                "typeString": "contract PhantomTWAP[] storage ref"
+                              }
+                            },
+                            "id": 1145,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "push",
+                            "nodeType": "MemberAccess",
+                            "src": "525:10:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage_ptr_$_t_contract$_PhantomTWAP_$1585_$returns$__$bound_to$_t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage_ptr_$",
+                              "typeString": "function (contract PhantomTWAP[] storage pointer,contract PhantomTWAP)"
+                            }
+                          },
+                          "id": 1151,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "525:34:37",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 1152,
+                        "nodeType": "ExpressionStatement",
+                        "src": "525:34:37"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 1139,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 1136,
+                      "name": "i",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1133,
+                      "src": "488:1:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "expression": {
+                        "id": 1137,
+                        "name": "twaps",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1123,
+                        "src": "492:5:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage",
+                          "typeString": "contract PhantomTWAP[] storage ref"
+                        }
+                      },
+                      "id": 1138,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "src": "492:12:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "488:16:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1154,
+                  "initializationExpression": {
+                    "assignments": [
+                      1133
+                    ],
+                    "declarations": [
+                      {
+                        "constant": false,
+                        "id": 1133,
+                        "mutability": "mutable",
+                        "name": "i",
+                        "nameLocation": "481:1:37",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 1154,
+                        "src": "476:6:37",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 1132,
+                          "name": "uint",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "476:4:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "id": 1135,
+                    "initialValue": {
+                      "hexValue": "30",
+                      "id": 1134,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "485:1:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "nodeType": "VariableDeclarationStatement",
+                    "src": "476:10:37"
+                  },
+                  "loopExpression": {
+                    "expression": {
+                      "id": 1141,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "++",
+                      "prefix": false,
+                      "src": "506:3:37",
+                      "subExpression": {
+                        "id": 1140,
+                        "name": "i",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1133,
+                        "src": "506:1:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 1142,
+                    "nodeType": "ExpressionStatement",
+                    "src": "506:3:37"
+                  },
+                  "nodeType": "ForStatement",
+                  "src": "471:99:37"
+                }
+              ]
+            },
+            "id": 1156,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1130,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1129,
+                  "mutability": "mutable",
+                  "name": "twaps_",
+                  "nameLocation": "446:6:37",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1156,
+                  "src": "429:23:37",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 1127,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "429:7:37",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 1128,
+                    "nodeType": "ArrayTypeName",
+                    "src": "429:9:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "428:25:37"
+            },
+            "returnParameters": {
+              "id": 1131,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "461:0:37"
+            },
+            "scope": 1289,
+            "src": "417:159:37",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              13777
+            ],
+            "body": {
+              "id": 1179,
+              "nodeType": "Block",
+              "src": "618:98:37",
+              "statements": [
+                {
+                  "body": {
+                    "id": 1177,
+                    "nodeType": "Block",
+                    "src": "668:42:37",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "expression": {
+                              "baseExpression": {
+                                "id": 1171,
+                                "name": "twaps",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1123,
+                                "src": "682:5:37",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage",
+                                  "typeString": "contract PhantomTWAP[] storage ref"
+                                }
+                              },
+                              "id": 1173,
+                              "indexExpression": {
+                                "id": 1172,
+                                "name": "i",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1161,
+                                "src": "688:1:37",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "682:8:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                                "typeString": "contract PhantomTWAP"
+                              }
+                            },
+                            "id": 1174,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "update",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 1466,
+                            "src": "682:15:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                              "typeString": "function () external"
+                            }
+                          },
+                          "id": 1175,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "682:17:37",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 1176,
+                        "nodeType": "ExpressionStatement",
+                        "src": "682:17:37"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 1167,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 1164,
+                      "name": "i",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1161,
+                      "src": "645:1:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "expression": {
+                        "id": 1165,
+                        "name": "twaps",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1123,
+                        "src": "649:5:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage",
+                          "typeString": "contract PhantomTWAP[] storage ref"
+                        }
+                      },
+                      "id": 1166,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "src": "649:12:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "645:16:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1178,
+                  "initializationExpression": {
+                    "assignments": [
+                      1161
+                    ],
+                    "declarations": [
+                      {
+                        "constant": false,
+                        "id": 1161,
+                        "mutability": "mutable",
+                        "name": "i",
+                        "nameLocation": "638:1:37",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 1178,
+                        "src": "633:6:37",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 1160,
+                          "name": "uint",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "633:4:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "id": 1163,
+                    "initialValue": {
+                      "hexValue": "30",
+                      "id": 1162,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "642:1:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "nodeType": "VariableDeclarationStatement",
+                    "src": "633:10:37"
+                  },
+                  "loopExpression": {
+                    "expression": {
+                      "id": 1169,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "++",
+                      "prefix": false,
+                      "src": "663:3:37",
+                      "subExpression": {
+                        "id": 1168,
+                        "name": "i",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1161,
+                        "src": "663:1:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 1170,
+                    "nodeType": "ExpressionStatement",
+                    "src": "663:3:37"
+                  },
+                  "nodeType": "ForStatement",
+                  "src": "628:82:37"
+                }
+              ]
+            },
+            "functionSelector": "a2e62045",
+            "id": 1180,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "update",
+            "nameLocation": "591:6:37",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 1158,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "609:8:37"
+            },
+            "parameters": {
+              "id": 1157,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "597:2:37"
+            },
+            "returnParameters": {
+              "id": 1159,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "618:0:37"
+            },
+            "scope": 1289,
+            "src": "582:134:37",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              13786
+            ],
+            "body": {
+              "id": 1287,
+              "nodeType": "Block",
+              "src": "908:1013:37",
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 1192,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 1190,
+                      "name": "amountIn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1184,
+                      "src": "922:8:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "hexValue": "30",
+                      "id": 1191,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "934:1:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "922:13:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1195,
+                  "nodeType": "IfStatement",
+                  "src": "918:27:37",
+                  "trueBody": {
+                    "expression": {
+                      "hexValue": "30",
+                      "id": 1193,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "944:1:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "functionReturnParameters": 1189,
+                    "id": 1194,
+                    "nodeType": "Return",
+                    "src": "937:8:37"
+                  }
+                },
+                {
+                  "assignments": [
+                    1197
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1197,
+                      "mutability": "mutable",
+                      "name": "currentAmount",
+                      "nameLocation": "964:13:37",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1287,
+                      "src": "956:21:37",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 1196,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "956:7:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1199,
+                  "initialValue": {
+                    "id": 1198,
+                    "name": "amountIn",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 1184,
+                    "src": "980:8:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "956:32:37"
+                },
+                {
+                  "assignments": [
+                    1201
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1201,
+                      "mutability": "mutable",
+                      "name": "currentToken",
+                      "nameLocation": "1006:12:37",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1287,
+                      "src": "998:20:37",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 1200,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "998:7:37",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1203,
+                  "initialValue": {
+                    "id": 1202,
+                    "name": "token",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 1182,
+                    "src": "1021:5:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "998:28:37"
+                },
+                {
+                  "body": {
+                    "id": 1267,
+                    "nodeType": "Block",
+                    "src": "1290:459:37",
+                    "statements": [
+                      {
+                        "assignments": [
+                          1216
+                        ],
+                        "declarations": [
+                          {
+                            "constant": false,
+                            "id": 1216,
+                            "mutability": "mutable",
+                            "name": "twap",
+                            "nameLocation": "1316:4:37",
+                            "nodeType": "VariableDeclaration",
+                            "scope": 1267,
+                            "src": "1304:16:37",
+                            "stateVariable": false,
+                            "storageLocation": "default",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                              "typeString": "contract PhantomTWAP"
+                            },
+                            "typeName": {
+                              "id": 1215,
+                              "nodeType": "UserDefinedTypeName",
+                              "pathNode": {
+                                "id": 1214,
+                                "name": "PhantomTWAP",
+                                "nodeType": "IdentifierPath",
+                                "referencedDeclaration": 1585,
+                                "src": "1304:11:37"
+                              },
+                              "referencedDeclaration": 1585,
+                              "src": "1304:11:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                                "typeString": "contract PhantomTWAP"
+                              }
+                            },
+                            "visibility": "internal"
+                          }
+                        ],
+                        "id": 1220,
+                        "initialValue": {
+                          "baseExpression": {
+                            "id": 1217,
+                            "name": "twaps",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1123,
+                            "src": "1323:5:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage",
+                              "typeString": "contract PhantomTWAP[] storage ref"
+                            }
+                          },
+                          "id": 1219,
+                          "indexExpression": {
+                            "id": 1218,
+                            "name": "i",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1205,
+                            "src": "1329:1:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1323:8:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                            "typeString": "contract PhantomTWAP"
+                          }
+                        },
+                        "nodeType": "VariableDeclarationStatement",
+                        "src": "1304:27:37"
+                      },
+                      {
+                        "assignments": [
+                          1222
+                        ],
+                        "declarations": [
+                          {
+                            "constant": false,
+                            "id": 1222,
+                            "mutability": "mutable",
+                            "name": "outAmount",
+                            "nameLocation": "1353:9:37",
+                            "nodeType": "VariableDeclaration",
+                            "scope": 1267,
+                            "src": "1345:17:37",
+                            "stateVariable": false,
+                            "storageLocation": "default",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "typeName": {
+                              "id": 1221,
+                              "name": "uint256",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "1345:7:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "visibility": "internal"
+                          }
+                        ],
+                        "id": 1228,
+                        "initialValue": {
+                          "arguments": [
+                            {
+                              "id": 1225,
+                              "name": "currentToken",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1201,
+                              "src": "1378:12:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            {
+                              "id": 1226,
+                              "name": "currentAmount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1197,
+                              "src": "1392:13:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "expression": {
+                              "id": 1223,
+                              "name": "twap",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1216,
+                              "src": "1365:4:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                                "typeString": "contract PhantomTWAP"
+                              }
+                            },
+                            "id": 1224,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "consult",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 1584,
+                            "src": "1365:12:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_uint256_$",
+                              "typeString": "function (address,uint256) view external returns (uint256)"
+                            }
+                          },
+                          "id": 1227,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1365:41:37",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "VariableDeclarationStatement",
+                        "src": "1345:61:37"
+                      },
+                      {
+                        "assignments": [
+                          1230
+                        ],
+                        "declarations": [
+                          {
+                            "constant": false,
+                            "id": 1230,
+                            "mutability": "mutable",
+                            "name": "outToken",
+                            "nameLocation": "1428:8:37",
+                            "nodeType": "VariableDeclaration",
+                            "scope": 1267,
+                            "src": "1420:16:37",
+                            "stateVariable": false,
+                            "storageLocation": "default",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            "typeName": {
+                              "id": 1229,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "1420:7:37",
+                              "stateMutability": "nonpayable",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            "visibility": "internal"
+                          }
+                        ],
+                        "id": 1243,
+                        "initialValue": {
+                          "condition": {
+                            "commonType": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            "id": 1235,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "id": 1231,
+                              "name": "token",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1182,
+                              "src": "1439:5:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "==",
+                            "rightExpression": {
+                              "arguments": [],
+                              "expression": {
+                                "argumentTypes": [],
+                                "expression": {
+                                  "id": 1232,
+                                  "name": "twap",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1216,
+                                  "src": "1448:4:37",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                                    "typeString": "contract PhantomTWAP"
+                                  }
+                                },
+                                "id": 1233,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "token0",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 1317,
+                                "src": "1448:11:37",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
+                                  "typeString": "function () view external returns (address)"
+                                }
+                              },
+                              "id": 1234,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "1448:13:37",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            "src": "1439:22:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "falseExpression": {
+                            "arguments": [],
+                            "expression": {
+                              "argumentTypes": [],
+                              "expression": {
+                                "id": 1239,
+                                "name": "twap",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1216,
+                                "src": "1481:4:37",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                                  "typeString": "contract PhantomTWAP"
+                                }
+                              },
+                              "id": 1240,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "token0",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 1317,
+                              "src": "1481:11:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
+                                "typeString": "function () view external returns (address)"
+                              }
+                            },
+                            "id": 1241,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "1481:13:37",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "id": 1242,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "Conditional",
+                          "src": "1439:55:37",
+                          "trueExpression": {
+                            "arguments": [],
+                            "expression": {
+                              "argumentTypes": [],
+                              "expression": {
+                                "id": 1236,
+                                "name": "twap",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1216,
+                                "src": "1465:4:37",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                                  "typeString": "contract PhantomTWAP"
+                                }
+                              },
+                              "id": 1237,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "token1",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 1319,
+                              "src": "1465:11:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
+                                "typeString": "function () view external returns (address)"
+                              }
+                            },
+                            "id": 1238,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "1465:13:37",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "VariableDeclarationStatement",
+                        "src": "1420:74:37"
+                      },
+                      {
+                        "assignments": [
+                          1245
+                        ],
+                        "declarations": [
+                          {
+                            "constant": false,
+                            "id": 1245,
+                            "mutability": "mutable",
+                            "name": "outDecimals",
+                            "nameLocation": "1516:11:37",
+                            "nodeType": "VariableDeclaration",
+                            "scope": 1267,
+                            "src": "1508:19:37",
+                            "stateVariable": false,
+                            "storageLocation": "default",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "typeName": {
+                              "id": 1244,
+                              "name": "uint256",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "1508:7:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "visibility": "internal"
+                          }
+                        ],
+                        "id": 1251,
+                        "initialValue": {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "id": 1247,
+                                  "name": "outToken",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1230,
+                                  "src": "1537:8:37",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                ],
+                                "id": 1246,
+                                "name": "IERC20",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1117,
+                                "src": "1530:6:37",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_IERC20_$1117_$",
+                                  "typeString": "type(contract IERC20)"
+                                }
+                              },
+                              "id": 1248,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "1530:16:37",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IERC20_$1117",
+                                "typeString": "contract IERC20"
+                              }
+                            },
+                            "id": 1249,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "decimals",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 1116,
+                            "src": "1530:25:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$__$returns$_t_uint8_$",
+                              "typeString": "function () view external returns (uint8)"
+                            }
+                          },
+                          "id": 1250,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1530:27:37",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint8",
+                            "typeString": "uint8"
+                          }
+                        },
+                        "nodeType": "VariableDeclarationStatement",
+                        "src": "1508:49:37"
+                      },
+                      {
+                        "expression": {
+                          "id": 1261,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 1252,
+                            "name": "currentAmount",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1197,
+                            "src": "1608:13:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "commonType": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "id": 1260,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "id": 1253,
+                              "name": "outAmount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1222,
+                              "src": "1624:9:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "*",
+                            "rightExpression": {
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "id": 1259,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "leftExpression": {
+                                "hexValue": "3130",
+                                "id": 1254,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "kind": "number",
+                                "lValueRequested": false,
+                                "nodeType": "Literal",
+                                "src": "1636:2:37",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_rational_10_by_1",
+                                  "typeString": "int_const 10"
+                                },
+                                "value": "10"
+                              },
+                              "nodeType": "BinaryOperation",
+                              "operator": "**",
+                              "rightExpression": {
+                                "components": [
+                                  {
+                                    "commonType": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    "id": 1257,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "leftExpression": {
+                                      "hexValue": "3138",
+                                      "id": 1255,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "kind": "number",
+                                      "lValueRequested": false,
+                                      "nodeType": "Literal",
+                                      "src": "1641:2:37",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_18_by_1",
+                                        "typeString": "int_const 18"
+                                      },
+                                      "value": "18"
+                                    },
+                                    "nodeType": "BinaryOperation",
+                                    "operator": "-",
+                                    "rightExpression": {
+                                      "id": 1256,
+                                      "name": "outDecimals",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 1245,
+                                      "src": "1646:11:37",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "src": "1641:16:37",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  }
+                                ],
+                                "id": 1258,
+                                "isConstant": false,
+                                "isInlineArray": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "nodeType": "TupleExpression",
+                                "src": "1640:18:37",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "src": "1636:22:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "src": "1624:34:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "1608:50:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 1262,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1608:50:37"
+                      },
+                      {
+                        "expression": {
+                          "id": 1265,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 1263,
+                            "name": "currentToken",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1201,
+                            "src": "1715:12:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "id": 1264,
+                            "name": "outToken",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1230,
+                            "src": "1730:8:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "src": "1715:23:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "id": 1266,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1715:23:37"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 1210,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 1207,
+                      "name": "i",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1205,
+                      "src": "1267:1:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "expression": {
+                        "id": 1208,
+                        "name": "twaps",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1123,
+                        "src": "1271:5:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage",
+                          "typeString": "contract PhantomTWAP[] storage ref"
+                        }
+                      },
+                      "id": 1209,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "src": "1271:12:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1267:16:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1268,
+                  "initializationExpression": {
+                    "assignments": [
+                      1205
+                    ],
+                    "declarations": [
+                      {
+                        "constant": false,
+                        "id": 1205,
+                        "mutability": "mutable",
+                        "name": "i",
+                        "nameLocation": "1264:1:37",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 1268,
+                        "src": "1256:9:37",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 1204,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "1256:7:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "id": 1206,
+                    "nodeType": "VariableDeclarationStatement",
+                    "src": "1256:9:37"
+                  },
+                  "loopExpression": {
+                    "expression": {
+                      "id": 1212,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "++",
+                      "prefix": false,
+                      "src": "1285:3:37",
+                      "subExpression": {
+                        "id": 1211,
+                        "name": "i",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1205,
+                        "src": "1285:1:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 1213,
+                    "nodeType": "ExpressionStatement",
+                    "src": "1285:3:37"
+                  },
+                  "nodeType": "ForStatement",
+                  "src": "1251:498:37"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 1272,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 1270,
+                          "name": "currentToken",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1201,
+                          "src": "1767:12:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 1271,
+                          "name": "FRAX",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1126,
+                          "src": "1783:4:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1767:20:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "5068616e746f6d426f6e6450726963696e673a206c6173742070616972206d75737420626520465241582f50484d",
+                        "id": 1273,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1789:48:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_902e81b0a8a7905e8d4cf06b2f9f2599cf2020c058e7d8d03095c2f1978d5935",
+                          "typeString": "literal_string \"PhantomBondPricing: last pair must be FRAX/PHM\""
+                        },
+                        "value": "PhantomBondPricing: last pair must be FRAX/PHM"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_902e81b0a8a7905e8d4cf06b2f9f2599cf2020c058e7d8d03095c2f1978d5935",
+                          "typeString": "literal_string \"PhantomBondPricing: last pair must be FRAX/PHM\""
+                        }
+                      ],
+                      "id": 1269,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "1759:7:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 1274,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1759:79:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1275,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1759:79:37"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 1283,
+                        "name": "currentToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1201,
+                        "src": "1886:12:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 1284,
+                        "name": "currentAmount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1197,
+                        "src": "1900:13:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "baseExpression": {
+                          "id": 1276,
+                          "name": "twaps",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1123,
+                          "src": "1856:5:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage",
+                            "typeString": "contract PhantomTWAP[] storage ref"
+                          }
+                        },
+                        "id": 1281,
+                        "indexExpression": {
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "id": 1280,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "expression": {
+                              "id": 1277,
+                              "name": "twaps",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1123,
+                              "src": "1862:5:37",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_contract$_PhantomTWAP_$1585_$dyn_storage",
+                                "typeString": "contract PhantomTWAP[] storage ref"
+                              }
+                            },
+                            "id": 1278,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "length",
+                            "nodeType": "MemberAccess",
+                            "src": "1862:12:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "-",
+                          "rightExpression": {
+                            "hexValue": "31",
+                            "id": 1279,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1875:1:37",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_1_by_1",
+                              "typeString": "int_const 1"
+                            },
+                            "value": "1"
+                          },
+                          "src": "1862:14:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "1856:21:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_PhantomTWAP_$1585",
+                          "typeString": "contract PhantomTWAP"
+                        }
+                      },
+                      "id": 1282,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "consult",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1584,
+                      "src": "1856:29:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (address,uint256) view external returns (uint256)"
+                      }
+                    },
+                    "id": 1285,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1856:58:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 1189,
+                  "id": 1286,
+                  "nodeType": "Return",
+                  "src": "1849:65:37"
+                }
+              ]
+            },
+            "functionSelector": "3ddac953",
+            "id": 1288,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "consult",
+            "nameLocation": "832:7:37",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 1186,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "884:8:37"
+            },
+            "parameters": {
+              "id": 1185,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1182,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nameLocation": "848:5:37",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1288,
+                  "src": "840:13:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1181,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "840:7:37",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1184,
+                  "mutability": "mutable",
+                  "name": "amountIn",
+                  "nameLocation": "860:8:37",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1288,
+                  "src": "855:13:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1183,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "855:4:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "839:30:37"
+            },
+            "returnParameters": {
+              "id": 1189,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1188,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1288,
+                  "src": "902:4:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1187,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "902:4:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "901:6:37"
+            },
+            "scope": 1289,
+            "src": "823:1098:37",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1290,
+        "src": "255:1668:37",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:1889:37"
+  },
+  "bytecode": "",
+  "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.10+commit.fc410830"
+  },
+  "contractName": "IERC20",
+  "coverageMap": {
+    "branches": {},
+    "statements": {}
+  },
+  "dependencies": [],
+  "deployedBytecode": "",
+  "deployedSourceMap": "",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    179,
+    253
+  ],
+  "opcodes": "",
+  "pcMap": {},
+  "sha1": "c068fe3c4454c16e3ab485d81dd49b32e4969df8",
+  "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n\nimport {IPhantomTWAP} from \"../../interfaces/core/IPhantomTWAP.sol\";\nimport {PhantomTWAP} from \"./PhantomTWAP.sol\";\n\ninterface IERC20 {\n    function decimals() external view returns(uint8);\n}\n\ncontract PhantomBondPricing is IPhantomTWAP {\n\n    PhantomTWAP[] private twaps;\n\n    address constant FRAX = 0xaf319E5789945197e365E7f7fbFc56B130523B33;\n    \n    constructor(address[] memory twaps_) public {\n        for (uint i = 0; i < twaps.length; i++) {\n            twaps.push(PhantomTWAP(twaps_[i]));\n        }\n    }\n\n    function update() external override {\n        for (uint i = 0; i < twaps.length; i++) {\n            twaps[i].update();\n        }\n    }\n\n    // note this will always return 0 before update has been called successfully for the first time.\n    function consult(address token, uint amountIn) external view override returns (uint) {\n        if (amountIn == 0) return 0;\n\n        uint256 currentAmount = amountIn;\n        address currentToken = token;\n\n        // Pretty (super) Ghetto. Assumes there is matching sides for each step of the path. \n        // EG: gOMH/wFTM > wFTM/FRAX > FRAX/PHM (last pair must be FRAX/PHM)\n        // TODO: unghetto this whole thing\n        for (uint256 i; i < twaps.length; i++) {\n            PhantomTWAP twap = twaps[i];\n            uint256 outAmount = twap.consult(currentToken, currentAmount);\n            address outToken = token == twap.token0()  ? twap.token1() : twap.token0();\n            uint256 outDecimals = IERC20(outToken).decimals();\n\n            // check decimal places\n            currentAmount = outAmount * 10**(18 - outDecimals); // Pad to Match 18 FRAX decimals if needed\n            currentToken = outToken;\n        }\n\n        require(currentToken == FRAX, \"PhantomBondPricing: last pair must be FRAX/PHM\");\n\n        return twaps[twaps.length-1].consult(currentToken, currentAmount);\n    }\n}\n",
+  "sourceMap": "",
+  "sourcePath": "contracts/core/PhantomBondPricing.sol",
+  "type": "interface"
+}

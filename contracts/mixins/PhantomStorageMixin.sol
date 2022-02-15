@@ -23,7 +23,6 @@ import {IPhantomStaking} from "../../interfaces/level0/staking/IPhantomStaking.s
 import {IPhantomStorage} from "../../interfaces/storage/IPhantomStorage.sol";
 import {IPhantomTreasury} from "../../interfaces/core/IPhantomTreasury.sol";
 import {IPhantomTWAP} from "../../interfaces/core/IPhantomTWAP.sol";
-import {IPhantomTWAPAggregator} from "../../interfaces/core/IPhantomTWAPAggregator.sol";
 import {IPhantomVault} from "../../interfaces/core/IPhantomVault.sol";
 import {IPhantomStorageFactory} from "../../interfaces/storage/IPhantomStorageFactory.sol";
 import {IPhantomStorageMixin} from "../../interfaces/mixins/IPhantomStorageMixin.sol";
@@ -132,9 +131,9 @@ contract PhantomStorageMixin is PhantomStorageKeys, ReentrancyGuard, IPhantomSto
         return IPhantomTWAP(PhantomStorage().getAddress(keccak256(abi.encodePacked(phantom.contracts.twap, token))));
     }
 
-    function PhantomTWAPAggregator(address token) internal view returns (IPhantomTWAPAggregator) {
+    function PhantomBondPricing(address token) internal view returns (IPhantomTWAP) {
         // Returns the address of the desired oracle for a given bonding token
-        return IPhantomTWAPAggregator(PhantomStorage().getAddress(keccak256(
+        return IPhantomTWAP(PhantomStorage().getAddress(keccak256(
             abi.encodePacked(abi.encodePacked(phantom.contracts.bondpricing, token))
         )));
     }

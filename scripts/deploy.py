@@ -63,6 +63,11 @@ def main(account):
     # Founders
     deploy_founders(acct)
 
+    # Dutch Auction Claim
+    deploy_da_claim(acct)
+
+    #########
+
     #########
     # Level 1 contracts
     #########
@@ -218,7 +223,7 @@ def deploy_admin(acct):
             guard.permit['address','address','bytes4'](
                 POLICY_MULTISIG, 
                 admin.address, 
-                admin.setBondLimit.signature,
+                admin.setDebtLimit.signature,
                 {"from": acct},
             )
             guard.permit['address','address','bytes4'](
@@ -239,18 +244,6 @@ def deploy_admin(acct):
                 admin.setBondingMultiplierFor.signature,
                 {"from": acct},
             )
-            #guard.permit['address','address','bytes4'](
-                #POLICY_MULTISIG, 
-                #admin.address, 
-                #admin.deployBondPricingTWAP.signature,
-                #{"from": acct},
-            #)
-            #guard.permit['address','address','bytes4'](
-                #POLICY_MULTISIG, 
-                #admin.address, 
-                #admin.deployTWAP.signature,
-                #{"from": acct},
-            #)
             guard.permit['address','address','bytes4'](
                 POLICY_MULTISIG, 
                 admin.address, 
@@ -380,6 +373,17 @@ def deploy_founders(acct):
         founders = PhantomFounders.deploy(storage.address, {"from": acct}, publish_source=publish())
         storage.registerContract(b"phantom.contracts.founders", founders.address, {"from": acct})
         return founders
+
+
+def deploy_da_claim(acct):
+    token = '0xdc301622e621166bd8e82f2ca0a26c13ad0be355' if publish() else '0xd73c5eCa030f6FF6b46fAa727621087D36FDe23f'
+    if is_deployed('PhantomAuctionClaim'):
+        return PhantomAuctionClaim.at(CONTRACTS[network.show_active()]['PhantomAuctionClaim'])
+    else:
+        storage = fetch_storage_contract()
+        auction_claim = PhantomAuctionClaim.deploy(storage.address, token, {"from": acct}, publish_source=publish())
+        storage.registerContract(b"phantom.contracts.auctionclaim",auction_claim.address, {"from": acct})
+        return auction_claim
 
 
 def deploy_governace(acct):

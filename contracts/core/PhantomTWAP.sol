@@ -2,9 +2,9 @@
 pragma solidity =0.8.10;
 
 import {IUniswapV2Pair} from "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol";
-import {FixedPoint} from '../libs/FixedPoint.sol';
+import '../libs/FixedPoint.sol';
 
-import {UniswapV2OracleLibrary} from '../libs/UniswapV2OracleLibrary.sol';
+import '../libs/UniswapV2OracleLibrary.sol';
 import {IUniswapV2Router02} from "../../../../interfaces/libs/IUniswapV2Router02.sol";
 
 import {IPhantomTWAP} from "../../interfaces/core/IPhantomTWAP.sol";
@@ -17,8 +17,8 @@ contract PhantomTWAP is IPhantomTWAP {
     uint    public constant PERIOD = 30 minutes;
 
     IUniswapV2Pair immutable pair;
-    address immutable _token0;
-    address immutable _token1;
+    address public immutable token0;
+    address public immutable token1;
 
     uint    public price0CumulativeLast;
     uint    public price1CumulativeLast;
@@ -26,24 +26,16 @@ contract PhantomTWAP is IPhantomTWAP {
     FixedPoint.uq112x112 public price0Average;
     FixedPoint.uq112x112 public price1Average;
 
-    constructor(address pair_) {
+    constructor(address pair_) public {
         pair = IUniswapV2Pair(pair_);
-        _token0 = pair.token0();
-        _token1 = pair.token1();
+        token0 = pair.token0();
+        token1 = pair.token1();
         price0CumulativeLast = pair.price0CumulativeLast(); // fetch the current accumulated price value (1 / 0)
         price1CumulativeLast = pair.price1CumulativeLast(); // fetch the current accumulated price value (0 / 1)
         uint112 reserve0;
         uint112 reserve1;
         (reserve0, reserve1, blockTimestampLast) = pair.getReserves();
         require(reserve0 != 0 && reserve1 != 0, 'PhantomTWAP: NO_RESERVES'); // ensure that there's liquidity in the pair
-    }
-
-    function token0() public override returns (address) {
-        return _token0;
-    }
-
-    function token1() public override returns (address) {
-        return _token1;
     }
 
     function update() external override {
@@ -87,10 +79,10 @@ contract PhantomTWAP is IPhantomTWAP {
             }
         }
 
-        if (token == _token0) {
+        if (token == token0) {
             amountOut = price0Average_.mul(amountIn).decode144();
         } else {
-            require(token == _token1, 'PhantomTWAP: INVALID_TOKEN');
+            require(token == token1, 'PhantomTWAP: INVALID_TOKEN');
             amountOut = price1Average_.mul(amountIn).decode144();
         }
     }
