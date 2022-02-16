@@ -74,41 +74,41 @@
     }
   ],
   "allSourcePaths": {
-    "100": "interfaces/mixins/IPhantomStorageMixin.sol",
+    "101": "interfaces/mixins/IPhantomStorageMixin.sol",
     "11": "/Users/admin/.brownie/packages/OpenZeppelin/openzeppelin-contracts@4.3.2/contracts/security/ReentrancyGuard.sol",
     "30": "/Users/admin/.brownie/packages/hifi-finance/prb-math@2.4.1/contracts/PRBMath.sol",
     "32": "/Users/admin/.brownie/packages/hifi-finance/prb-math@2.4.1/contracts/PRBMathUD60x18.sol",
-    "59": "contracts/level1/launch/PhantomLaunch.sol",
-    "67": "contracts/mixins/PhantomStorageMixin.sol",
-    "74": "contracts/storage/PhantomStorageKeys.sol",
-    "92": "interfaces/level0/launch/IPhantomAuctionClaim.sol",
-    "97": "interfaces/level1/launch/IPhantomLaunch.sol"
+    "60": "contracts/level1/launch/PhantomLaunch.sol",
+    "68": "contracts/mixins/PhantomStorageMixin.sol",
+    "75": "contracts/storage/PhantomStorageKeys.sol",
+    "93": "interfaces/level0/launch/IPhantomAuctionClaim.sol",
+    "98": "interfaces/level1/launch/IPhantomLaunch.sol"
   },
   "ast": {
     "absolutePath": "contracts/level1/launch/PhantomLaunch.sol",
     "exportedSymbols": {
       "IPhantomAuctionClaim": [
-        17613
+        20206
       ],
       "IPhantomLaunch": [
-        19970
+        22563
       ],
       "PRBMathUD60x18": [
-        13772
+        16365
       ],
       "PhantomLaunch": [
-        9130
+        11723
       ],
       "PhantomStorageMixin": [
-        11418
+        14011
       ]
     },
-    "id": 9131,
+    "id": 11724,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9032,
+        "id": 11625,
         "literals": [
           "solidity",
           "=",
@@ -116,25 +116,25 @@
           ".10"
         ],
         "nodeType": "PragmaDirective",
-        "src": "35:24:59"
+        "src": "35:24:60"
       },
       {
         "absolutePath": "/Users/admin/.brownie/packages/hifi-finance/prb-math@2.4.1/contracts/PRBMathUD60x18.sol",
         "file": "@hifi-finance/prb-math/contracts/PRBMathUD60x18.sol",
-        "id": 9034,
+        "id": 11627,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 9131,
-        "sourceUnit": 13773,
-        "src": "83:83:59",
+        "scope": 11724,
+        "sourceUnit": 16366,
+        "src": "83:83:60",
         "symbolAliases": [
           {
             "foreign": {
-              "id": 9033,
+              "id": 11626,
               "name": "PRBMathUD60x18",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "src": "91:14:59",
+              "src": "91:14:60",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -145,20 +145,20 @@
       {
         "absolutePath": "contracts/mixins/PhantomStorageMixin.sol",
         "file": "../../mixins/PhantomStorageMixin.sol",
-        "id": 9036,
+        "id": 11629,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 9131,
-        "sourceUnit": 11419,
-        "src": "191:73:59",
+        "scope": 11724,
+        "sourceUnit": 14012,
+        "src": "191:73:60",
         "symbolAliases": [
           {
             "foreign": {
-              "id": 9035,
+              "id": 11628,
               "name": "PhantomStorageMixin",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "src": "199:19:59",
+              "src": "199:19:60",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -169,20 +169,20 @@
       {
         "absolutePath": "interfaces/level1/launch/IPhantomLaunch.sol",
         "file": "../../../interfaces/level1/launch/IPhantomLaunch.sol",
-        "id": 9038,
+        "id": 11631,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 9131,
-        "sourceUnit": 19971,
-        "src": "299:84:59",
+        "scope": 11724,
+        "sourceUnit": 22564,
+        "src": "299:84:60",
         "symbolAliases": [
           {
             "foreign": {
-              "id": 9037,
+              "id": 11630,
               "name": "IPhantomLaunch",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "src": "307:14:59",
+              "src": "307:14:60",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -193,20 +193,20 @@
       {
         "absolutePath": "interfaces/level0/launch/IPhantomAuctionClaim.sol",
         "file": "../../../interfaces/level0/launch/IPhantomAuctionClaim.sol",
-        "id": 9040,
+        "id": 11633,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 9131,
-        "sourceUnit": 17614,
-        "src": "384:96:59",
+        "scope": 11724,
+        "sourceUnit": 20207,
+        "src": "384:96:60",
         "symbolAliases": [
           {
             "foreign": {
-              "id": 9039,
+              "id": 11632,
               "name": "IPhantomAuctionClaim",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "src": "392:20:59",
+              "src": "392:20:60",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -219,68 +219,68 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 9042,
+              "id": 11635,
               "name": "PhantomStorageMixin",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 11418,
-              "src": "629:19:59"
+              "referencedDeclaration": 14011,
+              "src": "629:19:60"
             },
-            "id": 9043,
+            "id": 11636,
             "nodeType": "InheritanceSpecifier",
-            "src": "629:19:59"
+            "src": "629:19:60"
           },
           {
             "baseName": {
-              "id": 9044,
+              "id": 11637,
               "name": "IPhantomLaunch",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 19970,
-              "src": "650:14:59"
+              "referencedDeclaration": 22563,
+              "src": "650:14:60"
             },
-            "id": 9045,
+            "id": 11638,
             "nodeType": "InheritanceSpecifier",
-            "src": "650:14:59"
+            "src": "650:14:60"
           }
         ],
         "canonicalName": "PhantomLaunch",
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 9041,
+          "id": 11634,
           "nodeType": "StructuredDocumentation",
-          "src": "482:120:59",
+          "src": "482:120:60",
           "text": " @title PhantomLaunch\n @author PhantomDao Team\n @notice The dApp facing contract used for launch functions"
         },
         "fullyImplemented": true,
-        "id": 9130,
+        "id": 11723,
         "linearizedBaseContracts": [
-          9130,
-          19970,
-          11418,
-          20026,
-          20010,
-          13028
+          11723,
+          22563,
+          14011,
+          22619,
+          22603,
+          15621
         ],
         "name": "PhantomLaunch",
-        "nameLocation": "612:13:59",
+        "nameLocation": "612:13:60",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 9048,
+            "id": 11641,
             "libraryName": {
-              "id": 9046,
+              "id": 11639,
               "name": "PRBMathUD60x18",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 13772,
-              "src": "677:14:59"
+              "referencedDeclaration": 16365,
+              "src": "677:14:60"
             },
             "nodeType": "UsingForDirective",
-            "src": "671:33:59",
+            "src": "671:33:60",
             "typeName": {
-              "id": 9047,
+              "id": 11640,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "696:7:59",
+              "src": "696:7:60",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -289,66 +289,66 @@
           },
           {
             "body": {
-              "id": 9057,
+              "id": 11650,
               "nodeType": "Block",
-              "src": "796:23:59",
+              "src": "796:23:60",
               "statements": [
                 {
-                  "functionReturnParameters": 9055,
-                  "id": 9056,
+                  "functionReturnParameters": 11648,
+                  "id": 11649,
                   "nodeType": "Return",
-                  "src": "806:7:59"
+                  "src": "806:7:60"
                 }
               ]
             },
-            "id": 9058,
+            "id": 11651,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 9053,
+                    "id": 11646,
                     "name": "storageFactoryAddress",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 9050,
-                    "src": "773:21:59",
+                    "referencedDeclaration": 11643,
+                    "src": "773:21:60",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   }
                 ],
-                "id": 9054,
+                "id": 11647,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 9052,
+                  "id": 11645,
                   "name": "PhantomStorageMixin",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 11418,
-                  "src": "753:19:59"
+                  "referencedDeclaration": 14011,
+                  "src": "753:19:60"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "753:42:59"
+                "src": "753:42:60"
               }
             ],
             "name": "",
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9051,
+              "id": 11644,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9050,
+                  "id": 11643,
                   "mutability": "mutable",
                   "name": "storageFactoryAddress",
-                  "nameLocation": "730:21:59",
+                  "nameLocation": "730:21:60",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9058,
-                  "src": "722:29:59",
+                  "scope": 11651,
+                  "src": "722:29:60",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -356,10 +356,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9049,
+                    "id": 11642,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "722:7:59",
+                    "src": "722:7:60",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -369,70 +369,70 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "721:31:59"
+              "src": "721:31:60"
             },
             "returnParameters": {
-              "id": 9055,
+              "id": 11648,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "796:0:59"
+              "src": "796:0:60"
             },
-            "scope": 9130,
-            "src": "710:109:59",
+            "scope": 11723,
+            "src": "710:109:60",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "baseFunctions": [
-              19957
+              22550
             ],
             "body": {
-              "id": 9086,
+              "id": 11679,
               "nodeType": "Block",
-              "src": "1144:196:59",
+              "src": "1144:196:60",
               "statements": [
                 {
                   "assignments": [
-                    9066
+                    11659
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 9066,
+                      "id": 11659,
                       "mutability": "mutable",
                       "name": "claim",
-                      "nameLocation": "1175:5:59",
+                      "nameLocation": "1175:5:60",
                       "nodeType": "VariableDeclaration",
-                      "scope": 9086,
-                      "src": "1154:26:59",
+                      "scope": 11679,
+                      "src": "1154:26:60",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IPhantomAuctionClaim_$17613",
+                        "typeIdentifier": "t_contract$_IPhantomAuctionClaim_$20206",
                         "typeString": "contract IPhantomAuctionClaim"
                       },
                       "typeName": {
-                        "id": 9065,
+                        "id": 11658,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 9064,
+                          "id": 11657,
                           "name": "IPhantomAuctionClaim",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 17613,
-                          "src": "1154:20:59"
+                          "referencedDeclaration": 20206,
+                          "src": "1154:20:60"
                         },
-                        "referencedDeclaration": 17613,
-                        "src": "1154:20:59",
+                        "referencedDeclaration": 20206,
+                        "src": "1154:20:60",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IPhantomAuctionClaim_$17613",
+                          "typeIdentifier": "t_contract$_IPhantomAuctionClaim_$20206",
                           "typeString": "contract IPhantomAuctionClaim"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 9078,
+                  "id": 11671,
                   "initialValue": {
                     "arguments": [
                       {
@@ -442,40 +442,40 @@
                               {
                                 "expression": {
                                   "expression": {
-                                    "id": 9072,
+                                    "id": 11665,
                                     "name": "phantom",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 12822,
-                                    "src": "1255:7:59",
+                                    "referencedDeclaration": 15415,
+                                    "src": "1255:7:60",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_struct$__phantom_$12854_storage",
+                                      "typeIdentifier": "t_struct$__phantom_$15447_storage",
                                       "typeString": "struct PhantomStorageKeys._phantom storage ref"
                                     }
                                   },
-                                  "id": 9073,
+                                  "id": 11666,
                                   "isConstant": false,
                                   "isLValue": true,
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "memberName": "contracts",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 12832,
-                                  "src": "1255:17:59",
+                                  "referencedDeclaration": 15425,
+                                  "src": "1255:17:60",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$__contracts_$13018_storage",
+                                    "typeIdentifier": "t_struct$__contracts_$15611_storage",
                                     "typeString": "struct PhantomStorageKeys._contracts storage ref"
                                   }
                                 },
-                                "id": 9074,
+                                "id": 11667,
                                 "isConstant": false,
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "auctionclaim",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 13017,
-                                "src": "1255:30:59",
+                                "referencedDeclaration": 15610,
+                                "src": "1255:30:60",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bytes_storage",
                                   "typeString": "bytes storage ref"
@@ -489,18 +489,18 @@
                                   "typeString": "bytes storage ref"
                                 }
                               ],
-                              "id": 9071,
+                              "id": 11664,
                               "name": "keccak256",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": -8,
-                              "src": "1245:9:59",
+                              "src": "1245:9:60",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                                 "typeString": "function (bytes memory) pure returns (bytes32)"
                               }
                             },
-                            "id": 9075,
+                            "id": 11668,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -508,7 +508,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "1245:41:59",
+                            "src": "1245:41:60",
                             "tryCall": false,
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -527,18 +527,18 @@
                             "arguments": [],
                             "expression": {
                               "argumentTypes": [],
-                              "id": 9068,
+                              "id": 11661,
                               "name": "PhantomStorage",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 10786,
-                              "src": "1217:14:59",
+                              "referencedDeclaration": 13379,
+                              "src": "1217:14:60",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomStorage_$20376_$",
+                                "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomStorage_$22969_$",
                                 "typeString": "function () view returns (contract IPhantomStorage)"
                               }
                             },
-                            "id": 9069,
+                            "id": 11662,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -546,28 +546,28 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "1217:16:59",
+                            "src": "1217:16:60",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IPhantomStorage_$20376",
+                              "typeIdentifier": "t_contract$_IPhantomStorage_$22969",
                               "typeString": "contract IPhantomStorage"
                             }
                           },
-                          "id": 9070,
+                          "id": 11663,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "getAddress",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 20088,
-                          "src": "1217:27:59",
+                          "referencedDeclaration": 22681,
+                          "src": "1217:27:60",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_bytes32_$returns$_t_address_$",
                             "typeString": "function (bytes32) view external returns (address)"
                           }
                         },
-                        "id": 9076,
+                        "id": 11669,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -575,7 +575,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1217:70:59",
+                        "src": "1217:70:60",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -590,18 +590,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 9067,
+                      "id": 11660,
                       "name": "IPhantomAuctionClaim",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 17613,
-                      "src": "1183:20:59",
+                      "referencedDeclaration": 20206,
+                      "src": "1183:20:60",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IPhantomAuctionClaim_$17613_$",
+                        "typeIdentifier": "t_type$_t_contract$_IPhantomAuctionClaim_$20206_$",
                         "typeString": "type(contract IPhantomAuctionClaim)"
                       }
                     },
-                    "id": 9077,
+                    "id": 11670,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -609,40 +609,40 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1183:114:59",
+                    "src": "1183:114:60",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IPhantomAuctionClaim_$17613",
+                      "typeIdentifier": "t_contract$_IPhantomAuctionClaim_$20206",
                       "typeString": "contract IPhantomAuctionClaim"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1154:143:59"
+                  "src": "1154:143:60"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
                         "expression": {
-                          "id": 9082,
+                          "id": 11675,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": -15,
-                          "src": "1322:3:59",
+                          "src": "1322:3:60",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 9083,
+                        "id": 11676,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "src": "1322:10:59",
+                        "src": "1322:10:60",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -657,32 +657,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 9079,
+                        "id": 11672,
                         "name": "claim",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9066,
-                        "src": "1307:5:59",
+                        "referencedDeclaration": 11659,
+                        "src": "1307:5:60",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IPhantomAuctionClaim_$17613",
+                          "typeIdentifier": "t_contract$_IPhantomAuctionClaim_$20206",
                           "typeString": "contract IPhantomAuctionClaim"
                         }
                       },
-                      "id": 9081,
+                      "id": 11674,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "purchase",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17605,
-                      "src": "1307:14:59",
+                      "referencedDeclaration": 20198,
+                      "src": "1307:14:60",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address) external"
                       }
                     },
-                    "id": 9084,
+                    "id": 11677,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -690,98 +690,98 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1307:26:59",
+                    "src": "1307:26:60",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9085,
+                  "id": 11678,
                   "nodeType": "ExpressionStatement",
-                  "src": "1307:26:59"
+                  "src": "1307:26:60"
                 }
               ]
             },
             "functionSelector": "3e43061c",
-            "id": 9087,
+            "id": 11680,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 9062,
+                "id": 11655,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 9061,
+                  "id": 11654,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 20009,
-                  "src": "1131:12:59"
+                  "referencedDeclaration": 22602,
+                  "src": "1131:12:60"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1131:12:59"
+                "src": "1131:12:60"
               }
             ],
             "name": "claimAPHM",
-            "nameLocation": "1101:9:59",
+            "nameLocation": "1101:9:60",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 9060,
+              "id": 11653,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
-              "src": "1122:8:59"
+              "src": "1122:8:60"
             },
             "parameters": {
-              "id": 9059,
+              "id": 11652,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1110:2:59"
+              "src": "1110:2:60"
             },
             "returnParameters": {
-              "id": 9063,
+              "id": 11656,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1144:0:59"
+              "src": "1144:0:60"
             },
-            "scope": 9130,
-            "src": "1092:248:59",
+            "scope": 11723,
+            "src": "1092:248:60",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "baseFunctions": [
-              19961
+              22554
             ],
             "body": {
-              "id": 9100,
+              "id": 11693,
               "nodeType": "Block",
-              "src": "1397:52:59",
+              "src": "1397:52:60",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
                         "expression": {
-                          "id": 9096,
+                          "id": 11689,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": -15,
-                          "src": "1431:3:59",
+                          "src": "1431:3:60",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 9097,
+                        "id": 11690,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "src": "1431:10:59",
+                        "src": "1431:10:60",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -799,18 +799,18 @@
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 9093,
+                          "id": 11686,
                           "name": "PhantomAlphaSwap",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11006,
-                          "src": "1407:16:59",
+                          "referencedDeclaration": 13599,
+                          "src": "1407:16:60",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomAlphaSwap_$17590_$",
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomAlphaSwap_$20183_$",
                             "typeString": "function () view returns (contract IPhantomAlphaSwap)"
                           }
                         },
-                        "id": 9094,
+                        "id": 11687,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -818,28 +818,28 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1407:18:59",
+                        "src": "1407:18:60",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IPhantomAlphaSwap_$17590",
+                          "typeIdentifier": "t_contract$_IPhantomAlphaSwap_$20183",
                           "typeString": "contract IPhantomAlphaSwap"
                         }
                       },
-                      "id": 9095,
+                      "id": 11688,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "swap",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17589,
-                      "src": "1407:23:59",
+                      "referencedDeclaration": 20182,
+                      "src": "1407:23:60",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address) external"
                       }
                     },
-                    "id": 9098,
+                    "id": 11691,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -847,98 +847,98 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1407:35:59",
+                    "src": "1407:35:60",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9099,
+                  "id": 11692,
                   "nodeType": "ExpressionStatement",
-                  "src": "1407:35:59"
+                  "src": "1407:35:60"
                 }
               ]
             },
             "functionSelector": "f4860e4f",
-            "id": 9101,
+            "id": 11694,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 9091,
+                "id": 11684,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 9090,
+                  "id": 11683,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 20009,
-                  "src": "1384:12:59"
+                  "referencedDeclaration": 22602,
+                  "src": "1384:12:60"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1384:12:59"
+                "src": "1384:12:60"
               }
             ],
             "name": "swapAPHM",
-            "nameLocation": "1355:8:59",
+            "nameLocation": "1355:8:60",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 9089,
+              "id": 11682,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
-              "src": "1375:8:59"
+              "src": "1375:8:60"
             },
             "parameters": {
-              "id": 9088,
+              "id": 11681,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1363:2:59"
+              "src": "1363:2:60"
             },
             "returnParameters": {
-              "id": 9092,
+              "id": 11685,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1397:0:59"
+              "src": "1397:0:60"
             },
-            "scope": 9130,
-            "src": "1346:103:59",
+            "scope": 11723,
+            "src": "1346:103:60",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "baseFunctions": [
-              19965
+              22558
             ],
             "body": {
-              "id": 9114,
+              "id": 11707,
               "nodeType": "Block",
-              "src": "1507:52:59",
+              "src": "1507:52:60",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
                         "expression": {
-                          "id": 9110,
+                          "id": 11703,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": -15,
-                          "src": "1541:3:59",
+                          "src": "1541:3:60",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 9111,
+                        "id": 11704,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "src": "1541:10:59",
+                        "src": "1541:10:60",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -956,18 +956,18 @@
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 9107,
+                          "id": 11700,
                           "name": "PhantomFounders",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11025,
-                          "src": "1517:15:59",
+                          "referencedDeclaration": 13618,
+                          "src": "1517:15:60",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomFounders_$17648_$",
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomFounders_$20241_$",
                             "typeString": "function () view returns (contract IPhantomFounders)"
                           }
                         },
-                        "id": 9108,
+                        "id": 11701,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -975,28 +975,28 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1517:17:59",
+                        "src": "1517:17:60",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IPhantomFounders_$17648",
+                          "typeIdentifier": "t_contract$_IPhantomFounders_$20241",
                           "typeString": "contract IPhantomFounders"
                         }
                       },
-                      "id": 9109,
+                      "id": 11702,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "claim",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17641,
-                      "src": "1517:23:59",
+                      "referencedDeclaration": 20234,
+                      "src": "1517:23:60",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address) external"
                       }
                     },
-                    "id": 9112,
+                    "id": 11705,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1004,98 +1004,98 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1517:35:59",
+                    "src": "1517:35:60",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9113,
+                  "id": 11706,
                   "nodeType": "ExpressionStatement",
-                  "src": "1517:35:59"
+                  "src": "1517:35:60"
                 }
               ]
             },
             "functionSelector": "c22a3e5b",
-            "id": 9115,
+            "id": 11708,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 9105,
+                "id": 11698,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 9104,
+                  "id": 11697,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 20009,
-                  "src": "1494:12:59"
+                  "referencedDeclaration": 22602,
+                  "src": "1494:12:60"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1494:12:59"
+                "src": "1494:12:60"
               }
             ],
             "name": "claimFPHM",
-            "nameLocation": "1464:9:59",
+            "nameLocation": "1464:9:60",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 9103,
+              "id": 11696,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
-              "src": "1485:8:59"
+              "src": "1485:8:60"
             },
             "parameters": {
-              "id": 9102,
+              "id": 11695,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1473:2:59"
+              "src": "1473:2:60"
             },
             "returnParameters": {
-              "id": 9106,
+              "id": 11699,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1507:0:59"
+              "src": "1507:0:60"
             },
-            "scope": 9130,
-            "src": "1455:104:59",
+            "scope": 11723,
+            "src": "1455:104:60",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "baseFunctions": [
-              19969
+              22562
             ],
             "body": {
-              "id": 9128,
+              "id": 11721,
               "nodeType": "Block",
-              "src": "1620:55:59",
+              "src": "1620:55:60",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
                         "expression": {
-                          "id": 9124,
+                          "id": 11717,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": -15,
-                          "src": "1657:3:59",
+                          "src": "1657:3:60",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 9125,
+                        "id": 11718,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "src": "1657:10:59",
+                        "src": "1657:10:60",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1113,18 +1113,18 @@
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 9121,
+                          "id": 11714,
                           "name": "PhantomFounders",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11025,
-                          "src": "1630:15:59",
+                          "referencedDeclaration": 13618,
+                          "src": "1630:15:60",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomFounders_$17648_$",
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IPhantomFounders_$20241_$",
                             "typeString": "function () view returns (contract IPhantomFounders)"
                           }
                         },
-                        "id": 9122,
+                        "id": 11715,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1132,28 +1132,28 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1630:17:59",
+                        "src": "1630:17:60",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IPhantomFounders_$17648",
+                          "typeIdentifier": "t_contract$_IPhantomFounders_$20241",
                           "typeString": "contract IPhantomFounders"
                         }
                       },
-                      "id": 9123,
+                      "id": 11716,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "exercise",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17647,
-                      "src": "1630:26:59",
+                      "referencedDeclaration": 20240,
+                      "src": "1630:26:60",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address) external"
                       }
                     },
-                    "id": 9126,
+                    "id": 11719,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1161,76 +1161,76 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1630:38:59",
+                    "src": "1630:38:60",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9127,
+                  "id": 11720,
                   "nodeType": "ExpressionStatement",
-                  "src": "1630:38:59"
+                  "src": "1630:38:60"
                 }
               ]
             },
             "functionSelector": "c1e262e5",
-            "id": 9129,
+            "id": 11722,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 9119,
+                "id": 11712,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 9118,
+                  "id": 11711,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 20009,
-                  "src": "1607:12:59"
+                  "referencedDeclaration": 22602,
+                  "src": "1607:12:60"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1607:12:59"
+                "src": "1607:12:60"
               }
             ],
             "name": "exerciseFPHM",
-            "nameLocation": "1574:12:59",
+            "nameLocation": "1574:12:60",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 9117,
+              "id": 11710,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
-              "src": "1598:8:59"
+              "src": "1598:8:60"
             },
             "parameters": {
-              "id": 9116,
+              "id": 11709,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1586:2:59"
+              "src": "1586:2:60"
             },
             "returnParameters": {
-              "id": 9120,
+              "id": 11713,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1620:0:59"
+              "src": "1620:0:60"
             },
-            "scope": 9130,
-            "src": "1565:110:59",
+            "scope": 11723,
+            "src": "1565:110:60",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 9131,
-        "src": "603:1074:59",
+        "scope": 11724,
+        "src": "603:1074:60",
         "usedErrors": [
-          20017,
-          20021,
-          20025
+          22610,
+          22614,
+          22618
         ]
       }
     ],
-    "src": "35:1643:59"
+    "src": "35:1643:60"
   },
   "bytecode": "601260e08181527139b2b1bab934ba3c9730b2323932b9b9b7b360711b6101009081526080918252600d6101209081526c73656375726974792e6e616d6560981b6101405260a0526101a060405260136101609081527f73656375726974792e72656769737465726564000000000000000000000000006101805260c0529091600091620000909183919062001690565b506020828101518051620000ab926001850192019062001690565b5060408201518051620000c991600284019160209091019062001690565b5050604080516103c081018252601b61038082019081527f7068616e746f6d2e636f6e7472616374732e616c7068617377617000000000006103a0830152610100820190815282518084018452601a8082527f7068616e746f6d2e636f6e7472616374732e666f756e646572730000000000006020838101919091526101208501929092528451808601865260198082527f7068616e746f6d2e636f6e7472616374732e7374616b696e67000000000000008285015261014086019190915285518087018752601f81527f7068616e746f6d2e636f6e7472616374732e7374616b696e677761726d75700081850152610160860152855180870187529081527f7068616e746f6d2e636f6e7472616374732e626f6e64696e67000000000000008184015261018085015284518086018652601581527f7068616e746f6d2e636f6e7472616374732e70686d0000000000000000000000818401526101a08501528451808601865260168082527f7068616e746f6d2e636f6e7472616374732e7370686d00000000000000000000828501526101c0860191909152855180870187528181527f7068616e746f6d2e636f6e7472616374732e6770686d00000000000000000000818501526101e0860152855180870187528181527f7068616e746f6d2e636f6e7472616374732e6170686d0000000000000000000081850152610200860152855180870187528181527f7068616e746f6d2e636f6e7472616374732e6670686d00000000000000000000818501526102208601528551808701875260178082527f7068616e746f6d2e636f6e7472616374732e7661756c7400000000000000000082860152610240870191909152865180880188528381527f7068616e746f6d2e636f6e7472616374732e747265617375727900000000000081860152610260870152865180880188529182527f7068616e746f6d2e636f6e7472616374732e74776170000000000000000000008285015261028086019190915285518087018752601d81527f7068616e746f6d2e636f6e7472616374732e626f6e6470726963696e67000000818501526102a086015285518087018752601c81527f7068616e746f6d2e636f6e7472616374732e6465785f726f7574657200000000818501526102c086015285518087018752601e8082527f7068616e746f6d2e636f6e7472616374732e796561726e5f726f757465720000828601526102e0870191909152865180880188528381527f7068616e746f6d2e636f6e7472616374732e6578656375746f7200000000000081860152610300870152865180880188529283527f7068616e746f6d2e636f6e7472616374732e7061796d656e747300000000000083850152610320860192909252855180870187529081527f7068616e746f6d2e636f6e7472616374732e677561726400000000000000000081840152610340850152845180860186529081527f7068616e746f6d2e636f6e7472616374732e61756374696f6e636c61696d000081830152610360840152908252825160c08101909352602a606084018181529294509084019291829162001e1a6080840139815260200160405180606001604052806040518060600160405280602b815260200162001d9f602b913981526020016040518060400160405280602081526020017f7068616e746f6d2e74726561737572792e6163636f756e745f6b65792e64616f815250815260200160405180606001604052806025815260200162001f2a6025913990528152604080518082018252601981527f7068616e746f6d2e74726561737572792e62616c616e636573000000000000006020828101919091529283015291835281516101c0810190925260246101608301818152938201938392830191829160c085019182919062001d35610180880139815260200160405180606001604052806025815260200162001f9960259139815260200160405180606001604052806024815260200162001f4f6024913981526020016040518060600160405280602b815260200162001dca602b9139815260200160405180606001604052806024815260200162001fbe60249139815250815260200160405180606001604052806025815260200162001e9460259139815260200160405180606001604052806029815260200162001f016029913981526020016040518060400160405280601b81526020017f7068616e746f6d2e616c6c6f6361746f722e746f6b656e732e6c70000000000081525081526020016040518060400160405280601f81526020017f7068616e746f6d2e616c6c6f6361746f722e746f6b656e732e73696e676c65008152508152508152508152602001604051806101a0016040528060405180606001604052806040518060600160405280602b815260200162001e44602b913981526020016040518060600160405280602c815260200162001ce3602c913981526020016040518060600160405280602f815260200162001cb4602f913981525081526020016040518060400160405280601d81526020017f7068616e746f6d2e626f6e64696e672e76657374696e67626c6f636b7300000081525081526020016040518060400160405280601c81526020017f7068616e746f6d2e626f6e64696e672e70726f6669745f726174696f0000000081525081526020016040518060400160405280601b81526020017f7068616e746f6d2e626f6e64696e672e69735f72656465656d65640000000000815250815260200160405180606001604052806022815260200162001eb96022913981526020016040518060400160405280601881526020017f7068616e746f6d2e626f6e64696e672e69735f76616c6964000000000000000081525081526020016040518060400160405280601a81526020017f7068616e746f6d2e626f6e64696e672e6d756c7469706c69657200000000000081525081526020016040518060400160405280601481526020017f7068616e746f6d2e626f6e64696e672e6465627400000000000000000000000081525081526020016040518060400160405280601e81526020017f7068616e746f6d2e626f6e64696e672e6d61785f646562745f726174696f00008152508152602001604051806060016040528060248152602001620020af6024913981526020016040518060400160405280601581526020017f7068616e746f6d2e626f6e64696e672e746f6b656e000000000000000000000081525081526020016040518060400160405280601d81526020017f7068616e746f6d2e626f6e64696e672e6c6173745f636c61696d5f617400000081525081526020016040518060400160405280601b81526020017f7068616e746f6d2e626f6e64696e672e766573745f6c656e6774680000000000815250815250815260200160405180604001604052806040518060400160405280601d81526020017f7068616e746f6d2e7374616b696e672e726562617365436f756e74657200000081525081526020016040518060600160405280602281526020016200208d6022913990528152604080516101408101909152602160e0820181815260209093019282916060830191829162002006610100860139815260200160405180606001604052806024815260200162001d7b60249139815260200160405180606001604052806026815260200162001d0f60269139815260408051808201825260208082527f7068616e746f6d2e666f756e6465722e636c61696d732e6c617374436c61696d828201529283015291835281516060810183528082018281527f7068616e746f6d2e666f756e6465722e6368616e6765732e6e65774f776e65728285015281528382015281518083018352601d81527f7068616e746f6d2e666f756e6465722e76657374696e67537461727473000000818301529282019290925291835281516101608101909252602261010083018181529390910192829162001d5961012084013981526020016040518060600160405280602381526020016200202760239139815260200160405180606001604052806025815260200162001e6f60259139815260200160405180606001604052806026815260200162001edb60269139815260200160405180606001604052806025815260200162001df560259139815260200160405180606001604052806026815260200162001f7360269139815260200160405180606001604052806024815260200162001fe26024913981526020016040518060600160405280602a8152602001620020d3602a9139815250815260200160405180608001604052806040518060400160405280601c81526020017f7068616e746f6d2e676f7665726e6f722e766f74696e6744656c61790000000081525081526020016040518060400160405280601d81526020017f7068616e746f6d2e676f7665726e6f722e766f74696e67506572696f6400000081525081526020016040518060600160405280602181526020016200204a6021913981526020016040518060600160405280602281526020016200206b602291399052905280518051805160039291839162000deb91839160209091019062001690565b50602082810151805162000e06926001850192019062001690565b506040820151805162000e2491600284019160209091019062001690565b506060820151805162000e4291600384019160209091019062001690565b506080820151805162000e6091600484019160209091019062001690565b5060a0820151805162000e7e91600584019160209091019062001690565b5060c0820151805162000e9c91600684019160209091019062001690565b5060e0820151805162000eba91600784019160209091019062001690565b50610100820151805162000ed991600884019160209091019062001690565b50610120820151805162000ef891600984019160209091019062001690565b50610140820151805162000f1791600a84019160209091019062001690565b50610160820151805162000f3691600b84019160209091019062001690565b50610180820151805162000f5591600c84019160209091019062001690565b506101a0820151805162000f7491600d84019160209091019062001690565b506101c0820151805162000f9391600e84019160209091019062001690565b506101e0820151805162000fb291600f84019160209091019062001690565b50610200820151805162000fd191601084019160209091019062001690565b50610220820151805162000ff091601184019160209091019062001690565b5061024082015180516200100f91601284019160209091019062001690565b5061026082015180516200102e91601384019160209091019062001690565b505050602082810151805180519192601485019262001051928492019062001690565b50602082810151805180519192600185019262001072928492019062001690565b5060208281015180516200108d926001850192019062001690565b5060408201518051620010ab91600284019160209091019062001690565b50505060408201518051620010cb91600484019160209091019062001690565b50505060408201518051805180518051601986019392849290918391620010f89183916020019062001690565b50602082810151805162001113926001850192019062001690565b50604082015180516200113191600284019160209091019062001690565b50606082015180516200114f91600384019160209091019062001690565b50608082015180516200116d91600484019160209091019062001690565b50505060208281015180516200118a926005850192019062001690565b5060408201518051620011a891600684019160209091019062001690565b5060608201518051620011c691600784019160209091019062001690565b5060808201518051620011e491600884019160209091019062001690565b505050506060830151805180518051929350602285019283916200120e9183916020019062001690565b50602082810151805162001229926001850192019062001690565b50604082015180516200124791600284019160209091019062001690565b505050602082810151805162001264926003850192019062001690565b50604082015180516200128291600484019160209091019062001690565b5060608201518051620012a091600584019160209091019062001690565b5060808201518051620012be91600684019160209091019062001690565b5060a08201518051620012dc91600784019160209091019062001690565b5060c08201518051620012fa91600884019160209091019062001690565b5060e082015180516200131891600984019160209091019062001690565b5061010082015180516200133791600a84019160209091019062001690565b5061012082015180516200135691600b84019160209091019062001690565b5061014082015180516200137591600c84019160209091019062001690565b5061016082015180516200139491600d84019160209091019062001690565b506101808201518051620013b391600e84019160209091019062001690565b5050506080820151805180516031840191620013d59183916020019062001690565b506020828101518051620013f0926001850192019062001690565b50505060a082015180518051805160338501929183916200141991839160209091019062001690565b50602082810151805162001434926001850192019062001690565b50604082015180516200145291600284019160209091019062001690565b50606082015180516200147091600384019160209091019062001690565b505050602082810151805180519192600485019262001493928492019062001690565b50505060408201518051620014b391600584019160209091019062001690565b50505060c0820151805180516039840191620014d59183916020019062001690565b506020828101518051620014f0926001850192019062001690565b50604082015180516200150e91600284019160209091019062001690565b50606082015180516200152c91600384019160209091019062001690565b50608082015180516200154a91600484019160209091019062001690565b5060a082015180516200156891600584019160209091019062001690565b5060c082015180516200158691600684019160209091019062001690565b5060e08201518051620015a491600784019160209091019062001690565b50505060e0820151805180516041840191620015c69183916020019062001690565b506020828101518051620015e1926001850192019062001690565b5060408201518051620015ff91600284019160209091019062001690565b50606082015180516200161d91600384019160209091019062001690565b50505050506d7068616e746f6d53746f7261676560901b604a553480156200164457600080fd5b50604051620020fd380380620020fd833981016040819052620016679162001736565b6001604855604980546001600160a01b0383166001600160a01b031990911617905550620017a5565b8280546200169e9062001768565b90600052602060002090601f016020900481019282620016c257600085556200170d565b82601f10620016dd57805160ff19168380011785556200170d565b828001600101855582156200170d579182015b828111156200170d578251825591602001919060010190620016f0565b506200171b9291506200171f565b5090565b5b808211156200171b576000815560010162001720565b6000602082840312156200174957600080fd5b81516001600160a01b03811681146200176157600080fd5b9392505050565b600181811c908216806200177d57607f821691505b602082108114156200179f57634e487b7160e01b600052602260045260246000fd5b50919050565b6104ff80620017b56000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80633e43061c14610051578063c1e262e51461005b578063c22a3e5b14610063578063f4860e4f1461006b575b600080fd5b610059610073565b005b6100596101a2565b610059610235565b610059610293565b6002604854141561009f5760405162461bcd60e51b8152600401610096906103c6565b60405180910390fd5b600260485560006100b86049546001600160a01b031690565b6001600160a01b03166321f8a72160036000016013016040516100db91906103fd565b60405190819003812060e083901b6001600160e01b03191682526004820152602401602060405180830381865afa15801561011a573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061013e9190610499565b6040516325b31a9760e01b81523360048201529091506001600160a01b038216906325b31a9790602401600060405180830381600087803b15801561018257600080fd5b505af1158015610196573d6000803e3d6000fd5b50506001604855505050565b600260485414156101c55760405162461bcd60e51b8152600401610096906103c6565b60026048556101d26102f0565b604051630d8acc1560e11b81523360048201526001600160a01b039190911690631b15982a906024015b600060405180830381600087803b15801561021657600080fd5b505af115801561022a573d6000803e3d6000fd5b505060016048555050565b600260485414156102585760405162461bcd60e51b8152600401610096906103c6565b60026048556102656102f0565b604051630f41a04d60e11b81523360048201526001600160a01b039190911690631e83409a906024016101fc565b600260485414156102b65760405162461bcd60e51b8152600401610096906103c6565b60026048556102c361038f565b604051623438dd60e41b81523360048201526001600160a01b0391909116906303438dd0906024016101fc565b60006103046049546001600160a01b031690565b6001600160a01b03166321f8a721600360000160010160405161032791906103fd565b60405190819003812060e083901b6001600160e01b03191682526004820152602401602060405180830381865afa158015610366573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061038a9190610499565b905090565b60006103a36049546001600160a01b031690565b6001600160a01b03166321f8a721600360000160000160405161032791906103fd565b6020808252601f908201527f5265656e7472616e637947756172643a207265656e7472616e742063616c6c00604082015260600190565b600080835481600182811c91508083168061041957607f831692505b602080841082141561043957634e487b7160e01b86526022600452602486fd5b81801561044d576001811461045e5761048b565b60ff1986168952848901965061048b565b60008a81526020902060005b868110156104835781548b82015290850190830161046a565b505084890196505b509498975050505050505050565b6000602082840312156104ab57600080fd5b81516001600160a01b03811681146104c257600080fd5b939250505056fea264697066735822122028e52fbe4d574a1238b8f146b88a59920b636a54f464f0572338128eb77e72b264736f6c634300080a00337068616e746f6d2e626f6e64696e672e757365722e6c6f776573745f6e6f6e63655f7374696c6c5f76657374696e677068616e746f6d2e626f6e64696e672e757365722e6c6f776573745f61737369676e61626c655f6e6f6e63657068616e746f6d2e666f756e6465722e636c61696d732e72656d61696e696e67416d6f756e747068616e746f6d2e616c6c6f6361746f722e746f6b656e732e616464726573732e6461697068616e746f6d2e726f7574696e672e6465785f726f757465725f616464726573737068616e746f6d2e666f756e6465722e636c61696d732e696e697469616c416d6f756e747068616e746f6d2e74726561737572792e6163636f756e745f6b65792e76656e747572656361706974616c7068616e746f6d2e616c6c6f6361746f722e746f6b656e732e616464726573732e6461695f70686d5f6c707068616e746f6d2e726f7574696e672e73706f6f6b795f726f757465725f616464726573737068616e746f6d2e74726561737572792e617070726f7665642e65787465726e616c2e616464726573737068616e746f6d2e626f6e64696e672e757365722e66697273745f756e72656465656d65645f6e6f6e63657068616e746f6d2e726f7574696e672e7370697269745f726f757465725f616464726573737068616e746f6d2e616c6c6f6361746f722e746f6b656e732e64657374696e6174696f6e737068616e746f6d2e626f6e64696e672e76657374735f61745f74696d657374616d707068616e746f6d2e726f7574696e672e7370697269745f666163746f72795f616464726573737068616e746f6d2e616c6c6f6361746f722e746f6b656e732e646573745f70657263656e74616765737068616e746f6d2e74726561737572792e6163636f756e745f6b65792e72657365727665737068616e746f6d2e616c6c6f6361746f722e746f6b656e732e616464726573732e6d696d7068616e746f6d2e726f7574696e672e73706f6f6b795f666163746f72795f616464726573737068616e746f6d2e616c6c6f6361746f722e746f6b656e732e616464726573732e7766746d7068616e746f6d2e616c6c6f6361746f722e746f6b656e732e616464726573732e6465787068616e746f6d2e726f7574696e672e7370697269745f67617567655f616464726573737068616e746f6d2e666f756e6465722e636c61696d732e616c6c6f636174696f6e7068616e746f6d2e726f7574696e672e6465785f666163746f72795f616464726573737068616e746f6d2e676f7665726e6f722e71756f72756d50657263656e746167657068616e746f6d2e676f7665726e6f722e70726f706f73616c5468726573686f6c647068616e746f6d2e7374616b696e672e6e657874526562617365446561646c696e657068616e746f6d2e626f6e64696e672e72656d61696e696e675f7061796f75745f666f727068616e746f6d2e726f7574696e672e7370697269745f67617567655f70726f78795f61646472657373",
   "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
@@ -1245,7 +1245,7 @@
   "contractName": "PhantomLaunch",
   "coverageMap": {
     "branches": {
-      "100": {},
+      "101": {},
       "11": {
         "PhantomLaunch.swapAPHM": {
           "7": [
@@ -1257,18 +1257,18 @@
       },
       "30": {},
       "32": {},
-      "59": {},
-      "67": {},
-      "74": {},
-      "92": {},
-      "97": {}
+      "60": {},
+      "68": {},
+      "75": {},
+      "93": {},
+      "98": {}
     },
     "statements": {
-      "100": {},
+      "101": {},
       "11": {},
       "30": {},
       "32": {},
-      "59": {
+      "60": {
         "PhantomLaunch.claimAPHM": {
           "1": [
             1307,
@@ -1294,7 +1294,7 @@
           ]
         }
       },
-      "67": {
+      "68": {
         "PhantomStorageMixin.PhantomAlphaSwap": {
           "6": [
             4996,
@@ -1314,9 +1314,9 @@
           ]
         }
       },
-      "74": {},
-      "92": {},
-      "97": {}
+      "75": {},
+      "93": {},
+      "98": {}
     }
   },
   "dependencies": [
@@ -1330,7 +1330,7 @@
     "OpenZeppelin/openzeppelin-contracts@4.3.2/ReentrancyGuard"
   ],
   "deployedBytecode": "608060405234801561001057600080fd5b506004361061004c5760003560e01c80633e43061c14610051578063c1e262e51461005b578063c22a3e5b14610063578063f4860e4f1461006b575b600080fd5b610059610073565b005b6100596101a2565b610059610235565b610059610293565b6002604854141561009f5760405162461bcd60e51b8152600401610096906103c6565b60405180910390fd5b600260485560006100b86049546001600160a01b031690565b6001600160a01b03166321f8a72160036000016013016040516100db91906103fd565b60405190819003812060e083901b6001600160e01b03191682526004820152602401602060405180830381865afa15801561011a573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061013e9190610499565b6040516325b31a9760e01b81523360048201529091506001600160a01b038216906325b31a9790602401600060405180830381600087803b15801561018257600080fd5b505af1158015610196573d6000803e3d6000fd5b50506001604855505050565b600260485414156101c55760405162461bcd60e51b8152600401610096906103c6565b60026048556101d26102f0565b604051630d8acc1560e11b81523360048201526001600160a01b039190911690631b15982a906024015b600060405180830381600087803b15801561021657600080fd5b505af115801561022a573d6000803e3d6000fd5b505060016048555050565b600260485414156102585760405162461bcd60e51b8152600401610096906103c6565b60026048556102656102f0565b604051630f41a04d60e11b81523360048201526001600160a01b039190911690631e83409a906024016101fc565b600260485414156102b65760405162461bcd60e51b8152600401610096906103c6565b60026048556102c361038f565b604051623438dd60e41b81523360048201526001600160a01b0391909116906303438dd0906024016101fc565b60006103046049546001600160a01b031690565b6001600160a01b03166321f8a721600360000160010160405161032791906103fd565b60405190819003812060e083901b6001600160e01b03191682526004820152602401602060405180830381865afa158015610366573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061038a9190610499565b905090565b60006103a36049546001600160a01b031690565b6001600160a01b03166321f8a721600360000160000160405161032791906103fd565b6020808252601f908201527f5265656e7472616e637947756172643a207265656e7472616e742063616c6c00604082015260600190565b600080835481600182811c91508083168061041957607f831692505b602080841082141561043957634e487b7160e01b86526022600452602486fd5b81801561044d576001811461045e5761048b565b60ff1986168952848901965061048b565b60008a81526020902060005b868110156104835781548b82015290850190830161046a565b505084890196505b509498975050505050505050565b6000602082840312156104ab57600080fd5b81516001600160a01b03811681146104c257600080fd5b939250505056fea264697066735822122028e52fbe4d574a1238b8f146b88a59920b636a54f464f0572338128eb77e72b264736f6c634300080a0033",
-  "deployedSourceMap": "603:1074:59:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1092:248;;;:::i;:::-;;1565:110;;;:::i;1455:104::-;;;:::i;1346:103::-;;;:::i;1092:248::-;1680:1:11;2259:7;;:19;;2251:63;;;;-1:-1:-1;;;2251:63:11;;;;;;;:::i;:::-;;;;;;;;;1680:1;2389:7;:18;1154:26:59::1;1217:16;2470:15:67::0;;-1:-1:-1;;;;;2470:15:67;;2371:122;1217:16:59::1;-1:-1:-1::0;;;;;1217:27:59::1;;1255:7;:17;;:30;;1245:41;;;;;;:::i;:::-;;::::0;;;;::::1;::::0;;1217:70:::1;::::0;;;-1:-1:-1;;;;;;1217:70:59;;;::::1;::::0;::::1;1746:25:103::0;1719:18;;1217:70:59::1;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1307:26;::::0;-1:-1:-1;;;1307:26:59;;1322:10:::1;1307:26;::::0;::::1;2223:51:103::0;1154:143:59;;-1:-1:-1;;;;;;1307:14:59;::::1;::::0;::::1;::::0;2196:18:103;;1307:26:59::1;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;::::0;::::1;;;;;-1:-1:-1::0;;1637:1:11;2562:7;:22;-1:-1:-1;;;1092:248:59:o;1565:110::-;1680:1:11;2259:7;;:19;;2251:63;;;;-1:-1:-1;;;2251:63:11;;;;;;;:::i;:::-;1680:1;2389:7;:18;1630:17:59::1;:15;:17::i;:::-;:38;::::0;-1:-1:-1;;;1630:38:59;;1657:10:::1;1630:38;::::0;::::1;2223:51:103::0;-1:-1:-1;;;;;1630:26:59;;;::::1;::::0;::::1;::::0;2196:18:103;;1630:38:59::1;;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;::::0;::::1;;;;;-1:-1:-1::0;;1637:1:11;2562:7;:22;-1:-1:-1;;1565:110:59:o;1455:104::-;1680:1:11;2259:7;;:19;;2251:63;;;;-1:-1:-1;;;2251:63:11;;;;;;;:::i;:::-;1680:1;2389:7;:18;1517:17:59::1;:15;:17::i;:::-;:35;::::0;-1:-1:-1;;;1517:35:59;;1541:10:::1;1517:35;::::0;::::1;2223:51:103::0;-1:-1:-1;;;;;1517:23:59;;;::::1;::::0;::::1;::::0;2196:18:103;;1517:35:59::1;2077:203:103::0;1346:103:59;1680:1:11;2259:7;;:19;;2251:63;;;;-1:-1:-1;;;2251:63:11;;;;;;;:::i;:::-;1680:1;2389:7;:18;1407::59::1;:16;:18::i;:::-;:35;::::0;-1:-1:-1;;;1407:35:59;;1431:10:::1;1407:35;::::0;::::1;2223:51:103::0;-1:-1:-1;;;;;1407:23:59;;;::::1;::::0;::::1;::::0;2196:18:103;;1407:35:59::1;2077:203:103::0;5102:176:67;5152:16;5204;2470:15;;-1:-1:-1;;;;;2470:15:67;;2371:122;5204:16;-1:-1:-1;;;;;5204:27:67;;5242:7;:17;;:26;;5232:37;;;;;;:::i;:::-;;;;;;;;;5204:66;;;;-1:-1:-1;;;;;;5204:66:67;;;;;;1746:25:103;1719:18;;5204:66:67;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;5180:91;;5102:176;:::o;4916:180::-;4967:17;5021:16;2470:15;;-1:-1:-1;;;;;2470:15:67;;2371:122;5021:16;-1:-1:-1;;;;;5021:27:67;;5059:7;:17;;:27;;5049:38;;;;;;:::i;14:355:103:-;216:2;198:21;;;255:2;235:18;;;228:30;294:33;289:2;274:18;;267:61;360:2;345:18;;14:355::o;499:1096::-;625:3;654:1;687:6;681:13;717:3;739:1;767:9;763:2;759:18;749:28;;827:2;816:9;812:18;849;839:61;;893:4;885:6;881:17;871:27;;839:61;919:2;967;959:6;956:14;936:18;933:38;930:165;;;-1:-1:-1;;;994:33:103;;1050:4;1047:1;1040:15;1080:4;1001:3;1068:17;930:165;1111:18;1138:104;;;;1256:1;1251:319;;;;1104:466;;1138:104;-1:-1:-1;;1171:24:103;;1159:37;;1216:16;;;;-1:-1:-1;1138:104:103;;1251:319;446:1;439:14;;;483:4;470:18;;1345:1;1359:165;1373:6;1370:1;1367:13;1359:165;;;1451:14;;1438:11;;;1431:35;1494:16;;;;1388:10;;1359:165;;;1363:3;;1553:6;1548:3;1544:16;1537:23;;1104:466;-1:-1:-1;1586:3:103;;499:1096;-1:-1:-1;;;;;;;;499:1096:103:o;1782:290::-;1852:6;1905:2;1893:9;1884:7;1880:23;1876:32;1873:52;;;1921:1;1918;1911:12;1873:52;1947:16;;-1:-1:-1;;;;;1992:31:103;;1982:42;;1972:70;;2038:1;2035;2028:12;1972:70;2061:5;1782:290;-1:-1:-1;;;1782:290:103:o",
+  "deployedSourceMap": "603:1074:60:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1092:248;;;:::i;:::-;;1565:110;;;:::i;1455:104::-;;;:::i;1346:103::-;;;:::i;1092:248::-;1680:1:11;2259:7;;:19;;2251:63;;;;-1:-1:-1;;;2251:63:11;;;;;;;:::i;:::-;;;;;;;;;1680:1;2389:7;:18;1154:26:60::1;1217:16;2470:15:68::0;;-1:-1:-1;;;;;2470:15:68;;2371:122;1217:16:60::1;-1:-1:-1::0;;;;;1217:27:60::1;;1255:7;:17;;:30;;1245:41;;;;;;:::i;:::-;;::::0;;;;::::1;::::0;;1217:70:::1;::::0;;;-1:-1:-1;;;;;;1217:70:60;;;::::1;::::0;::::1;1746:25:104::0;1719:18;;1217:70:60::1;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1307:26;::::0;-1:-1:-1;;;1307:26:60;;1322:10:::1;1307:26;::::0;::::1;2223:51:104::0;1154:143:60;;-1:-1:-1;;;;;;1307:14:60;::::1;::::0;::::1;::::0;2196:18:104;;1307:26:60::1;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;::::0;::::1;;;;;-1:-1:-1::0;;1637:1:11;2562:7;:22;-1:-1:-1;;;1092:248:60:o;1565:110::-;1680:1:11;2259:7;;:19;;2251:63;;;;-1:-1:-1;;;2251:63:11;;;;;;;:::i;:::-;1680:1;2389:7;:18;1630:17:60::1;:15;:17::i;:::-;:38;::::0;-1:-1:-1;;;1630:38:60;;1657:10:::1;1630:38;::::0;::::1;2223:51:104::0;-1:-1:-1;;;;;1630:26:60;;;::::1;::::0;::::1;::::0;2196:18:104;;1630:38:60::1;;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;::::0;::::1;;;;;-1:-1:-1::0;;1637:1:11;2562:7;:22;-1:-1:-1;;1565:110:60:o;1455:104::-;1680:1:11;2259:7;;:19;;2251:63;;;;-1:-1:-1;;;2251:63:11;;;;;;;:::i;:::-;1680:1;2389:7;:18;1517:17:60::1;:15;:17::i;:::-;:35;::::0;-1:-1:-1;;;1517:35:60;;1541:10:::1;1517:35;::::0;::::1;2223:51:104::0;-1:-1:-1;;;;;1517:23:60;;;::::1;::::0;::::1;::::0;2196:18:104;;1517:35:60::1;2077:203:104::0;1346:103:60;1680:1:11;2259:7;;:19;;2251:63;;;;-1:-1:-1;;;2251:63:11;;;;;;;:::i;:::-;1680:1;2389:7;:18;1407::60::1;:16;:18::i;:::-;:35;::::0;-1:-1:-1;;;1407:35:60;;1431:10:::1;1407:35;::::0;::::1;2223:51:104::0;-1:-1:-1;;;;;1407:23:60;;;::::1;::::0;::::1;::::0;2196:18:104;;1407:35:60::1;2077:203:104::0;5102:176:68;5152:16;5204;2470:15;;-1:-1:-1;;;;;2470:15:68;;2371:122;5204:16;-1:-1:-1;;;;;5204:27:68;;5242:7;:17;;:26;;5232:37;;;;;;:::i;:::-;;;;;;;;;5204:66;;;;-1:-1:-1;;;;;;5204:66:68;;;;;;1746:25:104;1719:18;;5204:66:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;5180:91;;5102:176;:::o;4916:180::-;4967:17;5021:16;2470:15;;-1:-1:-1;;;;;2470:15:68;;2371:122;5021:16;-1:-1:-1;;;;;5021:27:68;;5059:7;:17;;:27;;5049:38;;;;;;:::i;14:355:104:-;216:2;198:21;;;255:2;235:18;;;228:30;294:33;289:2;274:18;;267:61;360:2;345:18;;14:355::o;499:1096::-;625:3;654:1;687:6;681:13;717:3;739:1;767:9;763:2;759:18;749:28;;827:2;816:9;812:18;849;839:61;;893:4;885:6;881:17;871:27;;839:61;919:2;967;959:6;956:14;936:18;933:38;930:165;;;-1:-1:-1;;;994:33:104;;1050:4;1047:1;1040:15;1080:4;1001:3;1068:17;930:165;1111:18;1138:104;;;;1256:1;1251:319;;;;1104:466;;1138:104;-1:-1:-1;;1171:24:104;;1159:37;;1216:16;;;;-1:-1:-1;1138:104:104;;1251:319;446:1;439:14;;;483:4;470:18;;1345:1;1359:165;1373:6;1370:1;1367:13;1359:165;;;1451:14;;1438:11;;;1431:35;1494:16;;;;1388:10;;1359:165;;;1363:3;;1553:6;1548:3;1544:16;1537:23;;1104:466;-1:-1:-1;1586:3:104;;499:1096;-1:-1:-1;;;;;;;;499:1096:104:o;1782:290::-;1852:6;1905:2;1893:9;1884:7;1880:23;1876:32;1873:52;;;1921:1;1918;1911:12;1873:52;1947:16;;-1:-1:-1;;;;;1992:31:104;;1982:42;;1972:70;;2038:1;2035;2028:12;1972:70;2061:5;1782:290;-1:-1:-1;;;1782:290:104:o",
   "language": "Solidity",
   "natspec": {
     "author": "PhantomDao Team",
@@ -1365,7 +1365,7 @@
         1677
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x80"
     },
     "2": {
@@ -1375,7 +1375,7 @@
         1677
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "4": {
@@ -1385,7 +1385,7 @@
         1677
       ],
       "op": "MSTORE",
-      "path": "59"
+      "path": "60"
     },
     "5": {
       "fn": null,
@@ -1394,7 +1394,7 @@
         1677
       ],
       "op": "CALLVALUE",
-      "path": "59"
+      "path": "60"
     },
     "6": {
       "fn": null,
@@ -1403,7 +1403,7 @@
         1677
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "7": {
       "fn": null,
@@ -1412,7 +1412,7 @@
         1677
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "8": {
       "fn": null,
@@ -1421,7 +1421,7 @@
         1677
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x10"
     },
     "11": {
@@ -1431,7 +1431,7 @@
         1677
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "12": {
       "fn": null,
@@ -1440,7 +1440,7 @@
         1677
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "14": {
@@ -1450,7 +1450,7 @@
         1677
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "15": {
       "dev": "Cannot send ether to nonpayable function",
@@ -1460,7 +1460,7 @@
         1677
       ],
       "op": "REVERT",
-      "path": "59"
+      "path": "60"
     },
     "16": {
       "fn": null,
@@ -1469,7 +1469,7 @@
         1677
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "17": {
       "fn": null,
@@ -1478,7 +1478,7 @@
         1677
       ],
       "op": "POP",
-      "path": "59"
+      "path": "60"
     },
     "18": {
       "fn": null,
@@ -1487,7 +1487,7 @@
         1677
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x4"
     },
     "20": {
@@ -1497,7 +1497,7 @@
         1677
       ],
       "op": "CALLDATASIZE",
-      "path": "59"
+      "path": "60"
     },
     "21": {
       "fn": null,
@@ -1506,7 +1506,7 @@
         1677
       ],
       "op": "LT",
-      "path": "59"
+      "path": "60"
     },
     "22": {
       "fn": null,
@@ -1515,7 +1515,7 @@
         1677
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x4C"
     },
     "25": {
@@ -1525,7 +1525,7 @@
         1677
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "26": {
       "fn": null,
@@ -1534,7 +1534,7 @@
         1677
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "28": {
@@ -1544,7 +1544,7 @@
         1677
       ],
       "op": "CALLDATALOAD",
-      "path": "59"
+      "path": "60"
     },
     "29": {
       "fn": null,
@@ -1553,7 +1553,7 @@
         1677
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0xE0"
     },
     "31": {
@@ -1563,7 +1563,7 @@
         1677
       ],
       "op": "SHR",
-      "path": "59"
+      "path": "60"
     },
     "32": {
       "fn": null,
@@ -1572,7 +1572,7 @@
         1677
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "33": {
       "fn": null,
@@ -1581,7 +1581,7 @@
         1677
       ],
       "op": "PUSH4",
-      "path": "59",
+      "path": "60",
       "value": "0x3E43061C"
     },
     "38": {
@@ -1591,7 +1591,7 @@
         1677
       ],
       "op": "EQ",
-      "path": "59"
+      "path": "60"
     },
     "39": {
       "fn": null,
@@ -1600,7 +1600,7 @@
         1677
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x51"
     },
     "42": {
@@ -1610,7 +1610,7 @@
         1677
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "43": {
       "fn": null,
@@ -1619,7 +1619,7 @@
         1677
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "44": {
       "fn": null,
@@ -1628,7 +1628,7 @@
         1677
       ],
       "op": "PUSH4",
-      "path": "59",
+      "path": "60",
       "value": "0xC1E262E5"
     },
     "49": {
@@ -1638,7 +1638,7 @@
         1677
       ],
       "op": "EQ",
-      "path": "59"
+      "path": "60"
     },
     "50": {
       "fn": null,
@@ -1647,7 +1647,7 @@
         1677
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x5B"
     },
     "53": {
@@ -1657,7 +1657,7 @@
         1677
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "54": {
       "fn": null,
@@ -1666,7 +1666,7 @@
         1677
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "55": {
       "fn": null,
@@ -1675,7 +1675,7 @@
         1677
       ],
       "op": "PUSH4",
-      "path": "59",
+      "path": "60",
       "value": "0xC22A3E5B"
     },
     "60": {
@@ -1685,7 +1685,7 @@
         1677
       ],
       "op": "EQ",
-      "path": "59"
+      "path": "60"
     },
     "61": {
       "fn": null,
@@ -1694,7 +1694,7 @@
         1677
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x63"
     },
     "64": {
@@ -1704,7 +1704,7 @@
         1677
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "65": {
       "fn": null,
@@ -1713,7 +1713,7 @@
         1677
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "66": {
       "fn": null,
@@ -1722,7 +1722,7 @@
         1677
       ],
       "op": "PUSH4",
-      "path": "59",
+      "path": "60",
       "value": "0xF4860E4F"
     },
     "71": {
@@ -1732,7 +1732,7 @@
         1677
       ],
       "op": "EQ",
-      "path": "59"
+      "path": "60"
     },
     "72": {
       "fn": null,
@@ -1741,7 +1741,7 @@
         1677
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x6B"
     },
     "75": {
@@ -1751,7 +1751,7 @@
         1677
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "76": {
       "fn": null,
@@ -1760,7 +1760,7 @@
         1677
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "77": {
       "fn": null,
@@ -1769,7 +1769,7 @@
         1677
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "79": {
@@ -1779,7 +1779,7 @@
         1677
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "80": {
       "first_revert": true,
@@ -1789,7 +1789,7 @@
         1677
       ],
       "op": "REVERT",
-      "path": "59"
+      "path": "60"
     },
     "81": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -1798,7 +1798,7 @@
         1340
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "82": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -1807,7 +1807,7 @@
         1340
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x59"
     },
     "85": {
@@ -1817,7 +1817,7 @@
         1340
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x73"
     },
     "88": {
@@ -1828,7 +1828,7 @@
         1340
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "89": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -1837,7 +1837,7 @@
         1340
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "90": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -1846,7 +1846,7 @@
         1340
       ],
       "op": "STOP",
-      "path": "59"
+      "path": "60"
     },
     "91": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -1855,7 +1855,7 @@
         1675
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "92": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -1864,7 +1864,7 @@
         1675
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x59"
     },
     "95": {
@@ -1874,7 +1874,7 @@
         1675
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x1A2"
     },
     "98": {
@@ -1885,7 +1885,7 @@
         1675
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "99": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -1894,7 +1894,7 @@
         1559
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "100": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -1903,7 +1903,7 @@
         1559
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x59"
     },
     "103": {
@@ -1913,7 +1913,7 @@
         1559
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x235"
     },
     "106": {
@@ -1924,7 +1924,7 @@
         1559
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "107": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -1933,7 +1933,7 @@
         1449
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "108": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -1942,7 +1942,7 @@
         1449
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x59"
     },
     "111": {
@@ -1952,7 +1952,7 @@
         1449
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x293"
     },
     "114": {
@@ -1963,7 +1963,7 @@
         1449
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "115": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -1972,7 +1972,7 @@
         1340
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "116": {
       "offset": [
@@ -2256,7 +2256,7 @@
         1180
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "167": {
@@ -2266,7 +2266,7 @@
         1233
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0xB8"
     },
     "170": {
@@ -2276,7 +2276,7 @@
         2485
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "statement": 0,
       "value": "0x49"
     },
@@ -2287,7 +2287,7 @@
         2485
       ],
       "op": "SLOAD",
-      "path": "67"
+      "path": "68"
     },
     "173": {
       "op": "PUSH1",
@@ -2314,7 +2314,7 @@
         2485
       ],
       "op": "AND",
-      "path": "67"
+      "path": "68"
     },
     "182": {
       "fn": "PhantomStorageMixin.PhantomStorage",
@@ -2323,7 +2323,7 @@
         2485
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "183": {
       "fn": "PhantomStorageMixin.PhantomStorage",
@@ -2332,7 +2332,7 @@
         2493
       ],
       "op": "JUMP",
-      "path": "67"
+      "path": "68"
     },
     "184": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2341,7 +2341,7 @@
         1233
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "185": {
       "op": "PUSH1",
@@ -2368,7 +2368,7 @@
         1244
       ],
       "op": "AND",
-      "path": "59"
+      "path": "60"
     },
     "194": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2377,7 +2377,7 @@
         1244
       ],
       "op": "PUSH4",
-      "path": "59",
+      "path": "60",
       "value": "0x21F8A721"
     },
     "199": {
@@ -2387,7 +2387,7 @@
         1262
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x3"
     },
     "201": {
@@ -2397,7 +2397,7 @@
         1272
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "203": {
@@ -2407,7 +2407,7 @@
         1272
       ],
       "op": "ADD",
-      "path": "59"
+      "path": "60"
     },
     "204": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2416,7 +2416,7 @@
         1285
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x13"
     },
     "206": {
@@ -2426,7 +2426,7 @@
         1285
       ],
       "op": "ADD",
-      "path": "59"
+      "path": "60"
     },
     "207": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2435,7 +2435,7 @@
         1286
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "209": {
@@ -2445,7 +2445,7 @@
         1286
       ],
       "op": "MLOAD",
-      "path": "59"
+      "path": "60"
     },
     "210": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2454,7 +2454,7 @@
         1286
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0xDB"
     },
     "213": {
@@ -2464,7 +2464,7 @@
         1286
       ],
       "op": "SWAP2",
-      "path": "59"
+      "path": "60"
     },
     "214": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2473,7 +2473,7 @@
         1286
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "215": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2482,7 +2482,7 @@
         1286
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x3FD"
     },
     "218": {
@@ -2493,7 +2493,7 @@
         1286
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "219": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2502,7 +2502,7 @@
         1286
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "220": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2511,7 +2511,7 @@
         1286
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "222": {
@@ -2521,7 +2521,7 @@
         1286
       ],
       "op": "MLOAD",
-      "path": "59"
+      "path": "60"
     },
     "223": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2530,7 +2530,7 @@
         1286
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "224": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2539,7 +2539,7 @@
         1286
       ],
       "op": "DUP2",
-      "path": "59"
+      "path": "60"
     },
     "225": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2548,7 +2548,7 @@
         1286
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "226": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2557,7 +2557,7 @@
         1286
       ],
       "op": "SUB",
-      "path": "59"
+      "path": "60"
     },
     "227": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2566,7 +2566,7 @@
         1286
       ],
       "op": "DUP2",
-      "path": "59"
+      "path": "60"
     },
     "228": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2575,7 +2575,7 @@
         1286
       ],
       "op": "KECCAK256",
-      "path": "59"
+      "path": "60"
     },
     "229": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2584,7 +2584,7 @@
         1287
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0xE0"
     },
     "231": {
@@ -2594,7 +2594,7 @@
         1287
       ],
       "op": "DUP4",
-      "path": "59"
+      "path": "60"
     },
     "232": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2603,7 +2603,7 @@
         1287
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "233": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2612,7 +2612,7 @@
         1287
       ],
       "op": "SHL",
-      "path": "59"
+      "path": "60"
     },
     "234": {
       "op": "PUSH1",
@@ -2642,7 +2642,7 @@
         1287
       ],
       "op": "AND",
-      "path": "59"
+      "path": "60"
     },
     "244": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2651,7 +2651,7 @@
         1287
       ],
       "op": "DUP3",
-      "path": "59"
+      "path": "60"
     },
     "245": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2660,7 +2660,7 @@
         1287
       ],
       "op": "MSTORE",
-      "path": "59"
+      "path": "60"
     },
     "246": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2669,7 +2669,7 @@
         1287
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x4"
     },
     "248": {
@@ -2679,7 +2679,7 @@
         1287
       ],
       "op": "DUP3",
-      "path": "59"
+      "path": "60"
     },
     "249": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2688,7 +2688,7 @@
         1287
       ],
       "op": "ADD",
-      "path": "59"
+      "path": "60"
     },
     "250": {
       "op": "MSTORE"
@@ -2707,7 +2707,7 @@
         1287
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x20"
     },
     "256": {
@@ -2717,7 +2717,7 @@
         1287
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "258": {
@@ -2727,7 +2727,7 @@
         1287
       ],
       "op": "MLOAD",
-      "path": "59"
+      "path": "60"
     },
     "259": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2736,7 +2736,7 @@
         1287
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "260": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2745,7 +2745,7 @@
         1287
       ],
       "op": "DUP4",
-      "path": "59"
+      "path": "60"
     },
     "261": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2754,7 +2754,7 @@
         1287
       ],
       "op": "SUB",
-      "path": "59"
+      "path": "60"
     },
     "262": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2763,7 +2763,7 @@
         1287
       ],
       "op": "DUP2",
-      "path": "59"
+      "path": "60"
     },
     "263": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2772,7 +2772,7 @@
         1287
       ],
       "op": "DUP7",
-      "path": "59"
+      "path": "60"
     },
     "264": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2781,7 +2781,7 @@
         1287
       ],
       "op": "GAS",
-      "path": "59"
+      "path": "60"
     },
     "265": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2790,7 +2790,7 @@
         1287
       ],
       "op": "STATICCALL",
-      "path": "59"
+      "path": "60"
     },
     "266": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2799,7 +2799,7 @@
         1287
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "267": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2808,7 +2808,7 @@
         1287
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "268": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2817,7 +2817,7 @@
         1287
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "269": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2826,7 +2826,7 @@
         1287
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x11A"
     },
     "272": {
@@ -2836,7 +2836,7 @@
         1287
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "273": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2845,7 +2845,7 @@
         1287
       ],
       "op": "RETURNDATASIZE",
-      "path": "59"
+      "path": "60"
     },
     "274": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2854,7 +2854,7 @@
         1287
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "276": {
@@ -2864,7 +2864,7 @@
         1287
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "277": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2873,7 +2873,7 @@
         1287
       ],
       "op": "RETURNDATACOPY",
-      "path": "59"
+      "path": "60"
     },
     "278": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2882,7 +2882,7 @@
         1287
       ],
       "op": "RETURNDATASIZE",
-      "path": "59"
+      "path": "60"
     },
     "279": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2891,7 +2891,7 @@
         1287
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "281": {
@@ -2901,7 +2901,7 @@
         1287
       ],
       "op": "REVERT",
-      "path": "59"
+      "path": "60"
     },
     "282": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2910,7 +2910,7 @@
         1287
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "283": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2919,7 +2919,7 @@
         1287
       ],
       "op": "POP",
-      "path": "59"
+      "path": "60"
     },
     "284": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2928,7 +2928,7 @@
         1287
       ],
       "op": "POP",
-      "path": "59"
+      "path": "60"
     },
     "285": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2937,7 +2937,7 @@
         1287
       ],
       "op": "POP",
-      "path": "59"
+      "path": "60"
     },
     "286": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2946,7 +2946,7 @@
         1287
       ],
       "op": "POP",
-      "path": "59"
+      "path": "60"
     },
     "287": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2955,7 +2955,7 @@
         1287
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "289": {
@@ -2965,7 +2965,7 @@
         1287
       ],
       "op": "MLOAD",
-      "path": "59"
+      "path": "60"
     },
     "290": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2974,7 +2974,7 @@
         1287
       ],
       "op": "RETURNDATASIZE",
-      "path": "59"
+      "path": "60"
     },
     "291": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -2983,7 +2983,7 @@
         1287
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x1F"
     },
     "293": {
@@ -2993,7 +2993,7 @@
         1287
       ],
       "op": "NOT",
-      "path": "59"
+      "path": "60"
     },
     "294": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3002,7 +3002,7 @@
         1287
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x1F"
     },
     "296": {
@@ -3012,7 +3012,7 @@
         1287
       ],
       "op": "DUP3",
-      "path": "59"
+      "path": "60"
     },
     "297": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3021,7 +3021,7 @@
         1287
       ],
       "op": "ADD",
-      "path": "59"
+      "path": "60"
     },
     "298": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3030,7 +3030,7 @@
         1287
       ],
       "op": "AND",
-      "path": "59"
+      "path": "60"
     },
     "299": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3039,7 +3039,7 @@
         1287
       ],
       "op": "DUP3",
-      "path": "59"
+      "path": "60"
     },
     "300": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3048,7 +3048,7 @@
         1287
       ],
       "op": "ADD",
-      "path": "59"
+      "path": "60"
     },
     "301": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3057,7 +3057,7 @@
         1287
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "302": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3066,7 +3066,7 @@
         1287
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "304": {
@@ -3076,7 +3076,7 @@
         1287
       ],
       "op": "MSTORE",
-      "path": "59"
+      "path": "60"
     },
     "305": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3085,7 +3085,7 @@
         1287
       ],
       "op": "POP",
-      "path": "59"
+      "path": "60"
     },
     "306": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3094,7 +3094,7 @@
         1287
       ],
       "op": "DUP2",
-      "path": "59"
+      "path": "60"
     },
     "307": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3103,7 +3103,7 @@
         1287
       ],
       "op": "ADD",
-      "path": "59"
+      "path": "60"
     },
     "308": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3112,7 +3112,7 @@
         1287
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "309": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3121,7 +3121,7 @@
         1287
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x13E"
     },
     "312": {
@@ -3131,7 +3131,7 @@
         1287
       ],
       "op": "SWAP2",
-      "path": "59"
+      "path": "60"
     },
     "313": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3140,7 +3140,7 @@
         1287
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "314": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3149,7 +3149,7 @@
         1287
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x499"
     },
     "317": {
@@ -3160,7 +3160,7 @@
         1287
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "318": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3169,7 +3169,7 @@
         1287
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "319": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3178,7 +3178,7 @@
         1333
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "statement": 1,
       "value": "0x40"
     },
@@ -3189,7 +3189,7 @@
         1333
       ],
       "op": "MLOAD",
-      "path": "59"
+      "path": "60"
     },
     "322": {
       "op": "PUSH4",
@@ -3209,7 +3209,7 @@
         1333
       ],
       "op": "DUP2",
-      "path": "59"
+      "path": "60"
     },
     "331": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3218,7 +3218,7 @@
         1333
       ],
       "op": "MSTORE",
-      "path": "59"
+      "path": "60"
     },
     "332": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3227,7 +3227,7 @@
         1332
       ],
       "op": "CALLER",
-      "path": "59"
+      "path": "60"
     },
     "333": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3236,7 +3236,7 @@
         1333
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x4"
     },
     "335": {
@@ -3246,7 +3246,7 @@
         1333
       ],
       "op": "DUP3",
-      "path": "59"
+      "path": "60"
     },
     "336": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3255,7 +3255,7 @@
         1333
       ],
       "op": "ADD",
-      "path": "59"
+      "path": "60"
     },
     "337": {
       "op": "MSTORE"
@@ -3267,7 +3267,7 @@
         1297
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "339": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3276,7 +3276,7 @@
         1297
       ],
       "op": "SWAP2",
-      "path": "59"
+      "path": "60"
     },
     "340": {
       "op": "POP"
@@ -3306,7 +3306,7 @@
         1321
       ],
       "op": "DUP3",
-      "path": "59"
+      "path": "60"
     },
     "350": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3315,7 +3315,7 @@
         1321
       ],
       "op": "AND",
-      "path": "59"
+      "path": "60"
     },
     "351": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3324,7 +3324,7 @@
         1321
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "352": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3333,7 +3333,7 @@
         1321
       ],
       "op": "PUSH4",
-      "path": "59",
+      "path": "60",
       "value": "0x25B31A97"
     },
     "357": {
@@ -3343,7 +3343,7 @@
         1321
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "358": {
       "op": "PUSH1",
@@ -3359,7 +3359,7 @@
         1333
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "363": {
@@ -3369,7 +3369,7 @@
         1333
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "365": {
@@ -3379,7 +3379,7 @@
         1333
       ],
       "op": "MLOAD",
-      "path": "59"
+      "path": "60"
     },
     "366": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3388,7 +3388,7 @@
         1333
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "367": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3397,7 +3397,7 @@
         1333
       ],
       "op": "DUP4",
-      "path": "59"
+      "path": "60"
     },
     "368": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3406,7 +3406,7 @@
         1333
       ],
       "op": "SUB",
-      "path": "59"
+      "path": "60"
     },
     "369": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3415,7 +3415,7 @@
         1333
       ],
       "op": "DUP2",
-      "path": "59"
+      "path": "60"
     },
     "370": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3424,7 +3424,7 @@
         1333
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "372": {
@@ -3434,7 +3434,7 @@
         1333
       ],
       "op": "DUP8",
-      "path": "59"
+      "path": "60"
     },
     "373": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3443,7 +3443,7 @@
         1333
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "374": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3452,7 +3452,7 @@
         1333
       ],
       "op": "EXTCODESIZE",
-      "path": "59"
+      "path": "60"
     },
     "375": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3461,7 +3461,7 @@
         1333
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "376": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3470,7 +3470,7 @@
         1333
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "377": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3479,7 +3479,7 @@
         1333
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "378": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3488,7 +3488,7 @@
         1333
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x182"
     },
     "381": {
@@ -3498,7 +3498,7 @@
         1333
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "382": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3507,7 +3507,7 @@
         1333
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "384": {
@@ -3517,7 +3517,7 @@
         1333
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "385": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3526,7 +3526,7 @@
         1333
       ],
       "op": "REVERT",
-      "path": "59"
+      "path": "60"
     },
     "386": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3535,7 +3535,7 @@
         1333
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "387": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3544,7 +3544,7 @@
         1333
       ],
       "op": "POP",
-      "path": "59"
+      "path": "60"
     },
     "388": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3553,7 +3553,7 @@
         1333
       ],
       "op": "GAS",
-      "path": "59"
+      "path": "60"
     },
     "389": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3562,7 +3562,7 @@
         1333
       ],
       "op": "CALL",
-      "path": "59"
+      "path": "60"
     },
     "390": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3571,7 +3571,7 @@
         1333
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "391": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3580,7 +3580,7 @@
         1333
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "392": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3589,7 +3589,7 @@
         1333
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "393": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3598,7 +3598,7 @@
         1333
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x196"
     },
     "396": {
@@ -3608,7 +3608,7 @@
         1333
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "397": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3617,7 +3617,7 @@
         1333
       ],
       "op": "RETURNDATASIZE",
-      "path": "59"
+      "path": "60"
     },
     "398": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3626,7 +3626,7 @@
         1333
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "400": {
@@ -3636,7 +3636,7 @@
         1333
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "401": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3645,7 +3645,7 @@
         1333
       ],
       "op": "RETURNDATACOPY",
-      "path": "59"
+      "path": "60"
     },
     "402": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3654,7 +3654,7 @@
         1333
       ],
       "op": "RETURNDATASIZE",
-      "path": "59"
+      "path": "60"
     },
     "403": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3663,7 +3663,7 @@
         1333
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "405": {
@@ -3673,7 +3673,7 @@
         1333
       ],
       "op": "REVERT",
-      "path": "59"
+      "path": "60"
     },
     "406": {
       "fn": "PhantomLaunch.claimAPHM",
@@ -3682,7 +3682,7 @@
         1333
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "407": {
       "op": "POP"
@@ -3733,7 +3733,7 @@
         1340
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "418": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -3742,7 +3742,7 @@
         1675
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "419": {
       "offset": [
@@ -3952,7 +3952,7 @@
         1647
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "statement": 2,
       "value": "0x1D2"
     },
@@ -3963,7 +3963,7 @@
         1645
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x2F0"
     },
     "465": {
@@ -3974,7 +3974,7 @@
         1647
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "466": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -3983,7 +3983,7 @@
         1647
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "467": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -3992,7 +3992,7 @@
         1668
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "469": {
@@ -4002,7 +4002,7 @@
         1668
       ],
       "op": "MLOAD",
-      "path": "59"
+      "path": "60"
     },
     "470": {
       "op": "PUSH4",
@@ -4022,7 +4022,7 @@
         1668
       ],
       "op": "DUP2",
-      "path": "59"
+      "path": "60"
     },
     "479": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4031,7 +4031,7 @@
         1668
       ],
       "op": "MSTORE",
-      "path": "59"
+      "path": "60"
     },
     "480": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4040,7 +4040,7 @@
         1667
       ],
       "op": "CALLER",
-      "path": "59"
+      "path": "60"
     },
     "481": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4049,7 +4049,7 @@
         1668
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x4"
     },
     "483": {
@@ -4059,7 +4059,7 @@
         1668
       ],
       "op": "DUP3",
-      "path": "59"
+      "path": "60"
     },
     "484": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4068,7 +4068,7 @@
         1668
       ],
       "op": "ADD",
-      "path": "59"
+      "path": "60"
     },
     "485": {
       "op": "MSTORE"
@@ -4098,7 +4098,7 @@
         1656
       ],
       "op": "SWAP2",
-      "path": "59"
+      "path": "60"
     },
     "495": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4107,7 +4107,7 @@
         1656
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "496": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4116,7 +4116,7 @@
         1656
       ],
       "op": "SWAP2",
-      "path": "59"
+      "path": "60"
     },
     "497": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4125,7 +4125,7 @@
         1656
       ],
       "op": "AND",
-      "path": "59"
+      "path": "60"
     },
     "498": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4134,7 +4134,7 @@
         1656
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "499": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4143,7 +4143,7 @@
         1656
       ],
       "op": "PUSH4",
-      "path": "59",
+      "path": "60",
       "value": "0x1B15982A"
     },
     "504": {
@@ -4153,7 +4153,7 @@
         1656
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "505": {
       "op": "PUSH1",
@@ -4169,7 +4169,7 @@
         1668
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "509": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4178,7 +4178,7 @@
         1668
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "511": {
@@ -4188,7 +4188,7 @@
         1668
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "513": {
@@ -4198,7 +4198,7 @@
         1668
       ],
       "op": "MLOAD",
-      "path": "59"
+      "path": "60"
     },
     "514": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4207,7 +4207,7 @@
         1668
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "515": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4216,7 +4216,7 @@
         1668
       ],
       "op": "DUP4",
-      "path": "59"
+      "path": "60"
     },
     "516": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4225,7 +4225,7 @@
         1668
       ],
       "op": "SUB",
-      "path": "59"
+      "path": "60"
     },
     "517": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4234,7 +4234,7 @@
         1668
       ],
       "op": "DUP2",
-      "path": "59"
+      "path": "60"
     },
     "518": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4243,7 +4243,7 @@
         1668
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "520": {
@@ -4253,7 +4253,7 @@
         1668
       ],
       "op": "DUP8",
-      "path": "59"
+      "path": "60"
     },
     "521": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4262,7 +4262,7 @@
         1668
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "522": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4271,7 +4271,7 @@
         1668
       ],
       "op": "EXTCODESIZE",
-      "path": "59"
+      "path": "60"
     },
     "523": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4280,7 +4280,7 @@
         1668
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "524": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4289,7 +4289,7 @@
         1668
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "525": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4298,7 +4298,7 @@
         1668
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "526": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4307,7 +4307,7 @@
         1668
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x216"
     },
     "529": {
@@ -4317,7 +4317,7 @@
         1668
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "530": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4326,7 +4326,7 @@
         1668
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "532": {
@@ -4336,7 +4336,7 @@
         1668
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "533": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4345,7 +4345,7 @@
         1668
       ],
       "op": "REVERT",
-      "path": "59"
+      "path": "60"
     },
     "534": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4354,7 +4354,7 @@
         1668
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "535": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4363,7 +4363,7 @@
         1668
       ],
       "op": "POP",
-      "path": "59"
+      "path": "60"
     },
     "536": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4372,7 +4372,7 @@
         1668
       ],
       "op": "GAS",
-      "path": "59"
+      "path": "60"
     },
     "537": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4381,7 +4381,7 @@
         1668
       ],
       "op": "CALL",
-      "path": "59"
+      "path": "60"
     },
     "538": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4390,7 +4390,7 @@
         1668
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "539": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4399,7 +4399,7 @@
         1668
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "540": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4408,7 +4408,7 @@
         1668
       ],
       "op": "ISZERO",
-      "path": "59"
+      "path": "60"
     },
     "541": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4417,7 +4417,7 @@
         1668
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x22A"
     },
     "544": {
@@ -4427,7 +4427,7 @@
         1668
       ],
       "op": "JUMPI",
-      "path": "59"
+      "path": "60"
     },
     "545": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4436,7 +4436,7 @@
         1668
       ],
       "op": "RETURNDATASIZE",
-      "path": "59"
+      "path": "60"
     },
     "546": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4445,7 +4445,7 @@
         1668
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "548": {
@@ -4455,7 +4455,7 @@
         1668
       ],
       "op": "DUP1",
-      "path": "59"
+      "path": "60"
     },
     "549": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4464,7 +4464,7 @@
         1668
       ],
       "op": "RETURNDATACOPY",
-      "path": "59"
+      "path": "60"
     },
     "550": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4473,7 +4473,7 @@
         1668
       ],
       "op": "RETURNDATASIZE",
-      "path": "59"
+      "path": "60"
     },
     "551": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4482,7 +4482,7 @@
         1668
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x0"
     },
     "553": {
@@ -4492,7 +4492,7 @@
         1668
       ],
       "op": "REVERT",
-      "path": "59"
+      "path": "60"
     },
     "554": {
       "fn": "PhantomLaunch.exerciseFPHM",
@@ -4501,7 +4501,7 @@
         1668
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "555": {
       "op": "POP"
@@ -4549,7 +4549,7 @@
         1675
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "565": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4558,7 +4558,7 @@
         1559
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "566": {
       "offset": [
@@ -4768,7 +4768,7 @@
         1534
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "statement": 3,
       "value": "0x265"
     },
@@ -4779,7 +4779,7 @@
         1532
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x2F0"
     },
     "612": {
@@ -4790,7 +4790,7 @@
         1534
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "613": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4799,7 +4799,7 @@
         1534
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "614": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4808,7 +4808,7 @@
         1552
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "616": {
@@ -4818,7 +4818,7 @@
         1552
       ],
       "op": "MLOAD",
-      "path": "59"
+      "path": "60"
     },
     "617": {
       "op": "PUSH4",
@@ -4838,7 +4838,7 @@
         1552
       ],
       "op": "DUP2",
-      "path": "59"
+      "path": "60"
     },
     "626": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4847,7 +4847,7 @@
         1552
       ],
       "op": "MSTORE",
-      "path": "59"
+      "path": "60"
     },
     "627": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4856,7 +4856,7 @@
         1551
       ],
       "op": "CALLER",
-      "path": "59"
+      "path": "60"
     },
     "628": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4865,7 +4865,7 @@
         1552
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x4"
     },
     "630": {
@@ -4875,7 +4875,7 @@
         1552
       ],
       "op": "DUP3",
-      "path": "59"
+      "path": "60"
     },
     "631": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4884,7 +4884,7 @@
         1552
       ],
       "op": "ADD",
-      "path": "59"
+      "path": "60"
     },
     "632": {
       "op": "MSTORE"
@@ -4914,7 +4914,7 @@
         1540
       ],
       "op": "SWAP2",
-      "path": "59"
+      "path": "60"
     },
     "642": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4923,7 +4923,7 @@
         1540
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "643": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4932,7 +4932,7 @@
         1540
       ],
       "op": "SWAP2",
-      "path": "59"
+      "path": "60"
     },
     "644": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4941,7 +4941,7 @@
         1540
       ],
       "op": "AND",
-      "path": "59"
+      "path": "60"
     },
     "645": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4950,7 +4950,7 @@
         1540
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "646": {
       "fn": "PhantomLaunch.claimFPHM",
@@ -4959,7 +4959,7 @@
         1540
       ],
       "op": "PUSH4",
-      "path": "59",
+      "path": "60",
       "value": "0x1E83409A"
     },
     "651": {
@@ -4969,7 +4969,7 @@
         1540
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "652": {
       "op": "PUSH1",
@@ -4985,7 +4985,7 @@
         1552
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x1FC"
     },
     "658": {
@@ -4998,7 +4998,7 @@
         1449
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "660": {
       "offset": [
@@ -5210,7 +5210,7 @@
         1425
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "statement": 4,
       "value": "0x2C3"
     },
@@ -5221,7 +5221,7 @@
         1423
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x38F"
     },
     "706": {
@@ -5232,7 +5232,7 @@
         1425
       ],
       "op": "JUMP",
-      "path": "59"
+      "path": "60"
     },
     "707": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5241,7 +5241,7 @@
         1425
       ],
       "op": "JUMPDEST",
-      "path": "59"
+      "path": "60"
     },
     "708": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5250,7 +5250,7 @@
         1442
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x40"
     },
     "710": {
@@ -5260,7 +5260,7 @@
         1442
       ],
       "op": "MLOAD",
-      "path": "59"
+      "path": "60"
     },
     "711": {
       "op": "PUSH3",
@@ -5280,7 +5280,7 @@
         1442
       ],
       "op": "DUP2",
-      "path": "59"
+      "path": "60"
     },
     "719": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5289,7 +5289,7 @@
         1442
       ],
       "op": "MSTORE",
-      "path": "59"
+      "path": "60"
     },
     "720": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5298,7 +5298,7 @@
         1441
       ],
       "op": "CALLER",
-      "path": "59"
+      "path": "60"
     },
     "721": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5307,7 +5307,7 @@
         1442
       ],
       "op": "PUSH1",
-      "path": "59",
+      "path": "60",
       "value": "0x4"
     },
     "723": {
@@ -5317,7 +5317,7 @@
         1442
       ],
       "op": "DUP3",
-      "path": "59"
+      "path": "60"
     },
     "724": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5326,7 +5326,7 @@
         1442
       ],
       "op": "ADD",
-      "path": "59"
+      "path": "60"
     },
     "725": {
       "op": "MSTORE"
@@ -5356,7 +5356,7 @@
         1430
       ],
       "op": "SWAP2",
-      "path": "59"
+      "path": "60"
     },
     "735": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5365,7 +5365,7 @@
         1430
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "736": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5374,7 +5374,7 @@
         1430
       ],
       "op": "SWAP2",
-      "path": "59"
+      "path": "60"
     },
     "737": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5383,7 +5383,7 @@
         1430
       ],
       "op": "AND",
-      "path": "59"
+      "path": "60"
     },
     "738": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5392,7 +5392,7 @@
         1430
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "739": {
       "fn": "PhantomLaunch.swapAPHM",
@@ -5401,7 +5401,7 @@
         1430
       ],
       "op": "PUSH4",
-      "path": "59",
+      "path": "60",
       "value": "0x3438DD0"
     },
     "744": {
@@ -5411,7 +5411,7 @@
         1430
       ],
       "op": "SWAP1",
-      "path": "59"
+      "path": "60"
     },
     "745": {
       "op": "PUSH1",
@@ -5427,7 +5427,7 @@
         1442
       ],
       "op": "PUSH2",
-      "path": "59",
+      "path": "60",
       "value": "0x1FC"
     },
     "751": {
@@ -5440,7 +5440,7 @@
         5278
       ],
       "op": "JUMPDEST",
-      "path": "67"
+      "path": "68"
     },
     "753": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5449,7 +5449,7 @@
         5168
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x0"
     },
     "755": {
@@ -5459,7 +5459,7 @@
         5220
       ],
       "op": "PUSH2",
-      "path": "67",
+      "path": "68",
       "statement": 5,
       "value": "0x304"
     },
@@ -5470,7 +5470,7 @@
         2485
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x49"
     },
     "760": {
@@ -5480,7 +5480,7 @@
         2485
       ],
       "op": "SLOAD",
-      "path": "67"
+      "path": "68"
     },
     "761": {
       "op": "PUSH1",
@@ -5507,7 +5507,7 @@
         2485
       ],
       "op": "AND",
-      "path": "67"
+      "path": "68"
     },
     "770": {
       "fn": "PhantomStorageMixin.PhantomStorage",
@@ -5516,7 +5516,7 @@
         2485
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "771": {
       "fn": "PhantomStorageMixin.PhantomStorage",
@@ -5525,7 +5525,7 @@
         2493
       ],
       "op": "JUMP",
-      "path": "67"
+      "path": "68"
     },
     "772": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5534,7 +5534,7 @@
         5220
       ],
       "op": "JUMPDEST",
-      "path": "67"
+      "path": "68"
     },
     "773": {
       "op": "PUSH1",
@@ -5561,7 +5561,7 @@
         5231
       ],
       "op": "AND",
-      "path": "67"
+      "path": "68"
     },
     "782": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5570,7 +5570,7 @@
         5231
       ],
       "op": "PUSH4",
-      "path": "67",
+      "path": "68",
       "value": "0x21F8A721"
     },
     "787": {
@@ -5580,7 +5580,7 @@
         5249
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x3"
     },
     "789": {
@@ -5590,7 +5590,7 @@
         5259
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x0"
     },
     "791": {
@@ -5600,7 +5600,7 @@
         5259
       ],
       "op": "ADD",
-      "path": "67"
+      "path": "68"
     },
     "792": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5609,7 +5609,7 @@
         5268
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x1"
     },
     "794": {
@@ -5619,7 +5619,7 @@
         5268
       ],
       "op": "ADD",
-      "path": "67"
+      "path": "68"
     },
     "795": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5628,7 +5628,7 @@
         5269
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x40"
     },
     "797": {
@@ -5638,7 +5638,7 @@
         5269
       ],
       "op": "MLOAD",
-      "path": "67"
+      "path": "68"
     },
     "798": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5647,7 +5647,7 @@
         5269
       ],
       "op": "PUSH2",
-      "path": "67",
+      "path": "68",
       "value": "0x327"
     },
     "801": {
@@ -5657,7 +5657,7 @@
         5269
       ],
       "op": "SWAP2",
-      "path": "67"
+      "path": "68"
     },
     "802": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5666,7 +5666,7 @@
         5269
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "803": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5675,7 +5675,7 @@
         5269
       ],
       "op": "PUSH2",
-      "path": "67",
+      "path": "68",
       "value": "0x3FD"
     },
     "806": {
@@ -5686,7 +5686,7 @@
         5269
       ],
       "op": "JUMP",
-      "path": "67"
+      "path": "68"
     },
     "807": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5695,7 +5695,7 @@
         5269
       ],
       "op": "JUMPDEST",
-      "path": "67"
+      "path": "68"
     },
     "808": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5704,7 +5704,7 @@
         5269
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x40"
     },
     "810": {
@@ -5714,7 +5714,7 @@
         5269
       ],
       "op": "MLOAD",
-      "path": "67"
+      "path": "68"
     },
     "811": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5723,7 +5723,7 @@
         5269
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "812": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5732,7 +5732,7 @@
         5269
       ],
       "op": "DUP2",
-      "path": "67"
+      "path": "68"
     },
     "813": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5741,7 +5741,7 @@
         5269
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "814": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5750,7 +5750,7 @@
         5269
       ],
       "op": "SUB",
-      "path": "67"
+      "path": "68"
     },
     "815": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5759,7 +5759,7 @@
         5269
       ],
       "op": "DUP2",
-      "path": "67"
+      "path": "68"
     },
     "816": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5768,7 +5768,7 @@
         5269
       ],
       "op": "KECCAK256",
-      "path": "67"
+      "path": "68"
     },
     "817": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5777,7 +5777,7 @@
         5270
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0xE0"
     },
     "819": {
@@ -5787,7 +5787,7 @@
         5270
       ],
       "op": "DUP4",
-      "path": "67"
+      "path": "68"
     },
     "820": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5796,7 +5796,7 @@
         5270
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "821": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5805,7 +5805,7 @@
         5270
       ],
       "op": "SHL",
-      "path": "67"
+      "path": "68"
     },
     "822": {
       "op": "PUSH1",
@@ -5835,7 +5835,7 @@
         5270
       ],
       "op": "AND",
-      "path": "67"
+      "path": "68"
     },
     "832": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5844,7 +5844,7 @@
         5270
       ],
       "op": "DUP3",
-      "path": "67"
+      "path": "68"
     },
     "833": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5853,7 +5853,7 @@
         5270
       ],
       "op": "MSTORE",
-      "path": "67"
+      "path": "68"
     },
     "834": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5862,7 +5862,7 @@
         5270
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x4"
     },
     "836": {
@@ -5872,7 +5872,7 @@
         5270
       ],
       "op": "DUP3",
-      "path": "67"
+      "path": "68"
     },
     "837": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5881,7 +5881,7 @@
         5270
       ],
       "op": "ADD",
-      "path": "67"
+      "path": "68"
     },
     "838": {
       "op": "MSTORE"
@@ -5900,7 +5900,7 @@
         5270
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x20"
     },
     "844": {
@@ -5910,7 +5910,7 @@
         5270
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x40"
     },
     "846": {
@@ -5920,7 +5920,7 @@
         5270
       ],
       "op": "MLOAD",
-      "path": "67"
+      "path": "68"
     },
     "847": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5929,7 +5929,7 @@
         5270
       ],
       "op": "DUP1",
-      "path": "67"
+      "path": "68"
     },
     "848": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5938,7 +5938,7 @@
         5270
       ],
       "op": "DUP4",
-      "path": "67"
+      "path": "68"
     },
     "849": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5947,7 +5947,7 @@
         5270
       ],
       "op": "SUB",
-      "path": "67"
+      "path": "68"
     },
     "850": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5956,7 +5956,7 @@
         5270
       ],
       "op": "DUP2",
-      "path": "67"
+      "path": "68"
     },
     "851": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5965,7 +5965,7 @@
         5270
       ],
       "op": "DUP7",
-      "path": "67"
+      "path": "68"
     },
     "852": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5974,7 +5974,7 @@
         5270
       ],
       "op": "GAS",
-      "path": "67"
+      "path": "68"
     },
     "853": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5983,7 +5983,7 @@
         5270
       ],
       "op": "STATICCALL",
-      "path": "67"
+      "path": "68"
     },
     "854": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -5992,7 +5992,7 @@
         5270
       ],
       "op": "ISZERO",
-      "path": "67"
+      "path": "68"
     },
     "855": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6001,7 +6001,7 @@
         5270
       ],
       "op": "DUP1",
-      "path": "67"
+      "path": "68"
     },
     "856": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6010,7 +6010,7 @@
         5270
       ],
       "op": "ISZERO",
-      "path": "67"
+      "path": "68"
     },
     "857": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6019,7 +6019,7 @@
         5270
       ],
       "op": "PUSH2",
-      "path": "67",
+      "path": "68",
       "value": "0x366"
     },
     "860": {
@@ -6029,7 +6029,7 @@
         5270
       ],
       "op": "JUMPI",
-      "path": "67"
+      "path": "68"
     },
     "861": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6038,7 +6038,7 @@
         5270
       ],
       "op": "RETURNDATASIZE",
-      "path": "67"
+      "path": "68"
     },
     "862": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6047,7 +6047,7 @@
         5270
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x0"
     },
     "864": {
@@ -6057,7 +6057,7 @@
         5270
       ],
       "op": "DUP1",
-      "path": "67"
+      "path": "68"
     },
     "865": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6066,7 +6066,7 @@
         5270
       ],
       "op": "RETURNDATACOPY",
-      "path": "67"
+      "path": "68"
     },
     "866": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6075,7 +6075,7 @@
         5270
       ],
       "op": "RETURNDATASIZE",
-      "path": "67"
+      "path": "68"
     },
     "867": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6084,7 +6084,7 @@
         5270
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x0"
     },
     "869": {
@@ -6094,7 +6094,7 @@
         5270
       ],
       "op": "REVERT",
-      "path": "67"
+      "path": "68"
     },
     "870": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6103,7 +6103,7 @@
         5270
       ],
       "op": "JUMPDEST",
-      "path": "67"
+      "path": "68"
     },
     "871": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6112,7 +6112,7 @@
         5270
       ],
       "op": "POP",
-      "path": "67"
+      "path": "68"
     },
     "872": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6121,7 +6121,7 @@
         5270
       ],
       "op": "POP",
-      "path": "67"
+      "path": "68"
     },
     "873": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6130,7 +6130,7 @@
         5270
       ],
       "op": "POP",
-      "path": "67"
+      "path": "68"
     },
     "874": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6139,7 +6139,7 @@
         5270
       ],
       "op": "POP",
-      "path": "67"
+      "path": "68"
     },
     "875": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6148,7 +6148,7 @@
         5270
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x40"
     },
     "877": {
@@ -6158,7 +6158,7 @@
         5270
       ],
       "op": "MLOAD",
-      "path": "67"
+      "path": "68"
     },
     "878": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6167,7 +6167,7 @@
         5270
       ],
       "op": "RETURNDATASIZE",
-      "path": "67"
+      "path": "68"
     },
     "879": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6176,7 +6176,7 @@
         5270
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x1F"
     },
     "881": {
@@ -6186,7 +6186,7 @@
         5270
       ],
       "op": "NOT",
-      "path": "67"
+      "path": "68"
     },
     "882": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6195,7 +6195,7 @@
         5270
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x1F"
     },
     "884": {
@@ -6205,7 +6205,7 @@
         5270
       ],
       "op": "DUP3",
-      "path": "67"
+      "path": "68"
     },
     "885": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6214,7 +6214,7 @@
         5270
       ],
       "op": "ADD",
-      "path": "67"
+      "path": "68"
     },
     "886": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6223,7 +6223,7 @@
         5270
       ],
       "op": "AND",
-      "path": "67"
+      "path": "68"
     },
     "887": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6232,7 +6232,7 @@
         5270
       ],
       "op": "DUP3",
-      "path": "67"
+      "path": "68"
     },
     "888": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6241,7 +6241,7 @@
         5270
       ],
       "op": "ADD",
-      "path": "67"
+      "path": "68"
     },
     "889": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6250,7 +6250,7 @@
         5270
       ],
       "op": "DUP1",
-      "path": "67"
+      "path": "68"
     },
     "890": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6259,7 +6259,7 @@
         5270
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x40"
     },
     "892": {
@@ -6269,7 +6269,7 @@
         5270
       ],
       "op": "MSTORE",
-      "path": "67"
+      "path": "68"
     },
     "893": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6278,7 +6278,7 @@
         5270
       ],
       "op": "POP",
-      "path": "67"
+      "path": "68"
     },
     "894": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6287,7 +6287,7 @@
         5270
       ],
       "op": "DUP2",
-      "path": "67"
+      "path": "68"
     },
     "895": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6296,7 +6296,7 @@
         5270
       ],
       "op": "ADD",
-      "path": "67"
+      "path": "68"
     },
     "896": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6305,7 +6305,7 @@
         5270
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "897": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6314,7 +6314,7 @@
         5270
       ],
       "op": "PUSH2",
-      "path": "67",
+      "path": "68",
       "value": "0x38A"
     },
     "900": {
@@ -6324,7 +6324,7 @@
         5270
       ],
       "op": "SWAP2",
-      "path": "67"
+      "path": "68"
     },
     "901": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6333,7 +6333,7 @@
         5270
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "902": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6342,7 +6342,7 @@
         5270
       ],
       "op": "PUSH2",
-      "path": "67",
+      "path": "68",
       "value": "0x499"
     },
     "905": {
@@ -6353,7 +6353,7 @@
         5270
       ],
       "op": "JUMP",
-      "path": "67"
+      "path": "68"
     },
     "906": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6362,7 +6362,7 @@
         5270
       ],
       "op": "JUMPDEST",
-      "path": "67"
+      "path": "68"
     },
     "907": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6371,7 +6371,7 @@
         5271
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "908": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6380,7 +6380,7 @@
         5271
       ],
       "op": "POP",
-      "path": "67"
+      "path": "68"
     },
     "909": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6389,7 +6389,7 @@
         5278
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "910": {
       "fn": "PhantomStorageMixin.PhantomFounders",
@@ -6399,7 +6399,7 @@
         5278
       ],
       "op": "JUMP",
-      "path": "67"
+      "path": "68"
     },
     "911": {
       "fn": "PhantomStorageMixin.PhantomAlphaSwap",
@@ -6408,7 +6408,7 @@
         5096
       ],
       "op": "JUMPDEST",
-      "path": "67"
+      "path": "68"
     },
     "912": {
       "fn": "PhantomStorageMixin.PhantomAlphaSwap",
@@ -6417,7 +6417,7 @@
         4984
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x0"
     },
     "914": {
@@ -6427,7 +6427,7 @@
         5037
       ],
       "op": "PUSH2",
-      "path": "67",
+      "path": "68",
       "statement": 6,
       "value": "0x3A3"
     },
@@ -6438,7 +6438,7 @@
         2485
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x49"
     },
     "919": {
@@ -6448,7 +6448,7 @@
         2485
       ],
       "op": "SLOAD",
-      "path": "67"
+      "path": "68"
     },
     "920": {
       "op": "PUSH1",
@@ -6475,7 +6475,7 @@
         2485
       ],
       "op": "AND",
-      "path": "67"
+      "path": "68"
     },
     "929": {
       "fn": "PhantomStorageMixin.PhantomStorage",
@@ -6484,7 +6484,7 @@
         2485
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "930": {
       "fn": "PhantomStorageMixin.PhantomStorage",
@@ -6493,7 +6493,7 @@
         2493
       ],
       "op": "JUMP",
-      "path": "67"
+      "path": "68"
     },
     "931": {
       "fn": "PhantomStorageMixin.PhantomAlphaSwap",
@@ -6502,7 +6502,7 @@
         5037
       ],
       "op": "JUMPDEST",
-      "path": "67"
+      "path": "68"
     },
     "932": {
       "op": "PUSH1",
@@ -6529,7 +6529,7 @@
         5048
       ],
       "op": "AND",
-      "path": "67"
+      "path": "68"
     },
     "941": {
       "fn": "PhantomStorageMixin.PhantomAlphaSwap",
@@ -6538,7 +6538,7 @@
         5048
       ],
       "op": "PUSH4",
-      "path": "67",
+      "path": "68",
       "value": "0x21F8A721"
     },
     "946": {
@@ -6548,7 +6548,7 @@
         5066
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x3"
     },
     "948": {
@@ -6558,7 +6558,7 @@
         5076
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x0"
     },
     "950": {
@@ -6568,7 +6568,7 @@
         5076
       ],
       "op": "ADD",
-      "path": "67"
+      "path": "68"
     },
     "951": {
       "fn": "PhantomStorageMixin.PhantomAlphaSwap",
@@ -6577,7 +6577,7 @@
         5086
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x0"
     },
     "953": {
@@ -6587,7 +6587,7 @@
         5086
       ],
       "op": "ADD",
-      "path": "67"
+      "path": "68"
     },
     "954": {
       "fn": "PhantomStorageMixin.PhantomAlphaSwap",
@@ -6596,7 +6596,7 @@
         5087
       ],
       "op": "PUSH1",
-      "path": "67",
+      "path": "68",
       "value": "0x40"
     },
     "956": {
@@ -6606,7 +6606,7 @@
         5087
       ],
       "op": "MLOAD",
-      "path": "67"
+      "path": "68"
     },
     "957": {
       "fn": "PhantomStorageMixin.PhantomAlphaSwap",
@@ -6615,7 +6615,7 @@
         5087
       ],
       "op": "PUSH2",
-      "path": "67",
+      "path": "68",
       "value": "0x327"
     },
     "960": {
@@ -6625,7 +6625,7 @@
         5087
       ],
       "op": "SWAP2",
-      "path": "67"
+      "path": "68"
     },
     "961": {
       "fn": "PhantomStorageMixin.PhantomAlphaSwap",
@@ -6634,7 +6634,7 @@
         5087
       ],
       "op": "SWAP1",
-      "path": "67"
+      "path": "68"
     },
     "962": {
       "fn": "PhantomStorageMixin.PhantomAlphaSwap",
@@ -6643,7 +6643,7 @@
         5087
       ],
       "op": "PUSH2",
-      "path": "67",
+      "path": "68",
       "value": "0x3FD"
     },
     "965": {
@@ -6654,7 +6654,7 @@
         5087
       ],
       "op": "JUMP",
-      "path": "67"
+      "path": "68"
     },
     "966": {
       "op": "JUMPDEST"
@@ -7235,7 +7235,7 @@
   },
   "sha1": "1f5c70f68418531c19facc7b08eb8b474c1c5980",
   "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\n/* Package Imports */\nimport {PRBMathUD60x18} from \"@hifi-finance/prb-math/contracts/PRBMathUD60x18.sol\";\n\n/* Internal Imports */\nimport {PhantomStorageMixin} from \"../../mixins/PhantomStorageMixin.sol\";\n\n/* Internal Interface Imports */\nimport {IPhantomLaunch} from \"../../../interfaces/level1/launch/IPhantomLaunch.sol\";\nimport {IPhantomAuctionClaim} from \"../../../interfaces/level0/launch/IPhantomAuctionClaim.sol\";\n\n/**\n * @title PhantomLaunch\n * @author PhantomDao Team\n * @notice The dApp facing contract used for launch functions\n */\ncontract PhantomLaunch is PhantomStorageMixin, IPhantomLaunch {\n    using PRBMathUD60x18 for uint256;\n\n    constructor(address storageFactoryAddress) PhantomStorageMixin(storageFactoryAddress) {\n        return;\n    }\n\n    //=================================================================================================================\n    // External Functions\n    //=================================================================================================================\n\n    function claimAPHM() external override nonReentrant {\n        IPhantomAuctionClaim claim = IPhantomAuctionClaim(\n            PhantomStorage().getAddress(keccak256(phantom.contracts.auctionclaim))\n        );\n        claim.purchase(msg.sender);\n    }\n\n    function swapAPHM() external override nonReentrant {\n        PhantomAlphaSwap().swap(msg.sender);\n    }\n\n    function claimFPHM() external override nonReentrant {\n        PhantomFounders().claim(msg.sender);\n    }\n\n    function exerciseFPHM() external override nonReentrant {\n        PhantomFounders().exercise(msg.sender);\n    }\n}\n",
-  "sourceMap": "533:71:74:-:0;;;;;-1:-1:-1;;;533:71:74;;;;603:1074:59;533:71:74;;;;;;;;-1:-1:-1;;;533:71:74;;;;;603:1074:59;533:71:74;;;;;;;;;-1:-1:-1;533:71:74;603:1074:59;;-1:-1:-1;;503:101:74;;-1:-1:-1;;533:71:74;503:101;:::i;:::-;-1:-1:-1;503:101:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;503:101:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;647:4181:74;;;669:930;;;;;;;;;;;;;;;;;647:4181;;;669:930;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;669:930:74;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;669:930:74;;;;;;;;;;;;;;;;-1:-1:-1;;;669:930:74;647:4181;;;1613:367;;-1:-1:-1;1613:367:74;;;;;;;;;;;;647:4181;;-1:-1:-1;647:4181:74;;;;1613:367;;;;;;;;;;;;1702:219;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1613:367;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;;1994:687;;2051:366;;;;;;;;;;;;;647:4181;;;;1994:687;;;;;;;2022:645;;;;;;2051:366;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2022:645;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1994:687;;;647:4181;;;;2695:848;;;;;;;;2721:237;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2695:848;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;;;3557:79;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;3650:434;;;3676:268;;;;;;;;;;;;;647:4181;;;;;3650:434;;;;;;;;3676:268;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3650:434;;;3962:59;;;;;;;;;;;;;;;;;;;;3650:434;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;;4098:479;;;;;;;;;;;;;;;647:4181;;;;;4098:479;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;;;4591:227;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;611:4217;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;611:4217:74;;;;;;;;;;;;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:74;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:74;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;-1:-1:-1;;;2283:41:67;;710:109:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1637:1:11;1742:7;:22;2845:15:67;:32;;-1:-1:-1;;;;;2845:32:67;;-1:-1:-1;;;;;;2845:32:67;;;;;;710:109:59;603:1074;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;603:1074:59;;;-1:-1:-1;603:1074:59;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:290:103;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:103;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:103:o;309:380::-;388:1;384:12;;;;431;;;452:61;;506:4;498:6;494:17;484:27;;452:61;559:2;551:6;548:14;528:18;525:38;522:161;;;605:10;600:3;596:20;593:1;586:31;640:4;637:1;630:15;668:4;665:1;658:15;522:161;;309:380;;;:::o;:::-;603:1074:59;;;;;;",
+  "sourceMap": "533:71:75:-:0;;;;;-1:-1:-1;;;533:71:75;;;;603:1074:60;533:71:75;;;;;;;;-1:-1:-1;;;533:71:75;;;;;603:1074:60;533:71:75;;;;;;;;;-1:-1:-1;533:71:75;603:1074:60;;-1:-1:-1;;503:101:75;;-1:-1:-1;;533:71:75;503:101;:::i;:::-;-1:-1:-1;503:101:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;503:101:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;647:4181:75;;;669:930;;;;;;;;;;;;;;;;;647:4181;;;669:930;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;669:930:75;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;669:930:75;;;;;;;;;;;;;;;;-1:-1:-1;;;669:930:75;647:4181;;;1613:367;;-1:-1:-1;1613:367:75;;;;;;;;;;;;647:4181;;-1:-1:-1;647:4181:75;;;;1613:367;;;;;;;;;;;;1702:219;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1613:367;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;;1994:687;;2051:366;;;;;;;;;;;;;647:4181;;;;1994:687;;;;;;;2022:645;;;;;;2051:366;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2022:645;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1994:687;;;647:4181;;;;2695:848;;;;;;;;2721:237;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2695:848;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;;;3557:79;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;3650:434;;;3676:268;;;;;;;;;;;;;647:4181;;;;;3650:434;;;;;;;;3676:268;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3650:434;;;3962:59;;;;;;;;;;;;;;;;;;;;3650:434;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;;4098:479;;;;;;;;;;;;;;;647:4181;;;;;4098:479;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;;;4591:227;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:4181;;611:4217;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;611:4217:75;;;;;;;;;;;;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;611:4217:75;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;611:4217:75;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;-1:-1:-1;;;2283:41:68;;710:109:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1637:1:11;1742:7;:22;2845:15:68;:32;;-1:-1:-1;;;;;2845:32:68;;-1:-1:-1;;;;;;2845:32:68;;;;;;710:109:60;603:1074;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;603:1074:60;;;-1:-1:-1;603:1074:60;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:290:104;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:104;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:104:o;309:380::-;388:1;384:12;;;;431;;;452:61;;506:4;498:6;494:17;484:27;;452:61;559:2;551:6;548:14;528:18;525:38;522:161;;;605:10;600:3;596:20;593:1;586:31;640:4;637:1;630:15;668:4;665:1;658:15;522:161;;309:380;;;:::o;:::-;603:1074:60;;;;;;",
   "sourcePath": "contracts/level1/launch/PhantomLaunch.sol",
   "type": "contract"
 }

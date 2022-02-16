@@ -342,10 +342,10 @@
         3681
       ],
       "IERC20": [
-        13162
+        15755
       ],
       "IERC20Permit": [
-        14796
+        17389
       ]
     },
     "id": 3682,
@@ -370,7 +370,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 3682,
-        "sourceUnit": 13163,
+        "sourceUnit": 15756,
         "src": "101:70:42",
         "symbolAliases": [
           {
@@ -394,7 +394,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 3682,
-        "sourceUnit": 14797,
+        "sourceUnit": 17390,
         "src": "172:99:42",
         "symbolAliases": [
           {
@@ -419,7 +419,7 @@
               "id": 3236,
               "name": "IERC20",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 13162,
+              "referencedDeclaration": 15755,
               "src": "490:6:42"
             },
             "id": 3237,
@@ -431,7 +431,7 @@
               "id": 3238,
               "name": "IERC20Permit",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 14796,
+              "referencedDeclaration": 17389,
               "src": "498:12:42"
             },
             "id": 3239,
@@ -452,8 +452,8 @@
         "id": 3681,
         "linearizedBaseContracts": [
           3681,
-          14796,
-          13162
+          17389,
+          15755
         ],
         "name": "ERC20",
         "nameLocation": "481:5:42",
@@ -619,7 +619,7 @@
           },
           {
             "baseFunctions": [
-              13121
+              15714
             ],
             "constant": false,
             "functionSelector": "dd62ed3e",
@@ -822,7 +822,7 @@
           },
           {
             "baseFunctions": [
-              14789
+              17382
             ],
             "constant": false,
             "functionSelector": "7ecebe00",
@@ -1234,7 +1234,7 @@
           },
           {
             "baseFunctions": [
-              13093
+              15686
             ],
             "body": {
               "id": 3310,
@@ -1323,7 +1323,7 @@
           },
           {
             "baseFunctions": [
-              13101
+              15694
             ],
             "body": {
               "id": 3323,
@@ -1466,7 +1466,7 @@
           },
           {
             "baseFunctions": [
-              13131
+              15724
             ],
             "body": {
               "id": 3352,
@@ -1653,7 +1653,7 @@
                       "name": "Approval",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 13161,
+                      "referencedDeclaration": 15754,
                       "src": "2683:8:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
@@ -1821,7 +1821,7 @@
           },
           {
             "baseFunctions": [
-              13111
+              15704
             ],
             "body": {
               "id": 3393,
@@ -2058,7 +2058,7 @@
                       "name": "Transfer",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 13152,
+                      "referencedDeclaration": 15745,
                       "src": "3078:8:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
@@ -2325,7 +2325,7 @@
           },
           {
             "baseFunctions": [
-              13143
+              15736
             ],
             "body": {
               "id": 3456,
@@ -2817,7 +2817,7 @@
                       "name": "Transfer",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 13152,
+                      "referencedDeclaration": 15745,
                       "src": "3690:8:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
@@ -3098,7 +3098,7 @@
           },
           {
             "baseFunctions": [
-              14781
+              17374
             ],
             "body": {
               "id": 3546,
@@ -4127,7 +4127,7 @@
                       "name": "Approval",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 13161,
+                      "referencedDeclaration": 15754,
                       "src": "4957:8:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
@@ -4381,7 +4381,7 @@
           },
           {
             "baseFunctions": [
-              14795
+              17388
             ],
             "body": {
               "id": 3561,
@@ -5283,7 +5283,7 @@
                       "name": "Transfer",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 13152,
+                      "referencedDeclaration": 15745,
                       "src": "6119:8:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
@@ -5756,7 +5756,7 @@
                       "name": "Transfer",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 13152,
+                      "referencedDeclaration": 15745,
                       "src": "6507:8:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",

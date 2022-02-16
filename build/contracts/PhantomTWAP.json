@@ -150,42 +150,42 @@
   "allSourcePaths": {
     "34": "/Users/admin/.brownie/packages/uniswap/v2-core@1.0.1/contracts/interfaces/IUniswapV2Pair.sol",
     "38": "contracts/core/PhantomTWAP.sol",
-    "60": "contracts/libs/Babylonian.sol",
-    "61": "contracts/libs/BitMath.sol",
-    "63": "contracts/libs/FixedPoint.sol",
-    "64": "contracts/libs/FullMath.sol",
-    "66": "contracts/libs/UniswapV2OracleLibrary.sol",
-    "76": "interfaces/core/IPhantomTWAP.sol"
+    "61": "contracts/libs/Babylonian.sol",
+    "62": "contracts/libs/BitMath.sol",
+    "64": "contracts/libs/FixedPoint.sol",
+    "65": "contracts/libs/FullMath.sol",
+    "67": "contracts/libs/UniswapV2OracleLibrary.sol",
+    "77": "interfaces/core/IPhantomTWAP.sol"
   },
   "ast": {
     "absolutePath": "contracts/core/PhantomTWAP.sol",
     "exportedSymbols": {
       "Babylonian": [
-        9333
+        11926
       ],
       "BitMath": [
-        9611
+        12204
       ],
       "FixedPoint": [
-        10406
+        12999
       ],
       "FullMath": [
-        10528
+        13121
       ],
       "IPhantomTWAP": [
-        13787
+        16380
       ],
       "IUniswapV2Pair": [
-        14029
+        16622
       ],
       "IUniswapV2Router02": [
-        14117
+        16710
       ],
       "PhantomTWAP": [
         1585
       ],
       "UniswapV2OracleLibrary": [
-        10718
+        13311
       ]
     },
     "id": 1586,
@@ -210,7 +210,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1586,
-        "sourceUnit": 14030,
+        "sourceUnit": 16623,
         "src": "61:88:38",
         "symbolAliases": [
           {
@@ -234,7 +234,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1586,
-        "sourceUnit": 10407,
+        "sourceUnit": 13000,
         "src": "150:32:38",
         "symbolAliases": [],
         "unitAlias": ""
@@ -246,7 +246,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1586,
-        "sourceUnit": 10719,
+        "sourceUnit": 13312,
         "src": "184:44:38",
         "symbolAliases": [],
         "unitAlias": ""
@@ -258,7 +258,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1586,
-        "sourceUnit": 14118,
+        "sourceUnit": 16711,
         "src": "229:86:38",
         "symbolAliases": [
           {
@@ -282,7 +282,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1586,
-        "sourceUnit": 13788,
+        "sourceUnit": 16381,
         "src": "317:68:38",
         "symbolAliases": [
           {
@@ -307,7 +307,7 @@
               "id": 1300,
               "name": "IPhantomTWAP",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 13787,
+              "referencedDeclaration": 16380,
               "src": "412:12:38"
             },
             "id": 1301,
@@ -322,7 +322,7 @@
         "id": 1585,
         "linearizedBaseContracts": [
           1585,
-          13787
+          16380
         ],
         "name": "PhantomTWAP",
         "nameLocation": "397:11:38",
@@ -334,7 +334,7 @@
               "id": 1302,
               "name": "FixedPoint",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 10406,
+              "referencedDeclaration": 12999,
               "src": "437:10:38"
             },
             "nodeType": "UsingForDirective",
@@ -346,13 +346,13 @@
                 "id": 1303,
                 "name": "FixedPoint.uq144x112",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 9770,
+                "referencedDeclaration": 12363,
                 "src": "452:20:38"
               },
-              "referencedDeclaration": 9770,
+              "referencedDeclaration": 12363,
               "src": "452:20:38",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_uq144x112_$9770_storage_ptr",
+                "typeIdentifier": "t_struct$_uq144x112_$12363_storage_ptr",
                 "typeString": "struct FixedPoint.uq144x112"
               }
             }
@@ -363,7 +363,7 @@
               "id": 1306,
               "name": "FixedPoint",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 10406,
+              "referencedDeclaration": 12999,
               "src": "484:10:38"
             },
             "nodeType": "UsingForDirective",
@@ -375,13 +375,13 @@
                 "id": 1307,
                 "name": "FixedPoint.uq112x112",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 9767,
+                "referencedDeclaration": 12360,
                 "src": "499:20:38"
               },
-              "referencedDeclaration": 9767,
+              "referencedDeclaration": 12360,
               "src": "499:20:38",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_uq112x112_$9767_storage_ptr",
+                "typeIdentifier": "t_struct$_uq112x112_$12360_storage_ptr",
                 "typeString": "struct FixedPoint.uq112x112"
               }
             }
@@ -443,7 +443,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+              "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
               "typeString": "contract IUniswapV2Pair"
             },
             "typeName": {
@@ -453,13 +453,13 @@
                 "id": 1313,
                 "name": "IUniswapV2Pair",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 14029,
+                "referencedDeclaration": 16622,
                 "src": "576:14:38"
               },
-              "referencedDeclaration": 14029,
+              "referencedDeclaration": 16622,
               "src": "576:14:38",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                 "typeString": "contract IUniswapV2Pair"
               }
             },
@@ -620,7 +620,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_uq112x112_$9767_storage",
+              "typeIdentifier": "t_struct$_uq112x112_$12360_storage",
               "typeString": "struct FixedPoint.uq112x112"
             },
             "typeName": {
@@ -630,13 +630,13 @@
                 "id": 1326,
                 "name": "FixedPoint.uq112x112",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 9767,
+                "referencedDeclaration": 12360,
                 "src": "807:20:38"
               },
-              "referencedDeclaration": 9767,
+              "referencedDeclaration": 12360,
               "src": "807:20:38",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_uq112x112_$9767_storage_ptr",
+                "typeIdentifier": "t_struct$_uq112x112_$12360_storage_ptr",
                 "typeString": "struct FixedPoint.uq112x112"
               }
             },
@@ -655,7 +655,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_uq112x112_$9767_storage",
+              "typeIdentifier": "t_struct$_uq112x112_$12360_storage",
               "typeString": "struct FixedPoint.uq112x112"
             },
             "typeName": {
@@ -665,13 +665,13 @@
                 "id": 1329,
                 "name": "FixedPoint.uq112x112",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 9767,
+                "referencedDeclaration": 12360,
                 "src": "854:20:38"
               },
-              "referencedDeclaration": 9767,
+              "referencedDeclaration": 12360,
               "src": "854:20:38",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_uq112x112_$9767_storage_ptr",
+                "typeIdentifier": "t_struct$_uq112x112_$12360_storage_ptr",
                 "typeString": "struct FixedPoint.uq112x112"
               }
             },
@@ -698,7 +698,7 @@
                       "referencedDeclaration": 1315,
                       "src": "946:4:38",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                        "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                         "typeString": "contract IUniswapV2Pair"
                       }
                     },
@@ -730,10 +730,10 @@
                         "name": "IUniswapV2Pair",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 14029,
+                        "referencedDeclaration": 16622,
                         "src": "953:14:38",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_IUniswapV2Pair_$14029_$",
+                          "typeIdentifier": "t_type$_t_contract$_IUniswapV2Pair_$16622_$",
                           "typeString": "type(contract IUniswapV2Pair)"
                         }
                       },
@@ -748,13 +748,13 @@
                       "src": "953:21:38",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                        "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                         "typeString": "contract IUniswapV2Pair"
                       }
                     },
                     "src": "946:28:38",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                      "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                       "typeString": "contract IUniswapV2Pair"
                     }
                   },
@@ -795,7 +795,7 @@
                           "referencedDeclaration": 1315,
                           "src": "993:4:38",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                            "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                             "typeString": "contract IUniswapV2Pair"
                           }
                         },
@@ -806,7 +806,7 @@
                         "lValueRequested": false,
                         "memberName": "token0",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 13957,
+                        "referencedDeclaration": 16550,
                         "src": "993:11:38",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
@@ -871,7 +871,7 @@
                           "referencedDeclaration": 1315,
                           "src": "1025:4:38",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                            "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                             "typeString": "contract IUniswapV2Pair"
                           }
                         },
@@ -882,7 +882,7 @@
                         "lValueRequested": false,
                         "memberName": "token1",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 13962,
+                        "referencedDeclaration": 16555,
                         "src": "1025:11:38",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
@@ -947,7 +947,7 @@
                           "referencedDeclaration": 1315,
                           "src": "1071:4:38",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                            "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                             "typeString": "contract IUniswapV2Pair"
                           }
                         },
@@ -958,7 +958,7 @@
                         "lValueRequested": false,
                         "memberName": "price0CumulativeLast",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 13976,
+                        "referencedDeclaration": 16569,
                         "src": "1071:25:38",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -1023,7 +1023,7 @@
                           "referencedDeclaration": 1315,
                           "src": "1184:4:38",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                            "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                             "typeString": "contract IUniswapV2Pair"
                           }
                         },
@@ -1034,7 +1034,7 @@
                         "lValueRequested": false,
                         "memberName": "price1CumulativeLast",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 13981,
+                        "referencedDeclaration": 16574,
                         "src": "1184:25:38",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -1213,7 +1213,7 @@
                           "referencedDeclaration": 1315,
                           "src": "1369:4:38",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                            "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                             "typeString": "contract IUniswapV2Pair"
                           }
                         },
@@ -1224,7 +1224,7 @@
                         "lValueRequested": false,
                         "memberName": "getReserves",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 13971,
+                        "referencedDeclaration": 16564,
                         "src": "1369:16:38",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_uint112_$_t_uint112_$_t_uint32_$",
@@ -1488,7 +1488,7 @@
           },
           {
             "baseFunctions": [
-              13777
+              16370
             ],
             "body": {
               "id": 1465,
@@ -1597,7 +1597,7 @@
                             "referencedDeclaration": 1315,
                             "src": "1707:4:38",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                              "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                               "typeString": "contract IUniswapV2Pair"
                             }
                           }
@@ -1605,7 +1605,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                              "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                               "typeString": "contract IUniswapV2Pair"
                             }
                           ],
@@ -1656,10 +1656,10 @@
                         "name": "UniswapV2OracleLibrary",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10718,
+                        "referencedDeclaration": 13311,
                         "src": "1652:22:38",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_UniswapV2OracleLibrary_$10718_$",
+                          "typeIdentifier": "t_type$_t_contract$_UniswapV2OracleLibrary_$13311_$",
                           "typeString": "type(library UniswapV2OracleLibrary)"
                         }
                       },
@@ -1670,7 +1670,7 @@
                       "lValueRequested": false,
                       "memberName": "currentCumulativePrices",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10717,
+                      "referencedDeclaration": 13310,
                       "src": "1652:46:38",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_uint256_$_t_uint256_$_t_uint32_$",
@@ -1847,7 +1847,7 @@
                           "referencedDeclaration": 1328,
                           "src": "2157:13:38",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_uq112x112_$9767_storage",
+                            "typeIdentifier": "t_struct$_uq112x112_$12360_storage",
                             "typeString": "struct FixedPoint.uq112x112 storage ref"
                           }
                         },
@@ -2000,10 +2000,10 @@
                               "name": "FixedPoint",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 10406,
+                              "referencedDeclaration": 12999,
                               "src": "2173:10:38",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_FixedPoint_$10406_$",
+                                "typeIdentifier": "t_type$_t_contract$_FixedPoint_$12999_$",
                                 "typeString": "type(library FixedPoint)"
                               }
                             },
@@ -2014,10 +2014,10 @@
                             "lValueRequested": false,
                             "memberName": "uq112x112",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 9767,
+                            "referencedDeclaration": 12360,
                             "src": "2173:20:38",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_uq112x112_$9767_storage_ptr_$",
+                              "typeIdentifier": "t_type$_t_struct$_uq112x112_$12360_storage_ptr_$",
                               "typeString": "type(struct FixedPoint.uq112x112 storage pointer)"
                             }
                           },
@@ -2032,13 +2032,13 @@
                           "src": "2173:86:38",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                            "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                             "typeString": "struct FixedPoint.uq112x112 memory"
                           }
                         },
                         "src": "2157:102:38",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_uq112x112_$9767_storage",
+                          "typeIdentifier": "t_struct$_uq112x112_$12360_storage",
                           "typeString": "struct FixedPoint.uq112x112 storage ref"
                         }
                       },
@@ -2061,7 +2061,7 @@
                           "referencedDeclaration": 1331,
                           "src": "2273:13:38",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_uq112x112_$9767_storage",
+                            "typeIdentifier": "t_struct$_uq112x112_$12360_storage",
                             "typeString": "struct FixedPoint.uq112x112 storage ref"
                           }
                         },
@@ -2214,10 +2214,10 @@
                               "name": "FixedPoint",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 10406,
+                              "referencedDeclaration": 12999,
                               "src": "2289:10:38",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_FixedPoint_$10406_$",
+                                "typeIdentifier": "t_type$_t_contract$_FixedPoint_$12999_$",
                                 "typeString": "type(library FixedPoint)"
                               }
                             },
@@ -2228,10 +2228,10 @@
                             "lValueRequested": false,
                             "memberName": "uq112x112",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 9767,
+                            "referencedDeclaration": 12360,
                             "src": "2289:20:38",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_uq112x112_$9767_storage_ptr_$",
+                              "typeIdentifier": "t_type$_t_struct$_uq112x112_$12360_storage_ptr_$",
                               "typeString": "type(struct FixedPoint.uq112x112 storage pointer)"
                             }
                           },
@@ -2246,13 +2246,13 @@
                           "src": "2289:86:38",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                            "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                             "typeString": "struct FixedPoint.uq112x112 memory"
                           }
                         },
                         "src": "2273:102:38",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_uq112x112_$9767_storage",
+                          "typeIdentifier": "t_struct$_uq112x112_$12360_storage",
                           "typeString": "struct FixedPoint.uq112x112 storage ref"
                         }
                       },
@@ -2427,7 +2427,7 @@
           },
           {
             "baseFunctions": [
-              13786
+              16379
             ],
             "body": {
               "id": 1583,
@@ -2524,7 +2524,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                        "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                         "typeString": "struct FixedPoint.uq112x112"
                       },
                       "typeName": {
@@ -2534,13 +2534,13 @@
                           "id": 1484,
                           "name": "FixedPoint.uq112x112",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 9767,
+                          "referencedDeclaration": 12360,
                           "src": "2798:20:38"
                         },
-                        "referencedDeclaration": 9767,
+                        "referencedDeclaration": 12360,
                         "src": "2798:20:38",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_uq112x112_$9767_storage_ptr",
+                          "typeIdentifier": "t_struct$_uq112x112_$12360_storage_ptr",
                           "typeString": "struct FixedPoint.uq112x112"
                         }
                       },
@@ -2556,7 +2556,7 @@
                     "referencedDeclaration": 1328,
                     "src": "2843:13:38",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_uq112x112_$9767_storage",
+                      "typeIdentifier": "t_struct$_uq112x112_$12360_storage",
                       "typeString": "struct FixedPoint.uq112x112 storage ref"
                     }
                   },
@@ -2580,7 +2580,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                        "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                         "typeString": "struct FixedPoint.uq112x112"
                       },
                       "typeName": {
@@ -2590,13 +2590,13 @@
                           "id": 1491,
                           "name": "FixedPoint.uq112x112",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 9767,
+                          "referencedDeclaration": 12360,
                           "src": "2866:20:38"
                         },
-                        "referencedDeclaration": 9767,
+                        "referencedDeclaration": 12360,
                         "src": "2866:20:38",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_uq112x112_$9767_storage_ptr",
+                          "typeIdentifier": "t_struct$_uq112x112_$12360_storage_ptr",
                           "typeString": "struct FixedPoint.uq112x112"
                         }
                       },
@@ -2612,7 +2612,7 @@
                     "referencedDeclaration": 1331,
                     "src": "2911:13:38",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_uq112x112_$9767_storage",
+                      "typeIdentifier": "t_struct$_uq112x112_$12360_storage",
                       "typeString": "struct FixedPoint.uq112x112 storage ref"
                     }
                   },
@@ -2721,7 +2721,7 @@
                             "referencedDeclaration": 1315,
                             "src": "3073:4:38",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                              "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                               "typeString": "contract IUniswapV2Pair"
                             }
                           }
@@ -2729,7 +2729,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IUniswapV2Pair_$14029",
+                              "typeIdentifier": "t_contract$_IUniswapV2Pair_$16622",
                               "typeString": "contract IUniswapV2Pair"
                             }
                           ],
@@ -2780,10 +2780,10 @@
                         "name": "UniswapV2OracleLibrary",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10718,
+                        "referencedDeclaration": 13311,
                         "src": "3018:22:38",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_UniswapV2OracleLibrary_$10718_$",
+                          "typeIdentifier": "t_type$_t_contract$_UniswapV2OracleLibrary_$13311_$",
                           "typeString": "type(library UniswapV2OracleLibrary)"
                         }
                       },
@@ -2794,7 +2794,7 @@
                       "lValueRequested": false,
                       "memberName": "currentCumulativePrices",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10717,
+                      "referencedDeclaration": 13310,
                       "src": "3018:46:38",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_uint256_$_t_uint256_$_t_uint32_$",
@@ -2969,7 +2969,7 @@
                                 "referencedDeclaration": 1486,
                                 "src": "3568:14:38",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                                  "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                                   "typeString": "struct FixedPoint.uq112x112 memory"
                                 }
                               },
@@ -3122,10 +3122,10 @@
                                     "name": "FixedPoint",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 10406,
+                                    "referencedDeclaration": 12999,
                                     "src": "3585:10:38",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_type$_t_contract$_FixedPoint_$10406_$",
+                                      "typeIdentifier": "t_type$_t_contract$_FixedPoint_$12999_$",
                                       "typeString": "type(library FixedPoint)"
                                     }
                                   },
@@ -3136,10 +3136,10 @@
                                   "lValueRequested": false,
                                   "memberName": "uq112x112",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 9767,
+                                  "referencedDeclaration": 12360,
                                   "src": "3585:20:38",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_struct$_uq112x112_$9767_storage_ptr_$",
+                                    "typeIdentifier": "t_type$_t_struct$_uq112x112_$12360_storage_ptr_$",
                                     "typeString": "type(struct FixedPoint.uq112x112 storage pointer)"
                                   }
                                 },
@@ -3154,13 +3154,13 @@
                                 "src": "3585:86:38",
                                 "tryCall": false,
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                                  "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                                   "typeString": "struct FixedPoint.uq112x112 memory"
                                 }
                               },
                               "src": "3568:103:38",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                                "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                                 "typeString": "struct FixedPoint.uq112x112 memory"
                               }
                             },
@@ -3183,7 +3183,7 @@
                                 "referencedDeclaration": 1493,
                                 "src": "3689:14:38",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                                  "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                                   "typeString": "struct FixedPoint.uq112x112 memory"
                                 }
                               },
@@ -3336,10 +3336,10 @@
                                     "name": "FixedPoint",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 10406,
+                                    "referencedDeclaration": 12999,
                                     "src": "3706:10:38",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_type$_t_contract$_FixedPoint_$10406_$",
+                                      "typeIdentifier": "t_type$_t_contract$_FixedPoint_$12999_$",
                                       "typeString": "type(library FixedPoint)"
                                     }
                                   },
@@ -3350,10 +3350,10 @@
                                   "lValueRequested": false,
                                   "memberName": "uq112x112",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 9767,
+                                  "referencedDeclaration": 12360,
                                   "src": "3706:20:38",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_struct$_uq112x112_$9767_storage_ptr_$",
+                                    "typeIdentifier": "t_type$_t_struct$_uq112x112_$12360_storage_ptr_$",
                                     "typeString": "type(struct FixedPoint.uq112x112 storage pointer)"
                                   }
                                 },
@@ -3368,13 +3368,13 @@
                                 "src": "3706:86:38",
                                 "tryCall": false,
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                                  "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                                   "typeString": "struct FixedPoint.uq112x112 memory"
                                 }
                               },
                               "src": "3689:103:38",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                                "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                                 "typeString": "struct FixedPoint.uq112x112 memory"
                               }
                             },
@@ -3596,7 +3596,7 @@
                                     "referencedDeclaration": 1493,
                                     "src": "4025:14:38",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                                      "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                                       "typeString": "struct FixedPoint.uq112x112 memory"
                                     }
                                   },
@@ -3607,10 +3607,10 @@
                                   "lValueRequested": false,
                                   "memberName": "mul",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 9892,
+                                  "referencedDeclaration": 12485,
                                   "src": "4025:18:38",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_function_internal_pure$_t_struct$_uq112x112_$9767_memory_ptr_$_t_uint256_$returns$_t_struct$_uq144x112_$9770_memory_ptr_$bound_to$_t_struct$_uq112x112_$9767_memory_ptr_$",
+                                    "typeIdentifier": "t_function_internal_pure$_t_struct$_uq112x112_$12360_memory_ptr_$_t_uint256_$returns$_t_struct$_uq144x112_$12363_memory_ptr_$bound_to$_t_struct$_uq112x112_$12360_memory_ptr_$",
                                     "typeString": "function (struct FixedPoint.uq112x112 memory,uint256) pure returns (struct FixedPoint.uq144x112 memory)"
                                   }
                                 },
@@ -3625,7 +3625,7 @@
                                 "src": "4025:28:38",
                                 "tryCall": false,
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_uq144x112_$9770_memory_ptr",
+                                  "typeIdentifier": "t_struct$_uq144x112_$12363_memory_ptr",
                                   "typeString": "struct FixedPoint.uq144x112 memory"
                                 }
                               },
@@ -3636,10 +3636,10 @@
                               "lValueRequested": false,
                               "memberName": "decode144",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 9852,
+                              "referencedDeclaration": 12445,
                               "src": "4025:38:38",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_pure$_t_struct$_uq144x112_$9770_memory_ptr_$returns$_t_uint144_$bound_to$_t_struct$_uq144x112_$9770_memory_ptr_$",
+                                "typeIdentifier": "t_function_internal_pure$_t_struct$_uq144x112_$12363_memory_ptr_$returns$_t_uint144_$bound_to$_t_struct$_uq144x112_$12363_memory_ptr_$",
                                 "typeString": "function (struct FixedPoint.uq144x112 memory) pure returns (uint144)"
                               }
                             },
@@ -3733,7 +3733,7 @@
                                     "referencedDeclaration": 1486,
                                     "src": "3874:14:38",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_struct$_uq112x112_$9767_memory_ptr",
+                                      "typeIdentifier": "t_struct$_uq112x112_$12360_memory_ptr",
                                       "typeString": "struct FixedPoint.uq112x112 memory"
                                     }
                                   },
@@ -3744,10 +3744,10 @@
                                   "lValueRequested": false,
                                   "memberName": "mul",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 9892,
+                                  "referencedDeclaration": 12485,
                                   "src": "3874:18:38",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_function_internal_pure$_t_struct$_uq112x112_$9767_memory_ptr_$_t_uint256_$returns$_t_struct$_uq144x112_$9770_memory_ptr_$bound_to$_t_struct$_uq112x112_$9767_memory_ptr_$",
+                                    "typeIdentifier": "t_function_internal_pure$_t_struct$_uq112x112_$12360_memory_ptr_$_t_uint256_$returns$_t_struct$_uq144x112_$12363_memory_ptr_$bound_to$_t_struct$_uq112x112_$12360_memory_ptr_$",
                                     "typeString": "function (struct FixedPoint.uq112x112 memory,uint256) pure returns (struct FixedPoint.uq144x112 memory)"
                                   }
                                 },
@@ -3762,7 +3762,7 @@
                                 "src": "3874:28:38",
                                 "tryCall": false,
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_uq144x112_$9770_memory_ptr",
+                                  "typeIdentifier": "t_struct$_uq144x112_$12363_memory_ptr",
                                   "typeString": "struct FixedPoint.uq144x112 memory"
                                 }
                               },
@@ -3773,10 +3773,10 @@
                               "lValueRequested": false,
                               "memberName": "decode144",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 9852,
+                              "referencedDeclaration": 12445,
                               "src": "3874:38:38",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_pure$_t_struct$_uq144x112_$9770_memory_ptr_$returns$_t_uint144_$bound_to$_t_struct$_uq144x112_$9770_memory_ptr_$",
+                                "typeIdentifier": "t_function_internal_pure$_t_struct$_uq144x112_$12363_memory_ptr_$returns$_t_uint144_$bound_to$_t_struct$_uq144x112_$12363_memory_ptr_$",
                                 "typeString": "function (struct FixedPoint.uq144x112 memory) pure returns (uint144)"
                               }
                             },
@@ -3979,9 +3979,9 @@
           ]
         }
       },
-      "60": {},
       "61": {},
-      "63": {
+      "62": {},
+      "64": {
         "FixedPoint.fraction": {
           "40": [
             4681,
@@ -4017,7 +4017,7 @@
           ]
         }
       },
-      "64": {
+      "65": {
         "FullMath.fullMul": {
           "47": [
             398,
@@ -4043,7 +4043,7 @@
           ]
         }
       },
-      "66": {
+      "67": {
         "UniswapV2OracleLibrary.currentCumulativePrices": {
           "48": [
             1286,
@@ -4052,7 +4052,7 @@
           ]
         }
       },
-      "76": {}
+      "77": {}
     },
     "statements": {
       "34": {},
@@ -4110,9 +4110,9 @@
           ]
         }
       },
-      "60": {},
       "61": {},
-      "63": {
+      "62": {},
+      "64": {
         "FixedPoint.decode144": {
           "4": [
             1605,
@@ -4148,7 +4148,7 @@
           ]
         }
       },
-      "64": {
+      "65": {
         "FullMath.fullMul": {
           "30": [
             355,
@@ -4186,7 +4186,7 @@
           ]
         }
       },
-      "66": {
+      "67": {
         "UniswapV2OracleLibrary.currentBlockTimestamp": {
           "20": [
             536,
@@ -4216,7 +4216,7 @@
           ]
         }
       },
-      "76": {}
+      "77": {}
     }
   },
   "dependencies": [
@@ -4229,7 +4229,7 @@
     "UniswapV2OracleLibrary"
   ],
   "deployedBytecode": "608060405234801561001057600080fd5b506004361061009e5760003560e01c8063a2e6204511610066578063a2e6204514610145578063a6bb45391461014f578063b4d1d79514610162578063c5700a021461016b578063d21220a71461019057600080fd5b80630dfe1681146100a35780633ddac953146100e75780635909c0d5146101085780635a3d5493146101115780635e6aaf2c1461011a575b600080fd5b6100ca7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020015b60405180910390f35b6100fa6100f5366004610991565b6101b7565b6040519081526020016100de565b6100fa60005481565b6100fa60015481565b60045461012d906001600160e01b031681565b6040516001600160e01b0390911681526020016100de565b61014d6103b2565b005b60035461012d906001600160e01b031681565b6100fa61070881565b60025461017b9063ffffffff1681565b60405163ffffffff90911681526020016100de565b6100ca7f000000000000000000000000000000000000000000000000000000000000000081565b6000816101c6575060006103ac565b60408051602080820183526003546001600160e01b03908116835283519182019093526004549092168252906000808061021f7f00000000000000000000000000000000000000000000000000000000000000006104c3565b600254929550909350915063ffffffff90811682039061070890821610156102a85760405180602001604052808263ffffffff16600054870381610265576102656109c9565b046001600160e01b0316815250955060405180602001604052808263ffffffff16600154860381610298576102986109c9565b046001600160e01b031681525094505b507f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316886001600160a01b03161415610307576102f76102f0868961068b565b5160701c90565b6001600160901b031695506103a6565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316886001600160a01b03161461038d5760405162461bcd60e51b815260206004820152601a60248201527f5068616e746f6d545741503a20494e56414c49445f544f4b454e00000000000060448201526064015b60405180910390fd5b61039a6102f0858961068b565b6001600160901b031695505b50505050505b92915050565b60008060006103e07f00000000000000000000000000000000000000000000000000000000000000006104c3565b600254929550909350915063ffffffff908116820390610708908216106104075750505050565b60405180602001604052808263ffffffff1660005487038161042b5761042b6109c9565b046001600160e01b039081169091529051600380546001600160e01b031916919092161790556040805160208101909152600154819063ffffffff841690860381610478576104786109c9565b046001600160e01b039081169091529051600480546001600160e01b03191691909216179055506000929092556001556002805463ffffffff191663ffffffff909216919091179055565b60008060006104d0610729565b9050836001600160a01b0316635909c0d56040518163ffffffff1660e01b8152600401602060405180830381865afa158015610510573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061053491906109df565b9250836001600160a01b0316635a3d54936040518163ffffffff1660e01b8152600401602060405180830381865afa158015610574573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061059891906109df565b91506000806000866001600160a01b0316630902f1ac6040518163ffffffff1660e01b8152600401606060405180830381865afa1580156105dd573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106019190610a14565b9250925092508363ffffffff168163ffffffff16146106815780840363ffffffff811661063a6001600160701b0380861690871661073f565b600001516001600160e01b031602870196508063ffffffff1661066f856001600160701b0316856001600160701b031661073f565b516001600160e01b0316029590950194505b5050509193909250565b60408051602081019091526000815260008215806106c8575083516001600160e01b0316836106ba8183610a7a565b92506106c69083610a99565b145b6107145760405162461bcd60e51b815260206004820152601960248201527f4669786564506f696e743a3a6d756c3a206f766572666c6f77000000000000006044820152606401610384565b60408051602081019091529081529392505050565b600061073a64010000000042610aad565b905090565b604080516020810190915260008152600082116107ad5760405162461bcd60e51b815260206004820152602660248201527f4669786564506f696e743a3a6672616374696f6e3a206469766973696f6e206260448201526579207a65726f60d01b6064820152608401610384565b826107c757506040805160208101909152600081526103ac565b6001600160901b03831161085e5760006107e583607086901b610a99565b90506001600160e01b0381111561083e5760405162461bcd60e51b815260206004820152601e60248201527f4669786564506f696e743a3a6672616374696f6e3a206f766572666c6f7700006044820152606401610384565b6040518060200160405280826001600160e01b03168152509150506103ac565b60006107e584600160701b8560008060006108798686610934565b915091506000848061088d5761088d6109c9565b8688099050828111156108a8576108a5600183610ac1565b91505b6108b28184610ac1565b9250816108cd576108c38584610a99565b935050505061092d565b84821061091c5760405162461bcd60e51b815260206004820152601a60248201527f46756c6c4d6174683a2046554c4c4449565f4f564552464c4f570000000000006044820152606401610384565b610927838387610976565b93505050505b9392505050565b60008080600019848609905061094a8486610a7a565b92506109568382610ac1565b91508281101561096e5761096b600183610ac1565b91505b509250929050565b828202831584820484141761098a57600080fd5b0492915050565b600080604083850312156109a457600080fd5b82356001600160a01b03811681146109bb57600080fd5b946020939093013593505050565b634e487b7160e01b600052601260045260246000fd5b6000602082840312156109f157600080fd5b5051919050565b80516001600160701b0381168114610a0f57600080fd5b919050565b600080600060608486031215610a2957600080fd5b610a32846109f8565b9250610a40602085016109f8565b9150604084015163ffffffff81168114610a5957600080fd5b809150509250925092565b634e487b7160e01b600052601160045260246000fd5b6000816000190483118215151615610a9457610a94610a64565b500290565b600082610aa857610aa86109c9565b500490565b600082610abc57610abc6109c9565b500690565b600082821015610ad357610ad3610a64565b50039056fea2646970667358221220b74ec42a8187d763d3778d1673c8aac608dda95987937bec2b51aa32ea828dcb64736f6c634300080a0033",
-  "deployedSourceMap": "388:3696:38:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;611:31;;;;;;;;-1:-1:-1;;;;;178:32:103;;;160:51;;148:2;133:18;611:31:38;;;;;;;;2655:1427;;;;;;:::i;:::-;;:::i;:::-;;;727:25:103;;;715:2;700:18;2655:1427:38;581:177:103;686:35:38;;;;;;727;;;;;;854:41;;;;;-1:-1:-1;;;;;854:41:38;;;;;;-1:-1:-1;;;;;927:32:103;;;909:51;;897:2;882:18;854:41:38;763:203:103;1522:1026:38;;;:::i;:::-;;807:41;;;;;-1:-1:-1;;;;;807:41:38;;;526:43;;559:10;526:43;;768:33;;;;;;;;;;;;1145:10:103;1133:23;;;1115:42;;1103:2;1088:18;768:33:38;971:192:103;648:31:38;;;;;2655:1427;2734:14;2764:13;2760:27;;-1:-1:-1;2786:1:38;2779:8;;2760:27;2798:58;;;;;;;;;2843:13;2798:58;-1:-1:-1;;;;;2798:58:38;;;;;2866;;;;;;;;2911:13;2866:58;;;;;;2798;:42;;;3018:61;3073:4;3018:46;:61::i;:::-;3191:18;;2934:145;;-1:-1:-1;2934:145:38;;-1:-1:-1;2934:145:38;-1:-1:-1;3191:18:38;;;;3174:35;;;559:10;3335:20;;;;3331:476;;;3585:86;;;;;;;;3658:11;3614:55;;3634:20;;3615:16;:39;3614:55;;;;;:::i;:::-;;-1:-1:-1;;;;;3585:86:38;;;;3568:103;;3706:86;;;;;;;;3779:11;3735:55;;3755:20;;3736:16;:39;3735:55;;;;;:::i;:::-;;-1:-1:-1;;;;;3706:86:38;;;;3689:103;;3331:476;3129:688;3840:6;-1:-1:-1;;;;;3831:15:38;:5;-1:-1:-1;;;;;3831:15:38;;3827:249;;;3874:40;:28;:14;3893:8;3874:18;:28::i;:::-;1620:7:63;580:3;1620:21;;1521:128;3874:40:38;-1:-1:-1;;;;;3862:52:38;;;3827:249;;;3962:6;-1:-1:-1;;;;;3953:15:38;:5;-1:-1:-1;;;;;3953:15:38;;3945:54;;;;-1:-1:-1;;;3945:54:38;;1502:2:103;3945:54:38;;;1484:21:103;1541:2;1521:18;;;1514:30;1580:28;1560:18;;;1553:56;1626:18;;3945:54:38;;;;;;;;;4025:40;:28;:14;4044:8;4025:18;:28::i;:40::-;-1:-1:-1;;;;;4013:52:38;;;3827:249;2750:1332;;;;;2655:1427;;;;;:::o;1522:1026::-;1569:21;1592;1615;1652:61;1707:4;1652:46;:61::i;:::-;1785:18;;1568:145;;-1:-1:-1;1568:145:38;;-1:-1:-1;1568:145:38;-1:-1:-1;1785:18:38;;;;1768:35;;;559:10;1929:21;;;;1925:34;;1952:7;;;;1522:1026::o;1925:34::-;2173:86;;;;;;;;2246:11;2202:55;;2222:20;;2203:16;:39;2202:55;;;;;:::i;:::-;;-1:-1:-1;;;;;2173:86:38;;;;;;2157:102;;:13;:102;;-1:-1:-1;;;;;;2157:102:38;;;;;;;;2289:86;;;;;;;;;-1:-1:-1;2338:20:38;2289:86;;2318:55;;;;2319:39;;2318:55;;;;;:::i;:::-;;-1:-1:-1;;;;;2289:86:38;;;;;;2273:102;;:13;:102;;-1:-1:-1;;;;;;2273:102:38;;;;;;;;-1:-1:-1;;2390:39:38;;;;-1:-1:-1;2443:39:38;2496:18;:35;;-1:-1:-1;;2496:35:38;;;;;;;;;;;1522:1026::o;686:1110:66:-;770:21;793;816;866:23;:21;:23::i;:::-;849:40;;933:4;-1:-1:-1;;;;;918:41:66;;:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;899:62;;1005:4;-1:-1:-1;;;;;990:41:66;;:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;971:62;;1169:16;1187;1205:25;1249:4;-1:-1:-1;;;;;1234:32:66;;:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1168:100;;;;;;1308:14;1286:36;;:18;:36;;;1282:498;;1414:35;;;1569:62;;;1574:39;-1:-1:-1;;;;;1574:39:66;;;;;;:19;:39::i;:::-;:42;;;-1:-1:-1;;;;;1569:48:66;:62;1549:82;;;;1754:11;1703:62;;1708:39;1728:8;-1:-1:-1;;;;;1708:39:66;1738:8;-1:-1:-1;;;;;1708:39:66;:19;:39::i;:::-;:42;-1:-1:-1;;;;;1703:48:66;:62;1683:82;;;;;-1:-1:-1;1282:498:66;1144:646;;;686:1110;;;;;:::o;1743:237:63:-;-1:-1:-1;;;;;;;;;;;;1841:9:63;1872:6;;;:42;;-1:-1:-1;1907:7:63;;-1:-1:-1;;;;;1882:32:63;1902:1;1887:11;1902:1;1882:32;1887:11;:::i;:::-;1883:15;-1:-1:-1;1882:21:63;;1883:15;1882:21;:::i;:::-;:32;1872:42;1864:80;;;;-1:-1:-1;;;1864:80:63;;3124:2:103;1864:80:63;;;3106:21:103;3163:2;3143:18;;;3136:30;3202:27;3182:18;;;3175:55;3247:18;;1864:80:63;2922:349:103;1864:80:63;1961:12;;;;;;;;;;;;;1743:237;-1:-1:-1;;;1743:237:63:o;462:121:66:-;518:6;550:25;568:7;550:15;:25;:::i;:::-;536:40;;462:121;:::o;4564:697:63:-;-1:-1:-1;;;;;;;;;;;;4695:1:63;4681:11;:15;4673:66;;;;-1:-1:-1;;;4673:66:63;;3595:2:103;4673:66:63;;;3577:21:103;3634:2;3614:18;;;3607:30;3673:34;3653:18;;;3646:62;-1:-1:-1;;;3724:18:103;;;3717:36;3770:19;;4673:66:63;3393:402:103;4673:66:63;4753:14;4749:50;;-1:-1:-1;4776:23:63;;;;;;;;;-1:-1:-1;4776:23:63;;4769:30;;4749:50;-1:-1:-1;;;;;4814:9:63;:21;4810:445;;4851:14;4868:39;4896:11;580:3;4869:23;;;4868:39;:::i;:::-;4851:56;;-1:-1:-1;;;;;4929:6:63;:18;;4921:61;;;;-1:-1:-1;;;4921:61:63;;4002:2:103;4921:61:63;;;3984:21:103;4041:2;4021:18;;;4014:30;4080:32;4060:18;;;4053:60;4130:18;;4921:61:63;3800:354:103;4921:61:63;5003:26;;;;;;;;5021:6;-1:-1:-1;;;;;5003:26:63;;;;4996:33;;;;;4810:445;5060:14;5077:45;5093:9;-1:-1:-1;;;5110:11:63;1038:7:64;1058:9;1069;1082:13;1090:1;1093;1082:7;:13::i;:::-;1057:38;;;;1106:10;1132:1;1119:15;;;;;:::i;:::-;1129:1;1126;1119:15;1106:28;;1153:1;1148:2;:6;1144:18;;;1156:6;1161:1;1156:6;;:::i;:::-;;;1144:18;1172:7;1177:2;1172:7;;:::i;:::-;;-1:-1:-1;1194:6:64;1190:24;;1209:5;1213:1;1209;:5;:::i;:::-;1202:12;;;;;;;1190:24;1237:1;1233;:5;1225:44;;;;-1:-1:-1;;;1225:44:64;;4491:2:103;1225:44:64;;;4473:21:103;4530:2;4510:18;;;4503:30;4569:28;4549:18;;;4542:56;4615:18;;1225:44:64;4289:350:103;1225:44:64;1286:16;1294:1;1297;1300;1286:7;:16::i;:::-;1279:23;;;;;936:373;;;;;;:::o;216:203::-;278:9;;;-1:-1:-1;;333:1:64;330;323:22;310:35;-1:-1:-1;359:5:64;363:1;359;:5;:::i;:::-;355:9;-1:-1:-1;378:6:64;355:9;378:2;:6;:::i;:::-;374:10;;403:1;398:2;:6;394:18;;;406:6;411:1;406:6;;:::i;:::-;;;394:18;300:119;216:203;;;;;:::o;425:505::-;625:9;;;726;;740;;;737:16;;723:31;713:87;;784:1;781;774:12;713:87;898:16;;425:505;-1:-1:-1;;425:505:64:o;222:354:103:-;290:6;298;351:2;339:9;330:7;326:23;322:32;319:52;;;367:1;364;357:12;319:52;393:23;;-1:-1:-1;;;;;445:31:103;;435:42;;425:70;;491:1;488;481:12;425:70;514:5;566:2;551:18;;;;538:32;;-1:-1:-1;;;222:354:103:o;1168:127::-;1229:10;1224:3;1220:20;1217:1;1210:31;1260:4;1257:1;1250:15;1284:4;1281:1;1274:15;1655:184;1725:6;1778:2;1766:9;1757:7;1753:23;1749:32;1746:52;;;1794:1;1791;1784:12;1746:52;-1:-1:-1;1817:16:103;;1655:184;-1:-1:-1;1655:184:103:o;1844:188::-;1923:13;;-1:-1:-1;;;;;1965:42:103;;1955:53;;1945:81;;2022:1;2019;2012:12;1945:81;1844:188;;;:::o;2037:450::-;2124:6;2132;2140;2193:2;2181:9;2172:7;2168:23;2164:32;2161:52;;;2209:1;2206;2199:12;2161:52;2232:40;2262:9;2232:40;:::i;:::-;2222:50;;2291:49;2336:2;2325:9;2321:18;2291:49;:::i;:::-;2281:59;;2383:2;2372:9;2368:18;2362:25;2427:10;2420:5;2416:22;2409:5;2406:33;2396:61;;2453:1;2450;2443:12;2396:61;2476:5;2466:15;;;2037:450;;;;;:::o;2492:127::-;2553:10;2548:3;2544:20;2541:1;2534:31;2584:4;2581:1;2574:15;2608:4;2605:1;2598:15;2624:168;2664:7;2730:1;2726;2722:6;2718:14;2715:1;2712:21;2707:1;2700:9;2693:17;2689:45;2686:71;;;2737:18;;:::i;:::-;-1:-1:-1;2777:9:103;;2624:168::o;2797:120::-;2837:1;2863;2853:35;;2868:18;;:::i;:::-;-1:-1:-1;2902:9:103;;2797:120::o;3276:112::-;3308:1;3334;3324:35;;3339:18;;:::i;:::-;-1:-1:-1;3373:9:103;;3276:112::o;4159:125::-;4199:4;4227:1;4224;4221:8;4218:34;;;4232:18;;:::i;:::-;-1:-1:-1;4269:9:103;;4159:125::o",
+  "deployedSourceMap": "388:3696:38:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;611:31;;;;;;;;-1:-1:-1;;;;;178:32:104;;;160:51;;148:2;133:18;611:31:38;;;;;;;;2655:1427;;;;;;:::i;:::-;;:::i;:::-;;;727:25:104;;;715:2;700:18;2655:1427:38;581:177:104;686:35:38;;;;;;727;;;;;;854:41;;;;;-1:-1:-1;;;;;854:41:38;;;;;;-1:-1:-1;;;;;927:32:104;;;909:51;;897:2;882:18;854:41:38;763:203:104;1522:1026:38;;;:::i;:::-;;807:41;;;;;-1:-1:-1;;;;;807:41:38;;;526:43;;559:10;526:43;;768:33;;;;;;;;;;;;1145:10:104;1133:23;;;1115:42;;1103:2;1088:18;768:33:38;971:192:104;648:31:38;;;;;2655:1427;2734:14;2764:13;2760:27;;-1:-1:-1;2786:1:38;2779:8;;2760:27;2798:58;;;;;;;;;2843:13;2798:58;-1:-1:-1;;;;;2798:58:38;;;;;2866;;;;;;;;2911:13;2866:58;;;;;;2798;:42;;;3018:61;3073:4;3018:46;:61::i;:::-;3191:18;;2934:145;;-1:-1:-1;2934:145:38;;-1:-1:-1;2934:145:38;-1:-1:-1;3191:18:38;;;;3174:35;;;559:10;3335:20;;;;3331:476;;;3585:86;;;;;;;;3658:11;3614:55;;3634:20;;3615:16;:39;3614:55;;;;;:::i;:::-;;-1:-1:-1;;;;;3585:86:38;;;;3568:103;;3706:86;;;;;;;;3779:11;3735:55;;3755:20;;3736:16;:39;3735:55;;;;;:::i;:::-;;-1:-1:-1;;;;;3706:86:38;;;;3689:103;;3331:476;3129:688;3840:6;-1:-1:-1;;;;;3831:15:38;:5;-1:-1:-1;;;;;3831:15:38;;3827:249;;;3874:40;:28;:14;3893:8;3874:18;:28::i;:::-;1620:7:64;580:3;1620:21;;1521:128;3874:40:38;-1:-1:-1;;;;;3862:52:38;;;3827:249;;;3962:6;-1:-1:-1;;;;;3953:15:38;:5;-1:-1:-1;;;;;3953:15:38;;3945:54;;;;-1:-1:-1;;;3945:54:38;;1502:2:104;3945:54:38;;;1484:21:104;1541:2;1521:18;;;1514:30;1580:28;1560:18;;;1553:56;1626:18;;3945:54:38;;;;;;;;;4025:40;:28;:14;4044:8;4025:18;:28::i;:40::-;-1:-1:-1;;;;;4013:52:38;;;3827:249;2750:1332;;;;;2655:1427;;;;;:::o;1522:1026::-;1569:21;1592;1615;1652:61;1707:4;1652:46;:61::i;:::-;1785:18;;1568:145;;-1:-1:-1;1568:145:38;;-1:-1:-1;1568:145:38;-1:-1:-1;1785:18:38;;;;1768:35;;;559:10;1929:21;;;;1925:34;;1952:7;;;;1522:1026::o;1925:34::-;2173:86;;;;;;;;2246:11;2202:55;;2222:20;;2203:16;:39;2202:55;;;;;:::i;:::-;;-1:-1:-1;;;;;2173:86:38;;;;;;2157:102;;:13;:102;;-1:-1:-1;;;;;;2157:102:38;;;;;;;;2289:86;;;;;;;;;-1:-1:-1;2338:20:38;2289:86;;2318:55;;;;2319:39;;2318:55;;;;;:::i;:::-;;-1:-1:-1;;;;;2289:86:38;;;;;;2273:102;;:13;:102;;-1:-1:-1;;;;;;2273:102:38;;;;;;;;-1:-1:-1;;2390:39:38;;;;-1:-1:-1;2443:39:38;2496:18;:35;;-1:-1:-1;;2496:35:38;;;;;;;;;;;1522:1026::o;686:1110:67:-;770:21;793;816;866:23;:21;:23::i;:::-;849:40;;933:4;-1:-1:-1;;;;;918:41:67;;:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;899:62;;1005:4;-1:-1:-1;;;;;990:41:67;;:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;971:62;;1169:16;1187;1205:25;1249:4;-1:-1:-1;;;;;1234:32:67;;:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1168:100;;;;;;1308:14;1286:36;;:18;:36;;;1282:498;;1414:35;;;1569:62;;;1574:39;-1:-1:-1;;;;;1574:39:67;;;;;;:19;:39::i;:::-;:42;;;-1:-1:-1;;;;;1569:48:67;:62;1549:82;;;;1754:11;1703:62;;1708:39;1728:8;-1:-1:-1;;;;;1708:39:67;1738:8;-1:-1:-1;;;;;1708:39:67;:19;:39::i;:::-;:42;-1:-1:-1;;;;;1703:48:67;:62;1683:82;;;;;-1:-1:-1;1282:498:67;1144:646;;;686:1110;;;;;:::o;1743:237:64:-;-1:-1:-1;;;;;;;;;;;;1841:9:64;1872:6;;;:42;;-1:-1:-1;1907:7:64;;-1:-1:-1;;;;;1882:32:64;1902:1;1887:11;1902:1;1882:32;1887:11;:::i;:::-;1883:15;-1:-1:-1;1882:21:64;;1883:15;1882:21;:::i;:::-;:32;1872:42;1864:80;;;;-1:-1:-1;;;1864:80:64;;3124:2:104;1864:80:64;;;3106:21:104;3163:2;3143:18;;;3136:30;3202:27;3182:18;;;3175:55;3247:18;;1864:80:64;2922:349:104;1864:80:64;1961:12;;;;;;;;;;;;;1743:237;-1:-1:-1;;;1743:237:64:o;462:121:67:-;518:6;550:25;568:7;550:15;:25;:::i;:::-;536:40;;462:121;:::o;4564:697:64:-;-1:-1:-1;;;;;;;;;;;;4695:1:64;4681:11;:15;4673:66;;;;-1:-1:-1;;;4673:66:64;;3595:2:104;4673:66:64;;;3577:21:104;3634:2;3614:18;;;3607:30;3673:34;3653:18;;;3646:62;-1:-1:-1;;;3724:18:104;;;3717:36;3770:19;;4673:66:64;3393:402:104;4673:66:64;4753:14;4749:50;;-1:-1:-1;4776:23:64;;;;;;;;;-1:-1:-1;4776:23:64;;4769:30;;4749:50;-1:-1:-1;;;;;4814:9:64;:21;4810:445;;4851:14;4868:39;4896:11;580:3;4869:23;;;4868:39;:::i;:::-;4851:56;;-1:-1:-1;;;;;4929:6:64;:18;;4921:61;;;;-1:-1:-1;;;4921:61:64;;4002:2:104;4921:61:64;;;3984:21:104;4041:2;4021:18;;;4014:30;4080:32;4060:18;;;4053:60;4130:18;;4921:61:64;3800:354:104;4921:61:64;5003:26;;;;;;;;5021:6;-1:-1:-1;;;;;5003:26:64;;;;4996:33;;;;;4810:445;5060:14;5077:45;5093:9;-1:-1:-1;;;5110:11:64;1038:7:65;1058:9;1069;1082:13;1090:1;1093;1082:7;:13::i;:::-;1057:38;;;;1106:10;1132:1;1119:15;;;;;:::i;:::-;1129:1;1126;1119:15;1106:28;;1153:1;1148:2;:6;1144:18;;;1156:6;1161:1;1156:6;;:::i;:::-;;;1144:18;1172:7;1177:2;1172:7;;:::i;:::-;;-1:-1:-1;1194:6:65;1190:24;;1209:5;1213:1;1209;:5;:::i;:::-;1202:12;;;;;;;1190:24;1237:1;1233;:5;1225:44;;;;-1:-1:-1;;;1225:44:65;;4491:2:104;1225:44:65;;;4473:21:104;4530:2;4510:18;;;4503:30;4569:28;4549:18;;;4542:56;4615:18;;1225:44:65;4289:350:104;1225:44:65;1286:16;1294:1;1297;1300;1286:7;:16::i;:::-;1279:23;;;;;936:373;;;;;;:::o;216:203::-;278:9;;;-1:-1:-1;;333:1:65;330;323:22;310:35;-1:-1:-1;359:5:65;363:1;359;:5;:::i;:::-;355:9;-1:-1:-1;378:6:65;355:9;378:2;:6;:::i;:::-;374:10;;403:1;398:2;:6;394:18;;;406:6;411:1;406:6;;:::i;:::-;;;394:18;300:119;216:203;;;;;:::o;425:505::-;625:9;;;726;;740;;;737:16;;723:31;713:87;;784:1;781;774:12;713:87;898:16;;425:505;-1:-1:-1;;425:505:65:o;222:354:104:-;290:6;298;351:2;339:9;330:7;326:23;322:32;319:52;;;367:1;364;357:12;319:52;393:23;;-1:-1:-1;;;;;445:31:104;;435:42;;425:70;;491:1;488;481:12;425:70;514:5;566:2;551:18;;;;538:32;;-1:-1:-1;;;222:354:104:o;1168:127::-;1229:10;1224:3;1220:20;1217:1;1210:31;1260:4;1257:1;1250:15;1284:4;1281:1;1274:15;1655:184;1725:6;1778:2;1766:9;1757:7;1753:23;1749:32;1746:52;;;1794:1;1791;1784:12;1746:52;-1:-1:-1;1817:16:104;;1655:184;-1:-1:-1;1655:184:104:o;1844:188::-;1923:13;;-1:-1:-1;;;;;1965:42:104;;1955:53;;1945:81;;2022:1;2019;2012:12;1945:81;1844:188;;;:::o;2037:450::-;2124:6;2132;2140;2193:2;2181:9;2172:7;2168:23;2164:32;2161:52;;;2209:1;2206;2199:12;2161:52;2232:40;2262:9;2232:40;:::i;:::-;2222:50;;2291:49;2336:2;2325:9;2321:18;2291:49;:::i;:::-;2281:59;;2383:2;2372:9;2368:18;2362:25;2427:10;2420:5;2416:22;2409:5;2406:33;2396:61;;2453:1;2450;2443:12;2396:61;2476:5;2466:15;;;2037:450;;;;;:::o;2492:127::-;2553:10;2548:3;2544:20;2541:1;2534:31;2584:4;2581:1;2574:15;2608:4;2605:1;2598:15;2624:168;2664:7;2730:1;2726;2722:6;2718:14;2715:1;2712:21;2707:1;2700:9;2693:17;2689:45;2686:71;;;2737:18;;:::i;:::-;-1:-1:-1;2777:9:104;;2624:168::o;2797:120::-;2837:1;2863;2853:35;;2868:18;;:::i;:::-;-1:-1:-1;2902:9:104;;2797:120::o;3276:112::-;3308:1;3334;3324:35;;3339:18;;:::i;:::-;-1:-1:-1;3373:9:104;;3276:112::o;4159:125::-;4199:4;4227:1;4224;4221:8;4218:34;;;4232:18;;:::i;:::-;-1:-1:-1;4269:9:104;;4159:125::o",
   "language": "Solidity",
   "natspec": {
     "kind": "dev",
@@ -7519,7 +7519,7 @@
         1627
       ],
       "op": "MLOAD",
-      "path": "63",
+      "path": "64",
       "statement": 4
     },
     "754": {
@@ -7528,7 +7528,7 @@
         583
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x70"
     },
     "756": {
@@ -7538,7 +7538,7 @@
         1641
       ],
       "op": "SHR",
-      "path": "63"
+      "path": "64"
     },
     "757": {
       "fn": "FixedPoint.decode144",
@@ -7547,7 +7547,7 @@
         1641
       ],
       "op": "SWAP1",
-      "path": "63"
+      "path": "64"
     },
     "758": {
       "fn": "FixedPoint.decode144",
@@ -7556,7 +7556,7 @@
         1649
       ],
       "op": "JUMP",
-      "path": "63"
+      "path": "64"
     },
     "759": {
       "fn": "PhantomTWAP.consult",
@@ -9615,7 +9615,7 @@
         1796
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1220": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9624,7 +9624,7 @@
         791
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1222": {
@@ -9634,7 +9634,7 @@
         814
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1223": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9643,7 +9643,7 @@
         837
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1225": {
@@ -9653,7 +9653,7 @@
         889
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "statement": 13,
       "value": "0x4D0"
     },
@@ -9664,7 +9664,7 @@
         887
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x729"
     },
     "1231": {
@@ -9675,7 +9675,7 @@
         889
       ],
       "op": "JUMP",
-      "path": "66"
+      "path": "67"
     },
     "1232": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9684,7 +9684,7 @@
         889
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1233": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9693,7 +9693,7 @@
         889
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1234": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9702,7 +9702,7 @@
         889
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1235": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9711,7 +9711,7 @@
         937
       ],
       "op": "DUP4",
-      "path": "66",
+      "path": "67",
       "statement": 14
     },
     "1236": {
@@ -9739,7 +9739,7 @@
         959
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1245": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9748,7 +9748,7 @@
         959
       ],
       "op": "PUSH4",
-      "path": "66",
+      "path": "67",
       "value": "0x5909C0D5"
     },
     "1250": {
@@ -9758,7 +9758,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1252": {
@@ -9768,7 +9768,7 @@
         961
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1253": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9777,7 +9777,7 @@
         961
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1254": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9786,7 +9786,7 @@
         961
       ],
       "op": "PUSH4",
-      "path": "66",
+      "path": "67",
       "value": "0xFFFFFFFF"
     },
     "1259": {
@@ -9796,7 +9796,7 @@
         961
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1260": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9805,7 +9805,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0xE0"
     },
     "1262": {
@@ -9815,7 +9815,7 @@
         961
       ],
       "op": "SHL",
-      "path": "66"
+      "path": "67"
     },
     "1263": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9824,7 +9824,7 @@
         961
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1264": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9833,7 +9833,7 @@
         961
       ],
       "op": "MSTORE",
-      "path": "66"
+      "path": "67"
     },
     "1265": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9842,7 +9842,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x4"
     },
     "1267": {
@@ -9852,7 +9852,7 @@
         961
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1268": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9861,7 +9861,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x20"
     },
     "1270": {
@@ -9871,7 +9871,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1272": {
@@ -9881,7 +9881,7 @@
         961
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1273": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9890,7 +9890,7 @@
         961
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1274": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9899,7 +9899,7 @@
         961
       ],
       "op": "DUP4",
-      "path": "66"
+      "path": "67"
     },
     "1275": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9908,7 +9908,7 @@
         961
       ],
       "op": "SUB",
-      "path": "66"
+      "path": "67"
     },
     "1276": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9917,7 +9917,7 @@
         961
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1277": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9926,7 +9926,7 @@
         961
       ],
       "op": "DUP7",
-      "path": "66"
+      "path": "67"
     },
     "1278": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9935,7 +9935,7 @@
         961
       ],
       "op": "GAS",
-      "path": "66"
+      "path": "67"
     },
     "1279": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9944,7 +9944,7 @@
         961
       ],
       "op": "STATICCALL",
-      "path": "66"
+      "path": "67"
     },
     "1280": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9953,7 +9953,7 @@
         961
       ],
       "op": "ISZERO",
-      "path": "66"
+      "path": "67"
     },
     "1281": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9962,7 +9962,7 @@
         961
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1282": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9971,7 +9971,7 @@
         961
       ],
       "op": "ISZERO",
-      "path": "66"
+      "path": "67"
     },
     "1283": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9980,7 +9980,7 @@
         961
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x510"
     },
     "1286": {
@@ -9990,7 +9990,7 @@
         961
       ],
       "op": "JUMPI",
-      "path": "66"
+      "path": "67"
     },
     "1287": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -9999,7 +9999,7 @@
         961
       ],
       "op": "RETURNDATASIZE",
-      "path": "66"
+      "path": "67"
     },
     "1288": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10008,7 +10008,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1290": {
@@ -10018,7 +10018,7 @@
         961
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1291": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10027,7 +10027,7 @@
         961
       ],
       "op": "RETURNDATACOPY",
-      "path": "66"
+      "path": "67"
     },
     "1292": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10036,7 +10036,7 @@
         961
       ],
       "op": "RETURNDATASIZE",
-      "path": "66"
+      "path": "67"
     },
     "1293": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10045,7 +10045,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1295": {
@@ -10055,7 +10055,7 @@
         961
       ],
       "op": "REVERT",
-      "path": "66"
+      "path": "67"
     },
     "1296": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10064,7 +10064,7 @@
         961
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1297": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10073,7 +10073,7 @@
         961
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1298": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10082,7 +10082,7 @@
         961
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1299": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10091,7 +10091,7 @@
         961
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1300": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10100,7 +10100,7 @@
         961
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1301": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10109,7 +10109,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1303": {
@@ -10119,7 +10119,7 @@
         961
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1304": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10128,7 +10128,7 @@
         961
       ],
       "op": "RETURNDATASIZE",
-      "path": "66"
+      "path": "67"
     },
     "1305": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10137,7 +10137,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x1F"
     },
     "1307": {
@@ -10147,7 +10147,7 @@
         961
       ],
       "op": "NOT",
-      "path": "66"
+      "path": "67"
     },
     "1308": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10156,7 +10156,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x1F"
     },
     "1310": {
@@ -10166,7 +10166,7 @@
         961
       ],
       "op": "DUP3",
-      "path": "66"
+      "path": "67"
     },
     "1311": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10175,7 +10175,7 @@
         961
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1312": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10184,7 +10184,7 @@
         961
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1313": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10193,7 +10193,7 @@
         961
       ],
       "op": "DUP3",
-      "path": "66"
+      "path": "67"
     },
     "1314": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10202,7 +10202,7 @@
         961
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1315": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10211,7 +10211,7 @@
         961
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1316": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10220,7 +10220,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1318": {
@@ -10230,7 +10230,7 @@
         961
       ],
       "op": "MSTORE",
-      "path": "66"
+      "path": "67"
     },
     "1319": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10239,7 +10239,7 @@
         961
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1320": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10248,7 +10248,7 @@
         961
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1321": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10257,7 +10257,7 @@
         961
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1322": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10266,7 +10266,7 @@
         961
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1323": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10275,7 +10275,7 @@
         961
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x534"
     },
     "1326": {
@@ -10285,7 +10285,7 @@
         961
       ],
       "op": "SWAP2",
-      "path": "66"
+      "path": "67"
     },
     "1327": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10294,7 +10294,7 @@
         961
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1328": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10303,7 +10303,7 @@
         961
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x9DF"
     },
     "1331": {
@@ -10314,7 +10314,7 @@
         961
       ],
       "op": "JUMP",
-      "path": "66"
+      "path": "67"
     },
     "1332": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10323,7 +10323,7 @@
         961
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1333": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10332,7 +10332,7 @@
         961
       ],
       "op": "SWAP3",
-      "path": "66"
+      "path": "67"
     },
     "1334": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10341,7 +10341,7 @@
         961
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1335": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10350,7 +10350,7 @@
         1009
       ],
       "op": "DUP4",
-      "path": "66",
+      "path": "67",
       "statement": 15
     },
     "1336": {
@@ -10378,7 +10378,7 @@
         1031
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1345": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10387,7 +10387,7 @@
         1031
       ],
       "op": "PUSH4",
-      "path": "66",
+      "path": "67",
       "value": "0x5A3D5493"
     },
     "1350": {
@@ -10397,7 +10397,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1352": {
@@ -10407,7 +10407,7 @@
         1033
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1353": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10416,7 +10416,7 @@
         1033
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1354": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10425,7 +10425,7 @@
         1033
       ],
       "op": "PUSH4",
-      "path": "66",
+      "path": "67",
       "value": "0xFFFFFFFF"
     },
     "1359": {
@@ -10435,7 +10435,7 @@
         1033
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1360": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10444,7 +10444,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0xE0"
     },
     "1362": {
@@ -10454,7 +10454,7 @@
         1033
       ],
       "op": "SHL",
-      "path": "66"
+      "path": "67"
     },
     "1363": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10463,7 +10463,7 @@
         1033
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1364": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10472,7 +10472,7 @@
         1033
       ],
       "op": "MSTORE",
-      "path": "66"
+      "path": "67"
     },
     "1365": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10481,7 +10481,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x4"
     },
     "1367": {
@@ -10491,7 +10491,7 @@
         1033
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1368": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10500,7 +10500,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x20"
     },
     "1370": {
@@ -10510,7 +10510,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1372": {
@@ -10520,7 +10520,7 @@
         1033
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1373": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10529,7 +10529,7 @@
         1033
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1374": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10538,7 +10538,7 @@
         1033
       ],
       "op": "DUP4",
-      "path": "66"
+      "path": "67"
     },
     "1375": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10547,7 +10547,7 @@
         1033
       ],
       "op": "SUB",
-      "path": "66"
+      "path": "67"
     },
     "1376": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10556,7 +10556,7 @@
         1033
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1377": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10565,7 +10565,7 @@
         1033
       ],
       "op": "DUP7",
-      "path": "66"
+      "path": "67"
     },
     "1378": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10574,7 +10574,7 @@
         1033
       ],
       "op": "GAS",
-      "path": "66"
+      "path": "67"
     },
     "1379": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10583,7 +10583,7 @@
         1033
       ],
       "op": "STATICCALL",
-      "path": "66"
+      "path": "67"
     },
     "1380": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10592,7 +10592,7 @@
         1033
       ],
       "op": "ISZERO",
-      "path": "66"
+      "path": "67"
     },
     "1381": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10601,7 +10601,7 @@
         1033
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1382": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10610,7 +10610,7 @@
         1033
       ],
       "op": "ISZERO",
-      "path": "66"
+      "path": "67"
     },
     "1383": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10619,7 +10619,7 @@
         1033
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x574"
     },
     "1386": {
@@ -10629,7 +10629,7 @@
         1033
       ],
       "op": "JUMPI",
-      "path": "66"
+      "path": "67"
     },
     "1387": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10638,7 +10638,7 @@
         1033
       ],
       "op": "RETURNDATASIZE",
-      "path": "66"
+      "path": "67"
     },
     "1388": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10647,7 +10647,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1390": {
@@ -10657,7 +10657,7 @@
         1033
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1391": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10666,7 +10666,7 @@
         1033
       ],
       "op": "RETURNDATACOPY",
-      "path": "66"
+      "path": "67"
     },
     "1392": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10675,7 +10675,7 @@
         1033
       ],
       "op": "RETURNDATASIZE",
-      "path": "66"
+      "path": "67"
     },
     "1393": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10684,7 +10684,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1395": {
@@ -10694,7 +10694,7 @@
         1033
       ],
       "op": "REVERT",
-      "path": "66"
+      "path": "67"
     },
     "1396": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10703,7 +10703,7 @@
         1033
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1397": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10712,7 +10712,7 @@
         1033
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1398": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10721,7 +10721,7 @@
         1033
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1399": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10730,7 +10730,7 @@
         1033
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1400": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10739,7 +10739,7 @@
         1033
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1401": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10748,7 +10748,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1403": {
@@ -10758,7 +10758,7 @@
         1033
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1404": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10767,7 +10767,7 @@
         1033
       ],
       "op": "RETURNDATASIZE",
-      "path": "66"
+      "path": "67"
     },
     "1405": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10776,7 +10776,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x1F"
     },
     "1407": {
@@ -10786,7 +10786,7 @@
         1033
       ],
       "op": "NOT",
-      "path": "66"
+      "path": "67"
     },
     "1408": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10795,7 +10795,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x1F"
     },
     "1410": {
@@ -10805,7 +10805,7 @@
         1033
       ],
       "op": "DUP3",
-      "path": "66"
+      "path": "67"
     },
     "1411": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10814,7 +10814,7 @@
         1033
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1412": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10823,7 +10823,7 @@
         1033
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1413": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10832,7 +10832,7 @@
         1033
       ],
       "op": "DUP3",
-      "path": "66"
+      "path": "67"
     },
     "1414": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10841,7 +10841,7 @@
         1033
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1415": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10850,7 +10850,7 @@
         1033
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1416": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10859,7 +10859,7 @@
         1033
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1418": {
@@ -10869,7 +10869,7 @@
         1033
       ],
       "op": "MSTORE",
-      "path": "66"
+      "path": "67"
     },
     "1419": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10878,7 +10878,7 @@
         1033
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1420": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10887,7 +10887,7 @@
         1033
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1421": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10896,7 +10896,7 @@
         1033
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1422": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10905,7 +10905,7 @@
         1033
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1423": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10914,7 +10914,7 @@
         1033
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x598"
     },
     "1426": {
@@ -10924,7 +10924,7 @@
         1033
       ],
       "op": "SWAP2",
-      "path": "66"
+      "path": "67"
     },
     "1427": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10933,7 +10933,7 @@
         1033
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1428": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10942,7 +10942,7 @@
         1033
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x9DF"
     },
     "1431": {
@@ -10953,7 +10953,7 @@
         1033
       ],
       "op": "JUMP",
-      "path": "66"
+      "path": "67"
     },
     "1432": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10962,7 +10962,7 @@
         1033
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1433": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10971,7 +10971,7 @@
         1033
       ],
       "op": "SWAP2",
-      "path": "66"
+      "path": "67"
     },
     "1434": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10980,7 +10980,7 @@
         1033
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1435": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -10989,7 +10989,7 @@
         1185
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1437": {
@@ -10999,7 +10999,7 @@
         1203
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1438": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11008,7 +11008,7 @@
         1230
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1440": {
@@ -11018,7 +11018,7 @@
         1253
       ],
       "op": "DUP7",
-      "path": "66"
+      "path": "67"
     },
     "1441": {
       "op": "PUSH1",
@@ -11045,7 +11045,7 @@
         1266
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1450": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11054,7 +11054,7 @@
         1266
       ],
       "op": "PUSH4",
-      "path": "66",
+      "path": "67",
       "value": "0x902F1AC"
     },
     "1455": {
@@ -11064,7 +11064,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1457": {
@@ -11074,7 +11074,7 @@
         1268
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1458": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11083,7 +11083,7 @@
         1268
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1459": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11092,7 +11092,7 @@
         1268
       ],
       "op": "PUSH4",
-      "path": "66",
+      "path": "67",
       "value": "0xFFFFFFFF"
     },
     "1464": {
@@ -11102,7 +11102,7 @@
         1268
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1465": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11111,7 +11111,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0xE0"
     },
     "1467": {
@@ -11121,7 +11121,7 @@
         1268
       ],
       "op": "SHL",
-      "path": "66"
+      "path": "67"
     },
     "1468": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11130,7 +11130,7 @@
         1268
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1469": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11139,7 +11139,7 @@
         1268
       ],
       "op": "MSTORE",
-      "path": "66"
+      "path": "67"
     },
     "1470": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11148,7 +11148,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x4"
     },
     "1472": {
@@ -11158,7 +11158,7 @@
         1268
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1473": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11167,7 +11167,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x60"
     },
     "1475": {
@@ -11177,7 +11177,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1477": {
@@ -11187,7 +11187,7 @@
         1268
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1478": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11196,7 +11196,7 @@
         1268
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1479": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11205,7 +11205,7 @@
         1268
       ],
       "op": "DUP4",
-      "path": "66"
+      "path": "67"
     },
     "1480": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11214,7 +11214,7 @@
         1268
       ],
       "op": "SUB",
-      "path": "66"
+      "path": "67"
     },
     "1481": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11223,7 +11223,7 @@
         1268
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1482": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11232,7 +11232,7 @@
         1268
       ],
       "op": "DUP7",
-      "path": "66"
+      "path": "67"
     },
     "1483": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11241,7 +11241,7 @@
         1268
       ],
       "op": "GAS",
-      "path": "66"
+      "path": "67"
     },
     "1484": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11250,7 +11250,7 @@
         1268
       ],
       "op": "STATICCALL",
-      "path": "66"
+      "path": "67"
     },
     "1485": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11259,7 +11259,7 @@
         1268
       ],
       "op": "ISZERO",
-      "path": "66"
+      "path": "67"
     },
     "1486": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11268,7 +11268,7 @@
         1268
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1487": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11277,7 +11277,7 @@
         1268
       ],
       "op": "ISZERO",
-      "path": "66"
+      "path": "67"
     },
     "1488": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11286,7 +11286,7 @@
         1268
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x5DD"
     },
     "1491": {
@@ -11296,7 +11296,7 @@
         1268
       ],
       "op": "JUMPI",
-      "path": "66"
+      "path": "67"
     },
     "1492": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11305,7 +11305,7 @@
         1268
       ],
       "op": "RETURNDATASIZE",
-      "path": "66"
+      "path": "67"
     },
     "1493": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11314,7 +11314,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1495": {
@@ -11324,7 +11324,7 @@
         1268
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1496": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11333,7 +11333,7 @@
         1268
       ],
       "op": "RETURNDATACOPY",
-      "path": "66"
+      "path": "67"
     },
     "1497": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11342,7 +11342,7 @@
         1268
       ],
       "op": "RETURNDATASIZE",
-      "path": "66"
+      "path": "67"
     },
     "1498": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11351,7 +11351,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1500": {
@@ -11361,7 +11361,7 @@
         1268
       ],
       "op": "REVERT",
-      "path": "66"
+      "path": "67"
     },
     "1501": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11370,7 +11370,7 @@
         1268
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1502": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11379,7 +11379,7 @@
         1268
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1503": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11388,7 +11388,7 @@
         1268
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1504": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11397,7 +11397,7 @@
         1268
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1505": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11406,7 +11406,7 @@
         1268
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1506": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11415,7 +11415,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1508": {
@@ -11425,7 +11425,7 @@
         1268
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1509": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11434,7 +11434,7 @@
         1268
       ],
       "op": "RETURNDATASIZE",
-      "path": "66"
+      "path": "67"
     },
     "1510": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11443,7 +11443,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x1F"
     },
     "1512": {
@@ -11453,7 +11453,7 @@
         1268
       ],
       "op": "NOT",
-      "path": "66"
+      "path": "67"
     },
     "1513": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11462,7 +11462,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x1F"
     },
     "1515": {
@@ -11472,7 +11472,7 @@
         1268
       ],
       "op": "DUP3",
-      "path": "66"
+      "path": "67"
     },
     "1516": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11481,7 +11481,7 @@
         1268
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1517": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11490,7 +11490,7 @@
         1268
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1518": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11499,7 +11499,7 @@
         1268
       ],
       "op": "DUP3",
-      "path": "66"
+      "path": "67"
     },
     "1519": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11508,7 +11508,7 @@
         1268
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1520": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11517,7 +11517,7 @@
         1268
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1521": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11526,7 +11526,7 @@
         1268
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x40"
     },
     "1523": {
@@ -11536,7 +11536,7 @@
         1268
       ],
       "op": "MSTORE",
-      "path": "66"
+      "path": "67"
     },
     "1524": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11545,7 +11545,7 @@
         1268
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1525": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11554,7 +11554,7 @@
         1268
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1526": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11563,7 +11563,7 @@
         1268
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1527": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11572,7 +11572,7 @@
         1268
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1528": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11581,7 +11581,7 @@
         1268
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x601"
     },
     "1531": {
@@ -11591,7 +11591,7 @@
         1268
       ],
       "op": "SWAP2",
-      "path": "66"
+      "path": "67"
     },
     "1532": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11600,7 +11600,7 @@
         1268
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1533": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11609,7 +11609,7 @@
         1268
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0xA14"
     },
     "1536": {
@@ -11620,7 +11620,7 @@
         1268
       ],
       "op": "JUMP",
-      "path": "66"
+      "path": "67"
     },
     "1537": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11629,7 +11629,7 @@
         1268
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1538": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11638,7 +11638,7 @@
         1268
       ],
       "op": "SWAP3",
-      "path": "66"
+      "path": "67"
     },
     "1539": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11647,7 +11647,7 @@
         1268
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1540": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11656,7 +11656,7 @@
         1268
       ],
       "op": "SWAP3",
-      "path": "66"
+      "path": "67"
     },
     "1541": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11665,7 +11665,7 @@
         1268
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1542": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11674,7 +11674,7 @@
         1268
       ],
       "op": "SWAP3",
-      "path": "66"
+      "path": "67"
     },
     "1543": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11683,7 +11683,7 @@
         1268
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1544": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11692,7 +11692,7 @@
         1322
       ],
       "op": "DUP4",
-      "path": "66"
+      "path": "67"
     },
     "1545": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11701,7 +11701,7 @@
         1322
       ],
       "op": "PUSH4",
-      "path": "66",
+      "path": "67",
       "value": "0xFFFFFFFF"
     },
     "1550": {
@@ -11711,7 +11711,7 @@
         1322
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1551": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11720,7 +11720,7 @@
         1304
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1552": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11729,7 +11729,7 @@
         1322
       ],
       "op": "PUSH4",
-      "path": "66",
+      "path": "67",
       "value": "0xFFFFFFFF"
     },
     "1557": {
@@ -11739,7 +11739,7 @@
         1322
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1558": {
       "branch": 48,
@@ -11749,7 +11749,7 @@
         1322
       ],
       "op": "EQ",
-      "path": "66"
+      "path": "67"
     },
     "1559": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11758,7 +11758,7 @@
         1780
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x681"
     },
     "1562": {
@@ -11769,7 +11769,7 @@
         1780
       ],
       "op": "JUMPI",
-      "path": "66"
+      "path": "67"
     },
     "1563": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11778,7 +11778,7 @@
         1449
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1564": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11787,7 +11787,7 @@
         1449
       ],
       "op": "DUP5",
-      "path": "66"
+      "path": "67"
     },
     "1565": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11796,7 +11796,7 @@
         1449
       ],
       "op": "SUB",
-      "path": "66"
+      "path": "67"
     },
     "1566": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11805,7 +11805,7 @@
         1631
       ],
       "op": "PUSH4",
-      "path": "66",
+      "path": "67",
       "statement": 16,
       "value": "0xFFFFFFFF"
     },
@@ -11816,7 +11816,7 @@
         1631
       ],
       "op": "DUP2",
-      "path": "66"
+      "path": "67"
     },
     "1572": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11825,7 +11825,7 @@
         1631
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1573": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11834,7 +11834,7 @@
         1613
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x63A"
     },
     "1576": {
@@ -11862,7 +11862,7 @@
         1613
       ],
       "op": "DUP1",
-      "path": "66"
+      "path": "67"
     },
     "1585": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11871,7 +11871,7 @@
         1613
       ],
       "op": "DUP7",
-      "path": "66"
+      "path": "67"
     },
     "1586": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11880,7 +11880,7 @@
         1613
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1587": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11889,7 +11889,7 @@
         1613
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1588": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11898,7 +11898,7 @@
         1613
       ],
       "op": "DUP8",
-      "path": "66"
+      "path": "67"
     },
     "1589": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11907,7 +11907,7 @@
         1613
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1590": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11916,7 +11916,7 @@
         1593
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x73F"
     },
     "1593": {
@@ -11927,7 +11927,7 @@
         1613
       ],
       "op": "JUMP",
-      "path": "66"
+      "path": "67"
     },
     "1594": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11936,7 +11936,7 @@
         1613
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1595": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11945,7 +11945,7 @@
         1616
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1597": {
@@ -11955,7 +11955,7 @@
         1616
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1598": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -11964,7 +11964,7 @@
         1616
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1599": {
       "op": "PUSH1",
@@ -11991,7 +11991,7 @@
         1617
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1608": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12000,7 +12000,7 @@
         1631
       ],
       "op": "MUL",
-      "path": "66"
+      "path": "67"
     },
     "1609": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12009,7 +12009,7 @@
         1631
       ],
       "op": "DUP8",
-      "path": "66"
+      "path": "67"
     },
     "1610": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12018,7 +12018,7 @@
         1631
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1611": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12027,7 +12027,7 @@
         1631
       ],
       "op": "SWAP7",
-      "path": "66"
+      "path": "67"
     },
     "1612": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12036,7 +12036,7 @@
         1631
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1613": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12045,7 +12045,7 @@
         1765
       ],
       "op": "DUP1",
-      "path": "66",
+      "path": "67",
       "statement": 17
     },
     "1614": {
@@ -12055,7 +12055,7 @@
         1765
       ],
       "op": "PUSH4",
-      "path": "66",
+      "path": "67",
       "value": "0xFFFFFFFF"
     },
     "1619": {
@@ -12065,7 +12065,7 @@
         1765
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1620": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12074,7 +12074,7 @@
         1747
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x66F"
     },
     "1623": {
@@ -12084,7 +12084,7 @@
         1736
       ],
       "op": "DUP6",
-      "path": "66"
+      "path": "67"
     },
     "1624": {
       "op": "PUSH1",
@@ -12111,7 +12111,7 @@
         1747
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1633": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12120,7 +12120,7 @@
         1746
       ],
       "op": "DUP6",
-      "path": "66"
+      "path": "67"
     },
     "1634": {
       "op": "PUSH1",
@@ -12147,7 +12147,7 @@
         1747
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1643": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12156,7 +12156,7 @@
         1727
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0x73F"
     },
     "1646": {
@@ -12167,7 +12167,7 @@
         1747
       ],
       "op": "JUMP",
-      "path": "66"
+      "path": "67"
     },
     "1647": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12176,7 +12176,7 @@
         1747
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1648": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12185,7 +12185,7 @@
         1750
       ],
       "op": "MLOAD",
-      "path": "66"
+      "path": "67"
     },
     "1649": {
       "op": "PUSH1",
@@ -12212,7 +12212,7 @@
         1751
       ],
       "op": "AND",
-      "path": "66"
+      "path": "67"
     },
     "1658": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12221,7 +12221,7 @@
         1765
       ],
       "op": "MUL",
-      "path": "66"
+      "path": "67"
     },
     "1659": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12230,7 +12230,7 @@
         1765
       ],
       "op": "SWAP6",
-      "path": "66"
+      "path": "67"
     },
     "1660": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12239,7 +12239,7 @@
         1765
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1661": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12248,7 +12248,7 @@
         1765
       ],
       "op": "SWAP6",
-      "path": "66"
+      "path": "67"
     },
     "1662": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12257,7 +12257,7 @@
         1765
       ],
       "op": "ADD",
-      "path": "66"
+      "path": "67"
     },
     "1663": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12266,7 +12266,7 @@
         1765
       ],
       "op": "SWAP5",
-      "path": "66"
+      "path": "67"
     },
     "1664": {
       "op": "POP"
@@ -12278,7 +12278,7 @@
         1780
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1666": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12287,7 +12287,7 @@
         1790
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1667": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12296,7 +12296,7 @@
         1790
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1668": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12305,7 +12305,7 @@
         1790
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1669": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12314,7 +12314,7 @@
         1796
       ],
       "op": "SWAP2",
-      "path": "66"
+      "path": "67"
     },
     "1670": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12323,7 +12323,7 @@
         1796
       ],
       "op": "SWAP4",
-      "path": "66"
+      "path": "67"
     },
     "1671": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12332,7 +12332,7 @@
         1796
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1672": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12341,7 +12341,7 @@
         1796
       ],
       "op": "SWAP3",
-      "path": "66"
+      "path": "67"
     },
     "1673": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12350,7 +12350,7 @@
         1796
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1674": {
       "fn": "UniswapV2OracleLibrary.currentCumulativePrices",
@@ -12360,7 +12360,7 @@
         1796
       ],
       "op": "JUMP",
-      "path": "66"
+      "path": "67"
     },
     "1675": {
       "fn": "FixedPoint.mul",
@@ -12369,7 +12369,7 @@
         1980
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "1676": {
       "op": "PUSH1",
@@ -12417,7 +12417,7 @@
         1850
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x0"
     },
     "1693": {
@@ -12427,7 +12427,7 @@
         1878
       ],
       "op": "DUP3",
-      "path": "63",
+      "path": "64",
       "statement": 18
     },
     "1694": {
@@ -12437,7 +12437,7 @@
         1878
       ],
       "op": "ISZERO",
-      "path": "63"
+      "path": "64"
     },
     "1695": {
       "branch": 38,
@@ -12447,7 +12447,7 @@
         1878
       ],
       "op": "DUP1",
-      "path": "63"
+      "path": "64"
     },
     "1696": {
       "fn": "FixedPoint.mul",
@@ -12456,7 +12456,7 @@
         1914
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x6C8"
     },
     "1699": {
@@ -12467,7 +12467,7 @@
         1914
       ],
       "op": "JUMPI",
-      "path": "63"
+      "path": "64"
     },
     "1700": {
       "op": "POP"
@@ -12479,7 +12479,7 @@
         1914
       ],
       "op": "DUP4",
-      "path": "63"
+      "path": "64"
     },
     "1702": {
       "fn": "FixedPoint.mul",
@@ -12488,7 +12488,7 @@
         1914
       ],
       "op": "MLOAD",
-      "path": "63"
+      "path": "64"
     },
     "1703": {
       "op": "PUSH1",
@@ -12515,7 +12515,7 @@
         1914
       ],
       "op": "AND",
-      "path": "63"
+      "path": "64"
     },
     "1712": {
       "fn": "FixedPoint.mul",
@@ -12524,7 +12524,7 @@
         1903
       ],
       "op": "DUP4",
-      "path": "63"
+      "path": "64"
     },
     "1713": {
       "fn": "FixedPoint.mul",
@@ -12533,7 +12533,7 @@
         1898
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x6BA"
     },
     "1716": {
@@ -12543,7 +12543,7 @@
         1903
       ],
       "op": "DUP2",
-      "path": "63"
+      "path": "64"
     },
     "1717": {
       "fn": "FixedPoint.mul",
@@ -12552,7 +12552,7 @@
         1914
       ],
       "op": "DUP4",
-      "path": "63"
+      "path": "64"
     },
     "1718": {
       "fn": "FixedPoint.mul",
@@ -12561,7 +12561,7 @@
         1898
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0xA7A"
     },
     "1721": {
@@ -12572,7 +12572,7 @@
         1898
       ],
       "op": "JUMP",
-      "path": "63"
+      "path": "64"
     },
     "1722": {
       "fn": "FixedPoint.mul",
@@ -12581,7 +12581,7 @@
         1898
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "1723": {
       "fn": "FixedPoint.mul",
@@ -12590,7 +12590,7 @@
         1898
       ],
       "op": "SWAP3",
-      "path": "63"
+      "path": "64"
     },
     "1724": {
       "op": "POP"
@@ -12602,7 +12602,7 @@
         1903
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x6C6"
     },
     "1728": {
@@ -12612,7 +12612,7 @@
         1903
       ],
       "op": "SWAP1",
-      "path": "63"
+      "path": "64"
     },
     "1729": {
       "fn": "FixedPoint.mul",
@@ -12621,7 +12621,7 @@
         1898
       ],
       "op": "DUP4",
-      "path": "63"
+      "path": "64"
     },
     "1730": {
       "fn": "FixedPoint.mul",
@@ -12630,7 +12630,7 @@
         1903
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0xA99"
     },
     "1733": {
@@ -12641,7 +12641,7 @@
         1903
       ],
       "op": "JUMP",
-      "path": "63"
+      "path": "64"
     },
     "1734": {
       "fn": "FixedPoint.mul",
@@ -12650,7 +12650,7 @@
         1903
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "1735": {
       "branch": 39,
@@ -12660,7 +12660,7 @@
         1914
       ],
       "op": "EQ",
-      "path": "63"
+      "path": "64"
     },
     "1736": {
       "fn": "FixedPoint.mul",
@@ -12669,7 +12669,7 @@
         1914
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "1737": {
       "fn": "FixedPoint.mul",
@@ -12678,7 +12678,7 @@
         1944
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x714"
     },
     "1740": {
@@ -12689,7 +12689,7 @@
         1944
       ],
       "op": "JUMPI",
-      "path": "63"
+      "path": "64"
     },
     "1741": {
       "fn": "FixedPoint.mul",
@@ -12698,7 +12698,7 @@
         1944
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x40"
     },
     "1743": {
@@ -12708,7 +12708,7 @@
         1944
       ],
       "op": "MLOAD",
-      "path": "63"
+      "path": "64"
     },
     "1744": {
       "op": "PUSH3",
@@ -12728,7 +12728,7 @@
         1944
       ],
       "op": "DUP2",
-      "path": "63"
+      "path": "64"
     },
     "1752": {
       "fn": "FixedPoint.mul",
@@ -12737,7 +12737,7 @@
         1944
       ],
       "op": "MSTORE",
-      "path": "63"
+      "path": "64"
     },
     "1753": {
       "op": "PUSH1",
@@ -12750,7 +12750,7 @@
         1944
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x4"
     },
     "1757": {
@@ -12760,7 +12760,7 @@
         1944
       ],
       "op": "DUP3",
-      "path": "63"
+      "path": "64"
     },
     "1758": {
       "fn": "FixedPoint.mul",
@@ -12769,7 +12769,7 @@
         1944
       ],
       "op": "ADD",
-      "path": "63"
+      "path": "64"
     },
     "1759": {
       "op": "MSTORE"
@@ -12822,7 +12822,7 @@
         1944
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x384"
     },
     "1811": {
@@ -12835,7 +12835,7 @@
         1944
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "1813": {
       "fn": "FixedPoint.mul",
@@ -12844,7 +12844,7 @@
         1973
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "statement": 19,
       "value": "0x40"
     },
@@ -12855,7 +12855,7 @@
         1973
       ],
       "op": "DUP1",
-      "path": "63"
+      "path": "64"
     },
     "1816": {
       "fn": "FixedPoint.mul",
@@ -12864,7 +12864,7 @@
         1973
       ],
       "op": "MLOAD",
-      "path": "63"
+      "path": "64"
     },
     "1817": {
       "fn": "FixedPoint.mul",
@@ -12873,7 +12873,7 @@
         1973
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x20"
     },
     "1819": {
@@ -12883,7 +12883,7 @@
         1973
       ],
       "op": "DUP2",
-      "path": "63"
+      "path": "64"
     },
     "1820": {
       "fn": "FixedPoint.mul",
@@ -12892,7 +12892,7 @@
         1973
       ],
       "op": "ADD",
-      "path": "63"
+      "path": "64"
     },
     "1821": {
       "fn": "FixedPoint.mul",
@@ -12901,7 +12901,7 @@
         1973
       ],
       "op": "SWAP1",
-      "path": "63"
+      "path": "64"
     },
     "1822": {
       "fn": "FixedPoint.mul",
@@ -12910,7 +12910,7 @@
         1973
       ],
       "op": "SWAP2",
-      "path": "63"
+      "path": "64"
     },
     "1823": {
       "fn": "FixedPoint.mul",
@@ -12919,7 +12919,7 @@
         1973
       ],
       "op": "MSTORE",
-      "path": "63"
+      "path": "64"
     },
     "1824": {
       "fn": "FixedPoint.mul",
@@ -12928,7 +12928,7 @@
         1973
       ],
       "op": "SWAP1",
-      "path": "63"
+      "path": "64"
     },
     "1825": {
       "fn": "FixedPoint.mul",
@@ -12937,7 +12937,7 @@
         1973
       ],
       "op": "DUP2",
-      "path": "63"
+      "path": "64"
     },
     "1826": {
       "fn": "FixedPoint.mul",
@@ -12946,7 +12946,7 @@
         1973
       ],
       "op": "MSTORE",
-      "path": "63"
+      "path": "64"
     },
     "1827": {
       "fn": "FixedPoint.mul",
@@ -12955,7 +12955,7 @@
         1973
       ],
       "op": "SWAP4",
-      "path": "63"
+      "path": "64"
     },
     "1828": {
       "fn": "FixedPoint.mul",
@@ -12964,7 +12964,7 @@
         1980
       ],
       "op": "SWAP3",
-      "path": "63"
+      "path": "64"
     },
     "1829": {
       "op": "POP"
@@ -12983,7 +12983,7 @@
         1980
       ],
       "op": "JUMP",
-      "path": "63"
+      "path": "64"
     },
     "1833": {
       "fn": "UniswapV2OracleLibrary.currentBlockTimestamp",
@@ -12992,7 +12992,7 @@
         583
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1834": {
       "fn": "UniswapV2OracleLibrary.currentBlockTimestamp",
@@ -13001,7 +13001,7 @@
         524
       ],
       "op": "PUSH1",
-      "path": "66",
+      "path": "67",
       "value": "0x0"
     },
     "1836": {
@@ -13011,7 +13011,7 @@
         575
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "statement": 20,
       "value": "0x73A"
     },
@@ -13022,7 +13022,7 @@
         575
       ],
       "op": "PUSH5",
-      "path": "66",
+      "path": "67",
       "value": "0x100000000"
     },
     "1845": {
@@ -13032,7 +13032,7 @@
         565
       ],
       "op": "TIMESTAMP",
-      "path": "66"
+      "path": "67"
     },
     "1846": {
       "fn": "UniswapV2OracleLibrary.currentBlockTimestamp",
@@ -13041,7 +13041,7 @@
         575
       ],
       "op": "PUSH2",
-      "path": "66",
+      "path": "67",
       "value": "0xAAD"
     },
     "1849": {
@@ -13052,7 +13052,7 @@
         575
       ],
       "op": "JUMP",
-      "path": "66"
+      "path": "67"
     },
     "1850": {
       "fn": "UniswapV2OracleLibrary.currentBlockTimestamp",
@@ -13061,7 +13061,7 @@
         575
       ],
       "op": "JUMPDEST",
-      "path": "66"
+      "path": "67"
     },
     "1851": {
       "fn": "UniswapV2OracleLibrary.currentBlockTimestamp",
@@ -13070,7 +13070,7 @@
         576
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1852": {
       "fn": "UniswapV2OracleLibrary.currentBlockTimestamp",
@@ -13079,7 +13079,7 @@
         576
       ],
       "op": "POP",
-      "path": "66"
+      "path": "67"
     },
     "1853": {
       "fn": "UniswapV2OracleLibrary.currentBlockTimestamp",
@@ -13088,7 +13088,7 @@
         583
       ],
       "op": "SWAP1",
-      "path": "66"
+      "path": "67"
     },
     "1854": {
       "fn": "UniswapV2OracleLibrary.currentBlockTimestamp",
@@ -13098,7 +13098,7 @@
         583
       ],
       "op": "JUMP",
-      "path": "66"
+      "path": "67"
     },
     "1855": {
       "fn": "FixedPoint.fraction",
@@ -13107,7 +13107,7 @@
         5261
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "1856": {
       "op": "PUSH1",
@@ -13155,7 +13155,7 @@
         4696
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "statement": 21,
       "value": "0x0"
     },
@@ -13166,7 +13166,7 @@
         4692
       ],
       "op": "DUP3",
-      "path": "63"
+      "path": "64"
     },
     "1874": {
       "branch": 40,
@@ -13176,7 +13176,7 @@
         4696
       ],
       "op": "GT",
-      "path": "63"
+      "path": "64"
     },
     "1875": {
       "fn": "FixedPoint.fraction",
@@ -13185,7 +13185,7 @@
         4739
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x7AD"
     },
     "1878": {
@@ -13196,7 +13196,7 @@
         4739
       ],
       "op": "JUMPI",
-      "path": "63"
+      "path": "64"
     },
     "1879": {
       "fn": "FixedPoint.fraction",
@@ -13205,7 +13205,7 @@
         4739
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x40"
     },
     "1881": {
@@ -13215,7 +13215,7 @@
         4739
       ],
       "op": "MLOAD",
-      "path": "63"
+      "path": "64"
     },
     "1882": {
       "op": "PUSH3",
@@ -13235,7 +13235,7 @@
         4739
       ],
       "op": "DUP2",
-      "path": "63"
+      "path": "64"
     },
     "1890": {
       "fn": "FixedPoint.fraction",
@@ -13244,7 +13244,7 @@
         4739
       ],
       "op": "MSTORE",
-      "path": "63"
+      "path": "64"
     },
     "1891": {
       "op": "PUSH1",
@@ -13257,7 +13257,7 @@
         4739
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x4"
     },
     "1895": {
@@ -13267,7 +13267,7 @@
         4739
       ],
       "op": "DUP3",
-      "path": "63"
+      "path": "64"
     },
     "1896": {
       "fn": "FixedPoint.fraction",
@@ -13276,7 +13276,7 @@
         4739
       ],
       "op": "ADD",
-      "path": "63"
+      "path": "64"
     },
     "1897": {
       "op": "MSTORE"
@@ -13353,7 +13353,7 @@
         4739
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x384"
     },
     "1964": {
@@ -13366,7 +13366,7 @@
         4739
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "1966": {
       "branch": 41,
@@ -13376,7 +13376,7 @@
         4767
       ],
       "op": "DUP3",
-      "path": "63"
+      "path": "64"
     },
     "1967": {
       "fn": "FixedPoint.fraction",
@@ -13385,7 +13385,7 @@
         4799
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x7C7"
     },
     "1970": {
@@ -13396,7 +13396,7 @@
         4799
       ],
       "op": "JUMPI",
-      "path": "63"
+      "path": "64"
     },
     "1971": {
       "op": "POP"
@@ -13408,7 +13408,7 @@
         4799
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "statement": 22,
       "value": "0x40"
     },
@@ -13419,7 +13419,7 @@
         4799
       ],
       "op": "DUP1",
-      "path": "63"
+      "path": "64"
     },
     "1975": {
       "fn": "FixedPoint.fraction",
@@ -13428,7 +13428,7 @@
         4799
       ],
       "op": "MLOAD",
-      "path": "63"
+      "path": "64"
     },
     "1976": {
       "fn": "FixedPoint.fraction",
@@ -13437,7 +13437,7 @@
         4799
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x20"
     },
     "1978": {
@@ -13447,7 +13447,7 @@
         4799
       ],
       "op": "DUP2",
-      "path": "63"
+      "path": "64"
     },
     "1979": {
       "fn": "FixedPoint.fraction",
@@ -13456,7 +13456,7 @@
         4799
       ],
       "op": "ADD",
-      "path": "63"
+      "path": "64"
     },
     "1980": {
       "fn": "FixedPoint.fraction",
@@ -13465,7 +13465,7 @@
         4799
       ],
       "op": "SWAP1",
-      "path": "63"
+      "path": "64"
     },
     "1981": {
       "fn": "FixedPoint.fraction",
@@ -13474,7 +13474,7 @@
         4799
       ],
       "op": "SWAP2",
-      "path": "63"
+      "path": "64"
     },
     "1982": {
       "fn": "FixedPoint.fraction",
@@ -13483,7 +13483,7 @@
         4799
       ],
       "op": "MSTORE",
-      "path": "63"
+      "path": "64"
     },
     "1983": {
       "op": "PUSH1",
@@ -13496,7 +13496,7 @@
         4799
       ],
       "op": "DUP2",
-      "path": "63"
+      "path": "64"
     },
     "1986": {
       "fn": "FixedPoint.fraction",
@@ -13505,7 +13505,7 @@
         4799
       ],
       "op": "MSTORE",
-      "path": "63"
+      "path": "64"
     },
     "1987": {
       "fn": "FixedPoint.fraction",
@@ -13514,7 +13514,7 @@
         4799
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x3AC"
     },
     "1990": {
@@ -13524,7 +13524,7 @@
         4799
       ],
       "op": "JUMP",
-      "path": "63"
+      "path": "64"
     },
     "1991": {
       "fn": "FixedPoint.fraction",
@@ -13533,7 +13533,7 @@
         4799
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "1992": {
       "op": "PUSH1",
@@ -13560,7 +13560,7 @@
         4823
       ],
       "op": "DUP4",
-      "path": "63"
+      "path": "64"
     },
     "2001": {
       "branch": 42,
@@ -13570,7 +13570,7 @@
         4835
       ],
       "op": "GT",
-      "path": "63"
+      "path": "64"
     },
     "2002": {
       "fn": "FixedPoint.fraction",
@@ -13579,7 +13579,7 @@
         5255
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x85E"
     },
     "2005": {
@@ -13590,7 +13590,7 @@
         5255
       ],
       "op": "JUMPI",
-      "path": "63"
+      "path": "64"
     },
     "2006": {
       "fn": "FixedPoint.fraction",
@@ -13599,7 +13599,7 @@
         4865
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x0"
     },
     "2008": {
@@ -13609,7 +13609,7 @@
         4907
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x7E5"
     },
     "2011": {
@@ -13619,7 +13619,7 @@
         4907
       ],
       "op": "DUP4",
-      "path": "63"
+      "path": "64"
     },
     "2012": {
       "offset": [
@@ -13627,7 +13627,7 @@
         583
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x70"
     },
     "2014": {
@@ -13637,7 +13637,7 @@
         4892
       ],
       "op": "DUP7",
-      "path": "63"
+      "path": "64"
     },
     "2015": {
       "fn": "FixedPoint.fraction",
@@ -13646,7 +13646,7 @@
         4892
       ],
       "op": "SWAP1",
-      "path": "63"
+      "path": "64"
     },
     "2016": {
       "fn": "FixedPoint.fraction",
@@ -13655,7 +13655,7 @@
         4892
       ],
       "op": "SHL",
-      "path": "63"
+      "path": "64"
     },
     "2017": {
       "fn": "FixedPoint.fraction",
@@ -13664,7 +13664,7 @@
         4907
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0xA99"
     },
     "2020": {
@@ -13675,7 +13675,7 @@
         4907
       ],
       "op": "JUMP",
-      "path": "63"
+      "path": "64"
     },
     "2021": {
       "fn": "FixedPoint.fraction",
@@ -13684,7 +13684,7 @@
         4907
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "2022": {
       "fn": "FixedPoint.fraction",
@@ -13693,7 +13693,7 @@
         4907
       ],
       "op": "SWAP1",
-      "path": "63"
+      "path": "64"
     },
     "2023": {
       "fn": "FixedPoint.fraction",
@@ -13702,7 +13702,7 @@
         4907
       ],
       "op": "POP",
-      "path": "63"
+      "path": "64"
     },
     "2024": {
       "op": "PUSH1",
@@ -13729,7 +13729,7 @@
         4935
       ],
       "op": "DUP2",
-      "path": "63",
+      "path": "64",
       "statement": 23
     },
     "2033": {
@@ -13739,7 +13739,7 @@
         4947
       ],
       "op": "GT",
-      "path": "63"
+      "path": "64"
     },
     "2034": {
       "branch": 43,
@@ -13749,7 +13749,7 @@
         4947
       ],
       "op": "ISZERO",
-      "path": "63"
+      "path": "64"
     },
     "2035": {
       "fn": "FixedPoint.fraction",
@@ -13758,7 +13758,7 @@
         4982
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x83E"
     },
     "2038": {
@@ -13769,7 +13769,7 @@
         4982
       ],
       "op": "JUMPI",
-      "path": "63"
+      "path": "64"
     },
     "2039": {
       "fn": "FixedPoint.fraction",
@@ -13778,7 +13778,7 @@
         4982
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x40"
     },
     "2041": {
@@ -13788,7 +13788,7 @@
         4982
       ],
       "op": "MLOAD",
-      "path": "63"
+      "path": "64"
     },
     "2042": {
       "op": "PUSH3",
@@ -13808,7 +13808,7 @@
         4982
       ],
       "op": "DUP2",
-      "path": "63"
+      "path": "64"
     },
     "2050": {
       "fn": "FixedPoint.fraction",
@@ -13817,7 +13817,7 @@
         4982
       ],
       "op": "MSTORE",
-      "path": "63"
+      "path": "64"
     },
     "2051": {
       "op": "PUSH1",
@@ -13830,7 +13830,7 @@
         4982
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x4"
     },
     "2055": {
@@ -13840,7 +13840,7 @@
         4982
       ],
       "op": "DUP3",
-      "path": "63"
+      "path": "64"
     },
     "2056": {
       "fn": "FixedPoint.fraction",
@@ -13849,7 +13849,7 @@
         4982
       ],
       "op": "ADD",
-      "path": "63"
+      "path": "64"
     },
     "2057": {
       "op": "MSTORE"
@@ -13902,7 +13902,7 @@
         4982
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x384"
     },
     "2109": {
@@ -13915,7 +13915,7 @@
         4982
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "2111": {
       "fn": "FixedPoint.fraction",
@@ -13924,7 +13924,7 @@
         5029
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "statement": 24,
       "value": "0x40"
     },
@@ -13935,7 +13935,7 @@
         5029
       ],
       "op": "MLOAD",
-      "path": "63"
+      "path": "64"
     },
     "2114": {
       "fn": "FixedPoint.fraction",
@@ -13944,7 +13944,7 @@
         5029
       ],
       "op": "DUP1",
-      "path": "63"
+      "path": "64"
     },
     "2115": {
       "fn": "FixedPoint.fraction",
@@ -13953,7 +13953,7 @@
         5029
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x20"
     },
     "2117": {
@@ -13963,7 +13963,7 @@
         5029
       ],
       "op": "ADD",
-      "path": "63"
+      "path": "64"
     },
     "2118": {
       "fn": "FixedPoint.fraction",
@@ -13972,7 +13972,7 @@
         5029
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x40"
     },
     "2120": {
@@ -13982,7 +13982,7 @@
         5029
       ],
       "op": "MSTORE",
-      "path": "63"
+      "path": "64"
     },
     "2121": {
       "fn": "FixedPoint.fraction",
@@ -13991,7 +13991,7 @@
         5029
       ],
       "op": "DUP1",
-      "path": "63"
+      "path": "64"
     },
     "2122": {
       "fn": "FixedPoint.fraction",
@@ -14000,7 +14000,7 @@
         5027
       ],
       "op": "DUP3",
-      "path": "63"
+      "path": "64"
     },
     "2123": {
       "op": "PUSH1",
@@ -14027,7 +14027,7 @@
         5029
       ],
       "op": "AND",
-      "path": "63"
+      "path": "64"
     },
     "2132": {
       "fn": "FixedPoint.fraction",
@@ -14036,7 +14036,7 @@
         5029
       ],
       "op": "DUP2",
-      "path": "63"
+      "path": "64"
     },
     "2133": {
       "fn": "FixedPoint.fraction",
@@ -14045,7 +14045,7 @@
         5029
       ],
       "op": "MSTORE",
-      "path": "63"
+      "path": "64"
     },
     "2134": {
       "fn": "FixedPoint.fraction",
@@ -14054,7 +14054,7 @@
         5029
       ],
       "op": "POP",
-      "path": "63"
+      "path": "64"
     },
     "2135": {
       "fn": "FixedPoint.fraction",
@@ -14063,7 +14063,7 @@
         5029
       ],
       "op": "SWAP2",
-      "path": "63"
+      "path": "64"
     },
     "2136": {
       "fn": "FixedPoint.fraction",
@@ -14072,7 +14072,7 @@
         5029
       ],
       "op": "POP",
-      "path": "63"
+      "path": "64"
     },
     "2137": {
       "fn": "FixedPoint.fraction",
@@ -14081,7 +14081,7 @@
         5029
       ],
       "op": "POP",
-      "path": "63"
+      "path": "64"
     },
     "2138": {
       "fn": "FixedPoint.fraction",
@@ -14090,7 +14090,7 @@
         5029
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x3AC"
     },
     "2141": {
@@ -14100,7 +14100,7 @@
         5029
       ],
       "op": "JUMP",
-      "path": "63"
+      "path": "64"
     },
     "2142": {
       "fn": "FixedPoint.fraction",
@@ -14109,7 +14109,7 @@
         5255
       ],
       "op": "JUMPDEST",
-      "path": "63"
+      "path": "64"
     },
     "2143": {
       "fn": "FixedPoint.fraction",
@@ -14118,7 +14118,7 @@
         5074
       ],
       "op": "PUSH1",
-      "path": "63",
+      "path": "64",
       "value": "0x0"
     },
     "2145": {
@@ -14128,7 +14128,7 @@
         5122
       ],
       "op": "PUSH2",
-      "path": "63",
+      "path": "64",
       "value": "0x7E5"
     },
     "2148": {
@@ -14138,7 +14138,7 @@
         5102
       ],
       "op": "DUP5",
-      "path": "63"
+      "path": "64"
     },
     "2149": {
       "op": "PUSH1",
@@ -14158,7 +14158,7 @@
         5121
       ],
       "op": "DUP6",
-      "path": "63"
+      "path": "64"
     },
     "2155": {
       "fn": "FullMath.mulDiv",
@@ -14167,7 +14167,7 @@
         1045
       ],
       "op": "PUSH1",
-      "path": "64",
+      "path": "65",
       "value": "0x0"
     },
     "2157": {
@@ -14177,7 +14177,7 @@
         1067
       ],
       "op": "DUP1",
-      "path": "64"
+      "path": "65"
     },
     "2158": {
       "fn": "FullMath.mulDiv",
@@ -14186,7 +14186,7 @@
         1078
       ],
       "op": "PUSH1",
-      "path": "64",
+      "path": "65",
       "value": "0x0"
     },
     "2160": {
@@ -14196,7 +14196,7 @@
         1095
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x879"
     },
     "2163": {
@@ -14206,7 +14206,7 @@
         1091
       ],
       "op": "DUP7",
-      "path": "64"
+      "path": "65"
     },
     "2164": {
       "fn": "FullMath.mulDiv",
@@ -14215,7 +14215,7 @@
         1094
       ],
       "op": "DUP7",
-      "path": "64"
+      "path": "65"
     },
     "2165": {
       "fn": "FullMath.mulDiv",
@@ -14224,7 +14224,7 @@
         1089
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x934"
     },
     "2168": {
@@ -14235,7 +14235,7 @@
         1095
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2169": {
       "fn": "FullMath.mulDiv",
@@ -14244,7 +14244,7 @@
         1095
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2170": {
       "fn": "FullMath.mulDiv",
@@ -14253,7 +14253,7 @@
         1095
       ],
       "op": "SWAP2",
-      "path": "64"
+      "path": "65"
     },
     "2171": {
       "fn": "FullMath.mulDiv",
@@ -14262,7 +14262,7 @@
         1095
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2172": {
       "fn": "FullMath.mulDiv",
@@ -14271,7 +14271,7 @@
         1095
       ],
       "op": "SWAP2",
-      "path": "64"
+      "path": "65"
     },
     "2173": {
       "fn": "FullMath.mulDiv",
@@ -14280,7 +14280,7 @@
         1095
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2174": {
       "fn": "FullMath.mulDiv",
@@ -14289,7 +14289,7 @@
         1116
       ],
       "op": "PUSH1",
-      "path": "64",
+      "path": "65",
       "value": "0x0"
     },
     "2176": {
@@ -14299,7 +14299,7 @@
         1133
       ],
       "op": "DUP5",
-      "path": "64"
+      "path": "65"
     },
     "2177": {
       "fn": "FullMath.mulDiv",
@@ -14308,7 +14308,7 @@
         1134
       ],
       "op": "DUP1",
-      "path": "64"
+      "path": "65"
     },
     "2178": {
       "fn": "FullMath.mulDiv",
@@ -14317,7 +14317,7 @@
         1134
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x88D"
     },
     "2181": {
@@ -14327,7 +14327,7 @@
         1134
       ],
       "op": "JUMPI",
-      "path": "64"
+      "path": "65"
     },
     "2182": {
       "fn": "FullMath.mulDiv",
@@ -14336,7 +14336,7 @@
         1134
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x88D"
     },
     "2185": {
@@ -14346,7 +14346,7 @@
         1134
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x9C9"
     },
     "2188": {
@@ -14357,7 +14357,7 @@
         1134
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2189": {
       "fn": "FullMath.mulDiv",
@@ -14366,7 +14366,7 @@
         1134
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2190": {
       "fn": "FullMath.mulDiv",
@@ -14375,7 +14375,7 @@
         1130
       ],
       "op": "DUP7",
-      "path": "64"
+      "path": "65"
     },
     "2191": {
       "fn": "FullMath.mulDiv",
@@ -14384,7 +14384,7 @@
         1127
       ],
       "op": "DUP9",
-      "path": "64"
+      "path": "65"
     },
     "2192": {
       "fn": "FullMath.mulDiv",
@@ -14393,7 +14393,7 @@
         1134
       ],
       "op": "MULMOD",
-      "path": "64"
+      "path": "65"
     },
     "2193": {
       "fn": "FullMath.mulDiv",
@@ -14402,7 +14402,7 @@
         1134
       ],
       "op": "SWAP1",
-      "path": "64"
+      "path": "65"
     },
     "2194": {
       "fn": "FullMath.mulDiv",
@@ -14411,7 +14411,7 @@
         1134
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2195": {
       "fn": "FullMath.mulDiv",
@@ -14420,7 +14420,7 @@
         1154
       ],
       "op": "DUP3",
-      "path": "64"
+      "path": "65"
     },
     "2196": {
       "fn": "FullMath.mulDiv",
@@ -14429,7 +14429,7 @@
         1150
       ],
       "op": "DUP2",
-      "path": "64"
+      "path": "65"
     },
     "2197": {
       "branch": 44,
@@ -14439,7 +14439,7 @@
         1154
       ],
       "op": "GT",
-      "path": "64"
+      "path": "65"
     },
     "2198": {
       "fn": "FullMath.mulDiv",
@@ -14448,7 +14448,7 @@
         1162
       ],
       "op": "ISZERO",
-      "path": "64"
+      "path": "65"
     },
     "2199": {
       "fn": "FullMath.mulDiv",
@@ -14457,7 +14457,7 @@
         1162
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x8A8"
     },
     "2202": {
@@ -14468,7 +14468,7 @@
         1162
       ],
       "op": "JUMPI",
-      "path": "64"
+      "path": "65"
     },
     "2203": {
       "fn": "FullMath.mulDiv",
@@ -14477,7 +14477,7 @@
         1162
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "statement": 25,
       "value": "0x8A5"
     },
@@ -14488,7 +14488,7 @@
         1162
       ],
       "op": "PUSH1",
-      "path": "64",
+      "path": "65",
       "value": "0x1"
     },
     "2208": {
@@ -14498,7 +14498,7 @@
         1162
       ],
       "op": "DUP4",
-      "path": "64"
+      "path": "65"
     },
     "2209": {
       "fn": "FullMath.mulDiv",
@@ -14507,7 +14507,7 @@
         1162
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0xAC1"
     },
     "2212": {
@@ -14518,7 +14518,7 @@
         1162
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2213": {
       "fn": "FullMath.mulDiv",
@@ -14527,7 +14527,7 @@
         1162
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2214": {
       "fn": "FullMath.mulDiv",
@@ -14536,7 +14536,7 @@
         1162
       ],
       "op": "SWAP2",
-      "path": "64"
+      "path": "65"
     },
     "2215": {
       "fn": "FullMath.mulDiv",
@@ -14545,7 +14545,7 @@
         1162
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2216": {
       "fn": "FullMath.mulDiv",
@@ -14554,7 +14554,7 @@
         1162
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2217": {
       "fn": "FullMath.mulDiv",
@@ -14563,7 +14563,7 @@
         1179
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "statement": 26,
       "value": "0x8B2"
     },
@@ -14574,7 +14574,7 @@
         1179
       ],
       "op": "DUP2",
-      "path": "64"
+      "path": "65"
     },
     "2221": {
       "fn": "FullMath.mulDiv",
@@ -14583,7 +14583,7 @@
         1179
       ],
       "op": "DUP5",
-      "path": "64"
+      "path": "65"
     },
     "2222": {
       "fn": "FullMath.mulDiv",
@@ -14592,7 +14592,7 @@
         1179
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0xAC1"
     },
     "2225": {
@@ -14603,7 +14603,7 @@
         1179
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2226": {
       "fn": "FullMath.mulDiv",
@@ -14612,7 +14612,7 @@
         1179
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2227": {
       "fn": "FullMath.mulDiv",
@@ -14621,7 +14621,7 @@
         1179
       ],
       "op": "SWAP3",
-      "path": "64"
+      "path": "65"
     },
     "2228": {
       "op": "POP"
@@ -14634,7 +14634,7 @@
         1200
       ],
       "op": "DUP2",
-      "path": "64"
+      "path": "65"
     },
     "2230": {
       "fn": "FullMath.mulDiv",
@@ -14643,7 +14643,7 @@
         1214
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x8CD"
     },
     "2233": {
@@ -14654,7 +14654,7 @@
         1214
       ],
       "op": "JUMPI",
-      "path": "64"
+      "path": "65"
     },
     "2234": {
       "fn": "FullMath.mulDiv",
@@ -14663,7 +14663,7 @@
         1214
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "statement": 27,
       "value": "0x8C3"
     },
@@ -14674,7 +14674,7 @@
         1214
       ],
       "op": "DUP6",
-      "path": "64"
+      "path": "65"
     },
     "2238": {
       "fn": "FullMath.mulDiv",
@@ -14683,7 +14683,7 @@
         1210
       ],
       "op": "DUP5",
-      "path": "64"
+      "path": "65"
     },
     "2239": {
       "fn": "FullMath.mulDiv",
@@ -14692,7 +14692,7 @@
         1214
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0xA99"
     },
     "2242": {
@@ -14703,7 +14703,7 @@
         1214
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2243": {
       "fn": "FullMath.mulDiv",
@@ -14712,7 +14712,7 @@
         1214
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2244": {
       "fn": "FullMath.mulDiv",
@@ -14721,7 +14721,7 @@
         1214
       ],
       "op": "SWAP4",
-      "path": "64"
+      "path": "65"
     },
     "2245": {
       "fn": "FullMath.mulDiv",
@@ -14730,7 +14730,7 @@
         1214
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2246": {
       "fn": "FullMath.mulDiv",
@@ -14739,7 +14739,7 @@
         1214
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2247": {
       "fn": "FullMath.mulDiv",
@@ -14748,7 +14748,7 @@
         1214
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2248": {
       "fn": "FullMath.mulDiv",
@@ -14757,7 +14757,7 @@
         1214
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2249": {
       "fn": "FullMath.mulDiv",
@@ -14766,7 +14766,7 @@
         1214
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x92D"
     },
     "2252": {
@@ -14776,7 +14776,7 @@
         1214
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2253": {
       "fn": "FullMath.mulDiv",
@@ -14785,7 +14785,7 @@
         1214
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2254": {
       "fn": "FullMath.mulDiv",
@@ -14794,7 +14794,7 @@
         1238
       ],
       "op": "DUP5",
-      "path": "64",
+      "path": "65",
       "statement": 28
     },
     "2255": {
@@ -14804,7 +14804,7 @@
         1234
       ],
       "op": "DUP3",
-      "path": "64"
+      "path": "65"
     },
     "2256": {
       "branch": 46,
@@ -14814,7 +14814,7 @@
         1238
       ],
       "op": "LT",
-      "path": "64"
+      "path": "65"
     },
     "2257": {
       "fn": "FullMath.mulDiv",
@@ -14823,7 +14823,7 @@
         1269
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x91C"
     },
     "2260": {
@@ -14834,7 +14834,7 @@
         1269
       ],
       "op": "JUMPI",
-      "path": "64"
+      "path": "65"
     },
     "2261": {
       "fn": "FullMath.mulDiv",
@@ -14843,7 +14843,7 @@
         1269
       ],
       "op": "PUSH1",
-      "path": "64",
+      "path": "65",
       "value": "0x40"
     },
     "2263": {
@@ -14853,7 +14853,7 @@
         1269
       ],
       "op": "MLOAD",
-      "path": "64"
+      "path": "65"
     },
     "2264": {
       "op": "PUSH3",
@@ -14873,7 +14873,7 @@
         1269
       ],
       "op": "DUP2",
-      "path": "64"
+      "path": "65"
     },
     "2272": {
       "fn": "FullMath.mulDiv",
@@ -14882,7 +14882,7 @@
         1269
       ],
       "op": "MSTORE",
-      "path": "64"
+      "path": "65"
     },
     "2273": {
       "op": "PUSH1",
@@ -14895,7 +14895,7 @@
         1269
       ],
       "op": "PUSH1",
-      "path": "64",
+      "path": "65",
       "value": "0x4"
     },
     "2277": {
@@ -14905,7 +14905,7 @@
         1269
       ],
       "op": "DUP3",
-      "path": "64"
+      "path": "65"
     },
     "2278": {
       "fn": "FullMath.mulDiv",
@@ -14914,7 +14914,7 @@
         1269
       ],
       "op": "ADD",
-      "path": "64"
+      "path": "65"
     },
     "2279": {
       "op": "MSTORE"
@@ -14967,7 +14967,7 @@
         1269
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x384"
     },
     "2331": {
@@ -14980,7 +14980,7 @@
         1269
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2333": {
       "fn": "FullMath.mulDiv",
@@ -14989,7 +14989,7 @@
         1302
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "statement": 29,
       "value": "0x927"
     },
@@ -15000,7 +15000,7 @@
         1295
       ],
       "op": "DUP4",
-      "path": "64"
+      "path": "65"
     },
     "2337": {
       "fn": "FullMath.mulDiv",
@@ -15009,7 +15009,7 @@
         1298
       ],
       "op": "DUP4",
-      "path": "64"
+      "path": "65"
     },
     "2338": {
       "fn": "FullMath.mulDiv",
@@ -15018,7 +15018,7 @@
         1301
       ],
       "op": "DUP8",
-      "path": "64"
+      "path": "65"
     },
     "2339": {
       "fn": "FullMath.mulDiv",
@@ -15027,7 +15027,7 @@
         1293
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x976"
     },
     "2342": {
@@ -15038,7 +15038,7 @@
         1302
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2343": {
       "fn": "FullMath.mulDiv",
@@ -15047,7 +15047,7 @@
         1302
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2344": {
       "fn": "FullMath.mulDiv",
@@ -15056,7 +15056,7 @@
         1302
       ],
       "op": "SWAP4",
-      "path": "64"
+      "path": "65"
     },
     "2345": {
       "fn": "FullMath.mulDiv",
@@ -15065,7 +15065,7 @@
         1302
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2346": {
       "fn": "FullMath.mulDiv",
@@ -15074,7 +15074,7 @@
         1302
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2347": {
       "fn": "FullMath.mulDiv",
@@ -15083,7 +15083,7 @@
         1302
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2348": {
       "fn": "FullMath.mulDiv",
@@ -15092,7 +15092,7 @@
         1302
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2349": {
       "fn": "FullMath.mulDiv",
@@ -15101,7 +15101,7 @@
         1309
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2350": {
       "fn": "FullMath.mulDiv",
@@ -15110,7 +15110,7 @@
         1309
       ],
       "op": "SWAP4",
-      "path": "64"
+      "path": "65"
     },
     "2351": {
       "fn": "FullMath.mulDiv",
@@ -15119,7 +15119,7 @@
         1309
       ],
       "op": "SWAP3",
-      "path": "64"
+      "path": "65"
     },
     "2352": {
       "fn": "FullMath.mulDiv",
@@ -15128,7 +15128,7 @@
         1309
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2353": {
       "fn": "FullMath.mulDiv",
@@ -15137,7 +15137,7 @@
         1309
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2354": {
       "fn": "FullMath.mulDiv",
@@ -15146,7 +15146,7 @@
         1309
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2355": {
       "fn": "FullMath.mulDiv",
@@ -15156,7 +15156,7 @@
         1309
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2356": {
       "fn": "FullMath.fullMul",
@@ -15165,7 +15165,7 @@
         419
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2357": {
       "fn": "FullMath.fullMul",
@@ -15174,7 +15174,7 @@
         287
       ],
       "op": "PUSH1",
-      "path": "64",
+      "path": "65",
       "value": "0x0"
     },
     "2359": {
@@ -15184,7 +15184,7 @@
         287
       ],
       "op": "DUP1",
-      "path": "64"
+      "path": "65"
     },
     "2360": {
       "fn": "FullMath.fullMul",
@@ -15193,7 +15193,7 @@
         287
       ],
       "op": "DUP1",
-      "path": "64"
+      "path": "65"
     },
     "2361": {
       "op": "PUSH1",
@@ -15209,7 +15209,7 @@
         334
       ],
       "op": "DUP5",
-      "path": "64"
+      "path": "65"
     },
     "2365": {
       "fn": "FullMath.fullMul",
@@ -15218,7 +15218,7 @@
         331
       ],
       "op": "DUP7",
-      "path": "64"
+      "path": "65"
     },
     "2366": {
       "fn": "FullMath.fullMul",
@@ -15227,7 +15227,7 @@
         345
       ],
       "op": "MULMOD",
-      "path": "64"
+      "path": "65"
     },
     "2367": {
       "fn": "FullMath.fullMul",
@@ -15236,7 +15236,7 @@
         345
       ],
       "op": "SWAP1",
-      "path": "64"
+      "path": "65"
     },
     "2368": {
       "op": "POP"
@@ -15248,7 +15248,7 @@
         364
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "statement": 30,
       "value": "0x94A"
     },
@@ -15259,7 +15259,7 @@
         364
       ],
       "op": "DUP5",
-      "path": "64"
+      "path": "65"
     },
     "2373": {
       "fn": "FullMath.fullMul",
@@ -15268,7 +15268,7 @@
         360
       ],
       "op": "DUP7",
-      "path": "64"
+      "path": "65"
     },
     "2374": {
       "fn": "FullMath.fullMul",
@@ -15277,7 +15277,7 @@
         364
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0xA7A"
     },
     "2377": {
@@ -15288,7 +15288,7 @@
         364
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2378": {
       "fn": "FullMath.fullMul",
@@ -15297,7 +15297,7 @@
         364
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2379": {
       "fn": "FullMath.fullMul",
@@ -15306,7 +15306,7 @@
         364
       ],
       "op": "SWAP3",
-      "path": "64"
+      "path": "65"
     },
     "2380": {
       "op": "POP"
@@ -15318,7 +15318,7 @@
         384
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "statement": 31,
       "value": "0x956"
     },
@@ -15329,7 +15329,7 @@
         364
       ],
       "op": "DUP4",
-      "path": "64"
+      "path": "65"
     },
     "2385": {
       "fn": "FullMath.fullMul",
@@ -15338,7 +15338,7 @@
         380
       ],
       "op": "DUP3",
-      "path": "64"
+      "path": "65"
     },
     "2386": {
       "fn": "FullMath.fullMul",
@@ -15347,7 +15347,7 @@
         384
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0xAC1"
     },
     "2389": {
@@ -15358,7 +15358,7 @@
         384
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2390": {
       "fn": "FullMath.fullMul",
@@ -15367,7 +15367,7 @@
         384
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2391": {
       "fn": "FullMath.fullMul",
@@ -15376,7 +15376,7 @@
         384
       ],
       "op": "SWAP2",
-      "path": "64"
+      "path": "65"
     },
     "2392": {
       "fn": "FullMath.fullMul",
@@ -15385,7 +15385,7 @@
         384
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2393": {
       "fn": "FullMath.fullMul",
@@ -15394,7 +15394,7 @@
         404
       ],
       "op": "DUP3",
-      "path": "64"
+      "path": "65"
     },
     "2394": {
       "fn": "FullMath.fullMul",
@@ -15403,7 +15403,7 @@
         400
       ],
       "op": "DUP2",
-      "path": "64"
+      "path": "65"
     },
     "2395": {
       "branch": 47,
@@ -15413,7 +15413,7 @@
         404
       ],
       "op": "LT",
-      "path": "64"
+      "path": "65"
     },
     "2396": {
       "fn": "FullMath.fullMul",
@@ -15422,7 +15422,7 @@
         412
       ],
       "op": "ISZERO",
-      "path": "64"
+      "path": "65"
     },
     "2397": {
       "fn": "FullMath.fullMul",
@@ -15431,7 +15431,7 @@
         412
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x96E"
     },
     "2400": {
@@ -15442,7 +15442,7 @@
         412
       ],
       "op": "JUMPI",
-      "path": "64"
+      "path": "65"
     },
     "2401": {
       "fn": "FullMath.fullMul",
@@ -15451,7 +15451,7 @@
         412
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "statement": 32,
       "value": "0x96B"
     },
@@ -15462,7 +15462,7 @@
         412
       ],
       "op": "PUSH1",
-      "path": "64",
+      "path": "65",
       "value": "0x1"
     },
     "2406": {
@@ -15472,7 +15472,7 @@
         412
       ],
       "op": "DUP4",
-      "path": "64"
+      "path": "65"
     },
     "2407": {
       "fn": "FullMath.fullMul",
@@ -15481,7 +15481,7 @@
         412
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0xAC1"
     },
     "2410": {
@@ -15492,7 +15492,7 @@
         412
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2411": {
       "fn": "FullMath.fullMul",
@@ -15501,7 +15501,7 @@
         412
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2412": {
       "fn": "FullMath.fullMul",
@@ -15510,7 +15510,7 @@
         412
       ],
       "op": "SWAP2",
-      "path": "64"
+      "path": "65"
     },
     "2413": {
       "fn": "FullMath.fullMul",
@@ -15519,7 +15519,7 @@
         412
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2414": {
       "fn": "FullMath.fullMul",
@@ -15528,7 +15528,7 @@
         412
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2415": {
       "fn": "FullMath.fullMul",
@@ -15537,7 +15537,7 @@
         419
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2416": {
       "fn": "FullMath.fullMul",
@@ -15546,7 +15546,7 @@
         419
       ],
       "op": "SWAP3",
-      "path": "64"
+      "path": "65"
     },
     "2417": {
       "fn": "FullMath.fullMul",
@@ -15555,7 +15555,7 @@
         419
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2418": {
       "fn": "FullMath.fullMul",
@@ -15564,7 +15564,7 @@
         419
       ],
       "op": "SWAP3",
-      "path": "64"
+      "path": "65"
     },
     "2419": {
       "fn": "FullMath.fullMul",
@@ -15573,7 +15573,7 @@
         419
       ],
       "op": "SWAP1",
-      "path": "64"
+      "path": "65"
     },
     "2420": {
       "fn": "FullMath.fullMul",
@@ -15582,7 +15582,7 @@
         419
       ],
       "op": "POP",
-      "path": "64"
+      "path": "65"
     },
     "2421": {
       "fn": "FullMath.fullMul",
@@ -15592,7 +15592,7 @@
         419
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2422": {
       "fn": "FullMath.fullDiv",
@@ -15601,7 +15601,7 @@
         930
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2423": {
       "fn": "FullMath.fullDiv",
@@ -15610,7 +15610,7 @@
         634
       ],
       "op": "DUP3",
-      "path": "64"
+      "path": "65"
     },
     "2424": {
       "fn": "FullMath.fullDiv",
@@ -15619,7 +15619,7 @@
         634
       ],
       "op": "DUP3",
-      "path": "64"
+      "path": "65"
     },
     "2425": {
       "fn": "FullMath.fullDiv",
@@ -15628,7 +15628,7 @@
         634
       ],
       "op": "MUL",
-      "path": "64"
+      "path": "65"
     },
     "2426": {
       "fn": "FullMath.fullDiv",
@@ -15637,7 +15637,7 @@
         735
       ],
       "op": "DUP4",
-      "path": "64"
+      "path": "65"
     },
     "2427": {
       "fn": "FullMath.fullDiv",
@@ -15646,7 +15646,7 @@
         735
       ],
       "op": "ISZERO",
-      "path": "64"
+      "path": "65"
     },
     "2428": {
       "fn": "FullMath.fullDiv",
@@ -15655,7 +15655,7 @@
         749
       ],
       "op": "DUP5",
-      "path": "64"
+      "path": "65"
     },
     "2429": {
       "fn": "FullMath.fullDiv",
@@ -15664,7 +15664,7 @@
         749
       ],
       "op": "DUP3",
-      "path": "64"
+      "path": "65"
     },
     "2430": {
       "fn": "FullMath.fullDiv",
@@ -15673,7 +15673,7 @@
         749
       ],
       "op": "DIV",
-      "path": "64"
+      "path": "65"
     },
     "2431": {
       "fn": "FullMath.fullDiv",
@@ -15682,7 +15682,7 @@
         753
       ],
       "op": "DUP5",
-      "path": "64"
+      "path": "65"
     },
     "2432": {
       "fn": "FullMath.fullDiv",
@@ -15691,7 +15691,7 @@
         753
       ],
       "op": "EQ",
-      "path": "64"
+      "path": "65"
     },
     "2433": {
       "fn": "FullMath.fullDiv",
@@ -15700,7 +15700,7 @@
         754
       ],
       "op": "OR",
-      "path": "64"
+      "path": "65"
     },
     "2434": {
       "fn": "FullMath.fullDiv",
@@ -15709,7 +15709,7 @@
         800
       ],
       "op": "PUSH2",
-      "path": "64",
+      "path": "65",
       "value": "0x98A"
     },
     "2437": {
@@ -15719,7 +15719,7 @@
         800
       ],
       "op": "JUMPI",
-      "path": "64"
+      "path": "65"
     },
     "2438": {
       "fn": "FullMath.fullDiv",
@@ -15728,7 +15728,7 @@
         785
       ],
       "op": "PUSH1",
-      "path": "64",
+      "path": "65",
       "value": "0x0"
     },
     "2440": {
@@ -15738,7 +15738,7 @@
         782
       ],
       "op": "DUP1",
-      "path": "64"
+      "path": "65"
     },
     "2441": {
       "fn": "FullMath.fullDiv",
@@ -15747,7 +15747,7 @@
         786
       ],
       "op": "REVERT",
-      "path": "64"
+      "path": "65"
     },
     "2442": {
       "fn": "FullMath.fullDiv",
@@ -15756,7 +15756,7 @@
         800
       ],
       "op": "JUMPDEST",
-      "path": "64"
+      "path": "65"
     },
     "2443": {
       "fn": "FullMath.fullDiv",
@@ -15765,7 +15765,7 @@
         914
       ],
       "op": "DIV",
-      "path": "64"
+      "path": "65"
     },
     "2444": {
       "fn": "FullMath.fullDiv",
@@ -15774,7 +15774,7 @@
         914
       ],
       "op": "SWAP3",
-      "path": "64"
+      "path": "65"
     },
     "2445": {
       "fn": "FullMath.fullDiv",
@@ -15783,7 +15783,7 @@
         930
       ],
       "op": "SWAP2",
-      "path": "64"
+      "path": "65"
     },
     "2446": {
       "op": "POP"
@@ -15799,7 +15799,7 @@
         930
       ],
       "op": "JUMP",
-      "path": "64"
+      "path": "65"
     },
     "2449": {
       "op": "JUMPDEST"
@@ -16578,7 +16578,7 @@
   },
   "sha1": "060246e454041231ba035da387890ab5955cb5f7",
   "source": "/* SPDX-License-Identifier: MIT */\npragma solidity =0.8.10;\n\nimport {IUniswapV2Pair} from \"@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol\";\nimport '../libs/FixedPoint.sol';\n\nimport '../libs/UniswapV2OracleLibrary.sol';\nimport {IUniswapV2Router02} from \"../../../../interfaces/libs/IUniswapV2Router02.sol\";\n\nimport {IPhantomTWAP} from \"../../interfaces/core/IPhantomTWAP.sol\";\n\n\ncontract PhantomTWAP is IPhantomTWAP {\n    using FixedPoint for FixedPoint.uq144x112;\n    using FixedPoint for FixedPoint.uq112x112;\n\n    uint    public constant PERIOD = 30 minutes;\n\n    IUniswapV2Pair immutable pair;\n    address public immutable token0;\n    address public immutable token1;\n\n    uint    public price0CumulativeLast;\n    uint    public price1CumulativeLast;\n    uint32  public blockTimestampLast;\n    FixedPoint.uq112x112 public price0Average;\n    FixedPoint.uq112x112 public price1Average;\n\n    constructor(address pair_) public {\n        pair = IUniswapV2Pair(pair_);\n        token0 = pair.token0();\n        token1 = pair.token1();\n        price0CumulativeLast = pair.price0CumulativeLast(); // fetch the current accumulated price value (1 / 0)\n        price1CumulativeLast = pair.price1CumulativeLast(); // fetch the current accumulated price value (0 / 1)\n        uint112 reserve0;\n        uint112 reserve1;\n        (reserve0, reserve1, blockTimestampLast) = pair.getReserves();\n        require(reserve0 != 0 && reserve1 != 0, 'PhantomTWAP: NO_RESERVES'); // ensure that there's liquidity in the pair\n    }\n\n    function update() external override {\n        (uint price0Cumulative, uint price1Cumulative, uint32 blockTimestamp) =\n            UniswapV2OracleLibrary.currentCumulativePrices(address(pair));\n        unchecked {\n            uint32 timeElapsed = blockTimestamp - blockTimestampLast; // overflow is desired\n            // ensure that at least one full period has passed since the last update\n            if (timeElapsed >= PERIOD) return;\n\n            // overflow is desired, casting never truncates\n            // cumulative price is in (uq112x112 price * seconds) units so we simply wrap it after division by time elapsed\n            price0Average = FixedPoint.uq112x112(uint224((price0Cumulative - price0CumulativeLast) / timeElapsed));\n            price1Average = FixedPoint.uq112x112(uint224((price1Cumulative - price1CumulativeLast) / timeElapsed));\n\n            price0CumulativeLast = price0Cumulative;\n            price1CumulativeLast = price1Cumulative;\n            blockTimestampLast = blockTimestamp;\n        }\n    }\n\n    // note this will always return 0 before update has been called successfully for the first time.\n    function consult(address token, uint amountIn) external override view returns (uint amountOut) {\n        if (amountIn == 0) return 0;\n\n        FixedPoint.uq112x112 memory price0Average_ = price0Average;\n        FixedPoint.uq112x112 memory price1Average_ = price1Average;\n        (uint price0Cumulative, uint price1Cumulative, uint32 blockTimestamp) =\n            UniswapV2OracleLibrary.currentCumulativePrices(address(pair));\n\n        // Protect against stale price\n        unchecked {\n            uint32 timeElapsed = blockTimestamp - blockTimestampLast; // overflow is desired\n            // ensure that at least one full period has passed since the last update\n            if (timeElapsed < PERIOD) {\n\n                // overflow is desired, casting never truncates\n                // cumulative price is in (uq112x112 price * seconds) units so we simply wrap it after division by time elapsed\n                price0Average_ = FixedPoint.uq112x112(uint224((price0Cumulative - price0CumulativeLast) / timeElapsed));\n                price1Average_ = FixedPoint.uq112x112(uint224((price1Cumulative - price1CumulativeLast) / timeElapsed));\n            }\n        }\n\n        if (token == token0) {\n            amountOut = price0Average_.mul(amountIn).decode144();\n        } else {\n            require(token == token1, 'PhantomTWAP: INVALID_TOKEN');\n            amountOut = price1Average_.mul(amountIn).decode144();\n        }\n    }\n}",
-  "sourceMap": "388:3696:38:-:0;;;902:614;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;946:28:38;;;;;;993:13;;;-1:-1:-1;;;993:13:38;;;;:11;;:13;;;;;;;;;;;;;;;946:28;993:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;984:22:38;;;-1:-1:-1;;;;;984:22:38;;;;;1025:4;;-1:-1:-1;;;;;1025:11:38;;:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;1016:22:38;;;-1:-1:-1;;;;;1016:22:38;;;;;1071:4;;-1:-1:-1;;;;;1071:25:38;;:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1048:20;:50;;;;1184:4;;-1:-1:-1;;;;;1184:25:38;;:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1161:20;:50;;;;1274:16;1300;1369:4;;-1:-1:-1;;;;;1369:16:38;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1347;1326:61;;-1:-1:-1;;1326:61:38;;;;;;;;;;;;;;-1:-1:-1;1326:61:38;-1:-1:-1;;;;;;1405:13:38;;;;;;:30;;-1:-1:-1;;;;;;1422:13:38;;;;1405:30;1397:67;;;;-1:-1:-1;;;1397:67:38;;1337:2:103;1397:67:38;;;1319:21:103;1376:2;1356:18;;;1349:30;1415:26;1395:18;;;1388:54;1459:18;;1397:67:38;;;;;;;;936:580;;902:614;388:3696;;14:290:103;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:103;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:103:o;309:184::-;379:6;432:2;420:9;411:7;407:23;403:32;400:52;;;448:1;445;438:12;400:52;-1:-1:-1;471:16:103;;309:184;-1:-1:-1;309:184:103:o;498:177::-;577:13;;-1:-1:-1;;;;;619:31:103;;609:42;;599:70;;665:1;662;655:12;599:70;498:177;;;:::o;680:450::-;767:6;775;783;836:2;824:9;815:7;811:23;807:32;804:52;;;852:1;849;842:12;804:52;875:40;905:9;875:40;:::i;:::-;865:50;;934:49;979:2;968:9;964:18;934:49;:::i;:::-;924:59;;1026:2;1015:9;1011:18;1005:25;1070:10;1063:5;1059:22;1052:5;1049:33;1039:61;;1096:1;1093;1086:12;1039:61;1119:5;1109:15;;;680:450;;;;;:::o;1135:348::-;388:3696:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "sourceMap": "388:3696:38:-:0;;;902:614;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;946:28:38;;;;;;993:13;;;-1:-1:-1;;;993:13:38;;;;:11;;:13;;;;;;;;;;;;;;;946:28;993:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;984:22:38;;;-1:-1:-1;;;;;984:22:38;;;;;1025:4;;-1:-1:-1;;;;;1025:11:38;;:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;1016:22:38;;;-1:-1:-1;;;;;1016:22:38;;;;;1071:4;;-1:-1:-1;;;;;1071:25:38;;:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1048:20;:50;;;;1184:4;;-1:-1:-1;;;;;1184:25:38;;:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1161:20;:50;;;;1274:16;1300;1369:4;;-1:-1:-1;;;;;1369:16:38;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1347;1326:61;;-1:-1:-1;;1326:61:38;;;;;;;;;;;;;;-1:-1:-1;1326:61:38;-1:-1:-1;;;;;;1405:13:38;;;;;;:30;;-1:-1:-1;;;;;;1422:13:38;;;;1405:30;1397:67;;;;-1:-1:-1;;;1397:67:38;;1337:2:104;1397:67:38;;;1319:21:104;1376:2;1356:18;;;1349:30;1415:26;1395:18;;;1388:54;1459:18;;1397:67:38;;;;;;;;936:580;;902:614;388:3696;;14:290:104;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:104;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:104:o;309:184::-;379:6;432:2;420:9;411:7;407:23;403:32;400:52;;;448:1;445;438:12;400:52;-1:-1:-1;471:16:104;;309:184;-1:-1:-1;309:184:104:o;498:177::-;577:13;;-1:-1:-1;;;;;619:31:104;;609:42;;599:70;;665:1;662;655:12;599:70;498:177;;;:::o;680:450::-;767:6;775;783;836:2;824:9;815:7;811:23;807:32;804:52;;;852:1;849;842:12;804:52;875:40;905:9;875:40;:::i;:::-;865:50;;934:49;979:2;968:9;964:18;934:49;:::i;:::-;924:59;;1026:2;1015:9;1011:18;1005:25;1070:10;1063:5;1059:22;1052:5;1049:33;1039:61;;1096:1;1093;1086:12;1039:61;1119:5;1109:15;;;680:450;;;;;:::o;1135:348::-;388:3696:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
   "sourcePath": "contracts/core/PhantomTWAP.sol",
   "type": "contract"
 }

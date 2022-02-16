@@ -7,25 +7,25 @@
     "absolutePath": "contracts/auth/PhantomGuard.sol",
     "exportedSymbols": {
       "DSAuth": [
-        9756
+        12349
       ],
       "DSAuthEvents": [
-        9634
+        12227
       ],
       "DSAuthority": [
-        9625
+        12218
       ],
       "DSGuardEvents": [
         7
       ],
       "IPhantomGuard": [
-        13084
+        15677
       ],
       "PhantomGuard": [
         269
       ],
       "PhantomStorageMixin": [
-        11418
+        14011
       ]
     },
     "id": 270,
@@ -50,7 +50,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 270,
-        "sourceUnit": 9757,
+        "sourceUnit": 12350,
         "src": "83:28:35",
         "symbolAliases": [],
         "unitAlias": ""
@@ -62,7 +62,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 270,
-        "sourceUnit": 11419,
+        "sourceUnit": 14012,
         "src": "136:70:35",
         "symbolAliases": [
           {
@@ -86,7 +86,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 270,
-        "sourceUnit": 13085,
+        "sourceUnit": 15678,
         "src": "241:70:35",
         "symbolAliases": [
           {
@@ -130,7 +130,7 @@
               "id": 8,
               "name": "DSAuthority",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 9625,
+              "referencedDeclaration": 12218,
               "src": "366:11:35"
             },
             "id": 9,
@@ -154,7 +154,7 @@
               "id": 12,
               "name": "PhantomStorageMixin",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 11418,
+              "referencedDeclaration": 14011,
               "src": "394:19:35"
             },
             "id": 13,
@@ -166,7 +166,7 @@
               "id": 14,
               "name": "IPhantomGuard",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 13084,
+              "referencedDeclaration": 15677,
               "src": "415:13:35"
             },
             "id": 15,
@@ -181,13 +181,13 @@
         "id": 269,
         "linearizedBaseContracts": [
           269,
-          13084,
-          11418,
-          20026,
-          20010,
-          13028,
+          15677,
+          14011,
+          22619,
+          22603,
+          15621,
           7,
-          9625
+          12218
         ],
         "name": "PhantomGuard",
         "nameLocation": "350:12:35",
@@ -459,7 +459,7 @@
                   "id": 37,
                   "name": "PhantomStorageMixin",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 11418,
+                  "referencedDeclaration": 14011,
                   "src": "616:19:35"
                 },
                 "nodeType": "ModifierInvocation",
@@ -518,7 +518,7 @@
           },
           {
             "baseFunctions": [
-              9624
+              12217
             ],
             "body": {
               "id": 145,
@@ -1862,7 +1862,7 @@
           },
           {
             "baseFunctions": [
-              13056
+              15649
             ],
             "body": {
               "id": 173,
@@ -2050,7 +2050,7 @@
                       "name": "LogPermit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 13039,
+                      "referencedDeclaration": 15632,
                       "src": "1330:9:35",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$_t_bytes32_$_t_bytes32_$returns$__$",
@@ -2090,7 +2090,7 @@
                   "id": 154,
                   "name": "onlyRegisteredContracts",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 11368,
+                  "referencedDeclaration": 13961,
                   "src": "1256:23:35"
                 },
                 "nodeType": "ModifierInvocation",
@@ -2202,7 +2202,7 @@
           },
           {
             "baseFunctions": [
-              13074
+              15667
             ],
             "body": {
               "id": 201,
@@ -2390,7 +2390,7 @@
                       "name": "LogForbid",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 13047,
+                      "referencedDeclaration": 15640,
                       "src": "1504:9:35",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$_t_bytes32_$_t_bytes32_$returns$__$",
@@ -2430,7 +2430,7 @@
                   "id": 182,
                   "name": "onlyRegisteredContracts",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 11368,
+                  "referencedDeclaration": 13961,
                   "src": "1429:23:35"
                 },
                 "nodeType": "ModifierInvocation",
@@ -2542,7 +2542,7 @@
           },
           {
             "baseFunctions": [
-              13065
+              15658
             ],
             "body": {
               "id": 234,
@@ -2871,7 +2871,7 @@
                   "id": 210,
                   "name": "onlyRegisteredContracts",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 11368,
+                  "referencedDeclaration": 13961,
                   "src": "1602:23:35"
                 },
                 "nodeType": "ModifierInvocation",
@@ -2985,7 +2985,7 @@
           },
           {
             "baseFunctions": [
-              13083
+              15676
             ],
             "body": {
               "id": 267,
@@ -3314,7 +3314,7 @@
                   "id": 243,
                   "name": "onlyRegisteredContracts",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 11368,
+                  "referencedDeclaration": 13961,
                   "src": "1776:23:35"
                 },
                 "nodeType": "ModifierInvocation",
@@ -3430,9 +3430,9 @@
         "scope": 270,
         "src": "341:1544:35",
         "usedErrors": [
-          20017,
-          20021,
-          20025
+          22610,
+          22614,
+          22618
         ]
       }
     ],

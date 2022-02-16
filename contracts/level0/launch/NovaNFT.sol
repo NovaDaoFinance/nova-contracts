@@ -1343,7 +1343,7 @@ contract NovaNFT is ERC721Enumerable, Ownable, PhantomStorageMixin {
     uint256 public PRICE = 1e21;
     uint256 public MAX_NovaNFTs = 2015; //1000 WL, 15 launch team members, 1000 validators
     address public constant payoutAddr = 0xee9Abb3A1D3D09D2E258862f69D52AEdb2623088; //Update with proper IBC Treasury Module 
-    address public constant UST; //TBD on address as Token doesnt yet exist on their chain
+    address public constant UST = 0xa47c8bf37f92aBed4A126BDA807A7b7498661acD; //TBD on address as Token doesnt yet exist on their chain
 
     //Updated Values
     uint256 public numNovasMinted;
@@ -1353,18 +1353,18 @@ contract NovaNFT is ERC721Enumerable, Ownable, PhantomStorageMixin {
     bool public fNOVAClaimed = false;
     bool public nftSaleBegun = false; 
     bool public pause = false;
-    bool public teamMintStarted = true;
+    bool public teamMintStarted = false;
     bool public isAllowListActive = false;
     
     //Private mappings
     mapping(address => uint8) private _allowList; 
     mapping(address => bool) private _isClaimed;
 
-    //Event Emitted after each mint
+     //Event Emitted after each mint
     event NovaMint(address minter, bool status);
     
-    constructor( address storageFactoryAddress) NovaBaseMixin(storageFactoryAddress) ERC721("NovaDao Finance", "NovaNFT") {}
     
+    constructor( address storageFactoryAddress) PhantomStorageMixin(storageFactoryAddress) ERC721("NovaDao Finance", "NovaNFT") {}
 
     //=================================================================================================================
     // Toggle Functions
@@ -1382,7 +1382,7 @@ contract NovaNFT is ERC721Enumerable, Ownable, PhantomStorageMixin {
        teamMintStarted = !teamMintStarted;
     }
 
-    function togglefNOVAClaimed() external onlyRegisteredContracts {
+    function toggleSaleBegun() external onlyRegisteredContracts {
        nftSaleBegun = !nftSaleBegun;
     }
 
@@ -1405,7 +1405,7 @@ contract NovaNFT is ERC721Enumerable, Ownable, PhantomStorageMixin {
     // WL List Setup
     //=================================================================================================================
     
-    function setAllowList(address[] calldata addresses, uint8[] fNovaPredetermined) external onlyOwner {
+    function setAllowList(address[] calldata addresses, uint8[] calldata fNovaPredetermined) external onlyOwner {
         for (uint256 i = 0; i < addresses.length; i++) {
             _allowList[addresses[i]] = fNovaPredetermined[i];
         }
@@ -1430,17 +1430,16 @@ contract NovaNFT is ERC721Enumerable, Ownable, PhantomStorageMixin {
         require( msg.sender != address(0), "Cannot mint to null address");
         require(nftSaleBegun, "Sorry minting period isn't currently ongoing");
         require(numNovasMinted < MAX_NovaNFTs, "Minting would exceed supply!");
-        require(!_isClaimed[_address], "You have already claimed your NFT");
+        require(!_isClaimed[msg.sender], "You have already claimed your NFT");
         require(PRICE == msg.value, "The amount desposited isn't correct"); //How to check if 1000 deposited and UST is deposited 
         //Is there anyway to check WL onchain??? as a require statement as well without taking too much gas? 
 
         uint256 tokenId = numNovasMinted + 1;
         numNovasMinted += 1;
-        _isClaimed[_address] = true;
-         _safeMint(_address, tokenId);
-        }
+        _isClaimed[msg.sender] = true;
+         _safeMint(msg.sender, tokenId);
 
-        emit NovaMint(_address, true);
+        emit NovaMint(msg.sender, true);
     }
 
     //Add fNova balance for each team member as well
@@ -1453,7 +1452,6 @@ contract NovaNFT is ERC721Enumerable, Ownable, PhantomStorageMixin {
         numNovasMinted += 1;
         _isClaimed[_address] = true;
          _safeMint(_address, tokenId);
-        }
 
         emit NovaMint(_address, true);
     }
