@@ -1390,11 +1390,6 @@ contract NovaNFT is ERC721Enumerable, Ownable, PhantomStorageMixin {
         pause = !pause;
     }
     
-    function setbaseTokenURI(string memory baseURI) public onlyRegisteredContracts returns (string memory) {
-        baseTokenURI = baseURI;
-        return baseTokenURI;
-    }
-    
     function setPrice(uint256 inPrice) public onlyRegisteredContracts returns (uint256) {
         PRICE = inPrice;
         return PRICE;
@@ -1468,12 +1463,28 @@ contract NovaNFT is ERC721Enumerable, Ownable, PhantomStorageMixin {
     // Transfer Capability
     //=================================================================================================================
     
+    function _beforeTokenTransfer(
+        address from,
+        address to,
+        uint256 tokenId
+    ) internal override {
+        //this allows minting, and allows burning and transfer post fNova allocations
+        if( from == address(0) ) {
+            super._beforeTokenTransfer;
+        } else {
+            require(fNOVAClaimed == true, "Sorry fNova Claiming has not yet ended to transfer NFT");
+            super._beforeTokenTransfer;
+        }
+    }
 
     //=================================================================================================================
     // Mint
     //=================================================================================================================
     
 
+    /**
+     * @notice Allow contract owner to withdraw funds directly to the treasury 
+     */
     function withdrawAll() public onlyOwner {
         uint256 balance = address(this).balance;
         require(balance > 0, "Insufficent balance");
@@ -1485,6 +1496,17 @@ contract NovaNFT is ERC721Enumerable, Ownable, PhantomStorageMixin {
         (bool success, ) = _address.call{ value: _amount }("");
         require(success, "Failed to widthdraw Ether");
     }
+
+    
+    //=================================================================================================================
+    // TpkenURI
+    //=================================================================================================================
+    
+    function setbaseTokenURI(string memory baseURI) public onlyRegisteredContracts returns (string memory) {
+        baseTokenURI = baseURI;
+        return baseTokenURI;
+    }
+    
     
     function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
         require(_exists(tokenId), "ERC721Metadata: URI query for nonexistent token");
